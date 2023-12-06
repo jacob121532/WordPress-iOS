@@ -152,9 +152,6 @@
 /* Difference label for Period Overview stat, indicating change from previous period. Ex: +99.9K (5%) */
 "%@%@ (%@%%)" = "%1$@%2$@ (%3$@%%)";
 
-/* Accessibility label for a post in the post list. The parameters are the title, and date respectively. For example, \"Let it Go, 1 hour ago.\" */
-"%@, %@." = "%1$@, %2$@.";
-
 /* Accessibility value for a Stats' Posting Activity Month if the user selected a day with posts. The first parameter is day (e.g. November 2019). The second parameter is the number of posts. */
 "%@. %d posts." = "%1$@. %2$d příspěvky.";
 
@@ -209,9 +206,6 @@
 
 /* Age between dates over one year. */
 "%d years" = "%d roky";
-
-/* Max image size in pixels (e.g. 300x300px) */
-"%dx%dpx" = "%1$dx%2$dpx";
 
 /* One menu area available in the theme */
 "%i menu area in this theme" = "%i oblast pro menu v šabloně";
@@ -472,8 +466,7 @@ translators: Block name. %s: The localized block name */
 /* Label for the Activity Type filter button when there are more than 1 activity type selected */
 "Activity Type (%1$d)" = "Typ aktivit (%1$d)";
 
-/* Accessibility label for add button to add items to the user's media library
-   Remove asset from media picker list */
+/* Remove asset from media picker list */
 "Add" = "Přidat";
 
 /* Action for Media Picker to indicate selection of media. The argument in the string represents the number of elements (as numeric digits) selected */
@@ -568,9 +561,6 @@ translators: Block name. %s: The localized block name */
 
 /* No comment provided by engineer. */
 "Add menu item to children" = "Přidat položku menu pro děti";
-
-/* Accessibility hint for add button to add items to the user's media library */
-"Add new media" = "Přidat nová média";
 
 /* Screen reader text for Menus button that adds a new menu to a site. */
 "Add new menu" = "Přidat nové menu";
@@ -713,9 +703,6 @@ translators: Block name. %s: The localized block name */
 /* Image alt attribute option title.
    Label for the alt for a media asset (image) */
 "Alt Text" = "Alternativní text";
-
-/* No comment provided by engineer. */
-"Alternatively, you can detach and edit these blocks separately by tapping “Detach patterns”." = "Alternativně můžete tyto bloky oddělit a upravit samostatně klepnutím na „Převést na běžné bloky“.";
 
 /* Instruction text to explain to help users type their password instead of using magic link login option. */
 "Alternatively, you may enter the password for this account." = "Případně můžete zadat heslo pro tento účet.";
@@ -864,14 +851,8 @@ translators: Block name. %s: The localized block name */
 /* Message prompting the user to confirm that they want to disconnect Jetpack from the site. */
 "Are you sure you want to disconnect Jetpack from the site?" = "Opravdu chcete odpojit Jetpack od webové stránky?";
 
-/* Message prompting the user to confirm that they want to permanently delete a group of media items. */
-"Are you sure you want to permanently delete these items?" = "Opravdu chcete trvale odstranit vybrané položky?";
-
 /* Message prompting the user to confirm that they want to permanently delete a media item. Should match Calypso. */
 "Are you sure you want to permanently delete this item?" = "Opravdu chcete tuto položku trvale smazat?";
-
-/* Message of the confirmation alert when deleting a page from the trash. */
-"Are you sure you want to permanently delete this page?" = "Jste si jistí, že chcete natrvalo smazat tuto stránku?";
 
 /* Message of the confirmation alert when deleting a post from the trash. */
 "Are you sure you want to permanently delete this post?" = "Opravdu chcete trvale smazat tento příspěvek?";
@@ -903,9 +884,6 @@ translators: Block name. %s: The localized block name */
 
 /* Title of message shown when user taps submit for review. */
 "Are you sure you want to submit for review?" = "Opravdu chcete odeslat ke kontrole?";
-
-/* Message of the trash page confirmation alert. */
-"Are you sure you want to trash this page?" = "Jste si jistí, že chcete vyhodit tuto stránku?";
 
 /* Message of the trash confirmation alert. */
 "Are you sure you want to trash this post?" = "Opravdu chcete odstranit tento příspěvek?";
@@ -1217,9 +1195,6 @@ translators: Block name. %s: The localized block name */
 /* Label for the post author in the post detail. */
 "By " = "od ";
 
-/* Accessibility label for the post author in the post list. The parameter is the author name. For example, \"By Elsa.\" */
-"By %@." = "Od %@.";
-
 /* Legal disclaimer for logging in. The underscores _..._ denote underline. */
 "By continuing, you agree to our _Terms of Service_." = "Pokračováním vyjadřujete souhlas s našimi _podmínkami služby_.";
 
@@ -1291,10 +1266,7 @@ translators: Block name. %s: The localized block name */
    Cancels an Action
    Cancels an alert.
    Cancels the mark all as read action.
-   Dismiss the post action sheet
    Editing GIF alert cancel action button.
-   Label for a cancel button
-   Label for the auto-upload cancelation button in the post list. Tapping will prevent the app from auto-uploading the post.
    Menus cancel button for deleting a menu.
    Menus cancel button within text bar while editing items.
    Menus: Cancel button title for canceling an edited menu item.
@@ -1310,10 +1282,6 @@ translators: Block name. %s: The localized block name */
    Verb. Tapping cancels the publicize account selection.
    Verb. Title for Jetpack Restore cancel button. */
 "Cancel" = "Zrušit";
-
-/* Label for the Post List option that cancels automatic uploading of a post.
-   Media Library option to cancel an in-progress or failed upload. */
-"Cancel Upload" = "Zrušit nahrávání";
 
 /* Menus alert button title to cancel discarding changes and not createa a new menu.
    Menus alert button title to cancel discarding changes and not select a new menu
@@ -1372,9 +1340,6 @@ translators: Block name. %s: The localized block name */
 /* Account Settings Change password label
    Main title */
 "Change Password" = "Změnit heslo";
-
-/* Title of button that takes user to the system Settings section for the app */
-"Change Settings" = "Změnit nastavení";
 
 /* Change Username title. */
 "Change Username" = "Změnit uživatelské jméno";
@@ -1718,9 +1683,6 @@ translators: Block name. %s: The localized block name */
 /* Community & Non-Profit site intent topic */
 "Community & Non-Profit" = "Komunita a neziskové organizace";
 
-/* Accessibility indication that the current Post List style is currently Compact. */
-"Compact" = "Kompaktní";
-
 /* The action is completed */
 "Completed" = "Dokončeno";
 
@@ -1905,10 +1867,6 @@ translators: Block name. %s: The localized block name */
 
 /* No comment provided by engineer. */
 "Copied block" = "Zkopírovaný blok";
-
-/* Copy the post url and paste anywhere in phone
-   Label for page copy link. Tapping copy the url of page */
-"Copy Link" = "Kopírovat odkaz";
 
 /* Copy link to oomment button title */
 "Copy Link to Comment" = "Zkopírovat odkaz na komentář";
@@ -2268,7 +2226,6 @@ translators: Block name. %s: The localized block name */
 /* Delete
    Delete button title for the warning shown to the user when he refuses to re-login when the authToken is missing.
    Title for button that permanently deletes a media item (photo / video)
-   Title for button that permanently deletes one or more media items (photos / videos)
    Title of a delete button
    Title of the trash confirmation alert. */
 "Delete" = "Smazat";
@@ -2276,15 +2233,11 @@ translators: Block name. %s: The localized block name */
 /* Menus confirmation button for deleting a menu. */
 "Delete Menu" = "Smazat menu";
 
-/* Delete option in the confirmation alert when deleting a page from the trash.
-   Delete option in the confirmation alert when deleting a post from the trash.
-   Label for a button permanently deletes a page.
-   Label for the delete post option. Tapping permanently deletes a post.
+/* Delete option in the confirmation alert when deleting a post from the trash.
    Title for button on the comment details page that deletes the comment when tapped. */
 "Delete Permanently" = "Smazat trvale";
 
-/* Title of the confirmation alert when deleting a page from the trash.
-   Title of the confirmation alert when deleting a post from the trash. */
+/* Title of the confirmation alert when deleting a post from the trash. */
 "Delete Permanently?" = "Trvale smazat?";
 
 /* Button label for deleting the current site
@@ -2581,8 +2534,7 @@ translators: Block name. %s: The localized block name */
 /* Description of a Quick Start Tour */
 "Draft and publish a post." = "Navrhněte a publikujte svůj první příspěvek.";
 
-/* Title of the drafts filter.  This filter shows a list of draft posts.
-   Title of the drafts header in search list. */
+/* Title of the drafts filter.  This filter shows a list of draft posts. */
 "Drafts" = "Koncepty";
 
 /* No comment provided by engineer. */
@@ -2594,10 +2546,6 @@ translators: Block name. %s: The localized block name */
 /* No comment provided by engineer. */
 "Drag to adjust focal point" = "Potáhnutím upravíte ohnisko";
 
-/* Label for page duplicate option. Tapping creates a copy of the page.
-   Label for post duplicate option. Tapping creates a copy of the post. */
-"Duplicate" = "Duplikovat";
-
 /* No comment provided by engineer. */
 "Duplicate block" = "Duplicitní blok";
 
@@ -2607,13 +2555,9 @@ translators: Block name. %s: The localized block name */
 /* No comment provided by engineer. */
 "Each block has its own settings. To find them, tap on a block. Its settings will appear on the toolbar at the bottom of the screen." = "Každý blok má své vlastní nastavení. Chcete-li je najít, klepněte na blok. Jeho nastavení se zobrazí na panelu nástrojů ve spodní části obrazovky.";
 
-/* Accessibility label for edit button to enable multi selection mode in the user's media library
-   Edit the post.
-   Editing GIF alert default action button.
+/* Editing GIF alert default action button.
    Edits a Comment
    Edits the comment
-   Label for a button that opens the Edit Page view controller
-   Label for the edit post button. Tapping displays the editor.
    User action to edit media details.
    Verb, edit a comment */
 "Edit" = "Úpravy";
@@ -2810,9 +2754,6 @@ translators: Block name. %s: The localized block name */
 /* Secondary message shown when there are no domains that match the user entered text. */
 "Enter different words above and we'll look for an address that matches it." = "Výše zadejte různá slova a my vyhledáme adresu, která jí odpovídá.";
 
-/* Accessibility hint for edit button to enable multi selection mode in the user's media library */
-"Enter edit mode to enable multi select to delete" = "Aktivujte režim úprav a povolte smazání vícenásobným výběrem";
-
 /* (placeholder) Help enter WordPress password
    Placeholder of a field to type a password to protect the post. */
 "Enter password" = "Zadejte heslo";
@@ -2968,9 +2909,6 @@ translators: Block name. %s: The localized block name */
 /* Short title telling the user they will receive a blogging reminder every day of the week. */
 "Every day at %@" = "Každý den v %@";
 
-/* Label for the post author filter. This filter shows posts for all users on the blog. */
-"Everyone" = "Všichni";
-
 /* Example story title description */
 "Example story title" = "Příklad názvu příběhu";
 
@@ -2979,9 +2917,6 @@ translators: Block name. %s: The localized block name */
 
 /* No comment provided by engineer. */
 "Excerpt length (words)" = "Délka výňatku (slova)";
-
-/* Accessibility label for a post's excerpt in the post list. The parameter is the post excerpt. For example, \"Excerpt. This is the first paragraph.\" */
-"Excerpt. %@." = "Výňatek. %@.";
 
 /* Should be the same as the text displayed if the user clicks the (i) in Calypso. */
 "Excerpts are optional hand-crafted summaries of your content." = "Výpisky jsou volitelná shrnutí vašeho obsahu.";
@@ -2992,8 +2927,7 @@ translators: Block name. %s: The localized block name */
 /* Accessibility Label for the exit full screen button on the full screen comment reply mode */
 "Exit Full Screen" = "Ukončit celou obrazovku";
 
-/* Accessibility indication that the current Post List style is currently Expanded.
-   Screen reader text to represent the expanded state of a UI control */
+/* Screen reader text to represent the expanded state of a UI control */
 "Expanded" = "Rozšířený";
 
 /* Accessibility hint */
@@ -3042,9 +2976,6 @@ translators: Block name. %s: The localized block name */
 /* Status for Media object that is failed upload or export.
    The action failed */
 "Failed" = "Selhalo";
-
-/* Error title when picked media cannot be imported into stories. */
-"Failed Media Export" = "Export médií se nezdařil";
 
 /* Message for mark all as read success notice */
 "Failed marking Notifications as read" = "Oznámení se nepodařilo označit jako přečtené";
@@ -3564,8 +3495,7 @@ translators: Block name. %s: The localized block name */
 "Home" = "Úvodní stránka";
 
 /* Title for setting which shows the current page assigned as a site's homepage
-   Title for the homepage section in site settings screen
-   Title of the Homepage Badge */
+   Title for the homepage section in site settings screen */
 "Homepage" = "Domovská stránka";
 
 /* Label for Homepage Settings site settings section
@@ -4132,9 +4062,6 @@ translators: Block name. %s: The localized block name */
    Settings: Comments Approval settings */
 "Links in comments" = "Odkazy v komentářích";
 
-/* The accessibility label for the list style button in the Post List. */
-"List style" = "Styl seznamu";
-
 /* Title of the screen that load selected the revisions. */
 "Load" = "Načítání";
 
@@ -4222,8 +4149,7 @@ translators: Block name. %s: The localized block name */
 /* Local Services site intent topic */
 "Local Services" = "Místní služby";
 
-/* A status label for a post that only exists on the user's iOS device, and has not yet been published to their blog.
-   Title of the Local Changes Badge */
+/* A status label for a post that only exists on the user's iOS device, and has not yet been published to their blog. */
 "Local changes" = "Místní změny";
 
 /* Title for alert when a generic error happened when trying to find the location of the device */
@@ -4384,7 +4310,6 @@ translators: Block name. %s: The localized block name */
 "Max Video Upload Size" = "Maximální velikost nahraného videa";
 
 /* Accessibility label for the Me button in My Site.
-   Label for the post author filter. This filter shows posts only authored by the current user.
    Me page title
    Noun. Title. Links to the Me screen.
    The accessibility value of the me tab.
@@ -4392,9 +4317,7 @@ translators: Block name. %s: The localized block name */
 "Me" = "Já";
 
 /* Noun. Title. Links to the blog's Media library.
-   Tab bar title for the Media tab in Media Picker
    The menu item to select during a guided tour.
-   Title for Media Library section of the app.
    Title for the media section in site settings screen
    Title label for the media settings section in the app settings */
 "Media" = "Media";
@@ -4475,9 +4398,6 @@ translators: Block name. %s: The localized block name */
    Label for the share message field on the post settings. */
 "Message" = "Zpráva";
 
-/* Title of section containing image / video metadata such as size and file type */
-"Metadata" = "Metadata";
-
 /* Option to select the Microsft Outlook app when logging in with magic links */
 "Microsoft Outlook" = "Microsoft Outlook";
 
@@ -4497,13 +4417,11 @@ translators: Block name. %s: The localized block name */
 "Months and Years" = "Měsíce a Roky";
 
 /* Accessibility label for more button in dashboard quick start card.
-   Accessibility label for the More button in Page List.
    Accessibility label for the More button in Post List (compact view).
    Accessibility label for the More button on formatting toolbar.
    Accessibility label for the More button on Reader Cell
    Accessibility label for the More button on Reader's post details
-   Action button to display more available options
-   Label for the more post button. Tapping displays an action sheet with post options. */
+   Action button to display more available options */
 "More" = "Více";
 
 /* Action button to display more available options
@@ -4561,15 +4479,8 @@ translators: Block name. %s: The localized block name */
 /* Screen reader text for button that will move the menu item */
 "Move menu item" = "Přesunout položku menu";
 
-/* Label for a button that moves a page to the draft folder
-   Label for an option that moves a post to the draft folder */
-"Move to Draft" = "Přesunout mezi koncepty";
-
-/* Label for a button that moves a page to the trash folder
-   Label for a option that moves a post to the trash folder
-   Title for button on the comment details page that moves the comment to trash when tapped.
+/* Title for button on the comment details page that moves the comment to trash when tapped.
    Trash option in the trash confirmation alert.
-   Trash option in the trash page confirmation alert.
    Trashes the comment */
 "Move to Trash" = "Přesunout do koše";
 
@@ -4601,7 +4512,8 @@ translators: Block name. %s: The localized block name */
    Title of My Site tab */
 "My Site" = "Moje weby";
 
-/* Title of the 'My Sites' tab - used for spotlight indexing on iOS. */
+/* Title for site picker screen.
+   Title of the 'My Sites' tab - used for spotlight indexing on iOS. */
 "My Sites" = "Moje weby";
 
 /* Siri Suggestion to open My Sites */
@@ -4868,8 +4780,7 @@ translators: %s: Select control button label e.g. \"Button width\" */
 /* Displayed in the Notifications Tab as a title, when there are no notifications */
 "No notifications yet" = "Zatím nejsou žádná oznámení";
 
-/* Displayed when the user is searching the pages list and there are no matching pages
-   Text displayed when there's no matching with the text search */
+/* Text displayed when there's no matching with the text search */
 "No pages matching your search" = "Vyhledávání neodpovídají žádné stránky";
 
 /* Text displayed when search for plugins returns no results */
@@ -4889,9 +4800,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 
 /* Message shown whent the reader finds no posts for the chosen tag */
 "No posts have been made recently with this tag." = "Žádné příspěvku nebyly v nedávné době označené tímto štítkem.";
-
-/* Displayed when the user is searching the posts list and there are no matching posts */
-"No posts matching your search" = "Vyhledávání neodpovídají žádné příspěvky";
 
 /* Accessibility value for a Stats' Posting Activity Month if there are no posts. */
 "No posts." = "Žádné příspěvky.";
@@ -5114,9 +5022,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 /* No comment provided by engineer. */
 "Only show excerpt" = "Zobrazit pouze výňatek";
 
-/* Message telling the user that they've only enabled limited photo library permissions for the app. */
-"Only the selected photos you've given access to are available." = "Dostupné jsou pouze vybrané fotografie, ke kterým jste udělili přístup.";
-
 /* An informal exclaimation that means `something went wrong`.
    Title for the view when there's an error loading a comment.
    Title for the view when there's an error loading Activity Log
@@ -5251,15 +5156,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
    Title shown when selecting a post type of Page from the Share Extension. */
 "Page" = "Stránka";
 
-/* Prompts the user that a restored page was moved to the drafts list. */
-"Page Restored to Drafts" = "Stránka obnovena do konceptů";
-
-/* Prompts the user that a restored page was moved to the published list. */
-"Page Restored to Published" = "Stránka obnovena do publikovaných";
-
-/* Prompts the user that a restored page was moved to the scheduled list. */
-"Page Restored to Scheduled" = "Stránka obnovena do plánovaných";
-
 /* Name of the button to open the page settings
    The title of the Page Settings screen. */
 "Page Settings" = "Nastavení stránky";
@@ -5275,9 +5171,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 
 /* Title of notification displayed when a page has failed to upload. */
 "Page failed to upload" = "Stránku se nepodařilo nahrát";
-
-/* A short message explaining that a page was moved to the trash bin. */
-"Page moved to trash." = "Stránka přesunuta do koše.";
 
 /* Title of notification displayed when a page has been successfully saved as a draft. */
 "Page pending review" = "Stránka čekající na schválení";
@@ -5350,8 +5243,7 @@ translators: %s: Select control button label e.g. \"Button width\" */
    Title of pending Comments filter. */
 "Pending" = "Čekající na schválení";
 
-/* Name for the status of a post pending review.
-   Title of the Pending Review Badge */
+/* Name for the status of a post pending review. */
 "Pending review" = "Čeká na schválení";
 
 /* Noun. Title of the people management feature.
@@ -5379,9 +5271,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 
 /* Photography site intent topic */
 "Photography" = "Fotografie";
-
-/* Tab bar title for the Photos tab in Media Picker */
-"Photos" = "Fotky";
 
 /* Subtitle for placeholder in Free Photos. The company name 'Pexels' should always be written as it is. */
 "Photos provided by Pexels" = "Fotografie poskytla společnost Pexels";
@@ -5470,9 +5359,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 
 /* Instructional text shown when requesting the user's password for a login initiated via Sign In with Apple */
 "Please enter the password for your WordPress.com account to log in with your Apple ID." = "Chcete-li se přihlásit pomocí svého Apple ID, zadejte heslo ke svému účtu WordPress.com.";
-
-/* Instruction text on the two-factor screen. */
-"Please enter the verification code from your authenticator app, or tap the link below to receive a code via SMS." = "Zadejte ověřovací kód z aplikace ověřovatele nebo klepnutím na odkaz níže obdržíte kód prostřednictvím SMS.";
 
 /* Popup message to ask for user credentials (fields shown below). */
 "Please enter your credentials" = "Zadejte prosím své přihlašovací údaje";
@@ -5567,15 +5453,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
    The post formats available for the post. Should be the same as in core WP. */
 "Post Format" = "Formát příspěvku";
 
-/* Prompts the user that a restored post was moved to the drafts list. */
-"Post Restored to Drafts" = "Příspěvek byl obnoven jako koncept";
-
-/* Prompts the user that a restored post was moved to the published list. */
-"Post Restored to Published" = "Příspěvek byl obnoven jako Publikovaný";
-
-/* Prompts the user that a restored post was moved to the scheduled list. */
-"Post Restored to Scheduled" = "Příspěvek byl obnoven jako Naplánovaný";
-
 /* Name of the button to open the post settings
    The title of the Post Settings screen. */
 "Post Settings" = "Nastavení příspěvku";
@@ -5594,9 +5471,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 
 /* Title of notification displayed when a post has failed to upload. */
 "Post failed to upload" = "Nahrávání příspěvku se nezdařilo";
-
-/* A short message explaining that a post was moved to the trash bin. */
-"Post moved to trash." = "Příspěvek byl přesunut do koše.";
 
 /* Title of notification displayed when a post has been successfully saved as a draft. */
 "Post pending review" = "Příspěvek čeká na schválení";
@@ -5656,9 +5530,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
    Period Stats 'Posts and Pages' header */
 "Posts and Pages" = "Příspěvky a stránky";
 
-/* Title of the Posts Page Badge */
-"Posts page" = "Stránka příspěvků";
-
 /* Message informing the user that their static homepage for posts was set successfully */
 "Posts page successfully updated" = "Stránka příspěvků byla úspěšně aktualizována";
 
@@ -5700,9 +5571,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 
 /* Title on display preview error */
 "Preview Unavailable" = "Náhled není k dispozici";
-
-/* Accessibility label for media item preview for user's viewing an item in their media library */
-"Preview media" = "Náhled média";
 
 /* No comment provided by engineer. */
 "Preview page" = "Náhled stránky";
@@ -5747,8 +5615,7 @@ translators: %s: Select control button label e.g. \"Button width\" */
 "Privacy notice for California users" = "Oznámení o ochraně osobních údajů pro uživatele Kalifornie";
 
 /* Name for the status of a post that is marked private.
-   Privacy setting for posts set to 'Private'. Should be the same as in core WP.
-   Title of the Private Badge */
+   Privacy setting for posts set to 'Private'. Should be the same as in core WP. */
 "Private" = "Soukromé";
 
 /* No comment provided by engineer. */
@@ -5798,12 +5665,10 @@ translators: %s: Select control button label e.g. \"Button width\" */
    Label for the publish date button. */
 "Publish Date" = "Datum publikování";
 
-/* A short phrase indicating a post is due to be immedately published.
-   Label for a button that moves a page to the published folder, publishing with the current date/time. */
+/* A short phrase indicating a post is due to be immedately published. */
 "Publish Immediately" = "Publikovat okamžitě";
 
 /* Label for a button that publishes the post
-   Label for an option that moves a publishes a post immediately
    Title of button allowing the user to immediately publish the post they are editing. */
 "Publish Now" = "Publikovat";
 
@@ -5821,8 +5686,7 @@ translators: %s: Select control button label e.g. \"Button width\" */
 
 /* Name for the status of a published post.
    Period Stats 'Published' header
-   Title of the published filter. This filter shows a list of posts that the user has published.
-   Title of the published header in search list. */
+   Title of the published filter. This filter shows a list of posts that the user has published. */
 "Published" = "Publikováno";
 
 /* Precedes the name of the blog just posted on */
@@ -6112,9 +5976,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 /* Title of secondary button on alert prompting verify their accounts while attempting to publish */
 "Resend" = "Přeposlat";
 
-/* Title of the reset button */
-"Reset" = "Obnovit";
-
 /* Accessibility label for the reset activity type button */
 "Reset Activity Type filter" = "Obnovit filtr typu aktivity";
 
@@ -6169,12 +6030,9 @@ translators: %s: Select control button label e.g. \"Button width\" */
    Button title, displayed when media has failed to upload. Allows the user to try the upload again.
    Button title. Retries uploading a post.
    If a user taps the button with this label, the action that evinced this error view will be retried.
-   Label for a button that attempts to re-upload a page that previously failed to upload.
-   Label for the retry post upload button. Tapping attempts to upload the post again.
    Opens the media library .
    Retries the upload of a user's post.
    Retry updating User's Role
-   Retry uploading the post.
    Retry. Action
    Retry. Verb – retry a failed media upload.
    The Jetpack view button title used when an error occurred
@@ -6185,9 +6043,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 
 /* Button title that triggers a scan */
 "Retry Scan" = "Opakovat skenování";
-
-/* User action to retry media upload. */
-"Retry Upload" = "Opakovat nahrávání";
 
 /* User action to retry all failed media uploads. */
 "Retry all" = "Zopakujte všechno";
@@ -6286,9 +6141,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 /* Accessibility label for the 'Save Post' button when a post has been saved. */
 "Saved Post" = "Uložený příspěvek";
 
-/* Text displayed in HUD when a media item's metadata (title, etc) is saved successfully. */
-"Saved!" = "Uloženo!";
-
 /* Accessibility hint for the 'Save Post' button. */
 "Saves this post for later." = "Uloží tento příspěvek na později.";
 
@@ -6299,7 +6151,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 "Saving post…" = "Ukládání příspěvku...";
 
 /* Menus save button title while it is saving a Menu.
-   Text displayed in HUD while a media item's metadata (title, etc) is being saved.
    Text displayed in HUD while a post is being saved as a draft. */
 "Saving..." = "Ukládání...";
 
@@ -6387,12 +6238,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 /* No comment provided by engineer. */
 "Search or type URL" = "Vyhledejte nebo zadejte URL";
 
-/* Text displayed when the search controller will be presented */
-"Search pages" = "Hledat stránku";
-
-/* Text displayed when the search controller will be presented */
-"Search posts" = "Hledat příspěvky";
-
 /* No comment provided by engineer. */
 "Search settings" = "Nastavení vyhledávání";
 
@@ -6471,9 +6316,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 
 /* Register Domain - Domain contact information field placeholder for Country */
 "Select Country" = "Vybrat zemi";
-
-/* Title of button that allows the user to select more photos to access within the app */
-"Select More" = "Vybrat více";
 
 /* Blog Picker's Title */
 "Select Site" = "Vybrat web";
@@ -6602,18 +6444,11 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Label for connected service in Publicize stat. */
 "Service" = "Služba";
 
-/* Label for a button that opens the Set Parent options view controller
-   Navigation title displayed on the navigation bar */
+/* Navigation title displayed on the navigation bar */
 "Set Parent" = "Nastavit nadřazené";
 
 /* No comment provided by engineer. */
 "Set as Featured Image" = "Použít jako náhledový obrázek";
-
-/* Label for a button that sets the selected page as the site's Homepage */
-"Set as Homepage" = "Nastavit jako hlavní stránku";
-
-/* Label for a button that sets the selected page as the site's Posts page */
-"Set as Posts Page" = "Nastavit jako stránku příspěvků";
 
 /* Notice confirming that an image has been set as the post's featured image. */
 "Set as featured image" = "Použít jako náhledový obrázek";
@@ -6658,7 +6493,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Accessibility label for share buttons in nav bars
    Button label to share a post
    Button label to share a web page
-   Share the post.
    Shares the comment URL
    Spoken accessibility label
    Title for a button that allows the user to share their answer to the prompt.
@@ -7044,8 +6878,7 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Name of setting configured when a site uses a static page as its homepage */
 "Static Homepage" = "Statická domovská stránka";
 
-/* Label for post stats option. Tapping displays statistics for a post.
-   Noun. Abbreviation of Statistics. Name of the Stats feature
+/* Noun. Abbreviation of Statistics. Name of the Stats feature
    Noun. Abbv. of Statistics. Links to a blog's Stats screen.
    Stats 3D Touch Shortcut
    Stats window title
@@ -7075,9 +6908,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 
 /* Label text that defines a post marked as sticky */
 "Sticky" = "Zvýrazněný";
-
-/* Accessibility label for a sticky post in the post list. */
-"Sticky." = "Připnuté.";
 
 /* User action to stop upload. */
 "Stop upload" = "Zastavit nahrání";
@@ -7135,7 +6965,8 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
    Theme Support action title */
 "Support" = "Podpora";
 
-/* Button used to switch site */
+/* Button used to switch site
+   Title for back button that leads to the site picker screen. */
 "Switch Site" = "Přepnout web";
 
 /* Switches the Editor to HTML Mode */
@@ -7293,9 +7124,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Accessibility hint for button used to switch site */
 "Tap to switch to another site, or add a new site" = "Klepnutím přepnete na jiný web nebo přidáte nový web";
 
-/* Accessibility hint for media item preview for user's viewing an item in their media library */
-"Tap to view media in full screen" = "Klepnutím zobrazíte média na celé obrazovce";
-
 /* Accessibility hint for a button that opens a new view with more details. */
 "Tap to view more details." = "Klepnutím zobrazíte další podrobnosti.";
 
@@ -7341,8 +7169,7 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* No comment provided by engineer. */
 "Text formatting controls are located within the toolbar positioned above the keyboard while editing a text block" = "Ovládací prvky formátování textu se při úpravě textového bloku nacházejí na panelu nástrojů nad klávesnicí";
 
-/* Button title
-   The button's title text to send a 2FA code via SMS text message. */
+/* Button title */
 "Text me a code instead" = "Pošlete mi raději kód.";
 
 /* Message of alert when theme activation succeeds */
@@ -7502,7 +7329,7 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Error message shown when user attempts to remove the site owner. */
 "The user you are trying to remove is the owner of this site. Please contact support for assistance." = "Uživatel, kterého se pokoušíte odebrat, je vlastníkem tohoto webu. Požádejte o pomoc podporu.";
 
-/* Error message informing a user about an invalid password. */
+/* No comment provided by engineer. */
 "The username or password stored in the app may be out of date. Please re-enter your password in the settings and try again." = "Uživatelské jméno nebo heslo uložené v aplikaci může být zastaralé. Zadejte znovu heslo v nastavení a zkuste to znovu.";
 
 /* Message shown when a video failed to load while trying to add it to the Media library. */
@@ -7569,9 +7396,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 
 /* A short error message letting the user know about a problem displaying a post. */
 "There was a problem displaying this post." = "Došlo k potížím při zobrazování tohoto příspěvku.";
-
-/* Error message displayed when the Media Library is unable to load a full sized preview of an item. */
-"There was a problem loading the media item." = "Vyskytl se problém s načtením mediální položky.";
 
 /* The loading view subtitle displayed when an error occurred */
 "There was a problem loading your data, refresh your page to try again." = "Při načítání dat došlo k potížím. Obnovte stránku a zkuste to znovu.";
@@ -7899,17 +7723,10 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* No comment provided by engineer. */
 "Transform block…" = "Změnit blok...";
 
-/* Accessibility label for trash button to delete items from the user's media library
-   Accessibility label for trash buttons in nav bars
+/* Accessibility label for trash buttons in nav bars
    Trashes a comment
    Trashes the comment */
 "Trash" = "Odstranit";
-
-/* Accessibility hint for trash button to delete items from the user's media library */
-"Trash selected media" = "Odstraňte vybraná média do koše";
-
-/* Title of the trash page confirmation alert. */
-"Trash this page?" = "Smazat tuto stránku?";
 
 /* Title of the trash confirmation alert. */
 "Trash this post?" = "Smazat tento příspěvek?";
@@ -8025,9 +7842,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Shown when a user logs in with Google but it subsequently fails to work as login to WordPress.com */
 "Unable To Connect" = "Připojení se nezdařilo";
 
-/* An error message. */
-"Unable to Connect" = "Připojení se nezdařilo";
-
 /* Title for stories unknown error. */
 "Unable to Create Stories Editor" = "Nelze vytvořit editor příběhů";
 
@@ -8042,9 +7856,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 
 /* An error message shown when there is an issue creating new invite links. */
 "Unable to create new invite links." = "Nelze vytvořit nové odkazy na pozvánky.";
-
-/* Text displayed in HUD if there was an error attempting to delete a group of media items. */
-"Unable to delete all media items." = "Nelze smazat všechny mediální položky.";
 
 /* Text displayed in HUD if there was an error attempting to delete a media item. */
 "Unable to delete media item." = "Nelze smazat mediální položku.";
@@ -8108,12 +7919,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 
 /* Message displayed when sharing a link to the downloadable backup fails. */
 "Unable to share link" = "Odkaz nelze sdílet";
-
-/* Message that appears when a user tries to trash a page while their device is offline. */
-"Unable to trash pages while offline. Please try again later." = "V režimu offline nelze stránky vyhodit do koše. Prosím zkuste to znovu později.";
-
-/* Message that appears when a user tries to trash a post while their device is offline. */
-"Unable to trash posts while offline. Please try again later." = "V režimu offline nelze příspěvky vyhodit do koše. Prosím zkuste to znovu později.";
 
 /* Notice title when turning site notifications off fails. */
 "Unable to turn off site notifications" = "Nelze vypnout notifikace webu";
@@ -8187,8 +7992,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
    Button title. Reverts the previous notification operation
    Revert an operation
    Revert enabling notification after successfully subcribing to the comments for the post.
-   The title of an 'undo' button. Tapping the button moves a trashed page out of the trash folder.
-   The title of an 'undo' button. Tapping the button moves a trashed post out of the trash folder.
    Undo action */
 "Undo" = "Zpět";
 
@@ -8475,8 +8278,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 "Videos" = "Videa";
 
 /* Button title. Displays a summary / sharing screen for a specific post.
-   Label for a button that opens the page when tapped.
-   Label for the view post button. Tapping displays the post as it appears on the web.
    Opens the post epilogue screen to allow sharing / viewing of a post.
    Theme View action title
    Verb. The screen title shown when viewing a post inside the app. */
@@ -9324,9 +9125,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Title of the site address section in the Domains Dashboard. */
 "Your free WordPress.com address is" = "Vaše bezplatná adresa na WordPress.com je";
 
-/* Error message when picked media cannot be imported into stories. */
-"Your media could not be exported. If the problem persists you can contact us via the Me > Help & Support screen." = "Vaše média se nepodařilo exportovat. Pokud problém přetrvává, můžete nás kontaktovat prostřednictvím obrazovky Já > Nápověda a podpora.";
-
 /* Details about recently acquired domain on domain credit redemption success screen */
 "Your new domain %@ is being set up. It may take up to 30 minutes for your domain to start working." = "Vaše nová doména %@ se nastavuje. Může trvat až 30 minut, než vaše doména začne fungovat.";
 
@@ -9839,9 +9637,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Indicating that referrer was marked as spam */
 "marked as spam" = "Označeno jako spam";
 
-/* Verb. User action to dismiss error alert when failing to load media item. */
-"mediaItemTable.errorAlert.dismissButton" = "Odmítnout";
-
 /* Verb. Button title. Tapping dismisses a prompt. */
 "mediaLibrary.retryOptionsAlert.dismissButton" = "Odmítnout";
 
@@ -9856,9 +9651,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 
 /* The title in the Delete WordPress screen */
 "migration.deleteWordpress.title" = "Už nepotřebujete WordPress aplikaci";
-
-/* Primary button title in the migration done screen. */
-"migration.done.actions.primary.title" = "Dokončit";
 
 /* Highlighted text in the footer of the migration done screen. */
 "migration.done.footer.highlighted" = "Odstraňte WordPress aplikaci";

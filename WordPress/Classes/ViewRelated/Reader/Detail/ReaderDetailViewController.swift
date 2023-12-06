@@ -197,6 +197,7 @@ class ReaderDetailViewController: UIViewController, ReaderDetailView {
         super.viewWillAppear(animated)
         setupFeaturedImage()
         updateFollowButtonState()
+        toolbar.viewWillAppear()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -207,6 +208,7 @@ class ReaderDetailViewController: UIViewController, ReaderDetailView {
         }
 
         featuredImage.viewWillDisappear()
+        toolbar.viewWillDisappear()
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -252,6 +254,8 @@ class ReaderDetailViewController: UIViewController, ReaderDetailView {
            let postURL = URL(string: postURLString) {
             webView.postURL = postURL
         }
+
+        webView.isP2 = post.isP2Type()
 
         coordinator?.storeAuthenticationCookies(in: webView) { [weak self] in
             self?.webView.loadHTMLString(post.contentForDisplay())

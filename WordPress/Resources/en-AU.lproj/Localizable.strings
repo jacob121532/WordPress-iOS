@@ -152,9 +152,6 @@
 /* Difference label for Period Overview stat, indicating change from previous period. Ex: +99.9K (5%) */
 "%@%@ (%@%%)" = "%1$@%2$@ (%3$@%%)";
 
-/* Accessibility label for a post in the post list. The parameters are the title, and date respectively. For example, \"Let it Go, 1 hour ago.\" */
-"%@, %@." = "%1$@, %2$@.";
-
 /* Accessibility value for a Stats' Posting Activity Month if the user selected a day with posts. The first parameter is day (e.g. November 2019). The second parameter is the number of posts. */
 "%@. %d posts." = "%1$@. %2$d posts.";
 
@@ -209,9 +206,6 @@
 
 /* Age between dates over one year. */
 "%d years" = "%d years";
-
-/* Max image size in pixels (e.g. 300x300px) */
-"%dx%dpx" = "%1$dx%2$dpx";
 
 /* One menu area available in the theme */
 "%i menu area in this theme" = "%i menu area in this theme";
@@ -460,8 +454,7 @@ translators: Block name. %s: The localized block name */
 /* Label for the Activity Type filter button when there are more than 1 activity type selected */
 "Activity Type (%1$d)" = "Activity Type (%1$d)";
 
-/* Accessibility label for add button to add items to the user's media library
-   Remove asset from media picker list */
+/* Remove asset from media picker list */
 "Add" = "Add";
 
 /* Action for Media Picker to indicate selection of media. The argument in the string represents the number of elements (as numeric digits) selected */
@@ -544,9 +537,6 @@ translators: Block name. %s: The localized block name */
 
 /* No comment provided by engineer. */
 "Add menu item to children" = "Add menu item to children";
-
-/* Accessibility hint for add button to add items to the user's media library */
-"Add new media" = "Add new media";
 
 /* Screen reader text for Menus button that adds a new menu to a site. */
 "Add new menu" = "Add new menu";
@@ -689,9 +679,6 @@ translators: Block name. %s: The localized block name */
 /* Image alt attribute option title.
    Label for the alt for a media asset (image) */
 "Alt Text" = "Alt Text";
-
-/* No comment provided by engineer. */
-"Alternatively, you can detach and edit these blocks separately by tapping “Detach patterns”." = "Alternatively, you can detach and edit these blocks separately by tapping “Detach patterns”.";
 
 /* Instruction text to explain to help users type their password instead of using magic link login option. */
 "Alternatively, you may enter the password for this account." = "Alternatively, you may enter the password for this account.";
@@ -840,14 +827,8 @@ translators: Block name. %s: The localized block name */
 /* Message prompting the user to confirm that they want to disconnect Jetpack from the site. */
 "Are you sure you want to disconnect Jetpack from the site?" = "Are you sure you want to disconnect Jetpack from the site?";
 
-/* Message prompting the user to confirm that they want to permanently delete a group of media items. */
-"Are you sure you want to permanently delete these items?" = "Are you sure you want to permanently delete these items?";
-
 /* Message prompting the user to confirm that they want to permanently delete a media item. Should match Calypso. */
 "Are you sure you want to permanently delete this item?" = "Are you sure you want to permanently delete this item?";
-
-/* Message of the confirmation alert when deleting a page from the trash. */
-"Are you sure you want to permanently delete this page?" = "Are you sure you want to permanently delete this page?";
 
 /* Message of the confirmation alert when deleting a post from the trash. */
 "Are you sure you want to permanently delete this post?" = "Are you sure you want to permanently delete this post?";
@@ -879,9 +860,6 @@ translators: Block name. %s: The localized block name */
 
 /* Title of message shown when user taps submit for review. */
 "Are you sure you want to submit for review?" = "Are you sure you want to submit for review?";
-
-/* Message of the trash page confirmation alert. */
-"Are you sure you want to trash this page?" = "Are you sure you want to bin this page?";
 
 /* Message of the trash confirmation alert. */
 "Are you sure you want to trash this post?" = "Are you sure you want to trash this post?";
@@ -1187,9 +1165,6 @@ translators: Block name. %s: The localized block name */
 /* Label for the post author in the post detail. */
 "By " = "By ";
 
-/* Accessibility label for the post author in the post list. The parameter is the author name. For example, \"By Elsa.\" */
-"By %@." = "By %@.";
-
 /* Legal disclaimer for logging in. The underscores _..._ denote underline. */
 "By continuing, you agree to our _Terms of Service_." = "By continuing, you agree to our _Terms of Service_.";
 
@@ -1261,10 +1236,7 @@ translators: Block name. %s: The localized block name */
    Cancels an Action
    Cancels an alert.
    Cancels the mark all as read action.
-   Dismiss the post action sheet
    Editing GIF alert cancel action button.
-   Label for a cancel button
-   Label for the auto-upload cancelation button in the post list. Tapping will prevent the app from auto-uploading the post.
    Menus cancel button for deleting a menu.
    Menus cancel button within text bar while editing items.
    Menus: Cancel button title for canceling an edited menu item.
@@ -1280,10 +1252,6 @@ translators: Block name. %s: The localized block name */
    Verb. Tapping cancels the publicize account selection.
    Verb. Title for Jetpack Restore cancel button. */
 "Cancel" = "Cancel";
-
-/* Label for the Post List option that cancels automatic uploading of a post.
-   Media Library option to cancel an in-progress or failed upload. */
-"Cancel Upload" = "Cancel Upload";
 
 /* Menus alert button title to cancel discarding changes and not createa a new menu.
    Menus alert button title to cancel discarding changes and not select a new menu
@@ -1339,9 +1307,6 @@ translators: Block name. %s: The localized block name */
 /* Account Settings Change password label
    Main title */
 "Change Password" = "Change Password";
-
-/* Title of button that takes user to the system Settings section for the app */
-"Change Settings" = "Change Settings";
 
 /* Change Username title. */
 "Change Username" = "Change Username";
@@ -1670,9 +1635,6 @@ translators: Block name. %s: The localized block name */
 /* Community & Non-Profit site intent topic */
 "Community & Non-Profit" = "Community & Non-Profit";
 
-/* Accessibility indication that the current Post List style is currently Compact. */
-"Compact" = "Compact";
-
 /* The action is completed */
 "Completed" = "Completed";
 
@@ -1857,10 +1819,6 @@ translators: Block name. %s: The localized block name */
 
 /* No comment provided by engineer. */
 "Copied block" = "Copied block";
-
-/* Copy the post url and paste anywhere in phone
-   Label for page copy link. Tapping copy the url of page */
-"Copy Link" = "Copy Link";
 
 /* Copy link to oomment button title */
 "Copy Link to Comment" = "Copy Link to Comment";
@@ -2205,7 +2163,6 @@ translators: Block name. %s: The localized block name */
 /* Delete
    Delete button title for the warning shown to the user when he refuses to re-login when the authToken is missing.
    Title for button that permanently deletes a media item (photo / video)
-   Title for button that permanently deletes one or more media items (photos / videos)
    Title of a delete button
    Title of the trash confirmation alert. */
 "Delete" = "Delete";
@@ -2213,15 +2170,11 @@ translators: Block name. %s: The localized block name */
 /* Menus confirmation button for deleting a menu. */
 "Delete Menu" = "Delete Menu";
 
-/* Delete option in the confirmation alert when deleting a page from the trash.
-   Delete option in the confirmation alert when deleting a post from the trash.
-   Label for a button permanently deletes a page.
-   Label for the delete post option. Tapping permanently deletes a post.
+/* Delete option in the confirmation alert when deleting a post from the trash.
    Title for button on the comment details page that deletes the comment when tapped. */
 "Delete Permanently" = "Delete Permanently";
 
-/* Title of the confirmation alert when deleting a page from the trash.
-   Title of the confirmation alert when deleting a post from the trash. */
+/* Title of the confirmation alert when deleting a post from the trash. */
 "Delete Permanently?" = "Delete Permanently?";
 
 /* Button label for deleting the current site
@@ -2518,8 +2471,7 @@ translators: Block name. %s: The localized block name */
 /* Description of a Quick Start Tour */
 "Draft and publish a post." = "Draft and publish a post.";
 
-/* Title of the drafts filter.  This filter shows a list of draft posts.
-   Title of the drafts header in search list. */
+/* Title of the drafts filter.  This filter shows a list of draft posts. */
 "Drafts" = "Drafts";
 
 /* No comment provided by engineer. */
@@ -2531,10 +2483,6 @@ translators: Block name. %s: The localized block name */
 /* No comment provided by engineer. */
 "Drag to adjust focal point" = "Drag to adjust focal point";
 
-/* Label for page duplicate option. Tapping creates a copy of the page.
-   Label for post duplicate option. Tapping creates a copy of the post. */
-"Duplicate" = "Duplicate";
-
 /* No comment provided by engineer. */
 "Duplicate block" = "Duplicate block";
 
@@ -2544,13 +2492,9 @@ translators: Block name. %s: The localized block name */
 /* No comment provided by engineer. */
 "Each block has its own settings. To find them, tap on a block. Its settings will appear on the toolbar at the bottom of the screen." = "Each block has its own settings. To find them, tap on a block. Its settings will appear on the toolbar at the bottom of the screen.";
 
-/* Accessibility label for edit button to enable multi selection mode in the user's media library
-   Edit the post.
-   Editing GIF alert default action button.
+/* Editing GIF alert default action button.
    Edits a Comment
    Edits the comment
-   Label for a button that opens the Edit Page view controller
-   Label for the edit post button. Tapping displays the editor.
    User action to edit media details.
    Verb, edit a comment */
 "Edit" = "Edit";
@@ -2738,9 +2682,6 @@ translators: Block name. %s: The localized block name */
 /* Secondary message shown when there are no domains that match the user entered text. */
 "Enter different words above and we'll look for an address that matches it." = "Enter different words above and we'll look for an address that matches it.";
 
-/* Accessibility hint for edit button to enable multi selection mode in the user's media library */
-"Enter edit mode to enable multi select to delete" = "Enter edit mode to enable multi select to delete";
-
 /* (placeholder) Help enter WordPress password
    Placeholder of a field to type a password to protect the post. */
 "Enter password" = "Enter password";
@@ -2896,9 +2837,6 @@ translators: Block name. %s: The localized block name */
 /* Short title telling the user they will receive a blogging reminder every day of the week. */
 "Every day at %@" = "Every day at %@";
 
-/* Label for the post author filter. This filter shows posts for all users on the blog. */
-"Everyone" = "Everyone";
-
 /* Example story title description */
 "Example story title" = "Example story title";
 
@@ -2907,9 +2845,6 @@ translators: Block name. %s: The localized block name */
 
 /* No comment provided by engineer. */
 "Excerpt length (words)" = "Excerpt length (words)";
-
-/* Accessibility label for a post's excerpt in the post list. The parameter is the post excerpt. For example, \"Excerpt. This is the first paragraph.\" */
-"Excerpt. %@." = "Excerpt. %@.";
 
 /* Should be the same as the text displayed if the user clicks the (i) in Calypso. */
 "Excerpts are optional hand-crafted summaries of your content." = "Excerpts are optional hand-crafted summaries of your content.";
@@ -2920,8 +2855,7 @@ translators: Block name. %s: The localized block name */
 /* Accessibility Label for the exit full screen button on the full screen comment reply mode */
 "Exit Full Screen" = "Exit Full Screen";
 
-/* Accessibility indication that the current Post List style is currently Expanded.
-   Screen reader text to represent the expanded state of a UI control */
+/* Screen reader text to represent the expanded state of a UI control */
 "Expanded" = "Expanded";
 
 /* Accessibility hint */
@@ -2970,9 +2904,6 @@ translators: Block name. %s: The localized block name */
 /* Status for Media object that is failed upload or export.
    The action failed */
 "Failed" = "Failed";
-
-/* Error title when picked media cannot be imported into stories. */
-"Failed Media Export" = "Failed Media Export";
 
 /* Message for mark all as read success notice */
 "Failed marking Notifications as read" = "Failed marking Notifications as read";
@@ -3486,8 +3417,7 @@ translators: Block name. %s: The localized block name */
 "Home" = "Home";
 
 /* Title for setting which shows the current page assigned as a site's homepage
-   Title for the homepage section in site settings screen
-   Title of the Homepage Badge */
+   Title for the homepage section in site settings screen */
 "Homepage" = "Home page";
 
 /* Label for Homepage Settings site settings section
@@ -4039,9 +3969,6 @@ translators: Block name. %s: The localized block name */
    Settings: Comments Approval settings */
 "Links in comments" = "Links in comments";
 
-/* The accessibility label for the list style button in the Post List. */
-"List style" = "List style";
-
 /* Title of the screen that load selected the revisions. */
 "Load" = "Load";
 
@@ -4126,8 +4053,7 @@ translators: Block name. %s: The localized block name */
 /* Local Services site intent topic */
 "Local Services" = "Local Services";
 
-/* A status label for a post that only exists on the user's iOS device, and has not yet been published to their blog.
-   Title of the Local Changes Badge */
+/* A status label for a post that only exists on the user's iOS device, and has not yet been published to their blog. */
 "Local changes" = "Local changes";
 
 /* Title for alert when a generic error happened when trying to find the location of the device */
@@ -4288,7 +4214,6 @@ translators: Block name. %s: The localized block name */
 "Max Video Upload Size" = "Max Video Upload Size";
 
 /* Accessibility label for the Me button in My Site.
-   Label for the post author filter. This filter shows posts only authored by the current user.
    Me page title
    Noun. Title. Links to the Me screen.
    The accessibility value of the me tab.
@@ -4296,9 +4221,7 @@ translators: Block name. %s: The localized block name */
 "Me" = "Me";
 
 /* Noun. Title. Links to the blog's Media library.
-   Tab bar title for the Media tab in Media Picker
    The menu item to select during a guided tour.
-   Title for Media Library section of the app.
    Title for the media section in site settings screen
    Title label for the media settings section in the app settings */
 "Media" = "Media";
@@ -4373,9 +4296,6 @@ translators: Block name. %s: The localized block name */
    Label for the share message field on the post settings. */
 "Message" = "Message";
 
-/* Title of section containing image / video metadata such as size and file type */
-"Metadata" = "Metadata";
-
 /* Option to select the Microsft Outlook app when logging in with magic links */
 "Microsoft Outlook" = "Microsoft Outlook";
 
@@ -4395,13 +4315,11 @@ translators: Block name. %s: The localized block name */
 "Months and Years" = "Months and Years";
 
 /* Accessibility label for more button in dashboard quick start card.
-   Accessibility label for the More button in Page List.
    Accessibility label for the More button in Post List (compact view).
    Accessibility label for the More button on formatting toolbar.
    Accessibility label for the More button on Reader Cell
    Accessibility label for the More button on Reader's post details
-   Action button to display more available options
-   Label for the more post button. Tapping displays an action sheet with post options. */
+   Action button to display more available options */
 "More" = "More";
 
 /* Action button to display more available options
@@ -4453,15 +4371,8 @@ translators: Block name. %s: The localized block name */
 /* Screen reader text for button that will move the menu item */
 "Move menu item" = "Move menu item";
 
-/* Label for a button that moves a page to the draft folder
-   Label for an option that moves a post to the draft folder */
-"Move to Draft" = "Move to Draft";
-
-/* Label for a button that moves a page to the trash folder
-   Label for a option that moves a post to the trash folder
-   Title for button on the comment details page that moves the comment to trash when tapped.
+/* Title for button on the comment details page that moves the comment to trash when tapped.
    Trash option in the trash confirmation alert.
-   Trash option in the trash page confirmation alert.
    Trashes the comment */
 "Move to Trash" = "Move to Trash";
 
@@ -4493,7 +4404,8 @@ translators: Block name. %s: The localized block name */
    Title of My Site tab */
 "My Site" = "My Site";
 
-/* Title of the 'My Sites' tab - used for spotlight indexing on iOS. */
+/* Title for site picker screen.
+   Title of the 'My Sites' tab - used for spotlight indexing on iOS. */
 "My Sites" = "My Sites";
 
 /* Siri Suggestion to open My Sites */
@@ -4756,8 +4668,7 @@ translators: Block name. %s: The localized block name */
 /* Displayed in the Notifications Tab as a title, when there are no notifications */
 "No notifications yet" = "No notifications yet";
 
-/* Displayed when the user is searching the pages list and there are no matching pages
-   Text displayed when there's no matching with the text search */
+/* Text displayed when there's no matching with the text search */
 "No pages matching your search" = "No pages matching your search";
 
 /* Text displayed when search for plugins returns no results */
@@ -4777,9 +4688,6 @@ translators: Block name. %s: The localized block name */
 
 /* Message shown whent the reader finds no posts for the chosen tag */
 "No posts have been made recently with this tag." = "No posts have been made recently with this tag.";
-
-/* Displayed when the user is searching the posts list and there are no matching posts */
-"No posts matching your search" = "No posts matching your search";
 
 /* Accessibility value for a Stats' Posting Activity Month if there are no posts. */
 "No posts." = "No posts.";
@@ -4999,9 +4907,6 @@ translators: Block name. %s: The localized block name */
 /* No comment provided by engineer. */
 "Only show excerpt" = "Only show excerpt";
 
-/* Message telling the user that they've only enabled limited photo library permissions for the app. */
-"Only the selected photos you've given access to are available." = "Only the selected photos you've given access to are available.";
-
 /* An informal exclaimation that means `something went wrong`.
    Title for the view when there's an error loading a comment.
    Title for the view when there's an error loading Activity Log
@@ -5130,15 +5035,6 @@ translators: Block name. %s: The localized block name */
    Title shown when selecting a post type of Page from the Share Extension. */
 "Page" = "Page";
 
-/* Prompts the user that a restored page was moved to the drafts list. */
-"Page Restored to Drafts" = "Page Restored to Drafts";
-
-/* Prompts the user that a restored page was moved to the published list. */
-"Page Restored to Published" = "Page Restored to Published";
-
-/* Prompts the user that a restored page was moved to the scheduled list. */
-"Page Restored to Scheduled" = "Page Restored to Scheduled";
-
 /* Name of the button to open the page settings
    The title of the Page Settings screen. */
 "Page Settings" = "Page Settings";
@@ -5154,9 +5050,6 @@ translators: Block name. %s: The localized block name */
 
 /* Title of notification displayed when a page has failed to upload. */
 "Page failed to upload" = "Page failed to upload";
-
-/* A short message explaining that a page was moved to the trash bin. */
-"Page moved to trash." = "Page moved to trash.";
 
 /* Title of notification displayed when a page has been successfully saved as a draft. */
 "Page pending review" = "Page pending review";
@@ -5229,8 +5122,7 @@ translators: Block name. %s: The localized block name */
    Title of pending Comments filter. */
 "Pending" = "Pending";
 
-/* Name for the status of a post pending review.
-   Title of the Pending Review Badge */
+/* Name for the status of a post pending review. */
 "Pending review" = "Pending review";
 
 /* Noun. Title of the people management feature.
@@ -5258,9 +5150,6 @@ translators: Block name. %s: The localized block name */
 
 /* Photography site intent topic */
 "Photography" = "Photography";
-
-/* Tab bar title for the Photos tab in Media Picker */
-"Photos" = "Photos";
 
 /* Subtitle for placeholder in Free Photos. The company name 'Pexels' should always be written as it is. */
 "Photos provided by Pexels" = "Photos provided by Pexels";
@@ -5349,9 +5238,6 @@ translators: Block name. %s: The localized block name */
 
 /* Instructional text shown when requesting the user's password for a login initiated via Sign In with Apple */
 "Please enter the password for your WordPress.com account to log in with your Apple ID." = "Please enter the password for your WordPress.com account to log in with your Apple ID.";
-
-/* Instruction text on the two-factor screen. */
-"Please enter the verification code from your authenticator app, or tap the link below to receive a code via SMS." = "Please enter the verification code from your authenticator app, or tap the link below to receive a code via SMS.";
 
 /* Popup message to ask for user credentials (fields shown below). */
 "Please enter your credentials" = "Please enter your credentials";
@@ -5446,15 +5332,6 @@ translators: Block name. %s: The localized block name */
    The post formats available for the post. Should be the same as in core WP. */
 "Post Format" = "Post Format";
 
-/* Prompts the user that a restored post was moved to the drafts list. */
-"Post Restored to Drafts" = "Post Restored to Drafts";
-
-/* Prompts the user that a restored post was moved to the published list. */
-"Post Restored to Published" = "Post Restored to Published";
-
-/* Prompts the user that a restored post was moved to the scheduled list. */
-"Post Restored to Scheduled" = "Post Restored to Scheduled";
-
 /* Name of the button to open the post settings
    The title of the Post Settings screen. */
 "Post Settings" = "Post Settings";
@@ -5473,9 +5350,6 @@ translators: Block name. %s: The localized block name */
 
 /* Title of notification displayed when a post has failed to upload. */
 "Post failed to upload" = "Post failed to upload";
-
-/* A short message explaining that a post was moved to the trash bin. */
-"Post moved to trash." = "Post moved to trash.";
 
 /* Title of notification displayed when a post has been successfully saved as a draft. */
 "Post pending review" = "Post pending review";
@@ -5535,9 +5409,6 @@ translators: Block name. %s: The localized block name */
    Period Stats 'Posts and Pages' header */
 "Posts and Pages" = "Posts and Pages";
 
-/* Title of the Posts Page Badge */
-"Posts page" = "Posts page";
-
 /* Message informing the user that their static homepage for posts was set successfully */
 "Posts page successfully updated" = "Posts page successfully updated";
 
@@ -5579,9 +5450,6 @@ translators: Block name. %s: The localized block name */
 
 /* Title on display preview error */
 "Preview Unavailable" = "Preview Unavailable";
-
-/* Accessibility label for media item preview for user's viewing an item in their media library */
-"Preview media" = "Preview media";
 
 /* No comment provided by engineer. */
 "Preview page" = "Preview page";
@@ -5626,8 +5494,7 @@ translators: Block name. %s: The localized block name */
 "Privacy notice for California users" = "Privacy notice for California users";
 
 /* Name for the status of a post that is marked private.
-   Privacy setting for posts set to 'Private'. Should be the same as in core WP.
-   Title of the Private Badge */
+   Privacy setting for posts set to 'Private'. Should be the same as in core WP. */
 "Private" = "Private";
 
 /* No comment provided by engineer. */
@@ -5677,12 +5544,10 @@ translators: Block name. %s: The localized block name */
    Label for the publish date button. */
 "Publish Date" = "Publish Date";
 
-/* A short phrase indicating a post is due to be immedately published.
-   Label for a button that moves a page to the published folder, publishing with the current date/time. */
+/* A short phrase indicating a post is due to be immedately published. */
 "Publish Immediately" = "Publish Immediately";
 
 /* Label for a button that publishes the post
-   Label for an option that moves a publishes a post immediately
    Title of button allowing the user to immediately publish the post they are editing. */
 "Publish Now" = "Publish Now";
 
@@ -5700,8 +5565,7 @@ translators: Block name. %s: The localized block name */
 
 /* Name for the status of a published post.
    Period Stats 'Published' header
-   Title of the published filter. This filter shows a list of posts that the user has published.
-   Title of the published header in search list. */
+   Title of the published filter. This filter shows a list of posts that the user has published. */
 "Published" = "Published";
 
 /* Precedes the name of the blog just posted on */
@@ -5991,9 +5855,6 @@ translators: Block name. %s: The localized block name */
 /* Title of secondary button on alert prompting verify their accounts while attempting to publish */
 "Resend" = "Resend";
 
-/* Title of the reset button */
-"Reset" = "Reset";
-
 /* Accessibility label for the reset activity type button */
 "Reset Activity Type filter" = "Reset Activity Type filter";
 
@@ -6048,12 +5909,9 @@ translators: Block name. %s: The localized block name */
    Button title, displayed when media has failed to upload. Allows the user to try the upload again.
    Button title. Retries uploading a post.
    If a user taps the button with this label, the action that evinced this error view will be retried.
-   Label for a button that attempts to re-upload a page that previously failed to upload.
-   Label for the retry post upload button. Tapping attempts to upload the post again.
    Opens the media library .
    Retries the upload of a user's post.
    Retry updating User's Role
-   Retry uploading the post.
    Retry. Action
    Retry. Verb – retry a failed media upload.
    The Jetpack view button title used when an error occurred
@@ -6064,9 +5922,6 @@ translators: Block name. %s: The localized block name */
 
 /* Button title that triggers a scan */
 "Retry Scan" = "Retry Scan";
-
-/* User action to retry media upload. */
-"Retry Upload" = "Retry Upload";
 
 /* User action to retry all failed media uploads. */
 "Retry all" = "Retry all";
@@ -6165,9 +6020,6 @@ translators: Block name. %s: The localized block name */
 /* Accessibility label for the 'Save Post' button when a post has been saved. */
 "Saved Post" = "Saved Post";
 
-/* Text displayed in HUD when a media item's metadata (title, etc) is saved successfully. */
-"Saved!" = "Saved!";
-
 /* Accessibility hint for the 'Save Post' button. */
 "Saves this post for later." = "Saves this post for later.";
 
@@ -6178,7 +6030,6 @@ translators: Block name. %s: The localized block name */
 "Saving post…" = "Saving post…";
 
 /* Menus save button title while it is saving a Menu.
-   Text displayed in HUD while a media item's metadata (title, etc) is being saved.
    Text displayed in HUD while a post is being saved as a draft. */
 "Saving..." = "Saving...";
 
@@ -6260,12 +6111,6 @@ translators: Block name. %s: The localized block name */
 /* No comment provided by engineer. */
 "Search or type URL" = "Search or type URL";
 
-/* Text displayed when the search controller will be presented */
-"Search pages" = "Search pages";
-
-/* Text displayed when the search controller will be presented */
-"Search posts" = "Search posts";
-
 /* Title for placeholder in Tenor picker */
 "Search to find GIFs to add to your Media Library!" = "Search to find GIFs to add to your Media Library!";
 
@@ -6341,9 +6186,6 @@ translators: Block name. %s: The localized block name */
 
 /* Register Domain - Domain contact information field placeholder for Country */
 "Select Country" = "Select Country";
-
-/* Title of button that allows the user to select more photos to access within the app */
-"Select More" = "Select More";
 
 /* Blog Picker's Title */
 "Select Site" = "Select Site";
@@ -6462,18 +6304,11 @@ translators: Block name. %s: The localized block name */
 /* Label for connected service in Publicize stat. */
 "Service" = "Service";
 
-/* Label for a button that opens the Set Parent options view controller
-   Navigation title displayed on the navigation bar */
+/* Navigation title displayed on the navigation bar */
 "Set Parent" = "Set Parent";
 
 /* No comment provided by engineer. */
 "Set as Featured Image" = "Set as Featured Image";
-
-/* Label for a button that sets the selected page as the site's Homepage */
-"Set as Homepage" = "Set as Home page";
-
-/* Label for a button that sets the selected page as the site's Posts page */
-"Set as Posts Page" = "Set as Posts Page";
 
 /* Notice confirming that an image has been set as the post's featured image. */
 "Set as featured image" = "Set as featured image";
@@ -6518,7 +6353,6 @@ translators: Block name. %s: The localized block name */
 /* Accessibility label for share buttons in nav bars
    Button label to share a post
    Button label to share a web page
-   Share the post.
    Shares the comment URL
    Spoken accessibility label
    Title for a button that allows the user to share their answer to the prompt.
@@ -6901,8 +6735,7 @@ translators: Block name. %s: The localized block name */
 /* Name of setting configured when a site uses a static page as its homepage */
 "Static Homepage" = "Static Home page";
 
-/* Label for post stats option. Tapping displays statistics for a post.
-   Noun. Abbreviation of Statistics. Name of the Stats feature
+/* Noun. Abbreviation of Statistics. Name of the Stats feature
    Noun. Abbv. of Statistics. Links to a blog's Stats screen.
    Stats 3D Touch Shortcut
    Stats window title
@@ -6932,9 +6765,6 @@ translators: Block name. %s: The localized block name */
 
 /* Label text that defines a post marked as sticky */
 "Sticky" = "Sticky";
-
-/* Accessibility label for a sticky post in the post list. */
-"Sticky." = "Sticky.";
 
 /* User action to stop upload. */
 "Stop upload" = "Stop upload";
@@ -6992,7 +6822,8 @@ translators: Block name. %s: The localized block name */
    Theme Support action title */
 "Support" = "Support";
 
-/* Button used to switch site */
+/* Button used to switch site
+   Title for back button that leads to the site picker screen. */
 "Switch Site" = "Switch Site";
 
 /* Switches the Editor to HTML Mode */
@@ -7150,9 +6981,6 @@ translators: Block name. %s: The localized block name */
 /* Accessibility hint for button used to switch site */
 "Tap to switch to another site, or add a new site" = "Tap to switch to another site, or add a new site";
 
-/* Accessibility hint for media item preview for user's viewing an item in their media library */
-"Tap to view media in full screen" = "Tap to view media in full screen";
-
 /* Accessibility hint for a button that opens a new view with more details. */
 "Tap to view more details." = "Tap to view more details.";
 
@@ -7195,8 +7023,7 @@ translators: Block name. %s: The localized block name */
 /* No comment provided by engineer. */
 "Text formatting controls are located within the toolbar positioned above the keyboard while editing a text block" = "Text formatting controls are located within the toolbar positioned above the keyboard while editing a text block";
 
-/* Button title
-   The button's title text to send a 2FA code via SMS text message. */
+/* Button title */
 "Text me a code instead" = "Text me a code instead";
 
 /* Message of alert when theme activation succeeds */
@@ -7356,7 +7183,7 @@ translators: Block name. %s: The localized block name */
 /* Error message shown when user attempts to remove the site owner. */
 "The user you are trying to remove is the owner of this site. Please contact support for assistance." = "The user you are trying to remove is the owner of this site. Please contact support for assistance.";
 
-/* Error message informing a user about an invalid password. */
+/* No comment provided by engineer. */
 "The username or password stored in the app may be out of date. Please re-enter your password in the settings and try again." = "The username or password stored in the app may be out of date. Please re-enter your password in the settings and try again.";
 
 /* Message shown when a video failed to load while trying to add it to the Media library. */
@@ -7423,9 +7250,6 @@ translators: Block name. %s: The localized block name */
 
 /* A short error message letting the user know about a problem displaying a post. */
 "There was a problem displaying this post." = "There was a problem displaying this post.";
-
-/* Error message displayed when the Media Library is unable to load a full sized preview of an item. */
-"There was a problem loading the media item." = "There was a problem loading the media item.";
 
 /* The loading view subtitle displayed when an error occurred */
 "There was a problem loading your data, refresh your page to try again." = "There was a problem loading your data, refresh your page to try again.";
@@ -7744,17 +7568,10 @@ translators: Block name. %s: The localized block name */
 /* Title for the traffic section in site settings screen */
 "Traffic" = "Traffic";
 
-/* Accessibility label for trash button to delete items from the user's media library
-   Accessibility label for trash buttons in nav bars
+/* Accessibility label for trash buttons in nav bars
    Trashes a comment
    Trashes the comment */
 "Trash" = "Trash";
-
-/* Accessibility hint for trash button to delete items from the user's media library */
-"Trash selected media" = "Trash selected media";
-
-/* Title of the trash page confirmation alert. */
-"Trash this page?" = "Trash this page?";
 
 /* Title of the trash confirmation alert. */
 "Trash this post?" = "Trash this post?";
@@ -7864,9 +7681,6 @@ translators: Block name. %s: The localized block name */
 /* Shown when a user logs in with Google but it subsequently fails to work as login to WordPress.com */
 "Unable To Connect" = "Unable To Connect";
 
-/* An error message. */
-"Unable to Connect" = "Unable to Connect";
-
 /* Title for stories unknown error. */
 "Unable to Create Stories Editor" = "Unable to Create Stories Editor";
 
@@ -7881,9 +7695,6 @@ translators: Block name. %s: The localized block name */
 
 /* An error message shown when there is an issue creating new invite links. */
 "Unable to create new invite links." = "Unable to create new invite links.";
-
-/* Text displayed in HUD if there was an error attempting to delete a group of media items. */
-"Unable to delete all media items." = "Unable to delete all media items.";
 
 /* Text displayed in HUD if there was an error attempting to delete a media item. */
 "Unable to delete media item." = "Unable to delete media item.";
@@ -7944,12 +7755,6 @@ translators: Block name. %s: The localized block name */
 
 /* Message displayed when sharing a link to the downloadable backup fails. */
 "Unable to share link" = "Unable to share link";
-
-/* Message that appears when a user tries to trash a page while their device is offline. */
-"Unable to trash pages while offline. Please try again later." = "Unable to trash pages while offline. Please try again later.";
-
-/* Message that appears when a user tries to trash a post while their device is offline. */
-"Unable to trash posts while offline. Please try again later." = "Unable to trash posts while offline. Please try again later.";
 
 /* Notice title when turning site notifications off fails. */
 "Unable to turn off site notifications" = "Unable to turn off site notifications";
@@ -8023,8 +7828,6 @@ translators: Block name. %s: The localized block name */
    Button title. Reverts the previous notification operation
    Revert an operation
    Revert enabling notification after successfully subcribing to the comments for the post.
-   The title of an 'undo' button. Tapping the button moves a trashed page out of the trash folder.
-   The title of an 'undo' button. Tapping the button moves a trashed post out of the trash folder.
    Undo action */
 "Undo" = "Undo";
 
@@ -8305,8 +8108,6 @@ translators: Block name. %s: The localized block name */
 "Videos" = "Videos";
 
 /* Button title. Displays a summary / sharing screen for a specific post.
-   Label for a button that opens the page when tapped.
-   Label for the view post button. Tapping displays the post as it appears on the web.
    Opens the post epilogue screen to allow sharing / viewing of a post.
    Theme View action title
    Verb. The screen title shown when viewing a post inside the app. */
@@ -9136,9 +8937,6 @@ translators: Block name. %s: The localized block name */
 /* Title of the site address section in the Domains Dashboard. */
 "Your free WordPress.com address is" = "Your free WordPress.com address is";
 
-/* Error message when picked media cannot be imported into stories. */
-"Your media could not be exported. If the problem persists you can contact us via the Me > Help & Support screen." = "Your media could not be exported. If the problem persists you can contact us via the Me > Help & Support screen.";
-
 /* Details about recently acquired domain on domain credit redemption success screen */
 "Your new domain %@ is being set up. It may take up to 30 minutes for your domain to start working." = "Your new domain %@ is being set up. It may take up to 30 minutes for your domain to start working.";
 
@@ -9558,9 +9356,6 @@ translators: Block name. %s: The localized block name */
 /* Indicating that referrer was marked as spam */
 "marked as spam" = "marked as spam";
 
-/* Verb. User action to dismiss error alert when failing to load media item. */
-"mediaItemTable.errorAlert.dismissButton" = "Dismiss";
-
 /* Verb. Button title. Tapping dismisses a prompt. */
 "mediaLibrary.retryOptionsAlert.dismissButton" = "Dismiss";
 
@@ -9572,9 +9367,6 @@ translators: Block name. %s: The localized block name */
 
 /* The secondary button title in the Delete WordPress screen */
 "migration.deleteWordpress.secondaryButton" = "Need help?";
-
-/* Primary button title in the migration done screen. */
-"migration.done.actions.primary.title" = "Finish";
 
 /* Primary description in the migration done screen. */
 "migration.done.primaryDescription" = "We’ve transferred all your data and settings. Everything is right where you left it.";

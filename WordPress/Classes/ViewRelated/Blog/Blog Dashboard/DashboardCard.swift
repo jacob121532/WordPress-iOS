@@ -9,6 +9,7 @@ import Foundation
 enum DashboardCard: String, CaseIterable {
     case jetpackInstall
     case quickStart
+    case bloganuaryNudge = "bloganuary_nudge"
     case prompts
     case googleDomains
     case blaze
@@ -41,6 +42,8 @@ enum DashboardCard: String, CaseIterable {
             return DashboardScheduledPostsCardCell.self
         case .todaysStats:
             return DashboardStatsCardCell.self
+        case .bloganuaryNudge:
+            return DashboardBloganuaryCardCell.self
         case .prompts:
             return DashboardPromptsCardCell.self
         case .ghost:
@@ -92,7 +95,20 @@ enum DashboardCard: String, CaseIterable {
         }
     }
 
-    func shouldShow(for blog: Blog, apiResponse: BlogDashboardRemoteEntity? = nil) -> Bool {
+    func shouldShow(
+        for blog: Blog,
+        apiResponse: BlogDashboardRemoteEntity? = nil,
+        // The following three parameter should not have default values.
+        // Unfortunately, this method is called many times because the type is an enum with many cases^.
+        //
+        // At the time of writing, the priority is addressing a test failure and pave the way for better testability.
+        // As such, we are leaving default values to keep compatibility with the existing code.
+        //
+        // ^ – See the following article for a better way to distribute configurations https://www.jessesquires.com/blog/2016/07/31/enums-as-configs/
+        isJetpack: Bool = AppConfiguration.isJetpack,
+        isDotComAvailable: Bool = AccountHelper.isDotcomAvailable(),
+        shouldShowJetpackFeatures: Bool = JetpackFeaturesRemovalCoordinator.shouldShowJetpackFeatures()
+    ) -> Bool {
         switch self {
         case .jetpackInstall:
             return JetpackInstallPluginHelper.shouldShowCard(for: blog)
@@ -102,6 +118,8 @@ enum DashboardCard: String, CaseIterable {
             return shouldShowRemoteCard(apiResponse: apiResponse)
         case .todaysStats:
             return DashboardStatsCardCell.shouldShowCard(for: blog) && shouldShowRemoteCard(apiResponse: apiResponse)
+        case .bloganuaryNudge:
+            return DashboardBloganuaryCardCell.shouldShowCard(for: blog)
         case .prompts:
             return DashboardPromptsCardCell.shouldShowCard(for: blog)
         case .ghost:
@@ -109,7 +127,11 @@ enum DashboardCard: String, CaseIterable {
         case .failure:
             return blog.dashboardState.isFirstLoadFailure
         case .jetpackBadge:
-            return JetpackBrandingVisibility.all.enabled
+            return JetpackBrandingVisibility.all.isEnabled(
+                isWordPress: isJetpack == false,
+                isDotComAvailable: isDotComAvailable,
+                shouldShowJetpackFeatures: shouldShowJetpackFeatures
+            )
         case .blaze:
             return BlazeHelper.shouldShowCard(for: blog)
         case .freeToPaidPlansDashboardCard:
@@ -127,7 +149,7 @@ enum DashboardCard: String, CaseIterable {
         case .jetpackSocial:
             return DashboardJetpackSocialCardCell.shouldShowCard(for: blog)
         case .googleDomains:
-            return FeatureFlag.domainFocus.enabled && AppConfiguration.isJetpack
+            return FeatureFlag.domainFocus.enabled && isJetpack
         }
     }
 
