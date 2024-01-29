@@ -6,6 +6,8 @@ import WordPressAuthenticator
 import WordPressShared
 import AlamofireNetworkActivityIndicator
 import AutomatticAbout
+import UIDeviceIdentifier
+import WordPressUI
 
 #if APPCENTER_ENABLED
 import AppCenter
@@ -344,10 +346,6 @@ class WordPressAppDelegate: UIResponder, UIApplicationDelegate {
         pingHubManager = PingHubManager()
     }
 
-    private func setupShortcutCreator() {
-        shortcutCreator = WP3DTouchShortcutCreator()
-    }
-
     private func setupNoticePresenter() {
         noticePresenter = NoticePresenter()
     }
@@ -411,14 +409,8 @@ extension WordPressAppDelegate {
         }
 
         let utility = AppRatingUtility.shared
-        utility.register(section: "notifications", significantEventCount: 5)
-        utility.systemWideSignificantEventCountRequiredForPrompt = 10
+        utility.systemWideSignificantEventCountRequiredForPrompt = 20
         utility.setVersion(version)
-        if AppConfiguration.isWordPress {
-            utility.checkIfAppReviewPromptsHaveBeenDisabled(success: nil, failure: {
-                DDLogError("Was unable to retrieve data about throttling")
-            })
-        }
     }
 
     @objc func configureAppCenterSDK() {
@@ -524,8 +516,8 @@ extension WordPressAppDelegate {
     }
 
     @objc func configureWordPressComApi() {
-        if let baseUrl = UserPersistentStoreFactory.instance().string(forKey: "wpcom-api-base-url") {
-            Environment.replaceEnvironment(wordPressComApiBase: baseUrl)
+        if let baseUrl = UserPersistentStoreFactory.instance().string(forKey: "wpcom-api-base-url"), let url = URL(string: baseUrl) {
+            Environment.replaceEnvironment(wordPressComApiBase: url)
         }
     }
 }
@@ -565,7 +557,6 @@ extension WordPressAppDelegate {
         setupFancyAlertAppearance()
         setupFancyButtonAppearance()
     }
-
 
     /// Setup: FancyAlertView's Appearance
     ///
@@ -611,7 +602,6 @@ extension WordPressAppDelegate {
     }
 }
 
-
 // MARK: - Helpers
 
 extension WordPressAppDelegate {
@@ -640,20 +630,6 @@ extension WordPressAppDelegate {
 #endif
         default:
             return RootViewCoordinator.sharedPresenter.currentlySelectedScreen()
-        }
-    }
-
-    var isWelcomeScreenVisible: Bool {
-        get {
-            guard let presentedViewController = window?.rootViewController?.presentedViewController as? UINavigationController else {
-                return false
-            }
-
-            guard let visibleViewController = presentedViewController.visibleViewController else {
-                return false
-            }
-
-            return WordPressAuthenticator.isAuthenticationViewController(visibleViewController)
         }
     }
 
@@ -889,7 +865,6 @@ extension WordPressAppDelegate {
         WPStyleGuide.configureLightNavigationBarAppearance()
         WPStyleGuide.configureToolbarAppearance()
 
-        UISegmentedControl.appearance().setTitleTextAttributes( [NSAttributedString.Key.font: WPStyleGuide.regularTextFont()], for: .normal)
         UISwitch.appearance().onTintColor = .primary
 
         let navReferenceAppearance = UINavigationBar.appearance(whenContainedInInstancesOf: [UIReferenceLibraryViewController.self])

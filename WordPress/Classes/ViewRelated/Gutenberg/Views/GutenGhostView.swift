@@ -1,4 +1,5 @@
 import UIKit
+import WordPressUI
 
 class GutenGhostView: UIView {
     override init(frame: CGRect) {
@@ -26,7 +27,6 @@ class GutenGhostView: UIView {
             }
         }
     }
-
 
     @IBOutlet var buttonsViews: [UIView]! {
         didSet {
@@ -56,12 +56,6 @@ class GutenGhostView: UIView {
         didSet {
             toolbarBackgroundView.isGhostableDisabled = true
             toolbarBackgroundView.backgroundColor = .ghostToolbarBackground
-        }
-    }
-
-    var hidesToolbar: Bool = false {
-        didSet {
-            toolbarViews.forEach({ $0.isHidden = hidesToolbar })
         }
     }
 

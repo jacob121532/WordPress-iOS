@@ -1,4 +1,4 @@
-/* Translation-Revision-Date: 2023-11-29 15:54:09+0000 */
+/* Translation-Revision-Date: 2024-01-12 08:54:12+0000 */
 /* Plural-Forms: nplurals=2; plural=n > 1; */
 /* Generator: GlotPress/4.0.0-alpha.11 */
 /* Language: tr */
@@ -14,9 +14,6 @@
 
 /* Message of Close Account confirmation alert */
 "\nTo confirm, please re-enter your username before closing.\n\n" = "\nOnaylamak için lütfen kapatmadan önce kullanıcı adınızı tekrar girin.\n\n";
-
-/* Per-year postfix shown after a domain's cost. */
-" \/ year" = "\/ yıl";
 
 /* Title for the lazy load images setting */
 "\"Lazy-load\" images" = "Görselleri sonra yükle";
@@ -227,10 +224,6 @@
 
 /* Displays the number of words and characters in text */
 "%li words, %li characters" = "%1$li kelime, %2$li karakter";
-
-/* translators: %s: Block name e.g. \"Image block\"
-translators: Block name. %s: The localized block name */
-"%s block" = "%s blok";
 
 /* translators: %s: block title e.g: \"Paragraph\". */
 "%s block options" = "%s blok seçenekleri";
@@ -475,12 +468,6 @@ translators: Block name. %s: The localized block name */
 /* Label for the Activity Type filter button when there are more than 1 activity type selected */
 "Activity Type (%1$d)" = "Etkinlik Türü (%1$d)";
 
-/* Remove asset from media picker list */
-"Add" = "Ekle";
-
-/* Action for Media Picker to indicate selection of media. The argument in the string represents the number of elements (as numeric digits) selected */
-"Add %@" = "%@ ekle";
-
 /* No comment provided by engineer. */
 "Add Block After" = "Blok sonrasına ekle";
 
@@ -510,9 +497,6 @@ translators: Block name. %s: The localized block name */
 
 /* Title of a feature to add a new topic to the topics subscribed by the user. */
 "Add a Topic" = "Bir Konu ekle";
-
-/* Hint for the reader CSS URL field */
-"Add a custom CSS URL here to be loaded in Reader. If you're running Calypso locally this can be something like: http:\/\/192.168.15.23:3000\/calypso\/reader-mobile.css" = "Reader'a yüklenmek üzere buraya özel bir CSS URL'si ekleyin. Calypso'yu yerel olarak çalıştırıyorsanız şu şekilde olabilir: http:\/\/192.168.15.23:3000\/calypso\/reader-mobile.css";
 
 /* Label of the button that starts the purchase of an additional redirected domain in the Domains Dashboard. */
 "Add a domain" = "Alan adı ekle";
@@ -642,9 +626,6 @@ translators: Block name. %s: The localized block name */
 /* Option to select the Airmail app when logging in with magic links */
 "Airmail" = "Airmail";
 
-/* Description of albums in the photo libraries */
-"Albums" = "Albümler";
-
 /* Image alignment option title.
    Title of the screen for choosing an image's alignment. */
 "Alignment" = "Hizalama";
@@ -658,9 +639,8 @@ translators: Block name. %s: The localized block name */
    Title of the drafts filter. This filter shows a list of draft posts. */
 "All" = "Tümü";
 
-/* Footer of the free domain registration section for a paid plan.
-   Information about redeeming domain credit on site dashboard. */
-"All WordPress.com plans include a custom domain name. Register your free premium domain now." = "Tüm WordPress.com planları kişisel bir alan adı içerir. Ücretsiz premium alan adınızı hemen kaydedin.";
+/* Information about redeeming domain credit on site dashboard. */
+"All WordPress.com annual plans include a custom domain name. Register your free domain now." = "Tüm WordPress.com yıllık paketleri kişisel bir alan adı içerir. Ücretsiz alan adınızı hemen kaydedin.";
 
 /* An option in a list. Automatically approve all comments */
 "All comments" = "Tüm yorumlar";
@@ -952,9 +932,6 @@ translators: Block name. %s: The localized block name */
 /* translators: accessibility text. Empty Audio caption. */
 "Audio caption. Empty" = "Ses yazısı. Boş";
 
-/* Accessibility label for audio items in the media collection view. The parameter is the creation date of the audio. */
-"Audio, %@" = "Ses, %@";
-
 /* No comment provided by engineer. */
 "Authenticating" = "Doğrulanıyor";
 
@@ -986,9 +963,6 @@ translators: Block name. %s: The localized block name */
 
 /* The plugin can not be manually updated or deactivated */
 "Auto-managed on this site" = "Bu sitede otomatik yönetiliyor";
-
-/* Label indicating that a domain name registration will automatically renew */
-"Auto-renew enabled" = "Otomatik yenileme etkin";
 
 /* Discussion Settings Title
    Settings: Comments Approval settings */
@@ -1121,9 +1095,6 @@ translators: Block name. %s: The localized block name */
 /* translators: displayed right after the block is duplicated. */
 "Block duplicated" = "Blok çoğaltıldı";
 
-/* Popup title about why this post is being opened in block editor */
-"Block editor enabled" = "Blok düzenleyici etkinleştirildi";
-
 /* translators: displayed right after the block is grouped */
 "Block grouped" = "Blok gruplandı";
 
@@ -1213,9 +1184,6 @@ translators: Block name. %s: The localized block name */
 /* Description of a Quick Start Tour */
 "Bring media straight from your device or camera to your site." = "Medyayı doğrudan cihazınızdan veya kameranızdan sitenize aktarın.";
 
-/* Description of a Quick Start Tour */
-"Browse all our themes to find your perfect fit." = "Size tam uyanı bulmak için tüm temalarımıza göz atın.";
-
 /* Jetpack Settings: Brute Force Attack Protection Section */
 "Brute Force Attack Protection" = "Deneme yanılma saldırılarına karşı koruma";
 
@@ -1262,8 +1230,7 @@ translators: Block name. %s: The localized block name */
 /* Label for size of media while it's being calculated. */
 "Calculating..." = "Hesaplanıyor...";
 
-/* Accessibility label for taking an image or video with the camera on formatting toolbar.
-   Accessibility label for the camera tile in the collection view */
+/* Accessibility label for taking an image or video with the camera on formatting toolbar. */
 "Camera" = "Kamera";
 
 /* Title of an alert informing the user the camera permission for the app is disabled and its needed to proceed */
@@ -1509,8 +1476,7 @@ translators: Block name. %s: The localized block name */
 /* A text for title label on Login epilogue screen */
 "Choose a site to open." = "Lütfen açmak için bir site seçin.";
 
-/* Title for the screen to pick a theme and homepage for a site.
-   Title of a Quick Start Tour */
+/* Title for the screen to pick a theme and homepage for a site. */
 "Choose a theme" = "Bir tema seçin";
 
 /* Select the site's intent. Subtitle */
@@ -1527,9 +1493,6 @@ translators: Block name. %s: The localized block name */
 
 /* No comment provided by engineer. */
 "Choose file" = "Dosya seçin";
-
-/* Menu option for selecting media from the device's photo library. */
-"Choose from My Device" = "Cihazımdan seç";
 
 /* Explanatory text for Homepage Settings homepage type selection. */
 "Choose from a homepage that displays your latest posts (classic blog) or a fixed \/ static page." = "En son gönderilerinizi görüntüleyen bir ana sayfa (klasik blog) veya sabit\/statik bir sayfa seçin.";
@@ -1602,7 +1565,6 @@ translators: Block name. %s: The localized block name */
    Action button to close edior and cancel changes or insertion of post
    Action button to close the editor
    Dismiss the current view
-   Dismiss the media picker for Stock Photos
    Dismisses the current screen
    Voiceover accessibility label informing the user that this button dismiss the current view */
 "Close" = "Kapat";
@@ -1744,22 +1706,13 @@ translators: Block name. %s: The localized block name */
 "Completed: Check your site title" = "Tamamlandı: Sitenizin başlığını kontrol edin";
 
 /* The Quick Start Tour title after the user finished the step. */
-"Completed: Choose a theme" = "Tamamlandı: Bir tema seçin";
-
-/* The Quick Start Tour title after the user finished the step. */
 "Completed: Choose a unique site icon" = "Tamamlandı: Benzersiz bir site simgesi seçin";
 
 /* The Quick Start Tour title after the user finished the step. */
 "Completed: Connect with other sites" = "Tamamlandı: Diğer sitelerle bağlantı kurun";
 
 /* The Quick Start Tour title after the user finished the step. */
-"Completed: Continue with site setup" = "Tamamlandı: Site kurulumuna devam edin";
-
-/* The Quick Start Tour title after the user finished the step. */
 "Completed: Create your site" = "Tamamlandı: Sitenizi oluşturun";
-
-/* The Quick Start Tour title after the user finished the step. */
-"Completed: Explore plans" = "Tamamlandı: Planları keşfet";
 
 /* The Quick Start Tour title after the user finished the step. */
 "Completed: Publish a post" = "Tamamlandı: Bir yazı yayınlayın";
@@ -1898,9 +1851,6 @@ translators: Block name. %s: The localized block name */
 /* Button title. Tapping begins log in using Google. */
 "Continue with Google" = "Google ile devam et";
 
-/* Title of a Quick Start Tour */
-"Continue with site setup" = "Site kurulumuna devam edin";
-
 /* Shown while logging in with Apple and the app waits for the site creation process to complete. */
 "Continuing with Apple" = "Apple ile devam ediliyor";
 
@@ -1995,13 +1945,13 @@ translators: Block name. %s: The localized block name */
 "Couldn't connect to the WordPress site. There is no valid WordPress site at this address. Check the site address (URL) you entered." = "WordPress siteye bağlanılamıyor. Bu adreste geçerli bir WordPress sitesi yok. Girdiğiniz site adresini (URL) kontrol edin.";
 
 /* Message to show to user when he tries to add a self-hosted site with RSD link present, but xmlrpc is missing. */
-"Couldn't connect. Required XML-RPC methods are missing on the server." = "Bağlanılamıyor. Gerekli XML-RPC yordamları sunucuda bulunmuyor.";
+"Couldn't connect. Required XML-RPC methods are missing on the server. Please contact your hosting provider to solve this problem." = "Bağlantı kurulamadı. Gerekli XML-RPC yordamları sunucuda bulunmuyor. Sorunu çözmek için lütfen barındırma sağlayıcınızla iletişime geçin.";
 
 /* Message to show to user when he tries to add a self-hosted site but the host returned a 403 error, meaning that the access to the /xmlrpc.php file is forbidden. */
-"Couldn't connect. We received a 403 error when trying to access your site's XMLRPC endpoint. The app needs that in order to communicate with your site. Contact your host to solve this problem." = "Bağlantı kurulamadı. Sitenizin XMLRPC uç noktasına erişmeye çalışırken 403 hatası aldık. Uygulama, sitenizle bağlantı kurabilmek için buna gereksinim duyuyor. Bu sorunu gidermek için sunucunuzla iletişim kurun.";
+"Couldn't connect. We received a 403 error when trying to access your site's XMLRPC endpoint. The app needs that in order to communicate with your site. Please contact your hosting provider to solve this problem." = "Bağlantı kurulamadı. Sitenizin XMLRPC uç noktasına erişmeye çalışırken 403 hatasını aldık. Uygulama, sitenizle bağlantı kurabilmek için buna gereksinim duyuyor. Sorunu çözmek için lütfen barındırma sağlayıcınızla iletişime geçin.";
 
 /* Message to show to user when he tries to add a self-hosted site but the host returned a 405 error, meaning that the host is blocking POST requests on /xmlrpc.php file. */
-"Couldn't connect. Your host is blocking POST requests, and the app needs that in order to communicate with your site. Contact your host to solve this problem." = "Bağlantı kurulamadı. Sunucunuz POST isteklerini engelliyor ve uygulama sitenizle iletişim kurmak için buna gereksinim duyuyor. Bu sorunu gidermek için sunucunuzla iletişim kurun.";
+"Couldn't connect. Your host is blocking POST requests, and the app needs that in order to communicate with your site. Please contact your hosting provider to solve this problem." = "Bağlantı kurulamadı. Sunucunuz POST isteklerini engelliyor ve uygulama sitenizle iletişim kurmak için buna gereksinim duyuyor. Sorunu çözmek için lütfen barındırma sağlayıcınızla iletişime geçin.";
 
 /* Error message when tag loading failed */
 "Couldn't load tags." = "Etiketler yüklenemedi.";
@@ -2024,9 +1974,6 @@ translators: Block name. %s: The localized block name */
 /* Error title displayed when unable to close user account. */
 "Couldn’t close account automatically" = "Hesap otomatik olarak kapatılamadı";
 
-/* Message to show while media data source is finding the number of items available. */
-"Counting media items..." = "Ortam öğeleri sayılıyor...";
-
 /* Period Stats 'Countries' header */
 "Countries" = "Ülkeler";
 
@@ -2036,9 +1983,6 @@ translators: Block name. %s: The localized block name */
 
 /* Register Domain - Address information field Country Code */
 "Country Code" = "Ülke kodu";
-
-/* Title of a section on the debug screen that shows a list of actions related to crash logging */
-"Crash Logging" = "Kilitlenme günlüğü";
 
 /* Label for switch to turn on/off sending crashes info */
 "Crash reports" = "Çökme raporları";
@@ -2054,9 +1998,6 @@ translators: Block name. %s: The localized block name */
 
 /* Create New header text */
 "Create New" = "Yeni oluştur";
-
-/* Title for the site creation flow. */
-"Create New Site" = "Yeni bir site oluştur";
 
 /* Button for selecting the current page template.
    Button title, encourages users to create their first page on their blog.
@@ -2244,9 +2185,6 @@ translators: Block name. %s: The localized block name */
 /* Navigates to debug menu only available in development builds */
 "Debug" = "Hata ayıklama";
 
-/* Debug settings title */
-"Debug Settings" = "Hata Ayıklama Ayarları";
-
 /* Only December needs to be translated */
 "December 17, 2017" = "Aralık 17, 2017";
 
@@ -2267,9 +2205,6 @@ translators: Block name. %s: The localized block name */
 /* Label for selecting the default post format
    Title for screen to select a default post format for a blog */
 "Default Post Format" = "Varsayılan yazı biçimi";
-
-/* Placeholder for the reader CSS URL */
-"Default URL" = "Varsayılan URL";
 
 /* Discussion Settings: Posts Section */
 "Defaults for New Posts" = "Yeni yazılar için varsayılanlar";
@@ -2407,7 +2342,6 @@ translators: Block name. %s: The localized block name */
 /* Accessibility label for button to dismiss a bottom sheet
    Accessibility label for the transparent space above the login dialog which acts as a button to dismiss the dialog.
    Accessibility label for the transparent space above the signup dialog which acts as a button to dismiss the dialog.
-   Action to show on alert when view asset fails.
    Dismiss a view. Verb */
 "Dismiss" = "Kapat";
 
@@ -2425,12 +2359,6 @@ translators: Block name. %s: The localized block name */
    User's Display Name */
 "Display Name" = "Görünen isim";
 
-/* Accessibility label for other media items in the media collection view. The parameter is the creation date of the document. */
-"Document, %@" = "Belge, %@";
-
-/* Accessibility label for other media items in the media collection view. The parameter is the filename file. */
-"Document: %@" = "Belge: %@";
-
 /* Message shown when all tours have been completed */
 "Doesn't it feel good to cross things off a list?" = "Listedeki bazı işleri tamamlamak iyi hissettirmiyor mu?";
 
@@ -2442,12 +2370,6 @@ translators: Block name. %s: The localized block name */
 
 /* Noun. Title. Links to the Domains screen. */
 "Domains" = "Alan adları";
-
-/* Description for the first domain purchased with a free plan. */
-"Domains purchased on this site will redirect to %@" = "Bu siteden satın alınan alan adları %@ adresine yönlendirilecek";
-
-/* Description for the first domain purchased with a free plan. */
-"Domains purchased on this site will redirect users to " = "Bu site için satın alınmış alan adları kullanıcıları şuraya yönlendirecek";
 
 /* Label for button to log in using your site address. The underscores _..._ denote underline */
 "Don't have an account? _Sign up_" = "Hesabınız yok mu? _Kaydol_";
@@ -2618,15 +2540,11 @@ translators: Block name. %s: The localized block name */
 /* Editing GIF alert default action button.
    Edits a Comment
    Edits the comment
-   User action to edit media details.
-   Verb, edit a comment */
+   User action to edit media details. */
 "Edit" = "Düzenle";
 
 /* Title for the edit more button section */
 "Edit \"More\" button" = "\"Daha fazla\" tuşunu düzenle";
-
-/* Button that displays the media editor to the user */
-"Edit %@" = "%@ düzenle";
 
 /* Blocklist Keyword Edition Title */
 "Edit Blocklist Word" = "Kara Liste Sözcüğünü Düzenle";
@@ -2686,9 +2604,6 @@ translators: Block name. %s: The localized block name */
 
 /* Title for the editor settings section */
 "Editor" = "Düzenleyici";
-
-/* Edit Action Spoken hint. */
-"Edits a comment" = "Bir yorumu düzenler";
 
 /* VoiceOver accessibility hint, informing the user the button can be used to Edit the Comment. */
 "Edits the comment." = "Yorumu düzenler.";
@@ -2816,9 +2731,6 @@ translators: Block name. %s: The localized block name */
 
 /* Message explaining why the user might enter a password. */
 "Enter a password to protect this post" = "Bu yazıyı korumak için bir parola girin";
-
-/* Secondary message shown when there are no domains that match the user entered text. */
-"Enter different words above and we'll look for an address that matches it." = "Yukarıya farklı sözcükler girin, girdiğiniz sözcüklerle eşleşen adres olup olmadığını arayalım.";
 
 /* (placeholder) Help enter WordPress password
    Placeholder of a field to type a password to protect the post. */
@@ -3005,23 +2917,14 @@ translators: Block name. %s: The localized block name */
 /* Screen reader hint (non-imperative) about what does the site menu area selector button do. */
 "Expands to select a different menu area" = "Farklı bir menü alanı seçmek için genişler";
 
-/* Label indicating that a domain name registration has expired. */
-"Expired" = "Süresi doldu";
-
 /* Title for the error view when the user scanned an expired log in code */
 "Expired log in code" = "Süresi dolmuş oturum açma kodu";
 
 /* Title. Indicates an expiration date. */
 "Expires on" = "Sona erme tarihi:";
 
-/* Label indicating the date on which a domain name registration will expire. The %@ placeholder will be replaced with a date at runtime. */
-"Expires on %@" = "Sona erme tarihi: %@";
-
 /* Placeholder text for the tagline of a site */
 "Explain what this site is about." = "Bu sitenin ne hakkında olduğunu açıklayın.";
-
-/* Title of a Quick Start Tour */
-"Explore plans" = "Paketleri keşfedin";
 
 /* Export Content confirmation action title
    Label for selecting the Export Content Settings item */
@@ -3121,6 +3024,9 @@ translators: Block name. %s: The localized block name */
 /* Label for the file type (.JPG, .PNG, etc) for a media asset (image / video) */
 "File type" = "Dosya tipi";
 
+/* No comment provided by engineer. */
+"File type not supported as a media file." = "File type not supported as a media file.";
+
 /* Film & Television site intent topic */
 "Film & Television" = "Film ve Televizyon";
 
@@ -3208,8 +3114,7 @@ translators: Block name. %s: The localized block name */
    Label for number of followers. */
 "Followers" = "Takipçiler";
 
-/* Accessibility label for following buttons.
-   Title of the Following Reader tab
+/* Title of the Following Reader tab
    User is following the blog.
    Verb. Button title. The user is following a blog. */
 "Following" = "Takip ediliyor";
@@ -3226,9 +3131,6 @@ translators: Block name. %s: The localized block name */
 /* Filters Follows Notifications */
 "Follows" = "Takip edilenler";
 
-/* Spoken hint describing action for unselected following buttons. */
-"Follows blog" = "Blogu takip ediyor";
-
 /* VoiceOver accessibility hint, informing the user the button can be used to follow a blog. */
 "Follows the blog." = "Blogu takip eder.";
 
@@ -3237,6 +3139,9 @@ translators: Block name. %s: The localized block name */
 
 /* No comment provided by engineer. */
 "Font Size" = "Font Boyutu";
+
+/* translators: %1$s: Font size name e.g. Small */
+"Font Size, %1$s" = "Yazı tipi boyutu %1$s";
 
 /* Food site intent topic */
 "Food" = "Yiyecek";
@@ -3267,9 +3172,6 @@ translators: Block name. %s: The localized block name */
 
 /* One of the options when selecting More in the Post Editor's format bar */
 "Free Photo Library" = "Ücretsiz fotoğraf kütüphanesi";
-
-/* Label shown for domains that will be free for the first year due to the user having a premium plan with available domain credit. */
-"Free for the first year " = "İlk yıl ücretsiz ";
 
 /* Explanatory text for clearing device media cache. */
 "Free up storage space on this device by deleting temporary media files. This will not affect the media on your site." = "Geçici ortam dosyalarını silerek bu cihazda depolama alanı boşaltın. Bu, sitenizdeki ortam dosyalarını etkilemez.";
@@ -3359,9 +3261,6 @@ translators: Block name. %s: The localized block name */
 /* Name of the Quick Start list that guides users through a few tasks to explore the WordPress/Jetpack app. */
 "Get to know the app" = "Uygulamayı tanıyın";
 
-/* Title of the card that starts the purchase of the first redirected domain in the Domains Dashboard. */
-"Get your domain" = "Alan adınızı alın";
-
 /* Title of the second alert preparing users to grant permission for us to send them push notifications. */
 "Get your notifications faster" = "Bildirimlerinizi daha hızlı alın";
 
@@ -3385,9 +3284,6 @@ translators: Block name. %s: The localized block name */
 
 /* Option to select the Gmail app when logging in with magic links */
 "Gmail" = "Gmail";
-
-/* No comment provided by engineer. */
-"Go back" = "Geri dön";
 
 /* Button title. Tapping lets the user view the sites they follow. */
 "Go to Following" = "Takip edilenlere git";
@@ -3427,17 +3323,11 @@ translators: Block name. %s: The localized block name */
 /* This value is used to set the accessibility hint text for viewing the user's notifications. */
 "Guides you through the process of checking your notifications." = "Bildirimlerinizi kontrol etme sürecinde size rehberlik eder.";
 
-/* This value is used to set the accessibility hint text for choosing a theme for the user's site. */
-"Guides you through the process of choosing a theme for your site." = "Siteniz için bir tema seçme işlemine yönlendirir.";
-
 /* This value is used to set the accessibility hint text for creating a new page for the user's site. */
 "Guides you through the process of creating a new page for your site." = "Siteniz için yeni bir sayfa oluşturma işlemine yönlendirir.";
 
 /* This value is used to set the accessibility hint text for creating the user's site. */
 "Guides you through the process of creating your site." = "Sitenizin oluşturulması işlemine yönlendirir.";
-
-/* This value is used to set the accessibility hint text for exploring plans on the user's site. */
-"Guides you through the process of exploring plans for your site." = "Sitenizle ilgili planları inceleme işlemine yönlendirir.";
 
 /* This value is used to set the accessibility hint text for following the sites of other users. */
 "Guides you through the process of following other sites." = "Diğer siteleri takip etme işlemine yönlendirir.";
@@ -3453,9 +3343,6 @@ translators: Block name. %s: The localized block name */
 
 /* This value is used to set the accessibility hint text for setting the site title. */
 "Guides you through the process of setting a title for your site." = "Siteniz için bir başlık ayarlama sürecinde size rehberlik eder.";
-
-/* This value is used to set the accessibility hint text for setting up the user's site. */
-"Guides you through the process of setting up your site." = "Sitenizin ayarlarını düzenlemeye yönlendirir.";
 
 /* This value is used to set the accessibility hint text for uploading a site icon. */
 "Guides you through the process of uploading an icon for your site." = "Siteniz için bir simge yükleme işlemine yönlendirir.";
@@ -3610,9 +3497,6 @@ translators: Block name. %s: The localized block name */
 /* Message to show when site icon update failed */
 "Icon update failed" = "Simge güncelleme başarısız oldu";
 
-/* Message explaining that they will need to install Jetpack on one of their sites. */
-"If you already have a site, you’ll need to install the free Jetpack plugin and connect it to your WordPress.com account." = "Zaten bir siteniz varsa, ücretsiz Jetpack eklentisini yüklemeniz ve WordPress.com hesabınıza bağlamanız gerekir.";
-
 /* The instructions text about not being able to find the magic link email. */
 "If you can’t find the email, please check your junk or spam email folder" = "E-postayı bulamıyorsanız, lütfen önemsiz veya istenmeyen e-posta klasörünüzü kontrol edin.";
 
@@ -3663,9 +3547,6 @@ translators: Block name. %s: The localized block name */
 
 /* Hint for image title on image settings. */
 "Image title" = "Görsel başlığı";
-
-/* Accessibility label for image thumbnails in the media collection view. The parameter is the creation date of the image. */
-"Image, %@" = "Görsel, %@";
 
 /* Undated post time label */
 "Immediately" = "Hemen";
@@ -4025,9 +3906,6 @@ translators: Block name. %s: The localized block name */
 /* Body text of the first alert preparing users to grant permission for us to send them push notifications. */
 "Learn about new comments, likes, and follows in seconds." = "Yeni yorumlar, beğeniler ve takipler hakkında bilgileri saniyeler içinde edinin.";
 
-/* Description of a Quick Start Tour */
-"Learn about the marketing and SEO tools in our paid plans." = "Ücretli paketlerimizdeki pazarlama ve SEO araçları hakkında bilgi edinin.";
-
 /* A button title.
    Link to cookie policy
    Menu title to show the prompts feature introduction modal.
@@ -4167,17 +4045,11 @@ translators: Block name. %s: The localized block name */
 /* Text displayed while loading the activity feed for a site */
 "Loading Backups..." = "Yedeklemeler yükleniyor...";
 
-/* Phrase to show when the user has searched for GIFs and they are being loaded. */
-"Loading GIFs..." = "GIFler yükleniyor...";
-
 /* Menus label text displayed while menus are loading */
 "Loading Menus..." = "Menüler yükleniyor...";
 
 /* Text displayed while loading site People. */
 "Loading People..." = "Kişiler yükleniyor...";
-
-/* Phrase to show when the user has searched for images and they are being loaded. */
-"Loading Photos..." = "Fotoğraflar yükleniyor...";
 
 /* Text displayed while loading plans details */
 "Loading Plan..." = "Plan yükleniyor...";
@@ -4199,9 +4071,6 @@ translators: Block name. %s: The localized block name */
 
 /* Displayed while a comment is being loaded. */
 "Loading comment..." = "Yorum yükleniyor...";
-
-/* Shown while the app waits for the domain suggestions web service to return during the site creation process. */
-"Loading domains" = "Eklentiler yükleniyor";
 
 /* Displayed while a call is loading the history. */
 "Loading history..." = "Geçmiş yükleniyor...";
@@ -4422,13 +4291,6 @@ translators: Block name. %s: The localized block name */
 /* Label for size of media cache in the app. */
 "Media Cache Size" = "Ortam ön belleği boyutu";
 
-/* Title for alert when access to media capture is not granted */
-"Media Capture" = "Görsel yakalama";
-
-/* Title for alert when a generic error happened when loading media
-   Title for alert when access to the media library is not granted by the user */
-"Media Library" = "Ortam kütüphanesi";
-
 /* Title for action sheet with media options. */
 "Media Options" = "Ortam seçenekleri";
 
@@ -4450,9 +4312,6 @@ translators: Block name. %s: The localized block name */
 
 /* translators: %s: block title e.g: \"Paragraph\". */
 "Media options" = "Medya seçenekleri";
-
-/* Alert title when there is issues loading an asset to preview. */
-"Media preview failed." = "Ortam ön izleme hatası.";
 
 /* Alert displayed to the user when multiple media items have uploaded successfully. */
 "Media uploaded (%ld files)" = "Ortam yüklendi (%ld dosya)";
@@ -4664,8 +4523,11 @@ translators: %s: Select control button label e.g. \"Button width\" */
 /* Describes a status of a plugin */
 "Needs Update" = "Güncellenmesi gerekiyor";
 
-/* Label indicating that a domain name registration has no expiry date. */
-"Never expires" = "Asla hizmet dışı kalmaz";
+/* No comment provided by engineer. */
+"Network connection lost, working offline" = "Network connection lost, working offline";
+
+/* No comment provided by engineer. */
+"Network connection re-established" = "Network connection re-established";
 
 /* Header of section in Plugin Directory showing newest plugins */
 "New" = "Yeni";
@@ -4740,9 +4602,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 
 /* List Editor Empty State Message */
 "No Items" = "Öge yok";
-
-/* Title when users have no Jetpack sites. */
-"No Jetpack sites found" = "Hiçbir Jetpack sitesi bulunamadı";
 
 /* Menus selection title for setting a location to not use a menu. */
 "No Menu" = "Menü yok";
@@ -4856,9 +4715,7 @@ translators: %s: Select control button label e.g. \"Button width\" */
 /* Title for the view when there aren't any Activities to display in the Activity Log for a given filter. */
 "No matching events found." = "Eşleşen etkinlik bulunamadı.";
 
-/* Message displayed when no results are returned from a media library search. Should match Calypso.
-   Phrase to show when the user search for images but there are no result to show.
-   Phrase to show when the user searches for GIFs but there are no result to show. */
+/* Message displayed when no results are returned from a media library search. Should match Calypso. */
 "No media matching your search" = "Aramanızla eşleşen ortam yok";
 
 /* Menus text shown when no menus were available for loading the Menus editor. */
@@ -4962,9 +4819,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 /* Error message to show to users when trying to upload a media object with file size is larger than the available site disk quota */
 "Not enough space to upload" = "Karşıya yükleme işlemi için yeterli alan yok";
 
-/* Accessibility label for unselected following buttons. */
-"Not following" = "Takip etmiyor";
-
 /* Button label for denying our request to allow push notifications
    Not now button title shown in alert preparing users to grant permission for us to send them push notifications.
    Phrase displayed to dismiss a quick start tour suggestion. */
@@ -4996,9 +4850,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 
 /* A message title */
 "Nothing liked yet" = "Henüz hiçbir şey beğenilmedi";
-
-/* Default message for empty media picker */
-"Nothing to show" = "Gösterilecek bir şey yok";
 
 /* Notifications Details Accessibility Identifier */
 "Notification Details Table" = "Bildirim detayları tablosu";
@@ -5059,7 +4910,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
    Alert dismissal title
    Button title. Acknowledges a prompt.
    Button title. An acknowledgement of the message displayed in a prompt.
-   Confirmation of action
    Default action
    Dismisses the alert
    Marks all notifications as read.
@@ -5069,7 +4919,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
    Ok button for dismissing alert helping users understand their site address
    OK button title for the warning shown to the user when the app realizes there should be an auth token but there isn't one.
    OK Button title shown in alert informing users about the Reader Save for Later feature.
-   OK button to close the informative dialog on Gutenberg editor
    Submit button on prompt for user information.
    Title of a button that dismisses a prompt
    Title of an OK button. Pressing the button acknowledges and dismisses a prompt.
@@ -5154,9 +5003,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 /* Go to the settings app
    Title of a button that opens the apps settings in the system Settings.app */
 "Open Settings" = "Ayarları aç";
-
-/* Editor button to swich the media picker from quick mode to full picker */
-"Open full media picker" = "Tam ortam seçicisini aç";
 
 /* No comment provided by engineer. */
 "Open in Safari" = "Safari ile aç";
@@ -5374,14 +5220,8 @@ translators: %s: Select control button label e.g. \"Button width\" */
 /* Photography site intent topic */
 "Photography" = "Fotoğrafçılık";
 
-/* Subtitle for placeholder in Free Photos. The company name 'Pexels' should always be written as it is. */
-"Photos provided by Pexels" = "Fotoğraflar Pexels tarafından sağlandı";
-
 /* Title for selecting a new username in the site creation flow. */
 "Pick username" = "Kullanıcı adı seçin";
-
-/* The item to select during a guided tour. */
-"Plan" = "Paket";
 
 /* Action title. Noun. Links to a blog's Plans screen.
    Title for the plan selector */
@@ -5653,9 +5493,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 /* A message explaining the Posts I Like feature in the reader */
 "Posts that you like will appear here." = "Beğendiğiniz yazılar burada görüntülenecek.";
 
-/* Subtitle for placeholder in Tenor picker. `The company name 'Tenor' should always be written as it is. */
-"Powered by Tenor" = "Destekleyen Tenor";
-
 /* Browse premium themes selection title */
 "Premium" = "Premium";
 
@@ -5673,9 +5510,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
    Title for screen to preview a selected homepage design.
    Title for screen to preview a static content. */
 "Preview" = "Önizleme";
-
-/* Action for Media Picker to preview the selected media items. The argument in the string represents the number of elements (as numeric digits) selected */
-"Preview %@" = "%@ Önizlemesi";
 
 /* Title for web preview device switching button */
 "Preview Device" = "Ön izleme cihazı";
@@ -5704,9 +5538,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 /* Primary Site Picker's Title
    Primary Web Site */
 "Primary Site" = "Birincil site";
-
-/* Primary site address label, used in the site address section of the Domains Dashboard. */
-"Primary site address" = "Birincil site adresi";
 
 /* Label for the privacy setting
    Privacy settings section header */
@@ -5809,9 +5640,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 /* Published on [date] */
 "Published on" = "Yayın tarihi";
 
-/* Label that describes in which blog the user is publishing to */
-"Publishing To" = "Yayımlanıyor";
-
 /* A short message that informs the user a page is being published to the server from the share extension. */
 "Publishing page..." = "Sayfa yayımlanıyor...";
 
@@ -5833,9 +5661,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 /* This is the string we display when asking the user to approve push notifications in the settings app after previously having denied them. */
 "Push notifications have been turned off in iOS settings. Toggle “Allow Notifications” to turn them back on." = "Anında iletme bildirimleri iOS ayarlarında kapatıldı. Yeniden açmak için seçimi \"Bildirimlere İzin Ver\" olarak değiştirin.";
 
-/* The menu item to select during a guided tour. */
-"Quick Start" = "Hızlı başla";
-
 /* Title for button allowing users to rate the app in the App Store */
 "Rate Us" = "Bizi Değerlendirin";
 
@@ -5854,12 +5679,8 @@ translators: %s: Select control button label e.g. \"Button width\" */
    The accessibility value of the reader tab.
    The default title of the Reader
    The menu item to select during a guided tour.
-   Title of the 'Reader' tab - used for spotlight indexing on iOS.
-   Title of the Reader section of the debug screen used in debug builds of the app */
+   Title of the 'Reader' tab - used for spotlight indexing on iOS. */
 "Reader" = "Okuyucu";
-
-/* Title of the screen that allows the user to change the Reader CSS URL for debug builds */
-"Reader CSS URL" = "Okuyucu CSS URLsi";
 
 /* Title of button that asks the users if they'd like to focus on checking their sites stats */
 "Reading posts from other sites" = "Diğer sitelerin gönderilerini okumak";
@@ -5942,8 +5763,7 @@ translators: %s: Select control button label e.g. \"Button width\" */
 /* Title of the completion screen of the Blogging Reminders Settings screen when the reminders are removed. */
 "Reminders removed" = "Hatırlatıcılar kaldırıldı";
 
-/* Add asset to media picker list
-   Alert button to confirm a plugin to be removed
+/* Alert button to confirm a plugin to be removed
    Button label when removing a blog
    Label for the Remove Feature Image icon. Tapping will show a confirmation screen for removing the feature image from the post.
    Remove Action
@@ -6021,9 +5841,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 /* First line of remove email follower warning in confirmation dialog.
    First line of remove follower warning in confirmation dialog. */
 "Removing followers makes them stop receiving updates from your site. If they choose to, they can still visit your site, and follow it again." = "Takipçileri takipten çıkarırsanız sitenizden güncelleme alamazlar. İsterlerse sitenizi yine ziyaret edip takip edebilirler.";
-
-/* Label indicating the date on which a domain name registration will be renewed. The %@ placeholder will be replaced with a date at runtime. */
-"Renews on %@" = "Yenilenme tarihi: %@";
 
 /* No comment provided by engineer. */
 "Replace Current Block" = "Mevcut bloğu değiştir";
@@ -6157,7 +5974,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
    Retry. Verb – retry a failed media upload.
    The Jetpack view button title used when an error occurred
    Title for accessory view in the empty state table view cell in the Verticals step of Enhanced Site Creation
-   title for action that tries to connect to the reader after a loading error.
    User action to retry media upload. */
 "Retry" = "Tekrar";
 
@@ -6210,6 +6026,9 @@ translators: %s: Select control button label e.g. \"Button width\" */
 
 /* Button label to open web page in Safari */
 "Safari" = "Safari";
+
+/* Title of a row displayed on the debug screen used to configure the sandbox store use in the App. */
+"Sandbox Store" = "Sandbox Store'u kullanın";
 
 /* Menus save button title
    Save Action
@@ -6364,12 +6183,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 /* No comment provided by engineer. */
 "Search settings" = "Arama ayarları";
 
-/* Title for placeholder in Tenor picker */
-"Search to find GIFs to add to your Media Library!" = "Ortam kütüphanenize eklemek üzere GIF bulmak için ara!";
-
-/* Title for placeholder in Free Photos */
-"Search to find free photos to add to your Media Library!" = "Ortam kütüphanenize eklemek üzere ücretsiz fotoğraf bulmak için ara!";
-
 /* Menus search bar placeholder text. */
 "Search..." = "Ara...";
 
@@ -6384,9 +6197,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 
 /* Button in Plugin Directory letting users see more plugins */
 "See All" = "Tümünü gör";
-
-/* Action button linking to instructions for installing Jetpack.Presented when logging in with a site address that does not have a valid Jetpack installation */
-"See Instructions" = "Talimatlara bakın";
 
 /* Caption displayed in promotional screens shown during the login flow. */
 "See comments and notifications in real time." = "Yorumları ve bildirimleri gerçek zamanlı olarak görün.";
@@ -6405,22 +6215,13 @@ translators: %s: Select control button label e.g. \"Button width\" */
 "Select %@ to create a new post" = "Yeni yazı oluşturmak için %@ seçin";
 
 /* A step in a guided tour for quick start. %@ will be the name of the item to select. */
-"Select %@ to discover new themes" = "Yeni temaları keşfetmek için %@ seçin";
-
-/* A step in a guided tour for quick start. %@ will be the name of the item to select. */
 "Select %@ to find other sites." = "Diğer siteleri bulmak için %@ öğesini seçin.";
 
 /* A step in a guided tour for quick start. %@ will be the name of the item to select. */
 "Select %@ to see how your site is performing." = "Sitenizin performansını görmek için %@ seçin.";
 
 /* A step in a guided tour for quick start. %@ will be the name of the item to select. */
-"Select %@ to see your checklist" = "Kontrol listenizi görmek için %@ seçin";
-
-/* A step in a guided tour for quick start. %@ will be the name of the item to select. */
 "Select %@ to see your current library." = "Geçerli kitaplığınızı görmek için %@ öğesini seçin.";
-
-/* A step in a guided tour for quick start. %@ will be the name of the item to select. */
-"Select %@ to see your current plan and other available plans." = "Mevcut paketi ve kullanılabilecek diğer paketleri görmek için %@ seçin.";
 
 /* A step in a guided tour for quick start. %@ will be the name of the item to select. */
 "Select %@ to see your page list." = "Sayfa listenizi görmek için seçin: %@";
@@ -6460,9 +6261,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 
 /* Register domain - Title for the Choose domain button of Suggested domains screen */
 "Select domain" = "Alan adı seç";
-
-/* Accessibility hint for actions when displaying media items. */
-"Select media." = "Ortam dosyası seçin.";
 
 /* Accessibility label for selecting paragraph style button on formatting toolbar. */
 "Select paragraph style" = "Paragraf stilini seçin";
@@ -6817,10 +6615,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Create new Site Page button title */
 "Site page" = "Site sayfası";
 
-/* Prologue title label, the 
- force splits it into 2 lines. */
-"Site security and performance\nfrom your pocket" = "Site güvenliği ve performansı\ncebinizden";
-
 /* Site timezone offset from UTC. The first %@ is plus or minus. %d is the number of hours. The last %@ is minutes, where applicable. Examples: `Site timezone (UTC+10:30)`, `Site timezone (UTC-8)`. */
 "Site timezone (UTC%@%d%@)" = "Site saat dilimi (UTC%1$@%2$d%3$@)";
 
@@ -6874,9 +6668,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 
 /* Title shown on the dashboard when it fails to load */
 "Some data wasn't loaded" = "Bazı veriler yüklenmedi";
-
-/* Confirms with the user if they save the post all media that failed to upload will be removed from it. */
-"Some media uploads failed. This action will remove all failed media from the post.\nSave anyway?" = "Bazı görsel yüklemeleri başarısız oldu. Bu eylem, başarısız olan görsellerin  tümünü gönderiden kaldıracak.\nYine de kaydedilsin mi?";
 
 /* Title for a label that appears when the scan failed
    Title for the error view when the scan start has failed */
@@ -7088,8 +6879,7 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
    Theme Support action title */
 "Support" = "Destek";
 
-/* Button used to switch site
-   Title for back button that leads to the site picker screen. */
+/* Title for back button that leads to the site picker screen. */
 "Switch Site" = "Site değiştir";
 
 /* Switches the Editor to HTML Mode */
@@ -7177,9 +6967,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Label explaining why users might want to add tags. */
 "Tags help tell readers what a post is about. Separate different tags with commas." = "Etiketler okuyuculara bir gönderinin ne hakkında olduğunu anlatmaya yardımcı olur. Farklı etiketleri virgüller ile ayırın.";
 
-/* Menu option for taking an image or video with the device's camera. */
-"Take Photo or Video" = "Fotoğraf veya video çek";
-
 /* No comment provided by engineer. */
 "Take a Photo" = "Fotoğraf çek";
 
@@ -7249,9 +7036,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 
 /* Accessibility hint */
 "Tap to select the previous period" = "Bir önceki dönemi seçmek için seçe dokunun";
-
-/* Accessibility hint for button used to switch site */
-"Tap to switch to another site, or add a new site" = "Başka bir siteye geçmek için dokunun veya yeni bir site ekleyin";
 
 /* Accessibility hint for a button that opens a new view with more details. */
 "Tap to view more details." = "Daha fazla ayrıntı görüntülemek için dokunun.";
@@ -7330,9 +7114,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 
 /* Error message shown to a user who is trying to share to Facebook but does not have any available Facebook Pages. */
 "The Facebook connection cannot find any Pages. Publicize cannot connect to Facebook Profiles, only published Pages." = "Facebook bağlantısı hiçbir sayfa bulamıyor. Duyuru, Facebook profillerine bağlanamaz, yalnızca yayınlanan sayfalara bağlanabilir.";
-
-/* Message shown when a GIF failed to load while trying to add it to the Media library. */
-"The GIF could not be added to the Media Library." = "GIF, ortam kütüphanesine eklenemez.";
 
 /* Description shown when a user logs in with Google but no matching WordPress.com account is found */
 "The Google account \"%@\" doesn't match any account on WordPress.com" = " Google hesabı \"%@\" WordPress.com'daki herhangi bir hesapla eşleşmiyor";
@@ -7431,7 +7212,8 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* No comment provided by engineer. */
 "The site at %@ uses WordPress %@. We recommend to update to the latest version, or at least %@" = "Bu site %1$@ konumunda WordPress %2$@ kullanıyor. En son sürüme ya da en azından %3$@ sürümüne yükseltmenizi öneririz.";
 
-/* Error message shown a URL does not point to an existing site. */
+/* Error message shown a URL does not point to an existing site.
+   Error message shown when a URL does not point to an existing site. */
 "The site at this address is not a WordPress site. For us to connect to it, the site must use WordPress." = "Bu adresteki site bir WordPress sitesi değil. Siteyle bağlantı kurabilmemiz için sitede WordPress kullanılmalıdır.";
 
 /* Message shown when site deletion API failed */
@@ -7471,7 +7253,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 "Theme Activated" = "Tema etkinleştirildi";
 
 /* Noun. Name of the Themes feature
-   The menu item to select during a guided tour.
    Themes option in the blog details
    Title of Themes browser page */
 "Themes" = "Temalar";
@@ -7540,9 +7321,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 
 /* Explaining to the user there was an error trying to obtain the current location of the user. */
 "There was a problem when trying to access your location. Please try again later." = "Konumunuza ulaşırken bir problem oluştu. Lütfen daha sonra tekrar deneyin.";
-
-/* Explaining to the user there was an generic error accesing media. */
-"There was a problem when trying to access your media. Please try again later." = "Ortam dosyasına erişmeye çalışılırken bir sorun oluştu. Lütfen daha sonra tekrar deneyin.";
 
 /* Message for stories unknown error. */
 "There was a problem with the Stories editor.  If the problem persists you can contact us via the Me > Help & Support screen." = "Öyküler düzenleyicisinde bir sorun oluştu.  Sorun tekrar ederse lütfen Ben > Yardım ve Destek ekranından bizimle iletişim kurun.";
@@ -7613,9 +7391,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 
 /* A description informing the user in order to proceed with this feature we will need camera permissions, and how to enable it. */
 "This app needs permission to access the Camera to scan login codes, tap on the Open Settings button to enable it." = "Bu uygulamanın giriş kodlarını taramak için Kameraya erişmek için izne ihtiyacı vardır, etkinleştirmek için Ayarları Aç düğmesine dokunun.";
-
-/* Explaining to the user why the app needs access to the device media library. */
-"This app needs permission to access your device media library in order to add photos and\/or video to your posts. Please change the privacy settings if you wish to allow this." = "Bu uygulama yazılarınıza fotoğraf ve\/veya video eklemek için cihazınızın görsel kitaplığa erişim izni istiyor. Buna izin vermek istiyorsanız lütfen gizlilik ayarlarını değiştirin.";
 
 /* No comment provided by engineer. */
 "This color combination may be hard for people to read. Try using a brighter background color and\/or a darker text color." = "Bu renk birleşimi insanların okuması zor olabilir. Daha parlak bir arka plan ve\/veya daha koyu bir metin rengi kullanmayı deneyin.";
@@ -7723,9 +7498,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
    Title for the time zone selector */
 "Time Zone" = "Saat dilimi";
 
-/* Description of a Quick Start Tour */
-"Time to finish setting up your site! Our checklist walks you through the next steps." = "Site kurulumunuzu tamamlamanın zamanı geldi! Listemiz bir sonraki adımları size açıklar.";
-
 /* Error when the uses takes more than 1 minute to submit a security key. */
 "Time's up, but don't worry, your security is our priority. Please try again!" = "Süre doldu, ancak endişelenmenize gerek yok. Güvenliğiniz önceliğimizdir. Lütfen yeniden deneyin!";
 
@@ -7777,9 +7549,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Message asking the user if they want to set up Jetpack from stats */
 "To use stats on your site, you'll need to install the Jetpack plugin." = "Sitenizde istatistikleri kullanmak için Jetpack eklentisini yüklemelisiniz.";
 
-/* Message explaining that Jetpack needs to be installed for a particular site. Reads like 'To use this app for example.com you'll need to have... */
-"To use this app for %@ you'll need to have the Jetpack plugin installed and activated." = "Bu uygulamayı %@ için kullanabilmek istiyorsanız Jetpack eklentisini yükleyip etkinleştirmeniz gerekir.";
-
 /* Comments Today Section Header
    Insights 'Today' header
    Notifications Today Section Header */
@@ -7800,9 +7569,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Accessibility Identifier for the Aztec Unordered List Style */
 "Toggles the unordered list style" = "Sıralanmamış liste biçimini değiştirir";
 
-/* Title of the Tools section of the debug screen used in debug builds of the app */
-"Tools" = "Araçlar";
-
 /* Insights 'Top Commenters' header */
 "Top Commenters" = "En iyi yorumcular";
 
@@ -7810,8 +7576,7 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
    Screen reader text expressing the menu item is at the top level and has no parent. */
 "Top level" = "En üst seviye";
 
-/* Shortened version of the main title to be used in back navigation
-   Topic page title */
+/* Shortened version of the main title to be used in back navigation */
 "Topic" = "Konu";
 
 /* Used when a Reader Topic is not found for a specific id */
@@ -7888,9 +7653,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
    Try Again. Action
    Try to load the list of interests again. */
 "Try Again" = "Tekrar deneyin";
-
-/* Action button that will restart the login flow.Presented when logging in with a site address that does not have a valid Jetpack installation */
-"Try With Another Account" = "Başka Bir Hesapla Deneyin";
 
 /* Text displayed in the view when there aren't any backups to display for a given filter. */
 "Try adjusting your date range filter" = "Tarih aralığı filtrenizi ayarlamayı deneyin";
@@ -7970,9 +7732,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 
 /* Site creation. Seelect a domain, search field placeholder */
 "Type a name for your site" = "Siteniz için bir ad yazın";
-
-/* Register domain - Search field placeholder for the Suggested Domain screen */
-"Type to get more suggestions" = "Daha fazla tavsiye için yazın";
 
 /* URL text field placeholder */
 "URL" = "URL";
@@ -8079,12 +7838,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Alert displayed to the user when a single post has failed to upload. */
 "Unable to upload 1 draft post" = "1 taslak yazı yüklenemedi";
 
-/* Alert displayed to the user when a single post and multiple files have failed to upload. */
-"Unable to upload 1 draft post, %ld files" = "1 taslak yazı ve %ld dosya yüklenemedi";
-
-/* Alert displayed to the user when a single post and 1 file has failed to upload. */
-"Unable to upload 1 draft post, 1 file" = "1 taslak yazı ve 1 dosya yüklenemedi";
-
 /* Alert displayed to the user when a single post has failed to upload. */
 "Unable to upload 1 post" = "1 yazı karşıya yüklenemedi";
 
@@ -8139,8 +7892,7 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Label of the table view cell's delete button, when unfollowing a site. */
 "Unfollow" = "Takibi bırak";
 
-/* Accessibility label for unfollowing a site
-   Accessibility label for unfollowing a tag */
+/* Accessibility label for unfollowing a tag */
 "Unfollow %@" = "%@ takibini bırak";
 
 /* Title for a button that unsubscribes the user from the post. */
@@ -8155,9 +7907,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Notice title when unfollowing a site succeeds.
    User unfollowed a site. */
 "Unfollowed site" = "Takibi bırakılan site";
-
-/* Spoken hint describing action for selected following buttons. */
-"Unfollows blog" = "Blogu takibi bırakır";
 
 /* VoiceOver accessibility hint, informing the user the button can be used to unfollow a blog. */
 "Unfollows the blog." = "Blogu takip etmeyi bırakır.";
@@ -8174,9 +7923,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 
 /* Title for Unknown HTML Editor */
 "Unknown HTML" = "Bilinmeyen HTML";
-
-/* Label to use when creation date from media asset is not know. */
-"Unknown creation date" = "Bilinmeyen oluşturma tarihi";
 
 /* No comment provided by engineer. */
 "Unknown error" = "Bilinmeyen hata";
@@ -8331,17 +8077,11 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* No comment provided by engineer. */
 "Uploading…" = "Yükleniyor…";
 
-/* Title for alert when trying to save post with failed media items */
-"Uploads failed" = "Yüklemeler başarısız";
-
 /* Use the current image */
 "Use" = "Kullan";
 
 /* A step in a guided tour for quick start. %@ will be the name of the item to select. */
 "Use %@ to find sites and tags." = "Siteleri ve etiketleri bulmak için %@ kullanın.";
-
-/* Title of a row displayed on the debug screen used to configure the sandbox store use in the App. */
-"Use Sandbox Store" = "Sandbox Store'u kullanın";
 
 /* The button's title text to use a security key. */
 "Use a security key" = "Bir güvenlik anahtarı kullanın";
@@ -8390,9 +8130,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Push Authentication Alert Title */
 "Verify Log In" = "Girişi doğrula";
 
-/* Notice displayed after domain credit redemption success. */
-"Verify your email address - instructions sent to %@" = "E-posta adresinizi doğrulayın - Talimatlar %@ adresinde gönderildi";
-
 /* Description for the version label in the What's new page. */
 "Version " = "Sürüm ";
 
@@ -8420,9 +8157,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 
 /* Title of an alert informing users that the video they are trying to select is not allowed. */
 "Video not uploaded" = "Video yüklenmedi";
-
-/* Accessibility label for video thumbnails in the media collection view. The parameter is the creation date of the video. */
-"Video, %@" = "Video, %@";
 
 /* Period Stats 'Videos' header */
 "Videos" = "Videolar";
@@ -8604,9 +8338,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Message for error displayed when preparing a backup fails. */
 "We couldn't create your backup. Please try again later." = "Yedeğiniz oluşturulmadı. Lütfen daha sonra tekrar deneyin.";
 
-/* Primary message shown when there are no domains that match the user entered text. */
-"We couldn't find any available address with the words you entered - let's try again." = "Girdiğiniz sözcüklerle eşleşen adres bulamadık, tekrar deneyelim.";
-
 /* Text displayed in notice after the app fails to upload a page, it will attempt to upload it later. */
 "We couldn't publish this page, but we'll try again later." = "Bu sayfayı yayımlayamadık ama daha sonra tekrar deneyeceğiz.";
 
@@ -8682,9 +8413,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* The subtitle text on the magic link requested screen followed by the email address. */
 "We just sent a magic link to" = "Az önce size sihirli bir bağlantı gönderdik";
 
-/* Popup content about why this post is being opened in block editor */
-"We made big improvements to the block editor and think it's worth a try!\n\nWe enabled it for new posts and pages but if you'd like to change to the classic editor, go to 'My Site' > 'Site Settings'." = "Blok düzenleyicide büyük iyileştirmeler yaptık ve denemeye değer olduğunu düşünüyoruz!\n\nYeni yazılar ve sayfalar için etkinleştirdik, ancak klasik düzenleyiciye geçmek isterseniz, 'Sitem'> 'Site Ayarları'na gidin.";
-
 /* Message displayed when a backup has finished */
 "We successfully created a backup of your site as of %@" = "%@ itibarıyla sitenizin yedeği başarıyla oluşturuldu";
 
@@ -8693,9 +8421,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 
 /* Informational text about link to other tracking tools */
 "We use other tracking tools, including some from third parties. Read about these and how to control them." = "Üçüncü taraflara ait olanlar dahil diğer izleme araçlarını kullanıyoruz. Bunlar ve nasıl kontrol edilecekleri hakkında bilgi alın.";
-
-/* Message explaining that WordPress was not detected. */
-"We were not able to detect a WordPress site at the address you entered. Please make sure WordPress is installed and that you are running the latest available version." = "Girdiğiniz adreste bir WordPress sitesi tespit edemedik. Lütfen WordPress'in kurulu olduğundan ve mevcut en son sürümü çalıştırdığınızdan emin olun.";
 
 /* Error message displayed when an error occurred sending the magic link email. */
 "We were unable to send you an email at this time. Please try again later." = "Size şu anda e-posta gönderemedik. Lütfen daha sonra tekrar deneyin.";
@@ -8784,9 +8509,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 
 /* Instruction text after a signup Magic Link was requested. */
 "We've emailed you a signup link to create your new WordPress.com account. Check your email on this device, and tap the link in the email you receive from WordPress.com." = "Yeni WordPress.com hesabınızı oluşturmanız için size e-postayla bir kayıt bağlantısı gönderdik. Bu cihazda e-postanızı kontrol edin ve WordPress.com'dan aldığınız e-postadaki bağlantıya dokunun.";
-
-/* Register Domain - error displayed when a domain was purchased succesfully, but there was a problem setting it to a primary domain for the site */
-"We've had problems changing the primary domain on your site — but don't worry, your domain was successfully purchased." = "Sitenizdeki birincil alan adını değiştirirken sorunlar yaşadık; ancak merak etmeyin, alan adınız başarıyla satın alındı.";
 
 /* Account Settings Web Address label
    Header for a comment author's web address, shown when editing a comment. */
@@ -8953,9 +8675,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Siri Suggestion to open Support */
 "WordPress Help" = "WordPress yardımı";
 
-/* Name for the WordPress Media Library */
-"WordPress Media" = "WordPress ortamı";
-
 /* Accessibility label for selecting an image or video from the user's WordPress media library on formatting toolbar. */
 "WordPress Media Library" = "WordPress ortam kütüphanesi";
 
@@ -9022,6 +8741,9 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Title of button that displays the Automattic Work With Us web page */
 "Work With Us" = "Bizimle Çalışın";
 
+/* No comment provided by engineer. */
+"Working Offline" = "Çevrimdışı çalışın";
+
 /* Accessibility label for the Stats' world map. */
 "World map showing views by country." = "Ülkelere göre görünümlerini gösteren dünya haritası.";
 
@@ -9068,8 +8790,7 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Title of Years stats filter. */
 "Years" = "Yıl";
 
-/* Accept Action
-   Button title. Confirms that the user wants to proceed with a pending action.
+/* Button title. Confirms that the user wants to proceed with a pending action.
    Label for a button that clears all old activity logs
    Yes */
 "Yes" = "Evet";
@@ -9168,9 +8889,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Message informing the user that all of their sites are currently hidden (singular) */
 "You have 1 hidden WordPress site." = "1 gizli WordPress siteniz mevcut.";
 
-/* Description for the first domain purchased with a paid plan. */
-"You have a free one-year domain registration with your plan" = "Planınıza ücretsiz bir yıllık alan adı kaydı dahildir";
-
 /* Message alert when attempting to delete site with purchases */
 "You have active premium upgrades on your site. Please cancel your upgrades prior to deleting your site." = "Sitenizde premium yükseltmeleri etkinleştirdiniz. Sitenizi silmeden önce yükseltmelerinizi iptal edin.";
 
@@ -9255,9 +8973,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Message displayed on a post's card when the post has unsaved changes */
 "You've made unsaved changes to this post" = "Bu iletide kaydedilmeyen değişiklikler yaptınız";
 
-/* Header of the domains list section in the Domains Dashboard. */
-"Your Site Domains" = "Site alan adlarınız";
-
 /* The item to select during a guided tour. */
 "Your Site Icon" = "Site simgeniz";
 
@@ -9269,9 +8984,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 
 /* Share extension error dialog text. */
 "Your account does not have permission to upload media to this site. The Site Administrator can change these permissions." = "Hesabınızın bu siteye ortam yükleme izni yok. Site yöneticisi bu izinleri değiştirebilir.";
-
-/* Explaining to the user why the app needs access to the device media library. */
-"Your app is not authorized to access media library due to active restrictions such as parental controls. Please check your parental control settings in this device." = "Ebeveyn kontrolleri gibi etkin kısıtlamalar nedeniyle uygulamanızın ortam kitaplığına erişme yetkisi yok. Lütfen bu cihazdaki ebeveyn kontrolü ayarlarınızı kontrol edin.";
 
 /* Title for the Jetpack Backup Complete message. */
 "Your backup is now available for download" = "Yedeklemeniz artık indirilebilir";
@@ -9288,9 +9000,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Title for the view when there aren't any Backups to display */
 "Your first backup will be ready soon" = "İlk yedeğiniz az sonra hazır olacak";
 
-/* Title of the site address section in the Domains Dashboard. */
-"Your free WordPress.com address is" = "Ücretsiz WordPress.com adresiniz";
-
 /* Details about recently acquired domain on domain credit redemption success screen */
 "Your new domain %@ is being set up. It may take up to 30 minutes for your domain to start working." = "Yeni alan adınız %@ ayarlanıyor. Alan adınızın çalışmaya başlaması 30 dakika kadar sürebilir.";
 
@@ -9305,9 +9014,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 
 /* Message of Export Content confirmation alert; substitution is user's email address */
 "Your posts, pages, and settings will be mailed to you at %@." = "Yazılarınız, sayfalarınız ve ayarlarınız %@ adresine e-posta ile gönderilecek.";
-
-/* Footer of the primary site section in the Domains Dashboard. */
-"Your primary site address is what visitors will see in their address bar when visiting your website." = "Birincil site adresiniz, web sitenizi ziyaret edenlerin adres çubuğunda görecekleri adrestir.";
 
 /* Text displayed when a site restore takes too long. */
 "Your restore is taking longer than usual, please check again in a few minutes." = "Geri yüklemeniz normalden uzun sürüyor, lütfen birkaç dakika sonra tekrar kontrol edin.";
@@ -9365,12 +9071,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 
 /* Describes the expected behavior when the user enables in-app notifications in Reader Comments. */
 "You’re following this conversation. You will receive an email whenever a new comment is made." = "Bu konuşmayı takip ediyorsunuz. Yeni bir yorum yapıldığında e-posta alacaksınız.";
-
-/* Popup content about why this post is being opened in block editor */
-"You’re now using the block editor for new pages — great! If you’d like to change to the classic editor, go to ‘My Site’ > ‘Site Settings’." = "Şimdi yeni sayfalar için blok düzenleyiciyi kullanıyorsunuz, harika! Klasik düzenleyicide değişiklik yapmak istiyorsanız, Sitem > Site Ayarları'na gidin.";
-
-/* Popup content about why this post is being opened in block editor */
-"You’re now using the block editor for new posts — great! If you’d like to change to the classic editor, go to ‘My Site’ > ‘Site Settings’." = "Şimdi yeni yazılar için blok düzenleyiciyi kullanıyorsunuz, harika! Klasik düzenleyicide değişiklik yapmak istiyorsanız, Sitem > Site Ayarları'na gidin.";
 
 /* Comment Attachment Label */
 "[COMMENT]" = "[YORUM]";
@@ -9446,9 +9146,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 
 /* Title of button for leaving on image optimization, displayed in the alert informing users to enable image optimization in uploads. */
 "appSettings.optimizeImagesPopup.turnOn" = "Evet, açık kalsın";
-
-/* Label displayed on audio media items. */
-"audio" = "ses";
 
 /* translators: displays audio file extension. e.g. MP3 audio file */
 "audio file" = "ses dosyası";
@@ -9562,7 +9259,44 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 "blogHeader.actionCopyURL" = "Adresi Kopyala";
 
 /* Context menu button title */
-"blogHeader.actionOpenInBrowser" = "Tarayıcıda Aç";
+"blogHeader.actionVisitSite" = "Siteyi ziyaret et";
+
+/* Title for a button that, when tapped, shows more info about participating in Bloganuary. */
+"bloganuary.dashboard.card.button.learnMore" = "Daha fazla bilgi edinin";
+
+/* Short description for the Bloganuary event, shown right below the title. */
+"bloganuary.dashboard.card.description" = "Yeni yılda blog yazma alışkanlığı oluşturmayı hedefleyen topluluk etkinliğimiz Bloganuary'den Ocak ayı boyunca blog istemleri alacaksınız.";
+
+/* Title for the Bloganuary dashboard card while Bloganuary is running. */
+"bloganuary.dashboard.card.runningTitle" = "Bloganuary burada!";
+
+/* Title for the Bloganuary dashboard card. */
+"bloganuary.dashboard.card.title" = "Bloganuary yaklaşıyor!";
+
+/* Title of a button that calls the user to enable the Blogging Prompts feature. */
+"bloganuary.learnMore.modal.button.promptsDisabled" = "Blog istemlerini aç";
+
+/* Title of a button that will dismiss the Bloganuary modal when tapped.
+Note that the word 'go' here should have a closer meaning to 'start' rather than 'move forward'. */
+"bloganuary.learnMore.modal.button.promptsEnabled" = "Başlayalım!";
+
+/* The second line of the description shown in the Bloganuary modal sheet. */
+"bloganuary.learnMore.modal.description.second" = "Yanıtınızı yayımlayın.";
+
+/* The third line of the description shown in the Bloganuary modal sheet. */
+"bloganuary.learnMore.modal.description.third" = "İlham almak ve yeni bağlantılar kurmak için diğer blog yazarlarının yanıtlarını okuyun.";
+
+/* The first line of the description shown in the Bloganuary modal sheet. */
+"bloganuary.learnMore.modal.descriptions.first" = "Her gün size ilham verecek yeni istemler alın.";
+
+/* An additional piece of information shown in case the user has the Blogging Prompts feature disabled. */
+"bloganuary.learnMore.modal.footer.addition" = "Bloganuary'ye katılmak için Blog İstemlerini etkinleştirmeniz gerekir.";
+
+/* An informative excerpt shown in a subtler tone. */
+"bloganuary.learnMore.modal.footer.text" = "Bloganuary Ocak ayı boyunca size konular göndermek için Günlük Blog İstemlerini kullanacak.";
+
+/* The headline text of the Bloganuary modal sheet. */
+"bloganuary.learnMore.modal.headline" = "Bir ay sürecek yazma etkinliğimize katılın";
 
 /* Verb. Dismisses the blogging prompt notification. */
 "bloggingPrompt.pushNotification.customActionDescription.dismiss" = "Kapat";
@@ -9572,6 +9306,9 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 
 /* Option for users to rate a chat bot answer as helpful. */
 "chat.rateHelpful" = "Faydalı olarak değerlendirin";
+
+/* Title for the checkout view */
+"checkout.title" = "Ödeme";
 
 /* Displayed in the confirmation alert when marking comment notifications as read. */
 "comment" = "yorum";
@@ -9723,26 +9460,51 @@ Example: Reply to Pamela Nguyen */
 /* Title for the View stats button in the More menu */
 "dashboardCard.stats.viewStats" = "İstatistikleri Görüntüle";
 
+/* Debug menu item title */
+"debugMenu.analytics" = "Analizler";
+
 /* Feature flags menu item */
 "debugMenu.featureFlags" = "Özellik bayrakları";
 
-/* General section title */
-"debugMenu.generalSectionTitle" = "Genel";
+/* Title of the screen that allows the user to change the Reader CSS URL for debug builds */
+"debugMenu.readerCellTitle" = "Okuyucu CSS URLsi";
 
-/* Remote config params debug menu footer explaining the meaning of a cell with a checkmark. */
-"debugMenu.remoteConfig.footer" = "İptal edilen parametreler bir onay işareti ile gösterilir.";
+/* Placeholder for the reader CSS URL */
+"debugMenu.readerDefaultURL" = "Varsayılan URL";
 
-/* Hint for overriding remote config params */
-"debugMenu.remoteConfig.hint" = "Buradan yeni bir değer girerek seçili parametreyi iptal edin.";
+/* Hint for the reader CSS URL field */
+"debugMenu.readerHit" = "Reader'a yüklenmek üzere buraya özel bir CSS URL'si ekleyin. Calypso'yu yerel olarak çalıştırıyorsanız şu şekilde olabilir: http:\/\/192.168.15.23:3000\/calypso\/reader-mobile.css";
 
-/* Placeholder for overriding remote config params */
-"debugMenu.remoteConfig.placeholder" = "Uzaktan ya da varsayılan değer yok";
+/* Remote Config Debug Menu section title */
+"debugMenu.remoteConfig.defaultValue" = "Varsayılan Değer";
 
-/* Remote Config debug menu title */
+/* Remote Config Debug Menu section title */
+"debugMenu.remoteConfig.overridenValue" = "Uzaktan Yapılandırma";
+
+/* Remote Config Debug Menu section title */
+"debugMenu.remoteConfig.remoteConfigValue" = "Uzaktan Yapılandırma";
+
+/* Remote Config Debug Menu reset button title */
+"debugMenu.remoteConfig.reset" = "Sıfırla";
+
+/* Remote Config Debug Menu screen title
+   Remote Config debug menu title */
 "debugMenu.remoteConfig.title" = "Uzaktan Yapılandırma";
 
 /* Remove current quick start tour menu item */
 "debugMenu.removeQuickStart" = "Mevcut Turu Kaldır";
+
+/* Debug Menu section title */
+"debugMenu.section.logging" = "Logging";
+
+/* Debug Menu section title */
+"debugMenu.section.settings" = "Ayarlar";
+
+/* Title for debug menu screen */
+"debugMenu.title" = "Geliştirici";
+
+/* Weekly Roundup debug menu item */
+"debugMenu.weeklyRoundup" = "Haftalık Özet";
 
 /* Title for a menu action in the context menu on the Jetpack install card. */
 "domain.dashboard.card.menu.hide" = "Bunu gizle";
@@ -9761,6 +9523,9 @@ Example: Reply to Pamela Nguyen */
 
 /* The expired label of the domain card in All Domains screen. */
 "domain.management.card.expired.label" = "Süresi Dolmuş";
+
+/* Label indicating that a domain name registration has no expiry date. */
+"domain.management.card.neverExpires.label" = "Süresi asla bitmez";
 
 /* The renews label of the domain card in All Domains screen. */
 "domain.management.card.renews.label" = "Yenilemeler";
@@ -9855,6 +9620,12 @@ Example: Reply to Pamela Nguyen */
 /* The text to display for paid domains in 'Site Creation > Choose a domain' screen */
 "domain.suggestions.row.yearly" = "yıllık";
 
+/* Help button */
+"domainSelection.helpButton.title" = "Yardım";
+
+/* Search domain - Title for the Suggested domains screen */
+"domainSelection.search.title" = "Alan adı arayın";
+
 /* Title for the checkout screen. */
 "domains.checkout.title" = "Ödeme";
 
@@ -9886,9 +9657,17 @@ Example: Reply to Pamela Nguyen */
 "ellipsisButton.AccessibilityLabel" = "Daha fazla";
 
 /* Placeholder for the site url textfield.
-   Provides a sample of what a domain name looks like.
    Site Address placeholder */
 "example.com" = "example.com";
+
+/* Title for confirmation navigation bar button item */
+"externalMediaPicker.add" = "Ekle";
+
+/* Bottom toolbar title in the selection mode */
+"externalMediaPicker.toolbarSelectItemsPrompt" = "Görselleri seç";
+
+/* Bottom toolbar title in the selection mode */
+"externalMediaPicker.toolbarViewSelected" = "Seçileni görüntüle (%@)";
 
 /* Title of screen the displays the details of an advertisement campaign. */
 "feature.blaze.campaignDetails.title" = "Kampanya Ayrıntıları";
@@ -9988,9 +9767,6 @@ Example: Reply to Pamela Nguyen */
 
 /* (placeholder) Help the user enter a URL into the field */
 "http:\/\/my-site-address (URL)" = "http:\/\/benim-site-adresim (URL)";
-
-/* Label displayed on image media items. */
-"image" = "görsel";
 
 /* Sentence to justify why the app is asking permission from the user to use their camera. */
 "infoplist.NSCameraUsageDescription" = "Yazılarınızda kullanacağınız fotoğraf veya videoları çekmek için.";
@@ -10292,9 +10068,6 @@ Example: Reply to Pamela Nguyen */
 /* Indicating that referrer was marked as spam */
 "marked as spam" = "spam olarak işaretlendi";
 
-/* Products header text in Me Screen. */
-"me.products.header" = "Ürünler";
-
 /* Title of error prompt shown when a sync fails. */
 "media.syncFailed" = "Ortam senkronize edilemiyor";
 
@@ -10345,6 +10118,21 @@ Example: Reply to Pamela Nguyen */
 
 /* Text displayed in HUD after successfully deleting a media item */
 "mediaLibrary.deletionSuccessMessage" = "Silindi!";
+
+/* The name of the media filter */
+"mediaLibrary.filterAll" = "Hepsi";
+
+/* The name of the media filter */
+"mediaLibrary.filterAudio" = "Ses";
+
+/* The name of the media filter */
+"mediaLibrary.filterDocuments" = "Belgeler";
+
+/* The name of the media filter */
+"mediaLibrary.filterImages" = "Resimler";
+
+/* The name of the media filter */
+"mediaLibrary.filterVideos" = "Videolar";
 
 /* User action to delete un-uploaded media. */
 "mediaLibrary.retryOptionsAlert.delete" = "Sil";
@@ -10423,6 +10211,9 @@ Example: Reply to Pamela Nguyen */
 
 /* The name of the action in the context menu */
 "mediaPicker.takeVideo" = "Video Çek";
+
+/* Navigation title for media preview. Example: 1 of 3 */
+"mediaPreview.NofM" = "%1$@ \/ %2$@";
 
 /* Max image size in pixels (e.g. 300x300px) */
 "mediaSizeSlider.valueFormat" = "%1$d × %2$d piksel";
@@ -10577,6 +10368,30 @@ Example: Reply to Pamela Nguyen */
 /* Message title for when a user has no sites. */
 "mySite.noSites.title" = "Hiçbir siteniz yok";
 
+/* Menu title for the add site option */
+"mySite.siteActions.addSite" = "Site ekleyin";
+
+/* Button that reveals more site actions */
+"mySite.siteActions.button" = "Site eylemleri";
+
+/* Accessibility hint for button used to show more site actions */
+"mySite.siteActions.hint" = "Daha fazla site eylemi göstermek için dokunun";
+
+/* Menu title for the personalize home option */
+"mySite.siteActions.personalizeHome" = "Ana sayfayı kişiselleştir";
+
+/* Menu title for the change site icon option */
+"mySite.siteActions.siteIcon" = "Site simgesini değiştir";
+
+/* Menu title for the change site title option */
+"mySite.siteActions.siteTitle" = "Site başlığını değiştir";
+
+/* Menu title for the switch site option */
+"mySite.siteActions.switchSite" = "Site değiştir";
+
+/* Menu title for the visit site option */
+"mySite.siteActions.visitSite" = "Siteyi ziyaret et";
+
 /* Dismiss button title. */
 "noResultsViewController.dismissButton" = "Kapat";
 
@@ -10591,12 +10406,6 @@ Example: Reply to Pamela Nguyen */
 
 /* This is one of the buttons we display when prompting the user for a review */
 "notifications.appRatings.sendFeedback.yes.buttonTitle" = "Geri Bildirim gönderin";
-
-/* Word separating the current index from the total amount. I.e.: 7 of 9 */
-"of" = ",";
-
-/* Label displayed on media items that are not video, image, or audio. */
-"other" = "diğer";
 
 /* Badge for page cells */
 "pageList.badgeHomepage" = "Ana sayfa";
@@ -10687,6 +10496,9 @@ Example: Reply to Pamela Nguyen */
 
 /* Register Domain - Domain contact information field Phone */
 "phone number" = "telefon numarası";
+
+/* Title for the plan selection view */
+"planSelection.title" = "Paketler";
 
 /* Post status and date for list cells with %@ a placeholder for the date. */
 "post.createdTimeAgo" = "Oluşturma tarihi: %@";
@@ -10895,12 +10707,6 @@ Tapping on this row allows the user to edit the sharing message. */
 
 /* Title for a tappable string that opens the reader with a prompts tag */
 "prompts.card.viewprompts.title" = "Tüm yanıtları görüntüle";
-
-/* Subtitle of the notification when prompts are hidden from the dashboard card */
-"prompts.notification.removed.subtitle" = "Tekrar açmak için Site Ayarlarını ziyaret edin";
-
-/* Title of the notification when prompts are hidden from the dashboard card */
-"prompts.notification.removed.title" = "Blog Talepleri gizlendi";
 
 /* Button label that dismisses the qr log in flow and returns the user back to the previous screen */
 "qrLoginVerifyAuthorization.completedInstructions.dismiss" = "Kapat";
@@ -11126,6 +10932,30 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 /* Site name that is placed in the tooltip view. */
 "site.creation.domain.tooltip.site.name" = "SiteAdi.com";
 
+/* Header of the secondary domains list section in the Domains Dashboard. %1$@ is the name of the site. */
+"site.domains.domainSection.title" = "Other domains for %1$@";
+
+/* A section title which displays a row with a free WP.com domain */
+"site.domains.freeDomainSection.title" = "Ücretsiz WordPress.com alan adı";
+
+/* Description for the first domain purchased with a paid plan. */
+"site.domains.freeDomainWithPaidPlan.description" = "Yıllık ücretli paketlerden herhangi biriyle bir yıllık ücretsiz alan adı kaydı veya transferi hakkı edinin.";
+
+/* Title of the card that starts the purchase of the first domain with a paid plan. */
+"site.domains.freeDomainWithPaidPlan.title" = "Size ait bir alan adı.";
+
+/* Footer of the primary site section in the Domains Dashboard. */
+"site.domains.primaryDomain" = "Birincil site adresiniz, web sitenizi ziyaret edenlerin adres çubuğunda görecekleri adrestir.";
+
+/* Primary domain label, used in the site address section of the Domains Dashboard. */
+"site.domains.primaryDomain.title" = "Birincil alan adı";
+
+/* Title for a button that opens domain purchasing flow. */
+"site.domains.purchaseDirectly.buttons.title" = "Sadece alan adı arayacağım";
+
+/* Title for a button that opens plan and domain purchasing flow. */
+"site.domains.purchaseWithPlan.buttons.title" = "Ücretli bir pakete geç";
+
 /* Back button title shown in Site Creation flow to come back from Plan selection to Domain selection */
 "siteCreation.domain.backButton.title" = "Alan adları";
 
@@ -11155,6 +10985,9 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 
 /* Accessibility label for media item preview for user's viewing an item in their media library */
 "siteMediaItem.contentViewAccessibilityLabel" = "Ortamı önizle";
+
+/* Title for confirmation navigation bar button item */
+"siteMediaPicker.add" = "Ekle";
 
 /* Button selection media in media picker */
 "siteMediaPicker.deselect" = "Seçimi kaldır";
@@ -11330,6 +11163,12 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 /* Dismiss the AlertView */
 "stockPhotos.strings.dismiss" = "Kapat";
 
+/* Subtitle for placeholder in Free Photos. The company name 'Pexels' should always be written as it is. */
+"stockPhotos.subtitle" = "Pexels tarafından sağlanan fotoğraflar";
+
+/* Title for placeholder in Free Photos */
+"stockPhotos.title" = "Ortam kitaplığınıza eklemek için ücretsiz fotoğraflar arayın";
+
 /* Section title for prominent suggestions */
 "suggestions.section.prominent" = "Bu sohbette";
 
@@ -11438,9 +11277,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 /* Support email label. */
 "support.row.email.title" = "E-posta";
 
-/* Option in Support view to view the Forums. */
-"support.row.forums.title" = "WordPress forumları";
-
 /* Option in Support view to launch the Help Center. */
 "support.row.helpCenter.title" = "WordPress yardım merkezi";
 
@@ -11477,6 +11313,9 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 /* View title for Help & Support page. */
 "support.title" = "Yardım";
 
+/* Title for placeholder in Tenor picker */
+"tenor.welcomeMessage" = "Ortam kitaplığınıza eklemek için GIF arayın";
+
 /* Header of delete screen section listing things that will be deleted. */
 "these items will be deleted:" = "bu ögeler silinecekler:";
 
@@ -11491,9 +11330,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 
 /* Displayed in the confirmation alert when marking unread notifications as read. */
 "unread" = "okunmamış";
-
-/* Label displayed on video media items. */
-"video" = "video";
 
 /* Portion of a message for Jetpack users that have multisite WP installation, thus Restore is not available. This part is a link, colored with a different color. */
 "visit our documentation page" = "belge sayfamızı ziyaret edin";
@@ -11633,6 +11469,9 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 /* This is a comma separated list of keywords used for spotlight indexing of the 'My Sites' tab. */
 "wordpress, sites, site, blogs, blog" = "wordpress, siteler, site, bloglar, blog";
 
+/* Error message that describes an unknown error had occured */
+"wordpress-api.error.unknown" = "Bir yanlışlık oldu, lütfen daha sonra tekrar deneyin.";
+
 /* Jetpack Plugin Modal on WordPress primary button title */
 "wordpress.jetpack.plugin.modal.primary.button.title" = "Jetpack uygulamasına geçiş yapın";
 
@@ -11656,9 +11495,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 
 /* Title of a button that displays a blog post in a web view. */
 "wp.migration.successCard.learnMore" = "Daha fazlasını öğren";
-
-/* Placeholder for site url, if the url is unknown.Presented when logging in with a site address that does not have a valid Jetpack installation.The error would read: to use this app for your site you'll need... */
-"your site" = "siteniz";
 
 /* Label for button to log in using Google. The {G} will be replaced with the Google logo. */
 "{G} Log in with Google." = "{G} Google ile giriş yap.";

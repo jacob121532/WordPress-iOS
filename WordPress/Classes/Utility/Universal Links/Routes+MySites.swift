@@ -1,6 +1,6 @@
 import Foundation
 
-enum MySitesRoute {
+enum MySitesRoute: CaseIterable {
     case pages
     case posts
     case media
@@ -9,6 +9,9 @@ enum MySitesRoute {
     case people
     case plugins
     case managePlugins
+    case siteMonitoring
+    case phpLogs
+    case webServerLogs
 }
 
 extension MySitesRoute: Route {
@@ -38,6 +41,12 @@ extension MySitesRoute: Route {
             return "/plugins/:domain"
         case .managePlugins:
             return "/plugins/manage/:domain"
+        case .siteMonitoring:
+            return "/site-monitoring/:domain"
+        case .phpLogs:
+            return "/site-monitoring/:domain/php"
+        case .webServerLogs:
+            return "/site-monitoring/:domain/web"
         }
     }
 
@@ -53,6 +62,12 @@ extension MySitesRoute: Route {
             return false
         case .sharing:
             return true
+        case .siteMonitoring:
+            return true
+        case .phpLogs:
+            return true
+        case .webServerLogs:
+            return true
         case .people:
             return true
         case .plugins:
@@ -66,9 +81,17 @@ extension MySitesRoute: Route {
 extension MySitesRoute: NavigationAction {
     func perform(_ values: [String: String], source: UIViewController? = nil, router: LinkRouter) {
         let coordinator = RootViewCoordinator.sharedPresenter.mySitesCoordinator
+        let campaign = AppBannerCampaign.getCampaign(from: values)
 
         guard let blog = blog(from: values) else {
-            WPAppAnalytics.track(.deepLinkFailed, withProperties: ["route": path])
+            var properties: [AnyHashable: Any] = [
+                "route": path,
+                "error": "invalid_site_id"
+            ]
+            if let campaign {
+                properties["campaign"] = campaign
+            }
+            WPAppAnalytics.track(.deepLinkFailed, withProperties: properties)
 
             if failAndBounce(values) == false {
                 coordinator.showRootViewController()
@@ -84,7 +107,11 @@ extension MySitesRoute: NavigationAction {
         case .posts:
             coordinator.showPosts(for: blog)
         case .media:
-            coordinator.showMedia(for: blog)
+            if campaign.flatMap(AppBannerCampaign.init) == .qrCodeMedia {
+                coordinator.showMediaPicker(for: blog)
+            } else {
+                coordinator.showMedia(for: blog)
+            }
         case .comments:
             coordinator.showComments(for: blog)
         case .sharing:
@@ -95,6 +122,12 @@ extension MySitesRoute: NavigationAction {
             coordinator.showPlugins(for: blog)
         case .managePlugins:
             coordinator.showManagePlugins(for: blog)
+        case .siteMonitoring:
+            coordinator.showSiteMonitoring(for: blog, selectedTab: .metrics)
+        case .phpLogs:
+            coordinator.showSiteMonitoring(for: blog, selectedTab: .phpLogs)
+        case .webServerLogs:
+            coordinator.showSiteMonitoring(for: blog, selectedTab: .webServerLogs)
         }
     }
 }

@@ -1,6 +1,4 @@
 #import "SFHFKeychainUtils.h"
-#import <UIDeviceIdentifier/UIDeviceHardware.h>
-#import <NSObject_SafeExpectations/NSDictionary+SafeExpectations.h>
 
 // WordPress Module
 
@@ -17,7 +15,6 @@
 
 #import "CommentService.h"
 #import "CommentsViewController+Network.h"
-#import "Confirmable.h"
 #import "Constants.h"
 #import "CoreDataStack.h"
 #import "Coordinate.h"
@@ -92,6 +89,7 @@
 #import "WPAnimatedBox.h"
 #import "WPAnalyticsTrackerWPCom.h"
 #import "WPAppAnalytics.h"
+#import "WPAnalyticsTrackerAutomatticTracks.h"
 #import "WPAuthTokenIssueSolver.h"
 #import "WPBlogTableViewCell.h"
 #import "WPUploadStatusButton.h"
@@ -119,6 +117,5 @@
 #import <WordPressShared/WPStyleGuide.h>
 #import <WordPressShared/WPTableViewCell.h>
 #import <WordPressShared/WPAnalytics.h>
-#import <WordPressUI/UIImage+Util.h>
 
 FOUNDATION_EXTERN void SetCocoaLumberjackObjCLogLevel(NSUInteger ddLogLevelRawValue);

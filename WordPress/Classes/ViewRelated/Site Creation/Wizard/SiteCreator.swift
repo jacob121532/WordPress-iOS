@@ -2,13 +2,6 @@
 import Foundation
 import WordPressKit
 
-// MARK: - SiteCreationRequestAssemblyError
-
-enum SiteCreationRequestAssemblyError: Error {
-    case invalidSegmentIdentifier
-    case invalidVerticalIdentifier
-}
-
 // MARK: - SiteCreator
 
 // Tracks data state shared between Site Creation Wizard Steps. I am not too fond of the name, but it kind of works for now.
@@ -66,7 +59,6 @@ final class SiteCreator {
         guard let domainName = addressFromPlanSelection ?? address?.domainName else {
             return information?.title ?? ""
         }
-
 
         return domainName.isWordPress ? domainName.subdomain : domainName
     }

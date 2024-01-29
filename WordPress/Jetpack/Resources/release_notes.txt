@@ -1,9 +1,14 @@
-We added an Optimize Images setting so newly uploaded images are optimal size and quality by default. You can also delete images, videos, and other media in the Media screen in My Sites.
+You’ll now see a notification when you’re working offline. Media uploads to image blocks will also pause when your internet connection cuts out, then resume when you reconnect.
+As an added bonus, when you manually retry a failed media upload, the app will retry all other failed media uploads in your post. Now that’s efficient.
 
-Still want more media support? You’re in luck: thumbnails and original images now load faster in the Site Media screen, and GIF thumbnails are properly animated. We also added buttons so you can select and deselect your media files in preview mode.
+When you select a custom gradient in the block editor, there’s now an indicator to show your chosen color.
 
-In the block editor, you’ll only see the “ungroup” option for nested blocks if those blocks actually support it. Oh, and we added a native photo picker to the story editor.
+Scrolling through your images on the Site Media details screen will make them load ahead of time for a faster experience. Or maybe they were there all along.
 
-We fixed the media item details screen for iPad users and squashed a bug on the Stats screen, so sites now open when you click their URLs. We also solved a migration issue for WordPress users whose accounts don’t have any sites. The “Uninstall WordPress” prompt now lives in your dashboard, too.
+We added support for higher-resolution thumbnails, GIF and video playback, documents, and other file previews. (homer-simpson-woohoo.gif)
 
-Finally, your list of site pages now loads faster. Yes, even when your site has hundreds of pages. And yes, we’re just that good.
+We switched up the publishing flow to give you clearer instructions. Users with the “Contributor” role will see the “Submit for Review” action instead of “Publish.” You can also trash draft posts and deleted posts without having to confirm.
+
+There’s now a “Share” action in the site context menu so you can share your site with others.
+
+Finally, because we live for the applause, we improved the in-app rating prompt. You’ll be asked to leave a review if you’re happy with the app, or given a feedback form if you feel the app needs work. Feedback is how we get better, so feel free to share yours!

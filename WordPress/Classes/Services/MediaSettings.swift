@@ -8,7 +8,6 @@ class MediaSettings: NSObject {
     fileprivate let imageQualityKey = "SavedImageQualitySetting"
     fileprivate let removeLocationKey = "SavedRemoveLocationSetting"
     fileprivate let maxVideoSizeKey = "SavedMaxVideoSizeSetting"
-    fileprivate let advertiseImageOptimizationKey = "SavedAdvertiseImageOptimization"
 
     fileprivate let defaultImageOptimization = true
     fileprivate let defaultMaxImageDimension = 2000
@@ -101,23 +100,6 @@ class MediaSettings: NSObject {
                 return 4
             case .sizeOriginal:
                 return 5
-            }
-        }
-
-        static func videoResolution(from value: Int) -> MediaSettings.VideoResolution {
-            switch value {
-            case 1:
-                return .size640x480
-            case 2:
-                return .size1280x720
-            case 3:
-                return .size1920x1080
-            case 4:
-                return .size3840x2160
-            case 5:
-                return .sizeOriginal
-            default:
-                return .sizeOriginal
             }
         }
     }
@@ -226,11 +208,6 @@ class MediaSettings: NSObject {
         }
         set {
             database.set(newValue, forKey: imageOptimizationKey)
-
-            // If the user changes this setting manually, we disable the image optimization popup.
-            if advertiseImageOptimization {
-                advertiseImageOptimization = false
-            }
         }
     }
 
@@ -244,19 +221,6 @@ class MediaSettings: NSObject {
         }
         set {
             database.set(newValue.rawValue, forKey: imageQualityKey)
-        }
-    }
-
-    var advertiseImageOptimization: Bool {
-        get {
-            if let savedAdvertiseImageOptimization = database.object(forKey: advertiseImageOptimizationKey) as? Bool {
-                return savedAdvertiseImageOptimization
-            } else {
-                return true
-            }
-        }
-        set {
-            database.set(newValue, forKey: advertiseImageOptimizationKey)
         }
     }
 }

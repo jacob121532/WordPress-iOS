@@ -39,14 +39,6 @@ import AutomatticTracks
     private var placeholder: UIImage?
     private var selectedPhotonQuality: UInt = Constants.defaultPhotonQuality
 
-    private lazy var assetRequestOptions: PHImageRequestOptions = {
-        let requestOptions = PHImageRequestOptions()
-        requestOptions.resizeMode = .fast
-        requestOptions.deliveryMode = .opportunistic
-        requestOptions.isNetworkAccessAllowed = true
-        return requestOptions
-    }()
-
     @objc convenience init(imageView: CachedAnimatedImageView, gifStrategy: GIFStrategy = .mediumGIFs) {
         self.init(imageView: imageView, gifStrategy: gifStrategy, loadingIndicator: nil)
     }
@@ -67,7 +59,6 @@ import AutomatticTracks
 
         imageView.addLoadingIndicator(self.loadingIndicator, style: .fullView)
     }
-
 
     /// Removes the gif animation and prevents it from animate again.
     /// Call this in a table/collection cell's `prepareForReuse()`.
@@ -216,7 +207,6 @@ import AutomatticTracks
         return photonURL
     }
 
-
     /// Triggers the image dimensions fetcher if the `imageDimensionsHandler` property is set
     private func calculateImageDimensionsIfNeeded(from request: URLRequest) {
         guard let imageDimensionsHandler = imageDimensionsHandler else {
@@ -314,11 +304,6 @@ import AutomatticTracks
 
             self.errorHandler?(error)
         }
-    }
-
-    private func createError(description: String, key: String = NSLocalizedFailureReasonErrorKey) -> NSError {
-        let userInfo = [key: description]
-        return NSError(domain: ImageLoader.classNameWithoutNamespaces(), code: 0, userInfo: userInfo)
     }
 }
 

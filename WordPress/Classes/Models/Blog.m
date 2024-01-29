@@ -7,6 +7,8 @@
 #import "WPUserAgent.h"
 #import "WordPress-Swift.h"
 
+@import NSObject_SafeExpectations;
+
 @class Comment;
 
 static NSInteger const ImageSizeSmallWidth = 240;
@@ -619,6 +621,8 @@ NSString * const OptionsKeyIsWPForTeams = @"is_wpforteams_site";
             return [self canBlaze];
         case BlogFeaturePages:
             return [self isListingPagesAllowed];
+        case BlogFeatureSiteMonitoring:
+            return [self isAdmin] && [self isAtomic];
     }
 }
 
@@ -703,9 +707,7 @@ NSString * const OptionsKeyIsWPForTeams = @"is_wpforteams_site";
 
 - (BOOL)supportsStories
 {
-    BOOL hasRequiredJetpack = [self hasRequiredJetpackVersion:@"9.1"];
-    // Stories are disabled in iPad until this Kanvas issue is solved: https://github.com/tumblr/kanvas-ios/issues/104
-    return (hasRequiredJetpack || self.isHostedAtWPcom) && ![UIDevice isPad] && [JetpackFeaturesRemovalCoordinator jetpackFeaturesEnabled];
+    return NO;
 }
 
 - (BOOL)supportsContactInfo

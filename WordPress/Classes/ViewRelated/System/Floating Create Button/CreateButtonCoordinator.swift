@@ -1,5 +1,6 @@
 import Gridicons
 import WordPressFlux
+import WordPressUI
 
 @objc class CreateButtonCoordinator: NSObject {
 
@@ -151,10 +152,6 @@ import WordPressFlux
                 }
             })
         }
-    }
-
-    private func isShowingStoryOption() -> Bool {
-        actions.contains(where: { $0 is StoryAction })
     }
 
     private func actionSheetController(with traitCollection: UITraitCollection) -> UIViewController {

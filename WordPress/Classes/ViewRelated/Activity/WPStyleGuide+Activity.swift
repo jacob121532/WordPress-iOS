@@ -24,37 +24,8 @@ extension WPStyleGuide {
                      .foregroundColor: UIColor.text]
         }
 
-        public static func gravatarPlaceholderImage() -> UIImage {
-            return gravatar
-        }
-
-        public static func summaryRegularStyle() -> [NSAttributedString.Key: Any] {
-            return  [.paragraphStyle: summaryParagraph,
-                     .font: summaryRegularFont,
-                     .foregroundColor: UIColor.text]
-        }
-
-        public static func summaryBoldStyle() -> [NSAttributedString.Key: Any] {
-            return [.paragraphStyle: summaryParagraph,
-                    .font: summaryBoldFont,
-                    .foregroundColor: UIColor.text]
-        }
-
-        public static func timestampStyle() -> [NSAttributedString.Key: Any] {
-            return  [.font: timestampFont,
-                     .foregroundColor: UIColor.textSubtle]
-        }
-
         public static func backgroundColor() -> UIColor {
             return .listForeground
-        }
-
-        public static func backgroundDiscardedColor() -> UIColor {
-            return .neutral(.shade5)
-        }
-
-        public static func backgroundRewindableColor() -> UIColor {
-            return .primaryLight
         }
 
         public static func getGridiconTypeForActivity(_ activity: Activity) -> GridiconType? {
@@ -102,31 +73,6 @@ extension WPStyleGuide {
 
         private static var contentItalicFont: UIFont {
             return  WPStyleGuide.fontForTextStyle(.body, symbolicTraits: .traitItalic)
-        }
-
-        fileprivate static let gravatar = UIImage(named: "gravatar")!
-
-        private static var timestampFont: UIFont {
-            return WPStyleGuide.fontForTextStyle(.caption1)
-        }
-
-        private static var summaryRegularFont: UIFont {
-            return WPStyleGuide.fontForTextStyle(.footnote)
-        }
-
-        private static var summaryBoldFont: UIFont {
-            return WPStyleGuide.fontForTextStyle(.footnote, fontWeight: .semibold)
-        }
-
-        private static var summaryLineSize: CGFloat {
-            return WPStyleGuide.fontSizeForTextStyle(.footnote) * 1.3
-        }
-
-        private static var summaryParagraph: NSMutableParagraphStyle {
-            return NSMutableParagraphStyle(minLineHeight: summaryLineSize,
-                                           maxLineHeight: summaryLineSize,
-                                           lineBreakMode: .byTruncatingTail,
-                                           alignment: .natural)
         }
 
         // We will be able to get rid of this disgusting dictionary once we build the

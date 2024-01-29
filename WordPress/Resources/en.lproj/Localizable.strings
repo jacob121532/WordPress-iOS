@@ -2,9 +2,6 @@
 
 /* MARK: - Localizable.strings */
 
-/* Per-year postfix shown after a domain's cost. */
-" / year" = " / year";
-
 /* Description for the restore action. $1$@ is a placeholder for the selected date. */
 "%1$@ is the selected point for your restore." = "%1$@ is the selected point for your restore.";
 
@@ -99,9 +96,6 @@
 
 /* Amount of disk quota being used. First argument is the total percentage being used second argument is total quota allowed in GB.Ex: 33% of 14 GB used on your site. */
 "%@ of %@ used on your site" = "%1$@ of %2$@ used on your site";
-
-/* Plan yearly price */
-"%@ per year" = "%@ per year";
 
 /* Accessibility label for value in quadrillion. Ex: 66.6 quadrillion. */
 "%@ quadrillion" = "%@ quadrillion";
@@ -208,9 +202,6 @@
 
 /* Displays the number of words and characters in text */
 "%li words, %li characters" = "%1$li words, %2$li characters";
-
-/* translators: %s: Block name e.g. \"Image block\"\ntranslators: Block name. %s: The localized block name */
-"%s block" = "%s block";
 
 /* translators: %s: block title e.g: \"Paragraph\". */
 "%s block options" = "%s block options";
@@ -497,17 +488,8 @@
 /* Dismiss button title */
 "activityList.dismiss.title" = "Dismiss";
 
-/* Remove asset from media picker list */
-"Add" = "Add";
-
-/* Action for Media Picker to indicate selection of media. The argument in the string represents the number of elements (as numeric digits) selected */
-"Add %@" = "Add %@";
-
 /* The title on the add category screen */
 "Add a Category" = "Add a Category";
-
-/* Hint for the reader CSS URL field */
-"Add a custom CSS URL here to be loaded in Reader. If you're running Calypso locally this can be something like: http://192.168.15.23:3000/calypso/reader-mobile.css" = "Add a custom CSS URL here to be loaded in Reader. If you're running Calypso locally this can be something like: http://192.168.15.23:3000/calypso/reader-mobile.css";
 
 /* Label of the button that starts the purchase of an additional redirected domain in the Domains Dashboard. */
 "Add a domain" = "Add a domain";
@@ -673,9 +655,6 @@
 /* Option to select the Airmail app when logging in with magic links */
 "Airmail" = "Airmail";
 
-/* Description of albums in the photo libraries */
-"Albums" = "Albums";
-
 /* Image alignment option title.
    Title of the screen for choosing an image's alignment. */
 "Alignment" = "Alignment";
@@ -704,9 +683,8 @@
 /* Message shown when all Quick Start tasks are complete. */
 "All tasks complete!" = "All tasks complete!";
 
-/* Footer of the free domain registration section for a paid plan.
-   Information about redeeming domain credit on site dashboard. */
-"All WordPress.com plans include a custom domain name. Register your free premium domain now." = "All WordPress.com plans include a custom domain name. Register your free premium domain now.";
+/* Information about redeeming domain credit on site dashboard. */
+"All WordPress.com annual plans include a custom domain name. Register your free domain now." = "All WordPress.com annual plans include a custom domain name. Register your free domain now.";
 
 /* Insights 'All-Time' header */
 "All-Time" = "All-Time";
@@ -921,18 +899,6 @@
 /* Title for the image quality settings option. */
 "appSettings.media.imageQualityRow" = "Image Quality";
 
-/* Message of an alert informing users to enable image optimization in uploads. */
-"appSettings.optimizeImagesPopup.message" = "Image optimization shrinks images for faster uploading.\n\nThis option is enabled by default, but you can change it in the app settings at any time.";
-
-/* Title of an alert informing users to enable image optimization in uploads. */
-"appSettings.optimizeImagesPopup.title" = "Keep optimizing images?";
-
-/* Title of button for turning off image optimization, displayed in the alert informing users to enable image optimization in uploads. */
-"appSettings.optimizeImagesPopup.turnOff" = "No, turn off";
-
-/* Title of button for leaving on image optimization, displayed in the alert informing users to enable image optimization in uploads. */
-"appSettings.optimizeImagesPopup.turnOn" = "Yes, leave on";
-
 /* Menus alert message for alerting the user to unsaved changes while trying back out of Menus. */
 "Are you sure you want to cancel and discard changes?" = "Are you sure you want to cancel and discard changes?";
 
@@ -1016,9 +982,6 @@
 /* Alert option to embed a doc link into a blog post. */
 "Attach File as Link" = "Attach File as Link";
 
-/* Label displayed on audio media items. */
-"audio" = "audio";
-
 /* translators: accessibility text. %s: Audio caption. */
 "Audio caption. %s" = "Audio caption. %s";
 
@@ -1030,9 +993,6 @@
 
 /* No comment provided by engineer. */
 "Audio Player" = "Audio Player";
-
-/* Accessibility label for audio items in the media collection view. The parameter is the creation date of the audio. */
-"Audio, %@" = "Audio, %@";
 
 /* No comment provided by engineer. */
 "Authenticating" = "Authenticating";
@@ -1065,9 +1025,6 @@
 
 /* The plugin can not be manually updated or deactivated */
 "Auto-managed on this site" = "Auto-managed on this site";
-
-/* Label indicating that a domain name registration will automatically renew */
-"Auto-renew enabled" = "Auto-renew enabled";
 
 /* Discussion Settings Title
    Settings: Comments Approval settings */
@@ -1295,9 +1252,6 @@
 /* translators: displayed right after the block is duplicated. */
 "Block duplicated" = "Block duplicated";
 
-/* Popup title about why this post is being opened in block editor */
-"Block editor enabled" = "Block editor enabled";
-
 /* translators: displayed right after the block is grouped */
 "Block grouped" = "Block grouped";
 
@@ -1367,7 +1321,10 @@
 "bloganuary.dashboard.card.button.learnMore" = "Learn more";
 
 /* Short description for the Bloganuary event, shown right below the title. */
-"bloganuary.dashboard.card.description" = "For the month of January, blogging prompts will come from Bloganuary - our community challenge to build a blogging habit for the new year.";
+"bloganuary.dashboard.card.description" = "For the month of January, blogging prompts will come from Bloganuary — our community challenge to build a blogging habit for the new year.";
+
+/* Title for the Bloganuary dashboard card while Bloganuary is running. */
+"bloganuary.dashboard.card.runningTitle" = "Bloganuary is here!";
 
 /* Title for the Bloganuary dashboard card. */
 "bloganuary.dashboard.card.title" = "Bloganuary is coming!";
@@ -1416,7 +1373,7 @@ Note that the word 'go' here should have a closer meaning to 'start' rather than
 "blogHeader.actionCopyURL" = "Copy URL";
 
 /* Context menu button title */
-"blogHeader.actionOpenInBrowser" = "Open in Browser";
+"blogHeader.actionVisitSite" = "Visit site";
 
 /* Accessibility label for bold button on formatting toolbar.
    Discoverability title for bold formatting keyboard shortcut. */
@@ -1439,9 +1396,6 @@ Note that the word 'go' here should have a closer meaning to 'start' rather than
 
 /* Description of a Quick Start Tour */
 "Bring media straight from your device or camera to your site." = "Bring media straight from your device or camera to your site.";
-
-/* Description of a Quick Start Tour */
-"Browse all our themes to find your perfect fit." = "Browse all our themes to find your perfect fit.";
 
 /* Jetpack Settings: Brute Force Attack Protection Section */
 "Brute Force Attack Protection" = "Brute Force Attack Protection";
@@ -1488,8 +1442,7 @@ Note that the word 'go' here should have a closer meaning to 'start' rather than
 /* Label for size of media while it's being calculated. */
 "Calculating..." = "Calculating...";
 
-/* Accessibility label for taking an image or video with the camera on formatting toolbar.
-   Accessibility label for the camera tile in the collection view */
+/* Accessibility label for taking an image or video with the camera on formatting toolbar. */
 "Camera" = "Camera";
 
 /* Title of an alert informing the user the camera permission for the app is disabled and its needed to proceed */
@@ -1704,6 +1657,9 @@ Note that the word 'go' here should have a closer meaning to 'start' rather than
 /* Title of button that asks the users if they'd like to focus on checking their sites stats */
 "Checking stats" = "Checking stats";
 
+/* Title for the checkout view */
+"checkout.title" = "Checkout";
+
 /* Screen reader text expressing the menu item is a child of another menu item. Argument is a name for another menu item. */
 "Child of %@" = "Child of %@";
 
@@ -1729,8 +1685,7 @@ Note that the word 'go' here should have a closer meaning to 'start' rather than
 /* A text for title label on Login epilogue screen */
 "Choose a site to open." = "Choose a site to open.";
 
-/* Title for the screen to pick a theme and homepage for a site.
-   Title of a Quick Start Tour */
+/* Title for the screen to pick a theme and homepage for a site. */
 "Choose a theme" = "Choose a theme";
 
 /* Select the site's intent. Subtitle */
@@ -1753,9 +1708,6 @@ Note that the word 'go' here should have a closer meaning to 'start' rather than
 
 /* No comment provided by engineer. */
 "Choose from device" = "Choose from device";
-
-/* Menu option for selecting media from the device's photo library. */
-"Choose from My Device" = "Choose from My Device";
 
 /* Title for selecting a new homepage */
 "Choose Homepage" = "Choose Homepage";
@@ -1831,7 +1783,6 @@ Note that the word 'go' here should have a closer meaning to 'start' rather than
    Action button to close edior and cancel changes or insertion of post
    Action button to close the editor
    Dismiss the current view
-   Dismiss the media picker for Stock Photos
    Dismisses the current screen
    Voiceover accessibility label informing the user that this button dismiss the current view */
 "Close" = "Close";
@@ -1995,22 +1946,13 @@ Example: Reply to Pamela Nguyen */
 "Completed: Check your site title" = "Completed: Check your site title";
 
 /* The Quick Start Tour title after the user finished the step. */
-"Completed: Choose a theme" = "Completed: Choose a theme";
-
-/* The Quick Start Tour title after the user finished the step. */
 "Completed: Choose a unique site icon" = "Completed: Choose a unique site icon";
 
 /* The Quick Start Tour title after the user finished the step. */
 "Completed: Connect with other sites" = "Completed: Connect with other sites";
 
 /* The Quick Start Tour title after the user finished the step. */
-"Completed: Continue with site setup" = "Completed: Continue with site setup";
-
-/* The Quick Start Tour title after the user finished the step. */
 "Completed: Create your site" = "Completed: Create your site";
-
-/* The Quick Start Tour title after the user finished the step. */
-"Completed: Explore plans" = "Completed: Explore plans";
 
 /* The Quick Start Tour title after the user finished the step. */
 "Completed: Publish a post" = "Completed: Publish a post";
@@ -2164,9 +2106,6 @@ Example: Reply to Pamela Nguyen */
 /* Button title. Tapping begins log in using Google. */
 "Continue with Google" = "Continue with Google";
 
-/* Title of a Quick Start Tour */
-"Continue with site setup" = "Continue with site setup";
-
 /* Button title. Takes the user to the login with WordPress.com flow. */
 "Continue With WordPress.com" = "Continue With WordPress.com";
 
@@ -2267,13 +2206,13 @@ Example: Reply to Pamela Nguyen */
 "Couldn't connect to the WordPress site. There is no valid WordPress site at this address. Check the site address (URL) you entered." = "Couldn't connect to the WordPress site. There is no valid WordPress site at this address. Check the site address (URL) you entered.";
 
 /* Message to show to user when he tries to add a self-hosted site with RSD link present, but xmlrpc is missing. */
-"Couldn't connect. Required XML-RPC methods are missing on the server." = "Couldn't connect. Required XML-RPC methods are missing on the server.";
+"Couldn't connect. Required XML-RPC methods are missing on the server. Please contact your hosting provider to solve this problem." = "Couldn't connect. Required XML-RPC methods are missing on the server. Please contact your hosting provider to solve this problem.";
 
 /* Message to show to user when he tries to add a self-hosted site but the host returned a 403 error, meaning that the access to the /xmlrpc.php file is forbidden. */
-"Couldn't connect. We received a 403 error when trying to access your site's XMLRPC endpoint. The app needs that in order to communicate with your site. Contact your host to solve this problem." = "Couldn't connect. We received a 403 error when trying to access your site's XMLRPC endpoint. The app needs that in order to communicate with your site. Contact your host to solve this problem.";
+"Couldn't connect. We received a 403 error when trying to access your site's XMLRPC endpoint. The app needs that in order to communicate with your site. Please contact your hosting provider to solve this problem." = "Couldn't connect. We received a 403 error when trying to access your site's XMLRPC endpoint. The app needs that in order to communicate with your site. Please contact your hosting provider to solve this problem.";
 
 /* Message to show to user when he tries to add a self-hosted site but the host returned a 405 error, meaning that the host is blocking POST requests on /xmlrpc.php file. */
-"Couldn't connect. Your host is blocking POST requests, and the app needs that in order to communicate with your site. Contact your host to solve this problem." = "Couldn't connect. Your host is blocking POST requests, and the app needs that in order to communicate with your site. Contact your host to solve this problem.";
+"Couldn't connect. Your host is blocking POST requests, and the app needs that in order to communicate with your site. Please contact your hosting provider to solve this problem." = "Couldn't connect. Your host is blocking POST requests, and the app needs that in order to communicate with your site. Please contact your hosting provider to solve this problem.";
 
 /* Error message when tag loading failed */
 "Couldn't load tags." = "Couldn't load tags.";
@@ -2296,9 +2235,6 @@ Example: Reply to Pamela Nguyen */
 /* Error title displayed when unable to close user account. */
 "Couldn’t close account automatically" = "Couldn’t close account automatically";
 
-/* Message to show while media data source is finding the number of items available. */
-"Counting media items..." = "Counting media items...";
-
 /* Period Stats 'Countries' header */
 "Countries" = "Countries";
 
@@ -2308,9 +2244,6 @@ Example: Reply to Pamela Nguyen */
 
 /* Register Domain - Address information field Country Code */
 "Country Code" = "Country Code";
-
-/* Title of a section on the debug screen that shows a list of actions related to crash logging */
-"Crash Logging" = "Crash Logging";
 
 /* Label for switch to turn on/off sending crashes info */
 "Crash reports" = "Crash reports";
@@ -2363,9 +2296,6 @@ Example: Reply to Pamela Nguyen */
 
 /* Create New header text */
 "Create New" = "Create New";
-
-/* Title for the site creation flow. */
-"Create New Site" = "Create New Site";
 
 /* Button for selecting the current page template.
    Button title, encourages users to create their first page on their blog.
@@ -2621,29 +2551,57 @@ Example: Reply to Pamela Nguyen */
 /* Navigates to debug menu only available in development builds */
 "Debug" = "Debug";
 
-/* Debug settings title */
-"Debug Settings" = "Debug Settings";
+/* Debug menu item title */
+"debugMenu.analytics" = "Analytics";
 
 /* Feature flags menu item */
 "debugMenu.featureFlags" = "Feature Flags";
 
-/* General section title */
-"debugMenu.generalSectionTitle" = "General";
+/* Title of the screen that allows the user to change the Reader CSS URL for debug builds */
+"debugMenu.readerCellTitle" = "Reader CSS URL";
 
-/* Remote config params debug menu footer explaining the meaning of a cell with a checkmark. */
-"debugMenu.remoteConfig.footer" = "Overridden parameters are denoted by a checkmark.";
+/* Placeholder for the reader CSS URL */
+"debugMenu.readerDefaultURL" = "Default URL";
 
-/* Hint for overriding remote config params */
-"debugMenu.remoteConfig.hint" = "Override the chosen param by defining a new value here.";
+/* Hint for the reader CSS URL field */
+"debugMenu.readerHit" = "Add a custom CSS URL here to be loaded in Reader. If you're running Calypso locally this can be something like: http://192.168.15.23:3000/calypso/reader-mobile.css";
 
-/* Placeholder for overriding remote config params */
-"debugMenu.remoteConfig.placeholder" = "No remote or default value";
+/* Remote Config Debug Menu section title */
+"debugMenu.remoteConfig.currentValue" = "Current Value";
 
-/* Remote Config debug menu title */
+/* Remote Config Debug Menu section title */
+"debugMenu.remoteConfig.defaultValue" = "Default Value";
+
+/* Remote Config Debug Menu section title */
+"debugMenu.remoteConfig.overridenValue" = "Remote Config";
+
+/* Remote Config Debug Menu section title */
+"debugMenu.remoteConfig.remoteConfigValue" = "Remote Config Value";
+
+/* Remote Config Debug Menu reset button title */
+"debugMenu.remoteConfig.reset" = "Reset";
+
+/* Remote Config Debug Menu screen title
+   Remote Config debug menu title */
 "debugMenu.remoteConfig.title" = "Remote Config";
 
 /* Remove current quick start tour menu item */
 "debugMenu.removeQuickStart" = "Remove Current Tour";
+
+/* Debug Menu section title */
+"debugMenu.section.logging" = "Logging";
+
+/* Debug Menu section title */
+"debugMenu.section.quickStart" = "Quick Start";
+
+/* Debug Menu section title */
+"debugMenu.section.settings" = "Settings";
+
+/* Title for debug menu screen */
+"debugMenu.title" = "Developer";
+
+/* Weekly Roundup debug menu item */
+"debugMenu.weeklyRoundup" = "Weekly Roundup";
 
 /* Only December needs to be translated */
 "December 17, 2017" = "December 17, 2017";
@@ -2665,9 +2623,6 @@ Example: Reply to Pamela Nguyen */
 /* Label for selecting the default post format
    Title for screen to select a default post format for a blog */
 "Default Post Format" = "Default Post Format";
-
-/* Placeholder for the reader CSS URL */
-"Default URL" = "Default URL";
 
 /* Discussion Settings: Posts Section */
 "Defaults for New Posts" = "Defaults for New Posts";
@@ -2805,7 +2760,6 @@ Example: Reply to Pamela Nguyen */
 /* Accessibility label for button to dismiss a bottom sheet
    Accessibility label for the transparent space above the login dialog which acts as a button to dismiss the dialog.
    Accessibility label for the transparent space above the signup dialog which acts as a button to dismiss the dialog.
-   Action to show on alert when view asset fails.
    Dismiss a view. Verb */
 "Dismiss" = "Dismiss";
 
@@ -2826,12 +2780,6 @@ Example: Reply to Pamela Nguyen */
 /* DIY site intent topic */
 "DIY" = "DIY";
 
-/* Accessibility label for other media items in the media collection view. The parameter is the creation date of the document. */
-"Document, %@" = "Document, %@";
-
-/* Accessibility label for other media items in the media collection view. The parameter is the filename file. */
-"Document: %@" = "Document: %@";
-
 /* Message shown when all tours have been completed */
 "Doesn't it feel good to cross things off a list?" = "Doesn't it feel good to cross things off a list?";
 
@@ -2844,9 +2792,6 @@ Example: Reply to Pamela Nguyen */
 /* Title for a menu action in the context menu on the Jetpack install card. */
 "domain.dashboard.card.menu.hide" = "Hide this";
 
-/* Search domain - Title for the Suggested domains screen */
-"domain.management.addDomain.search.title" = "Search for a domain";
-
 /* Domain management buy domain card button title */
 "domain.management.buy.card.button.title" = "Get Domain";
 
@@ -2858,6 +2803,9 @@ Example: Reply to Pamela Nguyen */
 
 /* The expired label of the domain card in All Domains screen. */
 "domain.management.card.expired.label" = "Expired";
+
+/* Label indicating that a domain name registration has no expiry date. */
+"domain.management.card.neverExpires.label" = "Never expires";
 
 /* The renews label of the domain card in All Domains screen. */
 "domain.management.card.renews.label" = "Renews";
@@ -2955,12 +2903,6 @@ Example: Reply to Pamela Nguyen */
 /* Noun. Title. Links to the Domains screen. */
 "Domains" = "Domains";
 
-/* Description for the first domain purchased with a free plan. */
-"Domains purchased on this site will redirect to %@" = "Domains purchased on this site will redirect to %@";
-
-/* Description for the first domain purchased with a free plan. */
-"Domains purchased on this site will redirect users to " = "Domains purchased on this site will redirect users to ";
-
 /* Title for the checkout screen. */
 "domains.checkout.title" = "Checkout";
 
@@ -2978,6 +2920,15 @@ Example: Reply to Pamela Nguyen */
 
 /* Title of screen where user chooses a site to connect to their selected domain */
 "domains.sitePicker.title" = "Choose Site";
+
+/* Help button */
+"domainSelection.helpButton.title" = "Help";
+
+/* Description for the first domain purchased with a free plan. */
+"domainSelection.redirectPrompt.title" = "Domains purchased on this site will redirect to %1$@";
+
+/* Search domain - Title for the Suggested domains screen */
+"domainSelection.search.title" = "Search domains";
 
 /* Label for button to log in using your site address. The underscores _..._ denote underline */
 "Don't have an account? _Sign up_" = "Don't have an account? _Sign up_";
@@ -3151,12 +3102,8 @@ Example: Reply to Pamela Nguyen */
 /* Editing GIF alert default action button.
    Edits a Comment
    Edits the comment
-   User action to edit media details.
-   Verb, edit a comment */
+   User action to edit media details. */
 "Edit" = "Edit";
-
-/* Button that displays the media editor to the user */
-"Edit %@" = "Edit %@";
 
 /* Title for the edit more button section */
 "Edit \"More\" button" = "Edit \"More\" button";
@@ -3219,9 +3166,6 @@ Example: Reply to Pamela Nguyen */
 
 /* Title for the editor settings section */
 "Editor" = "Editor";
-
-/* Edit Action Spoken hint. */
-"Edits a comment" = "Edits a comment";
 
 /* VoiceOver accessibility hint, informing the user the button can be used to Edit the Comment. */
 "Edits the comment." = "Edits the comment.";
@@ -3307,7 +3251,6 @@ Example: Reply to Pamela Nguyen */
 "Empty URL" = "Empty URL";
 
 /* Button title for the enable site notifications action.
-   Button title to enable notifications for new comments
    Title of button to enable publicize. */
 "Enable" = "Enable";
 
@@ -3355,9 +3298,6 @@ Example: Reply to Pamela Nguyen */
 
 /* Message explaining why the user might enter a password. */
 "Enter a password to protect this post" = "Enter a password to protect this post";
-
-/* Secondary message shown when there are no domains that match the user entered text. */
-"Enter different words above and we'll look for an address that matches it." = "Enter different words above and we'll look for an address that matches it.";
 
 /* Accessibility Label for the enter full screen button on the comment reply text view */
 "Enter Full Screen" = "Enter Full Screen";
@@ -3521,7 +3461,6 @@ Example: Reply to Pamela Nguyen */
 "Example story title" = "Example story title";
 
 /* Placeholder for the site url textfield.
-   Provides a sample of what a domain name looks like.
    Site Address placeholder */
 "example.com" = "example.com";
 
@@ -3552,23 +3491,14 @@ Example: Reply to Pamela Nguyen */
 /* Screen reader hint (non-imperative) about what does the site menu area selector button do. */
 "Expands to select a different menu area" = "Expands to select a different menu area";
 
-/* Label indicating that a domain name registration has expired. */
-"Expired" = "Expired";
-
 /* Title for the error view when the user scanned an expired log in code */
 "Expired log in code" = "Expired log in code";
 
 /* Title. Indicates an expiration date. */
 "Expires on" = "Expires on";
 
-/* Label indicating the date on which a domain name registration will expire. The %@ placeholder will be replaced with a date at runtime. */
-"Expires on %@" = "Expires on %@";
-
 /* Placeholder text for the tagline of a site */
 "Explain what this site is about." = "Explain what this site is about.";
-
-/* Title of a Quick Start Tour */
-"Explore plans" = "Explore plans";
 
 /* Export Content confirmation action title
    Label for selecting the Export Content Settings item */
@@ -3585,6 +3515,15 @@ Example: Reply to Pamela Nguyen */
 
 /* Section title for the external table section in the blog details screen */
 "External" = "External";
+
+/* Title for confirmation navigation bar button item */
+"externalMediaPicker.add" = "Add";
+
+/* Bottom toolbar title in the selection mode */
+"externalMediaPicker.toolbarSelectItemsPrompt" = "Select Images";
+
+/* Bottom toolbar title in the selection mode */
+"externalMediaPicker.toolbarViewSelected" = "View Selected (%@)";
 
 /* Status for Media object that is failed upload or export.
    The action failed */
@@ -3673,6 +3612,9 @@ Example: Reply to Pamela Nguyen */
 
 /* Label for the file type (.JPG, .PNG, etc) for a media asset (image / video) */
 "File type" = "File type";
+
+/* No comment provided by engineer. */
+"File type not supported as a media file." = "File type not supported as a media file.";
 
 /* Film & Television site intent topic */
 "Film & Television" = "Film & Television";
@@ -3764,8 +3706,7 @@ Example: Reply to Pamela Nguyen */
    Label for number of followers. */
 "Followers" = "Followers";
 
-/* Accessibility label for following buttons.
-   Title of the Following Reader tab
+/* Title of the Following Reader tab
    User is following the blog.
    Verb. Button title. The user is following a blog. */
 "Following" = "Following";
@@ -3782,9 +3723,6 @@ Example: Reply to Pamela Nguyen */
 /* Filters Follows Notifications */
 "Follows" = "Follows";
 
-/* Spoken hint describing action for unselected following buttons. */
-"Follows blog" = "Follows blog";
-
 /* VoiceOver accessibility hint, informing the user the button can be used to follow a blog. */
 "Follows the blog." = "Follows the blog.";
 
@@ -3793,6 +3731,9 @@ Example: Reply to Pamela Nguyen */
 
 /* No comment provided by engineer. */
 "Font Size" = "Font Size";
+
+/* translators: %1$s: Font size name e.g. Small */
+"Font Size, %1$s" = "Font Size, %1$s";
 
 /* Food site intent topic */
 "Food" = "Food";
@@ -3817,9 +3758,6 @@ Example: Reply to Pamela Nguyen */
 
 /* Browse free themes selection title */
 "Free" = "Free";
-
-/* Label shown for domains that will be free for the first year due to the user having a premium plan with available domain credit. */
-"Free for the first year " = "Free for the first year ";
 
 /* One of the options when selecting More in the Post Editor's format bar */
 "Free GIF Library" = "Free GIF Library";
@@ -3939,9 +3877,6 @@ Example: Reply to Pamela Nguyen */
 /* Name of the Quick Start list that guides users through a few tasks to explore the WordPress app. */
 "Get to know the WordPress app" = "Get to know the WordPress app";
 
-/* Title of the card that starts the purchase of the first redirected domain in the Domains Dashboard. */
-"Get your domain" = "Get your domain";
-
 /* Title of the second alert preparing users to grant permission for us to send them push notifications. */
 "Get your notifications faster" = "Get your notifications faster";
 
@@ -3968,9 +3903,6 @@ Example: Reply to Pamela Nguyen */
 
 /* Option to select the Gmail app when logging in with magic links */
 "Gmail" = "Gmail";
-
-/* No comment provided by engineer. */
-"Go back" = "Go back";
 
 /* Button title. Tapping lets the user view the sites they follow. */
 "Go to Following" = "Go to Following";
@@ -4067,17 +3999,11 @@ Example: Reply to Pamela Nguyen */
 /* This value is used to set the accessibility hint text for viewing the user's notifications. */
 "Guides you through the process of checking your notifications." = "Guides you through the process of checking your notifications.";
 
-/* This value is used to set the accessibility hint text for choosing a theme for the user's site. */
-"Guides you through the process of choosing a theme for your site." = "Guides you through the process of choosing a theme for your site.";
-
 /* This value is used to set the accessibility hint text for creating a new page for the user's site. */
 "Guides you through the process of creating a new page for your site." = "Guides you through the process of creating a new page for your site.";
 
 /* This value is used to set the accessibility hint text for creating the user's site. */
 "Guides you through the process of creating your site." = "Guides you through the process of creating your site.";
-
-/* This value is used to set the accessibility hint text for exploring plans on the user's site. */
-"Guides you through the process of exploring plans for your site." = "Guides you through the process of exploring plans for your site.";
 
 /* This value is used to set the accessibility hint text for following the sites of other users. */
 "Guides you through the process of following other sites." = "Guides you through the process of following other sites.";
@@ -4093,9 +4019,6 @@ Example: Reply to Pamela Nguyen */
 
 /* This value is used to set the accessibility hint text for setting the site title. */
 "Guides you through the process of setting a title for your site." = "Guides you through the process of setting a title for your site.";
-
-/* This value is used to set the accessibility hint text for setting up the user's site. */
-"Guides you through the process of setting up your site." = "Guides you through the process of setting up your site.";
 
 /* This value is used to set the accessibility hint text for uploading a site icon. */
 "Guides you through the process of uploading an icon for your site." = "Guides you through the process of uploading an icon for your site.";
@@ -4253,9 +4176,6 @@ Example: Reply to Pamela Nguyen */
 /* Message to show when site icon update failed */
 "Icon update failed" = "Icon update failed";
 
-/* Message explaining that they will need to install Jetpack on one of their sites. */
-"If you already have a site, you’ll need to install the free Jetpack plugin and connect it to your WordPress.com account." = "If you already have a site, you’ll need to install the free Jetpack plugin and connect it to your WordPress.com account.";
-
 /* The instructions text about not being able to find the magic link email. */
 "If you can’t find the email, please check your junk or spam email folder" = "If you can’t find the email, please check your junk or spam email folder";
 
@@ -4283,9 +4203,6 @@ Example: Reply to Pamela Nguyen */
 /* Displays the ignored threats */
 "Ignored" = "Ignored";
 
-/* Label displayed on image media items. */
-"image" = "image";
-
 /* Hint for image alt on image settings. */
 "Image Alt" = "Image Alt";
 
@@ -4310,9 +4227,6 @@ Example: Reply to Pamela Nguyen */
 /* Hint for image title on image settings. */
 "Image title" = "Image title";
 
-/* Accessibility label for image thumbnails in the media collection view. The parameter is the creation date of the image. */
-"Image, %@" = "Image, %@";
-
 /* Undated post time label */
 "Immediately" = "Immediately";
 
@@ -4330,6 +4244,36 @@ Example: Reply to Pamela Nguyen */
 
 /* The app successfully enabled notifications for the subscription */
 "In-app notifications enabled" = "In-app notifications enabled";
+
+/* The message for the first feedback alert */
+"in-app.feedback.alert.message" = "Are you enjoying the Jetpack mobile app?";
+
+/* The 'no' button title for the first feedback alert */
+"in-app.feedback.alert.no" = "Not really";
+
+/* The title for the first feedback alert */
+"in-app.feedback.alert.title" = "Your feedback matters";
+
+/* The 'yes' button title for the first feedback alert */
+"in-app.feedback.alert.yes" = "It's great";
+
+/* No comment provided by engineer. */
+"in-app.feedback.confirmation.notice.message" = "Thanks for helping us improve the app.";
+
+/* No comment provided by engineer. */
+"in-app.feedback.confirmation.notice.title" = "Feedback sent";
+
+/* The message for the negative feedback alert */
+"in-app.feedback.negative.alert.message" = "Would you like to share more details with us?";
+
+/* The 'no' button for the negative feedback alert */
+"in-app.feedback.negative.alert.no" = "Not now";
+
+/* The title for the negative feedback alert */
+"in-app.feedback.negative.alert.title" = "Help us improve";
+
+/* The 'yes' button for the negative feedback alert */
+"in-app.feedback.negative.alert.yes" = "Sure";
 
 /* Describes a status of a plugin */
 "Inactive" = "Inactive";
@@ -4933,9 +4877,6 @@ Please install the %3$@ to use the app with this site.";
 /* Body text of the first alert preparing users to grant permission for us to send them push notifications. */
 "Learn about new comments, likes, and follows in seconds." = "Learn about new comments, likes, and follows in seconds.";
 
-/* Description of a Quick Start Tour */
-"Learn about the marketing and SEO tools in our paid plans." = "Learn about the marketing and SEO tools in our paid plans.";
-
 /* A button title.
    Link to cookie policy
    Menu title to show the prompts feature introduction modal.
@@ -5084,12 +5025,6 @@ Please install the %3$@ to use the app with this site.";
 /* Displayed while a comment is being loaded. */
 "Loading comment..." = "Loading comment...";
 
-/* Shown while the app waits for the domain suggestions web service to return during the site creation process. */
-"Loading domains" = "Loading domains";
-
-/* Phrase to show when the user has searched for GIFs and they are being loaded. */
-"Loading GIFs..." = "Loading GIFs...";
-
 /* Displayed while a call is loading the history. */
 "Loading history..." = "Loading history...";
 
@@ -5101,9 +5036,6 @@ Please install the %3$@ to use the app with this site.";
 
 /* Text displayed while loading site People. */
 "Loading People..." = "Loading People...";
-
-/* Phrase to show when the user has searched for images and they are being loaded. */
-"Loading Photos..." = "Loading Photos...";
 
 /* Text displayed while loading plans details */
 "Loading Plan..." = "Loading Plan...";
@@ -5134,9 +5066,6 @@ Please install the %3$@ to use the app with this site.";
 
 /* Loading message shown while the Unsupported Block Editor is loading. */
 "Loading the block editor." = "Loading the block editor.";
-
-/* Shown while the app waits for the username suggestions web service to return during the site creation process. */
-"Loading usernames" = "Loading usernames";
 
 /* Loading tags
    Loading tags.
@@ -5326,9 +5255,6 @@ Please install the %3$@ to use the app with this site.";
    Title of the 'Me' tab - used for spotlight indexing on iOS. */
 "Me" = "Me";
 
-/* Products header text in Me Screen. */
-"me.products.header" = "Products";
-
 /* Noun. Title. Links to the blog's Media library.
    The menu item to select during a guided tour.
    Title for the media section in site settings screen
@@ -5342,27 +5268,17 @@ Please install the %3$@ to use the app with this site.";
 /* Label for size of media cache in the app. */
 "Media Cache Size" = "Media Cache Size";
 
-/* Title for alert when access to media capture is not granted */
-"Media Capture" = "Media Capture";
-
 /* Error message to show to users when trying to upload a media object with no local file associated */
 "Media doesn't have an associated file to upload." = "Media doesn't have an associated file to upload.";
 
 /* Error message to show to users when trying to upload a media object with file size is larger than the max file size allowed in the site */
 "Media filesize (%@) is too large to upload. Maximum allowed is %@" = "Media filesize (%1$@) is too large to upload. Maximum allowed is %2$@";
 
-/* Title for alert when a generic error happened when loading media
-   Title for alert when access to the media library is not granted by the user */
-"Media Library" = "Media Library";
-
 /* translators: %s: block title e.g: \"Paragraph\". */
 "Media options" = "Media options";
 
 /* Title for action sheet with media options. */
 "Media Options" = "Media Options";
-
-/* Alert title when there is issues loading an asset to preview. */
-"Media preview failed." = "Media preview failed.";
 
 /* Media Settings Title
    User action to edit media settings. */
@@ -5430,6 +5346,21 @@ Please install the %3$@ to use the app with this site.";
 
 /* Text displayed in HUD after successfully deleting a media item */
 "mediaLibrary.deletionSuccessMessage" = "Deleted!";
+
+/* The name of the media filter */
+"mediaLibrary.filterAll" = "All";
+
+/* The name of the media filter */
+"mediaLibrary.filterAudio" = "Audio";
+
+/* The name of the media filter */
+"mediaLibrary.filterDocuments" = "Documents";
+
+/* The name of the media filter */
+"mediaLibrary.filterImages" = "Images";
+
+/* The name of the media filter */
+"mediaLibrary.filterVideos" = "Videos";
 
 /* User action to delete un-uploaded media. */
 "mediaLibrary.retryOptionsAlert.delete" = "Delete";
@@ -5508,6 +5439,9 @@ Please install the %3$@ to use the app with this site.";
 
 /* The name of the action in the context menu */
 "mediaPicker.takeVideo" = "Take Video";
+
+/* Navigation title for media preview. Example: 1 of 3 */
+"mediaPreview.NofM" = "%1$@ of %2$@";
 
 /* Max image size in pixels (e.g. 300x300px) */
 "mediaSizeSlider.valueFormat" = "%1$d × %2$d px";
@@ -5817,6 +5751,33 @@ Please install the %3$@ to use the app with this site.";
 /* Message title for when a user has no sites. */
 "mySite.noSites.title" = "You don't have any sites";
 
+/* Menu title for the add site option */
+"mySite.siteActions.addSite" = "Add site";
+
+/* Button that reveals more site actions */
+"mySite.siteActions.button" = "Site Actions";
+
+/* Accessibility hint for button used to show more site actions */
+"mySite.siteActions.hint" = "Tap to show more site actions";
+
+/* Menu title for the personalize home option */
+"mySite.siteActions.personalizeHome" = "Personalize home";
+
+/* Menu title for the share site option */
+"mySite.siteActions.shareSite" = "Share site";
+
+/* Menu title for the change site icon option */
+"mySite.siteActions.siteIcon" = "Change site icon";
+
+/* Menu title for the change site title option */
+"mySite.siteActions.siteTitle" = "Change site title";
+
+/* Menu title for the switch site option */
+"mySite.siteActions.switchSite" = "Switch site";
+
+/* Menu title for the visit site option */
+"mySite.siteActions.visitSite" = "Visit site";
+
 /* Accessibility label for the Email text field.
    Header for a comment author's name, shown when editing a comment.
    Name text field placeholder */
@@ -5859,8 +5820,11 @@ Please install the %3$@ to use the app with this site.";
 /* Describes a status of a plugin */
 "Needs Update" = "Needs Update";
 
-/* Label indicating that a domain name registration has no expiry date. */
-"Never expires" = "Never expires";
+/* No comment provided by engineer. */
+"Network connection lost, working offline" = "Network connection lost, working offline";
+
+/* No comment provided by engineer. */
+"Network connection re-established" = "Network connection re-established";
 
 /* No comment provided by engineer. */
 "NEW" = "NEW";
@@ -5910,9 +5874,6 @@ Please install the %3$@ to use the app with this site.";
    Title of a button.
    Title of a button. The text should be capitalized. */
 "Next" = "Next";
-
-/* Accessibility label for the button which shows the previous month in the monthly calendar view */
-"Next month" = "Next month";
 
 /* Accessibility label for the next notification button */
 "Next notification" = "Next notification";
@@ -6033,9 +5994,6 @@ Please install the %3$@ to use the app with this site.";
 /* List Editor Empty State Message */
 "No Items" = "No Items";
 
-/* Title when users have no Jetpack sites. */
-"No Jetpack sites found" = "No Jetpack sites found";
-
 /* Displayed in the Notifications Tab as a title, when the Likes Filter shows no notifications */
 "No likes yet" = "No likes yet";
 
@@ -6045,9 +6003,7 @@ Please install the %3$@ to use the app with this site.";
 /* Title for the view when there aren't any Activities to display in the Activity Log for a given filter. */
 "No matching events found." = "No matching events found.";
 
-/* Message displayed when no results are returned from a media library search. Should match Calypso.
-   Phrase to show when the user search for images but there are no result to show.
-   Phrase to show when the user searches for GIFs but there are no result to show. */
+/* Message displayed when no results are returned from a media library search. Should match Calypso. */
 "No media matching your search" = "No media matching your search";
 
 /* Menus selection title for setting a location to not use a menu. */
@@ -6100,9 +6056,6 @@ Please install the %3$@ to use the app with this site.";
 
 /* missing preview URL for blog post preview */
 "No Preview URL available" = "No Preview URL available";
-
-/* String to display in place of the site address, in case it was not retrieved from the backend. */
-"No primary site address found" = "No primary site address found";
 
 /* Title displayed when there are no blogging prompts to display. */
 "No prompts yet" = "No prompts yet";
@@ -6162,9 +6115,6 @@ Please install the %3$@ to use the app with this site.";
 /* Error message to show to users when trying to upload a media object with file size is larger than the available site disk quota */
 "Not enough space to upload" = "Not enough space to upload";
 
-/* Accessibility label for unselected following buttons. */
-"Not following" = "Not following";
-
 /* Button label for denying our request to allow push notifications
    Not now button title shown in alert preparing users to grant permission for us to send them push notifications.
    Phrase displayed to dismiss a quick start tour suggestion. */
@@ -6200,9 +6150,6 @@ Please install the %3$@ to use the app with this site.";
 
 /* A message title */
 "Nothing liked yet" = "Nothing liked yet";
-
-/* Default message for empty media picker */
-"Nothing to show" = "Nothing to show";
 
 /* Notifications Details Accessibility Identifier */
 "Notification Details Table" = "Notification Details Table";
@@ -6269,9 +6216,6 @@ Please install the %3$@ to use the app with this site.";
 /* Discoverability title for numbered list keyboard shortcut. */
 "Numbered List" = "Numbered List";
 
-/* Word separating the current index from the total amount. I.e.: 7 of 9 */
-"of" = "of";
-
 /* Disabled */
 "Off" = "Off";
 
@@ -6284,7 +6228,6 @@ Please install the %3$@ to use the app with this site.";
    Alert dismissal title
    Button title. Acknowledges a prompt.
    Button title. An acknowledgement of the message displayed in a prompt.
-   Confirmation of action
    Default action
    Dismisses the alert
    Marks all notifications as read.
@@ -6294,7 +6237,6 @@ Please install the %3$@ to use the app with this site.";
    Ok button for dismissing alert helping users understand their site address
    OK button title for the warning shown to the user when the app realizes there should be an auth token but there isn't one.
    OK Button title shown in alert informing users about the Reader Save for Later feature.
-   OK button to close the informative dialog on Gutenberg editor
    Submit button on prompt for user information.
    Title of a button that dismisses a prompt
    Title of an OK button. Pressing the button acknowledges and dismisses a prompt.
@@ -6362,9 +6304,6 @@ Please install the %3$@ to use the app with this site.";
 
 /* Opens iOS's Device Settings for WordPress App */
 "Open Device Settings" = "Open Device Settings";
-
-/* Editor button to swich the media picker from quick mode to full picker */
-"Open full media picker" = "Open full media picker";
 
 /* Label for the description of openening a link using a new window */
 "Open in a new Window/Tab" = "Open in a new Window/Tab";
@@ -6451,9 +6390,6 @@ Please install the %3$@ to use the app with this site.";
    Link to About section (contains info about the app)
    Title of Stats section that shows referrer traffic from other sources. */
 "Other" = "Other";
-
-/* Label displayed on media items that are not video, image, or audio. */
-"other" = "other";
 
 /* Accessibility label for selecting an image or video from other applications on formatting toolbar.
    Menu option used for adding media from other applications. */
@@ -6683,21 +6619,18 @@ Please install the %3$@ to use the app with this site.";
 /* Photography site intent topic */
 "Photography" = "Photography";
 
-/* Subtitle for placeholder in Free Photos. The company name 'Pexels' should always be written as it is. */
-"Photos provided by Pexels" = "Photos provided by Pexels";
-
 /* Title for selecting a new username in the site creation flow. */
 "Pick username" = "Pick username";
 
 /* Caption for the recommended sections in site designs. */
 "PICKED FOR YOU" = "PICKED FOR YOU";
 
-/* The item to select during a guided tour. */
-"Plan" = "Plan";
-
 /* Action title. Noun. Links to a blog's Plans screen.
    Title for the plan selector */
 "Plans" = "Plans";
+
+/* Title for the plan selection view */
+"planSelection.title" = "Plans";
 
 /* User action to play a video on the editor. */
 "Play video" = "Play video";
@@ -7034,9 +6967,6 @@ Please install the %3$@ to use the app with this site.";
 /* Label for the preview post button. Tapping displays the post as it appears on the web. */
 "posts.preview.actionTitle" = "Preview";
 
-/* Label for an option that moves a publishes a post immediately */
-"posts.publish.actionTitle" = "Publish now";
-
 /* Retry uploading the post. */
 "posts.retry.actionTitle" = "Retry";
 
@@ -7115,9 +7045,6 @@ Please install the %3$@ to use the app with this site.";
 /* Menu option for filtering posts by me */
 "postsList.postsByMe" = "Posts by me";
 
-/* Subtitle for placeholder in Tenor picker. `The company name 'Tenor' should always be written as it is. */
-"Powered by Tenor" = "Powered by Tenor";
-
 /* Browse premium themes selection title */
 "Premium" = "Premium";
 
@@ -7195,9 +7122,6 @@ Tapping on this row allows the user to edit the sharing message. */
    Title for screen to preview a static content. */
 "Preview" = "Preview";
 
-/* Action for Media Picker to preview the selected media items. The argument in the string represents the number of elements (as numeric digits) selected */
-"Preview %@" = "Preview %@";
-
 /* Title for web preview device switching button */
 "Preview Device" = "Preview Device";
 
@@ -7213,9 +7137,6 @@ Tapping on this row allows the user to edit the sharing message. */
 /* Description of a Quick Start Tour */
 "Preview your site to see what your visitors will see." = "Preview your site to see what your visitors will see.";
 
-/* Accessibility label for the button which shows the previous month in the monthly calendar view */
-"Previous month" = "Previous month";
-
 /* Accessibility label for the previous notification button */
 "Previous notification" = "Previous notification";
 
@@ -7225,9 +7146,6 @@ Tapping on this row allows the user to edit the sharing message. */
 /* Primary Site Picker's Title
    Primary Web Site */
 "Primary Site" = "Primary Site";
-
-/* Primary site address label, used in the site address section of the Domains Dashboard. */
-"Primary site address" = "Primary site address";
 
 /* Label for the privacy setting
    Privacy settings section header */
@@ -7288,12 +7206,6 @@ Tapping on this row allows the user to edit the sharing message. */
 /* Title for a tappable string that opens the reader with a prompts tag */
 "prompts.card.viewprompts.title" = "View all responses";
 
-/* Subtitle of the notification when prompts are hidden from the dashboard card */
-"prompts.notification.removed.subtitle" = "Visit Site Settings to turn back on";
-
-/* Title of the notification when prompts are hidden from the dashboard card */
-"prompts.notification.removed.title" = "Blogging Prompts hidden";
-
 /* Privacy setting for posts set to 'Public' (default). Should be the same as in core WP. */
 "Public" = "Public";
 
@@ -7345,9 +7257,6 @@ Tapping on this row allows the user to edit the sharing message. */
 /* A short message that informs the user a post is being published to the server from the share extension. */
 "Publishing post..." = "Publishing post...";
 
-/* Label that describes in which blog the user is publishing to */
-"Publishing To" = "Publishing To";
-
 /* Text displayed in HUD while a post is being published. */
 "Publishing..." = "Publishing...";
 
@@ -7372,9 +7281,6 @@ Tapping on this row allows the user to edit the sharing message. */
 /* Title for the success view when the user has successfully logged in */
 "qrLoginVerifyAuthorization.completedInstructions.title" = "You're logged in!";
 
-/* The menu item to select during a guided tour. */
-"Quick Start" = "Quick Start";
-
 /* The quick tour actions item to select during a guided tour. */
 "quickStart.moreMenu" = "More";
 
@@ -7396,12 +7302,8 @@ Tapping on this row allows the user to edit the sharing message. */
    The accessibility value of the reader tab.
    The default title of the Reader
    The menu item to select during a guided tour.
-   Title of the 'Reader' tab - used for spotlight indexing on iOS.
-   Title of the Reader section of the debug screen used in debug builds of the app */
+   Title of the 'Reader' tab - used for spotlight indexing on iOS. */
 "Reader" = "Reader";
-
-/* Title of the screen that allows the user to change the Reader CSS URL for debug builds */
-"Reader CSS URL" = "Reader CSS URL";
 
 /* Accessibility hint to inform that the author section can be tapped to see posts from the site. */
 "reader.detail.header.authorInfo.a11y.hint" = "Views posts from the site";
@@ -7663,8 +7565,7 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 /* Title of the completion screen of the Blogging Reminders Settings screen when the reminders are removed. */
 "Reminders removed" = "Reminders removed";
 
-/* Add asset to media picker list
-   Alert button to confirm a plugin to be removed
+/* Alert button to confirm a plugin to be removed
    Button label when removing a blog
    Label for the Remove Feature Image icon. Tapping will show a confirmation screen for removing the feature image from the post.
    Remove Action
@@ -7742,9 +7643,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 
 /* Explanation of what will happen if the user confirms this alert. */
 "Removing Next Steps will hide all tours on this site. This action cannot be undone." = "Removing Next Steps will hide all tours on this site. This action cannot be undone.";
-
-/* Label indicating the date on which a domain name registration will be renewed. The %@ placeholder will be replaced with a date at runtime. */
-"Renews on %@" = "Renews on %@";
 
 /* No comment provided by engineer. */
 "Replace audio" = "Replace audio";
@@ -7878,7 +7776,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
    Retry. Verb – retry a failed media upload.
    The Jetpack view button title used when an error occurred
    Title for accessory view in the empty state table view cell in the Verticals step of Enhanced Site Creation
-   title for action that tries to connect to the reader after a loading error.
    User action to retry media upload. */
 "Retry" = "Retry";
 
@@ -7925,6 +7822,9 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 
 /* Button label to open web page in Safari */
 "Safari" = "Safari";
+
+/* Title of a row displayed on the debug screen used to configure the sandbox store use in the App. */
+"Sandbox Store" = "Sandbox Store";
 
 /* Menus save button title
    Save Action
@@ -8076,12 +7976,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 /* Period Stats 'Search Terms' header */
 "Search Terms" = "Search Terms";
 
-/* Title for placeholder in Free Photos */
-"Search to find free photos to add to your Media Library!" = "Search to find free photos to add to your Media Library!";
-
-/* Title for placeholder in Tenor picker */
-"Search to find GIFs to add to your Media Library!" = "Search to find GIFs to add to your Media Library!";
-
 /* Placeholder text for the Reader search feature. */
 "Search WordPress" = "Search WordPress";
 
@@ -8103,9 +7997,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 /* Caption displayed in promotional screens shown during the login flow. */
 "See comments and notifications in real time." = "See comments and notifications in real time.";
 
-/* Action button linking to instructions for installing Jetpack.Presented when logging in with a site address that does not have a valid Jetpack installation */
-"See Instructions" = "See Instructions";
-
 /* Select action on the app extension category picker screen. Saves the selected categories for the post.
    Select action on the app extension post type picker screen. Saves the selected post type for the post. */
 "Select" = "Select";
@@ -8120,22 +8011,13 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 "Select %@ to create a new post" = "Select %@ to create a new post";
 
 /* A step in a guided tour for quick start. %@ will be the name of the item to select. */
-"Select %@ to discover new themes" = "Select %@ to discover new themes";
-
-/* A step in a guided tour for quick start. %@ will be the name of the item to select. */
 "Select %@ to find other sites." = "Select %@ to find other sites.";
 
 /* A step in a guided tour for quick start. %@ will be the name of the item to select. */
 "Select %@ to see how your site is performing." = "Select %@ to see how your site is performing.";
 
 /* A step in a guided tour for quick start. %@ will be the name of the item to select. */
-"Select %@ to see your checklist" = "Select %@ to see your checklist";
-
-/* A step in a guided tour for quick start. %@ will be the name of the item to select. */
 "Select %@ to see your current library." = "Select %@ to see your current library.";
-
-/* A step in a guided tour for quick start. %@ will be the name of the item to select. */
-"Select %@ to see your current plan and other available plans." = "Select %@ to see your current plan and other available plans.";
 
 /* A step in a guided tour for quick start. %@ will be the name of the item to select. */
 "Select %@ to see your page list." = "Select %@ to see your page list.";
@@ -8169,9 +8051,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 
 /* Register domain - Title for the Choose domain button of Suggested domains screen */
 "Select domain" = "Select domain";
-
-/* Accessibility hint for actions when displaying media items. */
-"Select media." = "Select media.";
 
 /* Accessibility label for selecting paragraph style button on formatting toolbar. */
 "Select paragraph style" = "Select paragraph style";
@@ -8536,9 +8415,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 /* Describes a site redirect domain */
 "Site Redirect" = "Site Redirect";
 
-/* Prologue title label, the \n force splits it into 2 lines. */
-"Site security and performance\nfrom your pocket" = "Site security and performance\nfrom your pocket";
-
 /* Noun. Title. Links to the blog's Settings screen. */
 "Site Settings" = "Site Settings";
 
@@ -8573,6 +8449,30 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 /* Site name that is placed in the tooltip view. */
 "site.creation.domain.tooltip.site.name" = "YourSiteName.com";
 
+/* Header of the secondary domains list section in the Domains Dashboard. %1$@ is the name of the site. */
+"site.domains.domainSection.title" = "Other domains for %1$@";
+
+/* A section title which displays a row with a free WP.com domain */
+"site.domains.freeDomainSection.title" = "Your Free WordPress.com domain";
+
+/* Description for the first domain purchased with a paid plan. */
+"site.domains.freeDomainWithPaidPlan.description" = "Get a free one-year domain registration or transfer with any annual paid plan.";
+
+/* Title of the card that starts the purchase of the first domain with a paid plan. */
+"site.domains.freeDomainWithPaidPlan.title" = "Get your domain";
+
+/* Footer of the primary site section in the Domains Dashboard. */
+"site.domains.primaryDomain" = "Your primary site address is what visitors will see in their address bar when visiting your website.";
+
+/* Primary domain label, used in the site address section of the Domains Dashboard. */
+"site.domains.primaryDomain.title" = "Primary domain";
+
+/* Title for a button that opens domain purchasing flow. */
+"site.domains.purchaseDirectly.buttons.title" = "Just search for a domain";
+
+/* Title for a button that opens plan and domain purchasing flow. */
+"site.domains.purchaseWithPlan.buttons.title" = "Upgrade to a plan";
+
 /* Back button title shown in Site Creation flow to come back from Plan selection to Domain selection */
 "siteCreation.domain.backButton.title" = "Domains";
 
@@ -8602,6 +8502,9 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 
 /* Accessibility label for media item preview for user's viewing an item in their media library */
 "siteMediaItem.contentViewAccessibilityLabel" = "Preview media";
+
+/* Title for confirmation navigation bar button item */
+"siteMediaPicker.add" = "Add";
 
 /* Button selection media in media picker */
 "siteMediaPicker.deselect" = "Deselect";
@@ -8725,9 +8628,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 
 /* Title shown on the dashboard when it fails to load */
 "Some data wasn't loaded" = "Some data wasn't loaded";
-
-/* Confirms with the user if they save the post all media that failed to upload will be removed from it. */
-"Some media uploads failed. This action will remove all failed media from the post.\nSave anyway?" = "Some media uploads failed. This action will remove all failed media from the post.\nSave anyway?";
 
 /* Title for a label that appears when the scan failed
    Title for the error view when the scan start has failed */
@@ -8862,6 +8762,9 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 /* The loading view title displayed when an error occurred */
 "Stats not loaded" = "Stats not loaded";
 
+/* Title of Traffic stats tab. */
+"stats.dashboard.tab.traffic" = "Traffic";
+
 /* Accessibility label used for distinguishing Views and Visitors in the Stats → Insights Views Visitors Line chart. */
 "stats.insights.accessibility.label.viewsVisitorsLastDays" = "Last 7-days";
 
@@ -8988,6 +8891,12 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 /* Dismiss the AlertView */
 "stockPhotos.strings.dismiss" = "Dismiss";
 
+/* Subtitle for placeholder in Free Photos. The company name 'Pexels' should always be written as it is. */
+"stockPhotos.subtitle" = "Photos provided by Pexels";
+
+/* Title for placeholder in Free Photos */
+"stockPhotos.title" = "Search to find free photos to add to your Media Library!";
+
 /* User action to stop upload. */
 "Stop upload" = "Stop upload";
 
@@ -9011,6 +8920,12 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 
 /* Submit for review button label (saving content, ex: Post, Page, Comment). */
 "Submit for Review" = "Submit for Review";
+
+/* The button title for the Submit button in the In-App Feedback screen */
+"submit.feedback.submit.button" = "Submit";
+
+/* The title for the the In-App Feedback screen */
+"submit.feedback.title" = "Feedback";
 
 /* Text displayed in HUD while a post is being submitted for review. */
 "Submitting for Review..." = "Submitting for Review...";
@@ -9152,9 +9067,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 /* Support email label. */
 "support.row.email.title" = "Email";
 
-/* Option in Support view to view the Forums. */
-"support.row.forums.title" = "WordPress Forums";
-
 /* Option in Support view to launch the Help Center. */
 "support.row.helpCenter.title" = "WordPress Help Center";
 
@@ -9191,8 +9103,7 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 /* View title for Help & Support page. */
 "support.title" = "Help";
 
-/* Button used to switch site
-   Title for back button that leads to the site picker screen. */
+/* Title for back button that leads to the site picker screen. */
 "Switch Site" = "Switch Site";
 
 /* Switches from the classic editor to block editor. */
@@ -9286,9 +9197,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 /* No comment provided by engineer. */
 "Take a Video" = "Take a Video";
 
-/* Menu option for taking an image or video with the device's camera. */
-"Take Photo or Video" = "Take Photo or Video";
-
 /* A hint displayed in the Saved Posts section of the Reader. The '[bookmark-outline]' placeholder will be replaced by an icon at runtime – please leave that string intact. */
 "Tap [bookmark-outline] to save a post to your list." = "Tap [bookmark-outline] to save a post to your list.";
 
@@ -9353,9 +9261,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 /* Accessibility hint */
 "Tap to select the previous period" = "Tap to select the previous period";
 
-/* Accessibility hint for button used to switch site */
-"Tap to switch to another site, or add a new site" = "Tap to switch to another site, or add a new site";
-
 /* Accessibility hint for a button that opens a new view with more details. */
 "Tap to view more details." = "Tap to view more details.";
 
@@ -9382,6 +9287,9 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 
 /* Create site, step 1. Select type of site. Title */
 "Tell us what kind of site you'd like to make" = "Tell us what kind of site you'd like to make";
+
+/* Title for placeholder in Tenor picker */
+"tenor.welcomeMessage" = "Search to find GIFs to add to your Media Library!";
 
 /* The underlined title sentence */
 "Terms and Conditions" = "Terms and Conditions";
@@ -9452,9 +9360,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 /* Title for a threat that includes the file name of the file */
 "The file %1$@ contains a malicious code pattern" = "The file %1$@ contains a malicious code pattern";
 
-/* Message shown when a GIF failed to load while trying to add it to the Media library. */
-"The GIF could not be added to the Media Library." = "The GIF could not be added to the Media Library.";
-
 /* Description shown when a user logs in with Google but no matching WordPress.com account is found */
 "The Google account \"%@\" doesn't match any account on WordPress.com" = "The Google account \"%@\" doesn't match any account on WordPress.com";
 
@@ -9467,9 +9372,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 
 /* Message of error prompt shown when a user tries to perform an action without an internet connection. */
 "The internet connection appears to be offline." = "The internet connection appears to be offline.";
-
-/* Message shown when an asset failed to load while trying to add it to the Media library. */
-"The item could not be added to the Media Library." = "The item could not be added to the Media Library.";
 
 /* Accessibility hint for list */
 "The kinds of sites that can be created" = "The kinds of sites that can be created";
@@ -9519,7 +9421,8 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 /* No comment provided by engineer. */
 "The site at %@ uses WordPress %@. We recommend to update to the latest version, or at least %@" = "The site at %1$@ uses WordPress %2$@. We recommend to update to the latest version, or at least %3$@";
 
-/* Error message shown a URL does not point to an existing site. */
+/* Error message shown a URL does not point to an existing site.
+   Error message shown when a URL does not point to an existing site. */
 "The site at this address is not a WordPress site. For us to connect to it, the site must use WordPress." = "The site at this address is not a WordPress site. For us to connect to it, the site must use WordPress.";
 
 /* Message shown when site deletion API failed */
@@ -9574,7 +9477,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 "Theme Activated" = "Theme Activated";
 
 /* Noun. Name of the Themes feature
-   The menu item to select during a guided tour.
    Themes option in the blog details
    Title of Themes browser page */
 "Themes" = "Themes";
@@ -9643,9 +9545,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 
 /* Explaining to the user there was an error trying to obtain the current location of the user. */
 "There was a problem when trying to access your location. Please try again later." = "There was a problem when trying to access your location. Please try again later.";
-
-/* Explaining to the user there was an generic error accesing media. */
-"There was a problem when trying to access your media. Please try again later." = "There was a problem when trying to access your media. Please try again later.";
 
 /* Message for stories unknown error. */
 "There was a problem with the Stories editor.  If the problem persists you can contact us via the Me > Help & Support screen." = "There was a problem with the Stories editor.  If the problem persists you can contact us via the Me > Help & Support screen.";
@@ -9716,9 +9615,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 
 /* A description informing the user in order to proceed with this feature we will need camera permissions, and how to enable it. */
 "This app needs permission to access the Camera to scan login codes, tap on the Open Settings button to enable it." = "This app needs permission to access the Camera to scan login codes, tap on the Open Settings button to enable it.";
-
-/* Explaining to the user why the app needs access to the device media library. */
-"This app needs permission to access your device media library in order to add photos and/or video to your posts. Please change the privacy settings if you wish to allow this." = "This app needs permission to access your device media library in order to add photos and/or video to your posts. Please change the privacy settings if you wish to allow this.";
 
 /* No comment provided by engineer. */
 "This color combination may be hard for people to read. Try using a brighter background color and/or a darker text color." = "This color combination may be hard for people to read. Try using a brighter background color and/or a darker text color.";
@@ -9825,9 +9721,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
    Writing Time Format Settings Title */
 "Time Format" = "Time Format";
 
-/* Description of a Quick Start Tour */
-"Time to finish setting up your site! Our checklist walks you through the next steps." = "Time to finish setting up your site! Our checklist walks you through the next steps.";
-
 /* Label for the timezone setting
    Title for the time zone selector */
 "Time Zone" = "Time Zone";
@@ -9883,9 +9776,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 /* Message asking the user if they want to set up Jetpack from stats */
 "To use stats on your site, you'll need to install the Jetpack plugin." = "To use stats on your site, you'll need to install the Jetpack plugin.";
 
-/* Message explaining that Jetpack needs to be installed for a particular site. Reads like 'To use this app for example.com you'll need to have... */
-"To use this app for %@ you'll need to have the Jetpack plugin installed and activated." = "To use this app for %@ you'll need to have the Jetpack plugin installed and activated.";
-
 /* Comments Today Section Header
    Insights 'Today' header
    Notifications Today Section Header */
@@ -9906,9 +9796,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 /* Accessibility Identifier for the Aztec Unordered List Style */
 "Toggles the unordered list style" = "Toggles the unordered list style";
 
-/* Title of the Tools section of the debug screen used in debug builds of the app */
-"Tools" = "Tools";
-
 /* Insights 'Top Commenters' header */
 "Top Commenters" = "Top Commenters";
 
@@ -9919,8 +9806,7 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 /* The part of the nudge title that should be emphasized, this content needs to match a string in 'If you want to try get more...' */
 "top tips" = "top tips";
 
-/* Shortened version of the main title to be used in back navigation
-   Topic page title */
+/* Shortened version of the main title to be used in back navigation */
 "Topic" = "Topic";
 
 /* Used when a Reader Topic is not found for a specific id */
@@ -10023,9 +9909,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 /* The title of a notice telling users that the classic editor is deprecated and will be removed in a future version of the app. */
 "Try the new Block Editor" = "Try the new Block Editor";
 
-/* Action button that will restart the login flow.Presented when logging in with a site address that does not have a valid Jetpack installation */
-"Try With Another Account" = "Try With Another Account";
-
 /* When social login fails, this button offers to let the user try again with a differen email address */
 "Try with another email" = "Try with another email";
 
@@ -10079,9 +9962,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 
 /* No comment provided by engineer. */
 "Type a URL" = "Type a URL";
-
-/* Register domain - Search field placeholder for the Suggested Domain screen */
-"Type to get more suggestions" = "Type to get more suggestions";
 
 /* Notice title when blocking a site fails. */
 "Unable to block site" = "Unable to block site";
@@ -10180,15 +10060,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 "Unable to update plan prices. There is a problem with the supplied blog." = "Unable to update plan prices. There is a problem with the supplied blog.";
 
 /* Alert displayed to the user when a single post has failed to upload. */
-"Unable to upload 1 draft post" = "Unable to upload 1 draft post";
-
-/* Alert displayed to the user when a single post and multiple files have failed to upload. */
-"Unable to upload 1 draft post, %ld files" = "Unable to upload 1 draft post, %ld files";
-
-/* Alert displayed to the user when a single post and 1 file has failed to upload. */
-"Unable to upload 1 draft post, 1 file" = "Unable to upload 1 draft post, 1 file";
-
-/* Alert displayed to the user when a single post has failed to upload. */
 "Unable to upload 1 post" = "Unable to upload 1 post";
 
 /* Alert displayed to the user when a single post and multiple files have failed to upload. */
@@ -10242,8 +10113,7 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 /* Label of the table view cell's delete button, when unfollowing a site. */
 "Unfollow" = "Unfollow";
 
-/* Accessibility label for unfollowing a site
-   Accessibility label for unfollowing a tag */
+/* Accessibility label for unfollowing a tag */
 "Unfollow %@" = "Unfollow %@";
 
 /* Title for a button that unsubscribes the user from the post. */
@@ -10259,9 +10129,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
    User unfollowed a site. */
 "Unfollowed site" = "Unfollowed site";
 
-/* Spoken hint describing action for selected following buttons. */
-"Unfollows blog" = "Unfollows blog";
-
 /* VoiceOver accessibility hint, informing the user the button can be used to unfollow a blog. */
 "Unfollows the blog." = "Unfollows the blog.";
 
@@ -10274,9 +10141,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 /* Label for size of media when it's not possible to calculate it.
    Unknown Tag Name */
 "Unknown" = "Unknown";
-
-/* Label to use when creation date from media asset is not know. */
-"Unknown creation date" = "Unknown creation date";
 
 /* No comment provided by engineer. */
 "Unknown error" = "Unknown error";
@@ -10443,9 +10307,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 /* No comment provided by engineer. */
 "Uploading…" = "Uploading…";
 
-/* Title for alert when trying to save post with failed media items */
-"Uploads failed" = "Uploads failed";
-
 /* URL text field placeholder */
 "URL" = "URL";
 
@@ -10466,9 +10327,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 
 /* The button title text for logging in with WP.com password instead of magic link. */
 "Use password to sign in" = "Use password to sign in";
-
-/* Title of a row displayed on the debug screen used to configure the sandbox store use in the App. */
-"Use Sandbox Store" = "Use Sandbox Store";
 
 /* Description of a Quick Start Tour */
 "Used across the web: in browser tabs, social media previews, and the WordPress.com Reader." = "Used across the web: in browser tabs, social media previews, and the WordPress.com Reader.";
@@ -10508,9 +10366,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 /* Push Authentication Alert Title */
 "Verify Log In" = "Verify Log In";
 
-/* Notice displayed after domain credit redemption success. */
-"Verify your email address - instructions sent to %@" = "Verify your email address - instructions sent to %@";
-
 /* Description for the version label in the What's new page. */
 "Version " = "Version ";
 
@@ -10523,9 +10378,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 
 /* Message to show when a new plugin version is available */
 "Version %@ is available" = "Version %@ is available";
-
-/* Label displayed on video media items. */
-"video" = "video";
 
 /* translators: accessibility text. %s: video caption. */
 "Video caption. %s" = "Video caption. %s";
@@ -10541,9 +10393,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 
 /* Message shown if a video preview image is unavailable while the video is being uploaded. */
 "Video Preview Unavailable" = "Video Preview Unavailable";
-
-/* Accessibility label for video thumbnails in the media collection view. The parameter is the creation date of the video. */
-"Video, %@" = "Video, %@";
 
 /* Period Stats 'Videos' header */
 "Videos" = "Videos";
@@ -10657,6 +10506,9 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 /* Title for a threat that includes the file name of the theme and the affected version */
 "Vulnerable Theme %1$@ (version %2$@)" = "Vulnerable Theme %1$@ (version %2$@)";
 
+/* No comment provided by engineer. */
+"Waiting for connection" = "Waiting for connection";
+
 /* Message shown on screen while waiting for Google to finish its signup process. */
 "Waiting for Google to complete…" = "Waiting for Google to complete…";
 
@@ -10721,9 +10573,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 
 /* Message for error displayed when preparing a backup fails. */
 "We couldn't create your backup. Please try again later." = "We couldn't create your backup. Please try again later.";
-
-/* Primary message shown when there are no domains that match the user entered text. */
-"We couldn't find any available address with the words you entered - let's try again." = "We couldn't find any available address with the words you entered - let's try again.";
 
 /* Text displayed in notice after the app fails to upload a page, it will attempt to upload it later. */
 "We couldn't publish this page, but we'll try again later." = "We couldn't publish this page, but we'll try again later.";
@@ -10800,9 +10649,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 /* The subtitle text on the magic link requested screen followed by the email address. */
 "We just sent a magic link to" = "We just sent a magic link to";
 
-/* Popup content about why this post is being opened in block editor */
-"We made big improvements to the block editor and think it's worth a try!\n\nWe enabled it for new posts and pages but if you'd like to change to the classic editor, go to 'My Site' > 'Site Settings'." = "We made big improvements to the block editor and think it's worth a try!\n\nWe enabled it for new posts and pages but if you'd like to change to the classic editor, go to 'My Site' > 'Site Settings'.";
-
 /* Message displayed when a backup has finished */
 "We successfully created a backup of your site as of %@" = "We successfully created a backup of your site as of %@";
 
@@ -10811,9 +10657,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 
 /* Informational text about link to other tracking tools */
 "We use other tracking tools, including some from third parties. Read about these and how to control them." = "We use other tracking tools, including some from third parties. Read about these and how to control them.";
-
-/* Message explaining that WordPress was not detected. */
-"We were not able to detect a WordPress site at the address you entered. Please make sure WordPress is installed and that you are running the latest available version." = "We were not able to detect a WordPress site at the address you entered. Please make sure WordPress is installed and that you are running the latest available version.";
 
 /* Error message displayed when an error occurred sending the magic link email. */
 "We were unable to send you an email at this time. Please try again later." = "We were unable to send you an email at this time. Please try again later.";
@@ -10902,9 +10745,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 
 /* Instruction text after a signup Magic Link was requested. */
 "We've emailed you a signup link to create your new WordPress.com account. Check your email on this device, and tap the link in the email you receive from WordPress.com." = "We've emailed you a signup link to create your new WordPress.com account. Check your email on this device, and tap the link in the email you receive from WordPress.com.";
-
-/* Register Domain - error displayed when a domain was purchased succesfully, but there was a problem setting it to a primary domain for the site */
-"We've had problems changing the primary domain on your site — but don't worry, your domain was successfully purchased." = "We've had problems changing the primary domain on your site — but don't worry, your domain was successfully purchased.";
 
 /* Account Settings Web Address label
    Header for a comment author's web address, shown when editing a comment. */
@@ -11188,9 +11028,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 /* Siri Suggestion to open Support */
 "WordPress Help" = "WordPress Help";
 
-/* Name for the WordPress Media Library */
-"WordPress Media" = "WordPress Media";
-
 /* Accessibility label for selecting an image or video from the user's WordPress media library on formatting toolbar. */
 "WordPress Media Library" = "WordPress Media Library";
 
@@ -11251,6 +11088,9 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 /* This is a comma separated list of keywords used for spotlight indexing of the 'My Sites' tab. */
 "wordpress, sites, site, blogs, blog" = "wordpress, sites, site, blogs, blog";
 
+/* Error message that describes an unknown error had occured */
+"wordpress-api.error.unknown" = "Something went wrong, please try again later.";
+
 /* Label for WordPress.com followers */
 "WordPress.com" = "WordPress.com";
 
@@ -11296,6 +11136,9 @@ from anywhere.";
 
 /* Title of button that displays the Automattic Work With Us web page */
 "Work With Us" = "Work With Us";
+
+/* No comment provided by engineer. */
+"Working Offline" = "Working Offline";
 
 /* Accessibility label for the Stats' world map. */
 "World map showing views by country." = "World map showing views by country.";
@@ -11355,8 +11198,7 @@ from anywhere.";
 /* Title of Years stats filter. */
 "Years" = "Years";
 
-/* Accept Action
-   Button title. Confirms that the user wants to proceed with a pending action.
+/* Button title. Confirms that the user wants to proceed with a pending action.
    Label for a button that clears all old activity logs
    Yes */
 "Yes" = "Yes";
@@ -11456,7 +11298,7 @@ from anywhere.";
 "You have 1 hidden WordPress site." = "You have 1 hidden WordPress site.";
 
 /* Description for the first domain purchased with a paid plan. */
-"You have a free one-year domain registration with your plan" = "You have a free one-year domain registration with your plan";
+"You have a free one-year domain registration with your plan." = "You have a free one-year domain registration with your plan.";
 
 /* Message alert when attempting to delete site with purchases */
 "You have active premium upgrades on your site. Please cancel your upgrades prior to deleting your site." = "You have active premium upgrades on your site. Please cancel your upgrades prior to deleting your site.";
@@ -11544,9 +11386,6 @@ from anywhere.";
 /* Share extension error dialog text. */
 "Your account does not have permission to upload media to this site. The Site Administrator can change these permissions." = "Your account does not have permission to upload media to this site. The Site Administrator can change these permissions.";
 
-/* Explaining to the user why the app needs access to the device media library. */
-"Your app is not authorized to access media library due to active restrictions such as parental controls. Please check your parental control settings in this device." = "Your app is not authorized to access media library due to active restrictions such as parental controls. Please check your parental control settings in this device.";
-
 /* Title for the Jetpack Backup Complete message. */
 "Your backup is now available for download" = "Your backup is now available for download";
 
@@ -11561,9 +11400,6 @@ from anywhere.";
 
 /* Title for the view when there aren't any Backups to display */
 "Your first backup will be ready soon" = "Your first backup will be ready soon";
-
-/* Title of the site address section in the Domains Dashboard. */
-"Your free WordPress.com address is" = "Your free WordPress.com address is";
 
 /* Details about recently acquired domain on domain credit redemption success screen */
 "Your new domain %@ is being set up. It may take up to 30 minutes for your domain to start working." = "Your new domain %@ is being set up. It may take up to 30 minutes for your domain to start working.";
@@ -11580,17 +11416,11 @@ from anywhere.";
 /* Message of Export Content confirmation alert; substitution is user's email address */
 "Your posts, pages, and settings will be mailed to you at %@." = "Your posts, pages, and settings will be mailed to you at %@.";
 
-/* Footer of the primary site section in the Domains Dashboard. */
-"Your primary site address is what visitors will see in their address bar when visiting your website." = "Your primary site address is what visitors will see in their address bar when visiting your website.";
-
 /* Text displayed when a site restore takes too long. */
 "Your restore is taking longer than usual, please check again in a few minutes." = "Your restore is taking longer than usual, please check again in a few minutes.";
 
 /* This is shown to the user when their domain search query contains invalid characters. */
 "Your search includes characters not supported in WordPress.com domains. The following characters are allowed: A–Z, a–z, 0–9." = "Your search includes characters not supported in WordPress.com domains. The following characters are allowed: A–Z, a–z, 0–9.";
-
-/* Placeholder for site url, if the url is unknown.Presented when logging in with a site address that does not have a valid Jetpack installation.The error would read: to use this app for your site you'll need... */
-"your site" = "your site";
 
 /* Body text of alert helping users understand their site address */
 "Your site address appears in the bar at the top of the screen when you visit your site in Safari." = "Your site address appears in the bar at the top of the screen when you visit your site in Safari.";
@@ -11600,9 +11430,6 @@ from anywhere.";
 
 /* Example notification content displayed on the Enable Notifications prompt that is personalized based on a users selection. Words marked between * characters will be displayed as bold text. */
 "Your site appears to be getting *more traffic* than usual!" = "Your site appears to be getting *more traffic* than usual!";
-
-/* Header of the domains list section in the Domains Dashboard. */
-"Your Site Domains" = "Your Site Domains";
 
 /* User-facing string, presented to reflect that site assembly completed successfully. */
 "Your site has been created!" = "Your site has been created!";
@@ -11654,12 +11481,6 @@ from anywhere.";
 
 /* Describes the expected behavior when the user enables in-app notifications in Reader Comments. */
 "You’re following this conversation. You will receive an email whenever a new comment is made." = "You’re following this conversation. You will receive an email whenever a new comment is made.";
-
-/* Popup content about why this post is being opened in block editor */
-"You’re now using the block editor for new pages — great! If you’d like to change to the classic editor, go to ‘My Site’ > ‘Site Settings’." = "You’re now using the block editor for new pages — great! If you’d like to change to the classic editor, go to ‘My Site’ > ‘Site Settings’.";
-
-/* Popup content about why this post is being opened in block editor */
-"You’re now using the block editor for new posts — great! If you’d like to change to the classic editor, go to ‘My Site’ > ‘Site Settings’." = "You’re now using the block editor for new posts — great! If you’d like to change to the classic editor, go to ‘My Site’ > ‘Site Settings’.";
 
 /* Label for button to log in using Google. The {G} will be replaced with the Google logo. */
 "{G} Log in with Google." = "{G} Log in with Google.";

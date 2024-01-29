@@ -2,6 +2,7 @@ import AutomatticTracks
 import UIKit
 import Gridicons
 import WordPressShared
+import WordPressUI
 
 class PostCompactCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
@@ -198,9 +199,7 @@ class PostCompactCell: UITableViewCell {
 
     private enum Constants {
         static let separator = " · "
-        static let contentSpacing: CGFloat = 8
         static let imageRadius: CGFloat = 2
-        static let labelsVerticalAlignment: CGFloat = -1
         static let opacity: Float = 1
         static let margin: CGFloat = 16
     }
@@ -245,10 +244,6 @@ extension PostCompactCell {
         if !post.isScheduled() {
             configureExcerpt()
         }
-    }
-
-    func hideSeparator() {
-        separator.isHidden = true
     }
 
     func disableiPadReadableMargin() {

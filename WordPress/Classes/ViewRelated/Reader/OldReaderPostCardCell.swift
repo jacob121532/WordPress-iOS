@@ -2,6 +2,7 @@ import AutomatticTracks
 import Foundation
 import WordPressShared
 import Gridicons
+import WordPressUI
 
 protocol ReaderTopicsChipsDelegate: AnyObject {
     func didSelect(topic: String)
@@ -135,10 +136,6 @@ protocol ReaderTopicsChipsDelegate: AnyObject {
 
     private lazy var readerCardSummaryAttributes: [NSAttributedString.Key: Any] = {
         return WPStyleGuide.readerCardSummaryAttributes()
-    }()
-
-    private lazy var readerCardReadingTimeAttributes: [NSAttributedString.Key: Any] = {
-        return WPStyleGuide.readerCardReadingTimeAttributes()
     }()
 
     // MARK: - Lifecycle Methods
@@ -912,30 +909,6 @@ private extension OldReaderPostCardCell {
         reblogActionButton.accessibilityTraits = UIAccessibilityTraits.button
     }
 
-    func followLabel() -> String {
-        return followButtonIsSelected() ? followingLabel() : notFollowingLabel()
-    }
-
-    func followingLabel() -> String {
-        return NSLocalizedString("Following", comment: "Accessibility label for following buttons.")
-    }
-
-    func notFollowingLabel() -> String {
-        return NSLocalizedString("Not following", comment: "Accessibility label for unselected following buttons.")
-    }
-
-    func followHint() -> String {
-        return followButtonIsSelected() ? unfollow(): follow()
-    }
-
-    func unfollow() -> String {
-        return NSLocalizedString("Unfollows blog", comment: "Spoken hint describing action for selected following buttons.")
-    }
-
-    func follow() -> String {
-        return NSLocalizedString("Follows blog", comment: "Spoken hint describing action for unselected following buttons.")
-    }
-
     func followButtonIsSelected() -> Bool {
         return contentProvider?.isFollowing() ?? false
     }
@@ -960,7 +933,6 @@ private extension OldReaderPostCardCell {
         return contentProvider?.dateForDisplay()?.toMediumString() ?? ""
     }
 }
-
 
 /// Extension providing getters to some private outlets, for testability
 extension OldReaderPostCardCell {

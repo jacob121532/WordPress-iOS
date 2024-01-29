@@ -23,9 +23,6 @@
 /* Lets a user know that a local draft does not have a title. */
 "(no title)" = "(bez naslova)";
 
-/* Remove asset from media picker list */
-"Add" = "Dodaj";
-
 /* The title on the add category screen */
 "Add a Category" = "Dodaj Kategoriju";
 
@@ -153,7 +150,6 @@
    Action button to close edior and cancel changes or insertion of post
    Action button to close the editor
    Dismiss the current view
-   Dismiss the media picker for Stock Photos
    Dismisses the current screen
    Voiceover accessibility label informing the user that this button dismiss the current view */
 "Close" = "Zatvori";
@@ -245,7 +241,6 @@
 /* Accessibility label for button to dismiss a bottom sheet
    Accessibility label for the transparent space above the login dialog which acts as a button to dismiss the dialog.
    Accessibility label for the transparent space above the signup dialog which acts as a button to dismiss the dialog.
-   Action to show on alert when view asset fails.
    Dismiss a view. Verb */
 "Dismiss" = "Odbaci";
 
@@ -276,8 +271,7 @@
 /* Editing GIF alert default action button.
    Edits a Comment
    Edits the comment
-   User action to edit media details.
-   Verb, edit a comment */
+   User action to edit media details. */
 "Edit" = "Uredi";
 
 /* View title when editing a comment. */
@@ -338,9 +332,6 @@
 
 /* Example post content used in the login prologue screens. */
 "I am so inspired by photographer Cameron Karsten's work. I will be trying these techniques on my next" = "Inspiriran sam radovima fotografa Camerona Karstena. Pokušavat ću primjenjivati te tehnike na svoje sljedeće";
-
-/* Message explaining that they will need to install Jetpack on one of their sites. */
-"If you already have a site, you’ll need to install the free Jetpack plugin and connect it to your WordPress.com account." = "Ako već imate sjedište, trebat ćete instalirati besplatni Jetpack priključak te ga povezati s vašim WordPress računom.";
 
 /* Undated post time label */
 "Immediately" = "Odmah";
@@ -452,10 +443,6 @@
    Title label for the media settings section in the app settings */
 "Media" = "Media";
 
-/* Title for alert when a generic error happened when loading media
-   Title for alert when access to the media library is not granted by the user */
-"Media Library" = "Zbirka medija";
-
 /* Medium image size. Should be the same as in core WP. */
 "Medium" = "Srednje";
 
@@ -516,7 +503,6 @@
    Alert dismissal title
    Button title. Acknowledges a prompt.
    Button title. An acknowledgement of the message displayed in a prompt.
-   Confirmation of action
    Default action
    Dismisses the alert
    Marks all notifications as read.
@@ -526,7 +512,6 @@
    Ok button for dismissing alert helping users understand their site address
    OK button title for the warning shown to the user when the app realizes there should be an auth token but there isn't one.
    OK Button title shown in alert informing users about the Reader Save for Later feature.
-   OK button to close the informative dialog on Gutenberg editor
    Submit button on prompt for user information.
    Title of a button that dismisses a prompt
    Title of an OK button. Pressing the button acknowledges and dismisses a prompt.
@@ -656,16 +641,14 @@
    The accessibility value of the reader tab.
    The default title of the Reader
    The menu item to select during a guided tour.
-   Title of the 'Reader' tab - used for spotlight indexing on iOS.
-   Title of the Reader section of the debug screen used in debug builds of the app */
+   Title of the 'Reader' tab - used for spotlight indexing on iOS. */
 "Reader" = "Čitač";
 
 /* Button label to refres a web page
    The loading view button title displayed when an error occurred */
 "Refresh" = "Osvježi";
 
-/* Add asset to media picker list
-   Alert button to confirm a plugin to be removed
+/* Alert button to confirm a plugin to be removed
    Button label when removing a blog
    Label for the Remove Feature Image icon. Tapping will show a confirmation screen for removing the feature image from the post.
    Remove Action
@@ -697,7 +680,6 @@
    Retry. Verb – retry a failed media upload.
    The Jetpack view button title used when an error occurred
    Title for accessory view in the empty state table view cell in the Verticals step of Enhanced Site Creation
-   title for action that tries to connect to the reader after a loading error.
    User action to retry media upload. */
 "Retry" = "Pokušaj Ponovno";
 
@@ -747,9 +729,6 @@
 
 /* No comment provided by engineer. */
 "Search blocks" = "Pretraži blokove";
-
-/* Action button linking to instructions for installing Jetpack.Presented when logging in with a site address that does not have a valid Jetpack installation */
-"See Instructions" = "Pogledajte upute";
 
 /* Link to plugin's Settings
    Section title
@@ -839,7 +818,6 @@
 "The site at %@ uses WordPress %@. We recommend to update to the latest version, or at least %@" = "Web stranica na %1$@ koristi WordPress %2$@. Preporučamo da ažurirate na najnoviju inačicu, ili barem %3$@";
 
 /* Noun. Name of the Themes feature
-   The menu item to select during a guided tour.
    Themes option in the blog details
    Title of Themes browser page */
 "Themes" = "Teme";
@@ -878,9 +856,6 @@
    Try Again. Action
    Try to load the list of interests again. */
 "Try Again" = "Pokušajte ponovno";
-
-/* Action button that will restart the login flow.Presented when logging in with a site address that does not have a valid Jetpack installation */
-"Try With Another Account" = "Pokušajte s drugim računom";
 
 /* Button label for trying to retrieve the activities type again
    Button label for trying to retrieve the history again
@@ -989,9 +964,6 @@
    Today's Stats 'Visitors' label */
 "Visitors" = "Posjetitelji";
 
-/* Message explaining that WordPress was not detected. */
-"We were not able to detect a WordPress site at the address you entered. Please make sure WordPress is installed and that you are running the latest available version." = "Nismo bili u mogućnosti pronaći WordPress sjedište na adresi koju ste unijeli. Provjerite da je WordPress instaliran i da koristite najnoviju verziju.";
-
 /* Example Reader feed title */
 "Web News" = "Web novosti";
 
@@ -1022,8 +994,7 @@
 /* WordPress.com Notification Settings Title */
 "WordPress.com Updates" = "WordPress.com Statistika";
 
-/* Accept Action
-   Button title. Confirms that the user wants to proceed with a pending action.
+/* Button title. Confirms that the user wants to proceed with a pending action.
    Label for a button that clears all old activity logs
    Yes */
 "Yes" = "Da";
@@ -1049,9 +1020,6 @@
 /* translators: displays audio file extension. e.g. MP3 audio file */
 "audio file" = "Zvučna datoteka";
 
-/* Label displayed on image media items. */
-"image" = "slika";
-
 /* This text is used when the user is configuring the iOS widget to suggest them to select the site to configure the widget for */
 "ios-widget.gpCwrM" = "Select Site";
 
@@ -1075,7 +1043,4 @@
 
 /* Title of visitors label in today widget */
 "widget.today.visitors.label" = "Posjetitelji";
-
-/* Placeholder for site url, if the url is unknown.Presented when logging in with a site address that does not have a valid Jetpack installation.The error would read: to use this app for your site you'll need... */
-"your site" = "vaše sjedište";
 

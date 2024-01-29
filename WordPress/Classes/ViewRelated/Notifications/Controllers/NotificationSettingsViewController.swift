@@ -1,7 +1,6 @@
 import UIKit
 import WordPressShared
 
-
 /// The purpose of this class is to retrieve the collection of NotificationSettings from WordPress.com
 /// Backend, and render the "Top Level" list.
 /// On Row Press, we'll push the list of available Streams, which will, in turn, push the Details View
@@ -31,19 +30,15 @@ class NotificationSettingsViewController: UIViewController {
         return view
     }()
 
-
     // MARK: - Private Constants
 
     fileprivate let blogReuseIdentifier = WPBlogTableViewCell.classNameWithoutNamespaces()
-    fileprivate let blogRowHeight = CGFloat(54.0)
 
     fileprivate let defaultReuseIdentifier = WPTableViewCell.classNameWithoutNamespaces()
     fileprivate let switchReuseIdentifier = SwitchTableViewCell.classNameWithoutNamespaces()
 
-    fileprivate let emptyCount = 0
     fileprivate let loadMoreRowIndex = 3
     fileprivate let loadMoreRowCount = 4
-
 
     // MARK: - Private Properties
 
@@ -90,7 +85,6 @@ class NotificationSettingsViewController: UIViewController {
         registerUserActivity()
     }
 
-
     // MARK: - Setup Helpers
 
     fileprivate func setupNavigationItem() {
@@ -115,7 +109,6 @@ class NotificationSettingsViewController: UIViewController {
 
         activityIndicatorView.tintColor = .textSubtle
     }
-
 
     // MARK: - Service Helpers
 
@@ -218,7 +211,6 @@ class NotificationSettingsViewController: UIViewController {
     fileprivate func section(at index: Int) -> Section {
         return tableSections[index]
     }
-
 
     // MARK: - Error Handling
 
@@ -329,7 +321,6 @@ private extension NotificationSettingsViewController {
         labelView.pinSubviewToAllEdges(label, insets: FooterMetrics.footerLabelInsets)
         return labelView
     }
-
 
     /// Creates the footer for the my sites section
     /// - Parameter text: the text to be used in the label

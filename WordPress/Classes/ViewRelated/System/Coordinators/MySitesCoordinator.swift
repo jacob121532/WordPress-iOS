@@ -69,9 +69,14 @@ class MySitesCoordinator: NSObject {
         navigationController.restorationIdentifier = MySitesCoordinator.navigationControllerRestorationID
         navigationController.navigationBar.isTranslucent = false
 
-        let tabBarImage = AppStyleGuide.mySiteTabIcon
-        navigationController.tabBarItem.image = tabBarImage
-        navigationController.tabBarItem.selectedImage = tabBarImage
+        if FeatureFlag.newTabIcons.enabled {
+            navigationController.tabBarItem.image = UIImage(named: "tab-bar-home-unselected")?.withRenderingMode(.alwaysOriginal)
+            navigationController.tabBarItem.selectedImage = UIImage(named: "tab-bar-home-selected")
+        } else {
+            let tabBarImage = AppStyleGuide.mySiteTabIcon
+            navigationController.tabBarItem.image = tabBarImage
+            navigationController.tabBarItem.selectedImage = tabBarImage
+        }
         navigationController.tabBarItem.accessibilityLabel = NSLocalizedString("My Site", comment: "The accessibility value of the my site tab.")
         navigationController.tabBarItem.accessibilityIdentifier = "mySitesTabButton"
         navigationController.tabBarItem.title = NSLocalizedString("My Site", comment: "The accessibility value of the my site tab.")
@@ -101,16 +106,6 @@ class MySitesCoordinator: NSObject {
         navigationController.viewControllers = [rootContentViewController]
     }
 
-    // MARK: - Sites List
-
-    private func showSitesList() {
-        showRootViewController()
-
-        let navigationController = UINavigationController(rootViewController: blogListViewController)
-        navigationController.modalPresentationStyle = .formSheet
-        mySiteViewController.present(navigationController, animated: true)
-    }
-
     // MARK: - Blog Details
 
     @objc
@@ -125,11 +120,11 @@ class MySitesCoordinator: NSObject {
         }
     }
 
-    func showBlogDetails(for blog: Blog, then subsection: BlogDetailsSubsection) {
+    func showBlogDetails(for blog: Blog, then subsection: BlogDetailsSubsection, userInfo: [AnyHashable: Any] = [:]) {
         showBlogDetails(for: blog)
 
         if let mySiteViewController = navigationController.topViewController as? MySiteViewController {
-            mySiteViewController.showBlogDetailsSubsection(subsection)
+            mySiteViewController.showBlogDetailsSubsection(subsection, userInfo: userInfo)
         }
     }
 
@@ -219,6 +214,10 @@ class MySitesCoordinator: NSObject {
         showBlogDetails(for: blog, then: .media)
     }
 
+    func showMediaPicker(for blog: Blog) {
+        showBlogDetails(for: blog, then: .media, userInfo: [BlogDetailsViewController.userInfoShowPickerKey(): true])
+    }
+
     func showComments(for blog: Blog) {
         showBlogDetails(for: blog, then: .comments)
     }
@@ -233,6 +232,10 @@ class MySitesCoordinator: NSObject {
 
     func showPlugins(for blog: Blog) {
         showBlogDetails(for: blog, then: .plugins)
+    }
+
+    func showSiteMonitoring(for blog: Blog, selectedTab: SiteMonitoringTab) {
+        showBlogDetails(for: blog, then: .siteMonitoring, userInfo: [BlogDetailsViewController.userInfoSiteMonitoringTabKey(): selectedTab.rawValue])
     }
 
     func showManagePlugins(for blog: Blog) {

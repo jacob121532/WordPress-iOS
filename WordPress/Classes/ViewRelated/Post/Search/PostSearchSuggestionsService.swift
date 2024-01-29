@@ -34,6 +34,7 @@ actor PostSearchSuggestionsService {
             .sorted { ($0.score, $0.token.value) > ($1.score, $1.token.value) }
             .map { $0.token }
             .prefix(3))
+            .deduplicated(by: \.id)
     }
 
     private struct RankedToken {
@@ -79,7 +80,7 @@ actor PostSearchSuggestionsService {
 
     private func getTagTokens(for searchTerm: String, selectedTokens: [any PostSearchToken]) async -> [RankedToken] {
         guard !selectedTokens.contains(where: { $0 is PostSearchTagToken }) else {
-            return [] // Don't suggest authors anymore
+            return [] // Don't suggest tags anymore
         }
         let tokens = await getAllTagTokens()
         let search = StringRankedSearch(searchTerm: searchTerm)

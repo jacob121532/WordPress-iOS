@@ -6,8 +6,9 @@ import WordPressFlux
 /// navigation bar button of Gutenberg editor.
 extension GutenbergViewController {
 
-    private enum ErrorCode: Int {
+    enum ErrorCode: Int {
         case expectedSecondaryAction = 1
+        case managedObjectContextMissing = 2
     }
 
     func displayMoreSheet() {
@@ -55,7 +56,6 @@ extension GutenbergViewController {
                 ActionDispatcher.dispatch(NoticeAction.unlock)
             }
         }
-
 
         let settingsTitle = self.post is Page ? MoreSheetAlert.pageSettingsTitle : MoreSheetAlert.postSettingsTitle
 

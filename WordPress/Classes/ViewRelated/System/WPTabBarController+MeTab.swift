@@ -1,4 +1,5 @@
 import Foundation
+import WordPressUI
 
 extension WPTabBarController {
 
@@ -14,9 +15,13 @@ extension WPTabBarController {
         NotificationCenter.default.addObserver(self, selector: #selector(accountDidChange), name: .WPAccountEmailAndDefaultBlogUpdated, object: nil)
     }
 
-    @objc func configureMeTabImage(placeholderImage: UIImage) {
-        meNavigationController?.tabBarItem.image = placeholderImage
-        meNavigationController?.tabBarItem.selectedImage = placeholderImage
+    @objc func configureMeTabImage(placeholderImage: UIImage?) {
+        configureMeTabImage(unselectedPlaceholderImage: placeholderImage, selectedPlaceholderImage: placeholderImage)
+    }
+
+    @objc func configureMeTabImage(unselectedPlaceholderImage: UIImage?, selectedPlaceholderImage: UIImage?) {
+        meNavigationController?.tabBarItem.image = unselectedPlaceholderImage
+        meNavigationController?.tabBarItem.selectedImage = selectedPlaceholderImage
 
         guard let account = defaultAccount(),
               let email = account.email else {
@@ -45,14 +50,20 @@ extension WPTabBarController {
     }
 
     @objc private func accountDidChange() {
-        configureMeTabImage(placeholderImage: UIImage(named: "icon-tab-me") ?? UIImage())
+        guard FeatureFlag.newTabIcons.enabled else {
+            configureMeTabImage(placeholderImage: UIImage(named: "icon-tab-me"))
+            return
+        }
+
+        configureMeTabImage(unselectedPlaceholderImage: UIImage(named: "tab-bar-me-unselected"),
+                            selectedPlaceholderImage: UIImage(named: "tab-bar-me-selected"))
     }
 }
 
 extension UITabBarItem {
 
     func configureGravatarImage(_ image: UIImage) {
-        let gravatarIcon = image.gravatarIcon(size: 28.0)
+        let gravatarIcon = image.gravatarIcon(size: 26.0)
         self.image = gravatarIcon?.blackAndWhite?.withAlpha(0.36)
         self.selectedImage = gravatarIcon
     }

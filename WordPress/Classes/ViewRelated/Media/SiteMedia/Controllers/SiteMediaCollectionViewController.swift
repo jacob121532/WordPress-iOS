@@ -482,18 +482,7 @@ final class SiteMediaCollectionViewController: UIViewController, NSFetchedResult
     }
 
     private func makePreviewViewController(for media: Media) -> UIViewController? {
-        let viewModel = getViewModel(for: media)
-        guard let image = viewModel.getCachedThubmnail() else {
-            return nil
-        }
-        let imageView = UIImageView(image: image)
-        imageView.accessibilityIgnoresInvertColors = true
-
-        let viewController = UIViewController()
-        viewController.view.addSubview(imageView)
-        viewController.view.pinSubviewToAllEdges(imageView)
-        viewController.preferredContentSize = image.size
-        return viewController
+        SiteMediaPreviewViewController(media: media)
     }
 
     // MARK: - UICollectionViewDataSourcePrefetching
@@ -506,7 +495,8 @@ final class SiteMediaCollectionViewController: UIViewController, NSFetchedResult
     }
 
     func collectionView(_ collectionView: UICollectionView, cancelPrefetchingForItemsAt indexPaths: [IndexPath]) {
-        for indexPath in indexPaths {
+        let count = fetchController.fetchedObjects?.count ?? 0
+        for indexPath in indexPaths where indexPath.row < count {
             let media = fetchController.object(at: indexPath)
             getViewModel(for: media).cancelPrefetching()
         }

@@ -1,7 +1,6 @@
 import Foundation
 import CoreData
 
-
 class Revision: NSManagedObject {
     @NSManaged var siteId: NSNumber
     @NSManaged var revisionId: NSNumber
@@ -18,7 +17,6 @@ class Revision: NSManagedObject {
 
     @NSManaged var diff: RevisionDiff?
 
-
     private lazy var revisionFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.locale = Locale(identifier: "en_US_POSIX")
@@ -29,10 +27,6 @@ class Revision: NSManagedObject {
 
     var revisionDate: Date {
         return revisionFormatter.date(from: postDateGmt ?? "") ?? Date()
-    }
-
-    var revisionModifiedDate: Date {
-        return revisionFormatter.date(from: postModifiedGmt ?? "") ?? Date()
     }
 
     @objc var revisionDateForSection: String {

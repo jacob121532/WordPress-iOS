@@ -41,7 +41,6 @@ class FindOutMoreCell: UITableViewCell, Reusable {
 private extension FindOutMoreCell {
     enum Appearance {
         static let buttonTitle = NSLocalizedString("Find out more", comment: "Title for the find out more button in the What's New page.")
-        static let buttonFont = UIFont(descriptor: .preferredFontDescriptor(withTextStyle: .callout), size: 16)
         static let topMargin: CGFloat = -8
     }
 
@@ -55,7 +54,6 @@ private extension FindOutMoreCell {
         UIApplication.shared.open(url)
     }
 }
-
 
 private extension FindOutMoreCell {
     enum Accessibility {

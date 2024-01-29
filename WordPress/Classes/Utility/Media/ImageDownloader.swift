@@ -30,6 +30,8 @@ actor ImageDownloader {
         )
     }
 
+    private var tasks: [String: ImageDataTask] = [:]
+
     init(cache: MemoryCacheProtocol = MemoryCache.shared) {
         self.cache = cache
     }
@@ -103,6 +105,35 @@ actor ImageDownloader {
     // MARK: - Networking
 
     private func data(for request: URLRequest, options: ImageRequestOptions) async throws -> Data {
+        let requestKey = request.urlRequest?.url?.absoluteString ?? ""
+        let task = tasks[requestKey] ?? ImageDataTask(task: Task {
+            try await self._data(for: request, options: options, key: requestKey)
+        })
+        let subscriptionID = UUID()
+        task.subscriptions.insert(subscriptionID)
+        tasks[requestKey] = task
+
+        return try await withTaskCancellationHandler {
+            try await task.task.value
+        } onCancel: {
+            Task {
+                await self.unsubscribe(subscriptionID, key: requestKey)
+            }
+        }
+    }
+
+    private func unsubscribe(_ subscriptionID: UUID, key: String) {
+        guard let task = tasks[key],
+              task.subscriptions.remove(subscriptionID) != nil,
+              task.subscriptions.isEmpty else {
+            return
+        }
+        task.task.cancel()
+        tasks[key] = nil
+    }
+
+    private func _data(for request: URLRequest, options: ImageRequestOptions, key: String) async throws -> Data {
+        defer { tasks[key] = nil }
         let session = options.isDiskCacheEnabled ? urlSessionWithCache : urlSession
         let (data, response) = try await session.data(for: request)
         try validate(response: response)
@@ -111,11 +142,22 @@ actor ImageDownloader {
 
     private func validate(response: URLResponse) throws {
         guard let response = response as? HTTPURLResponse else {
-            throw ImageDownloaderError.unexpectedResponse
+            return // The request was made not over HTTP, e.g. a `file://` request
         }
         guard (200..<400).contains(response.statusCode) else {
             throw ImageDownloaderError.unacceptableStatusCode(response.statusCode)
         }
+    }
+}
+
+private final class ImageDataTask {
+    var subscriptions = Set<UUID>()
+    var isCancelled = false
+    var task: Task<Data, Error>
+
+    init(subscriptions: Set<UUID> = Set<UUID>(), task: Task<Data, Error>) {
+        self.subscriptions = subscriptions
+        self.task = task
     }
 }
 
@@ -183,7 +225,6 @@ private struct AnonymousImageDownloadTask: ImageDownloaderTask {
 }
 
 enum ImageDownloaderError: Error {
-    case unexpectedResponse
     case unacceptableStatusCode(_ statusCode: Int?)
 }
 

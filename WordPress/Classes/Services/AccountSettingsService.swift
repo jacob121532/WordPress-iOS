@@ -33,12 +33,10 @@ extension AccountSettingsRemoteInterface {
 
 extension AccountSettingsRemote: AccountSettingsRemoteInterface {}
 
-
 class AccountSettingsService {
     struct Defaults {
         static let stallTimeout = 4.0
         static let maxRetries = 3
-        static let pollingInterval = 60.0
     }
 
     let remote: AccountSettingsRemoteInterface

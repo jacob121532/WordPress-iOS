@@ -10,6 +10,8 @@
 #import "AbstractPost.h"
 #import "WordPress-Swift.h"
 
+@import NSObject_SafeExpectations;
+
 NSString * const WPAppAnalyticsDefaultsUserOptedOut                 = @"tracks_opt_out";
 NSString * const WPAppAnalyticsDefaultsKeyUsageTracking_deprecated  = @"usage_tracking_enabled";
 NSString * const WPAppAnalyticsKeyBlogID                            = @"blog_id";
@@ -338,14 +340,18 @@ NSString * const WPAppAnalyticsValueSiteTypeP2                      = @"p2";
     [WPAnalytics track:stat withProperties:properties];
 }
 
-+ (void)track:(WPAnalyticsStat)stat error:(NSError * _Nonnull)error {
++ (void)track:(WPAnalyticsStat)stat error:(NSError * _Nonnull)error withBlogID:(NSNumber *)blogID {
     NSError *err = [self sanitizedErrorFromError:error];
     NSDictionary *properties = @{
                                  @"error_code": [@(err.code) stringValue],
                                  @"error_domain": err.domain,
                                  @"error_description": err.description
     };
-    [self track:stat withProperties: properties];
+    [self track:stat withProperties: properties withBlogID:blogID];
+}
+
++ (void)track:(WPAnalyticsStat)stat error:(NSError * _Nonnull)error {
+    [self track:stat error:error withBlogID:nil];
 }
 
 /**

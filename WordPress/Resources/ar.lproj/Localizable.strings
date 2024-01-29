@@ -1,4 +1,4 @@
-/* Translation-Revision-Date: 2023-11-29 17:54:08+0000 */
+/* Translation-Revision-Date: 2024-01-11 13:54:10+0000 */
 /* Plural-Forms: nplurals=6; plural=(n == 0) ? 0 : ((n == 1) ? 1 : ((n == 2) ? 2 : ((n % 100 >= 3 && n % 100 <= 10) ? 3 : ((n % 100 >= 11 && n % 100 <= 99) ? 4 : 5)))); */
 /* Generator: GlotPress/4.0.0-alpha.11 */
 /* Language: ar */
@@ -14,9 +14,6 @@
 
 /* Message of Close Account confirmation alert */
 "\nTo confirm, please re-enter your username before closing.\n\n" = "\nللتأكيد، يرجى إعادة إدخال اسم المستخدم الخاص بك قبل الإغلاق.\n\n";
-
-/* Per-year postfix shown after a domain's cost. */
-" \/ year" = " \/ سنة";
 
 /* Title for the lazy load images setting */
 "\"Lazy-load\" images" = "صور \"بطيئة التحميل\"";
@@ -227,10 +224,6 @@
 
 /* Displays the number of words and characters in text */
 "%li words, %li characters" = "%1$li كلمات، %2$li أحرف";
-
-/* translators: %s: Block name e.g. \"Image block\"
-translators: Block name. %s: The localized block name */
-"%s block" = "مكوّن [%s]";
 
 /* translators: %s: block title e.g: \"Paragraph\". */
 "%s block options" = "خيارات المكوِّن %s";
@@ -475,12 +468,6 @@ translators: Block name. %s: The localized block name */
 /* Label for the Activity Type filter button when there are more than 1 activity type selected */
 "Activity Type (%1$d)" = "نوع النشاط (%1$d)";
 
-/* Remove asset from media picker list */
-"Add" = "إضافة";
-
-/* Action for Media Picker to indicate selection of media. The argument in the string represents the number of elements (as numeric digits) selected */
-"Add %@" = "إضافة %@";
-
 /* No comment provided by engineer. */
 "Add Block After" = "إضافة مكوّن بعد";
 
@@ -510,9 +497,6 @@ translators: Block name. %s: The localized block name */
 
 /* Title of a feature to add a new topic to the topics subscribed by the user. */
 "Add a Topic" = "إضافة موضوع";
-
-/* Hint for the reader CSS URL field */
-"Add a custom CSS URL here to be loaded in Reader. If you're running Calypso locally this can be something like: http:\/\/192.168.15.23:3000\/calypso\/reader-mobile.css" = "أضف عنوان URL الخاص بـ CSS المخصصة هنا ليتم تحميلها في القارئ. إذا كنتَ تقوم بتشغيل Calypso محليًا، فقد يبدو هذا مثل: http:\/\/192.168.15.23:3000\/calypso\/reader-mobile.css";
 
 /* Label of the button that starts the purchase of an additional redirected domain in the Domains Dashboard. */
 "Add a domain" = "إضافة نطاق";
@@ -642,9 +626,6 @@ translators: Block name. %s: The localized block name */
 /* Option to select the Airmail app when logging in with magic links */
 "Airmail" = "Airmail";
 
-/* Description of albums in the photo libraries */
-"Albums" = "الألبومات";
-
 /* Image alignment option title.
    Title of the screen for choosing an image's alignment. */
 "Alignment" = "محاذاة";
@@ -658,9 +639,8 @@ translators: Block name. %s: The localized block name */
    Title of the drafts filter. This filter shows a list of draft posts. */
 "All" = "الكل";
 
-/* Footer of the free domain registration section for a paid plan.
-   Information about redeeming domain credit on site dashboard. */
-"All WordPress.com plans include a custom domain name. Register your free premium domain now." = "تتضمن جميع خطط WordPress.com اسم نطاق مخصصًا. قم بتسجيل نطاقك المتميز المجاني الآن.";
+/* Information about redeeming domain credit on site dashboard. */
+"All WordPress.com annual plans include a custom domain name. Register your free domain now." = "تتضمن جميع خطط ووردبريس.كوم السنوية اسم نطاق مخصصًا. سجِّل نطاقك المجاني الآن.";
 
 /* An option in a list. Automatically approve all comments */
 "All comments" = "جميع التعليقات";
@@ -952,9 +932,6 @@ translators: Block name. %s: The localized block name */
 /* translators: accessibility text. Empty Audio caption. */
 "Audio caption. Empty" = "تسمية الملف الصوتي. فارغة";
 
-/* Accessibility label for audio items in the media collection view. The parameter is the creation date of the audio. */
-"Audio, %@" = "الصوت، %@";
-
 /* No comment provided by engineer. */
 "Authenticating" = "مصادقة";
 
@@ -986,9 +963,6 @@ translators: Block name. %s: The localized block name */
 
 /* The plugin can not be manually updated or deactivated */
 "Auto-managed on this site" = "تمت الإدارة التلقائية على هذا الموقع";
-
-/* Label indicating that a domain name registration will automatically renew */
-"Auto-renew enabled" = "تم تمكين التجديد التلقائي";
 
 /* Discussion Settings Title
    Settings: Comments Approval settings */
@@ -1121,9 +1095,6 @@ translators: Block name. %s: The localized block name */
 /* translators: displayed right after the block is duplicated. */
 "Block duplicated" = "المكوِّن الذي تم تكراره";
 
-/* Popup title about why this post is being opened in block editor */
-"Block editor enabled" = "تم تمكين محرر المكوّنات";
-
 /* translators: displayed right after the block is grouped */
 "Block grouped" = "تم تجميع المكوّنات";
 
@@ -1213,9 +1184,6 @@ translators: Block name. %s: The localized block name */
 /* Description of a Quick Start Tour */
 "Bring media straight from your device or camera to your site." = "قم بإحضار الوسائط مباشرةً من جهازك أو الكاميرا الخاصة بك إلى موقعك.";
 
-/* Description of a Quick Start Tour */
-"Browse all our themes to find your perfect fit." = "تصفّح جميع قوالبنا للعثور على ما يناسبك.";
-
 /* Jetpack Settings: Brute Force Attack Protection Section */
 "Brute Force Attack Protection" = "الحماية من هجمات القوة الغاشمة";
 
@@ -1262,8 +1230,7 @@ translators: Block name. %s: The localized block name */
 /* Label for size of media while it's being calculated. */
 "Calculating..." = "جاري الحساب...";
 
-/* Accessibility label for taking an image or video with the camera on formatting toolbar.
-   Accessibility label for the camera tile in the collection view */
+/* Accessibility label for taking an image or video with the camera on formatting toolbar. */
 "Camera" = "كاميرا";
 
 /* Title of an alert informing the user the camera permission for the app is disabled and its needed to proceed */
@@ -1509,8 +1476,7 @@ translators: Block name. %s: The localized block name */
 /* A text for title label on Login epilogue screen */
 "Choose a site to open." = "اختيار موقع لفتحه.";
 
-/* Title for the screen to pick a theme and homepage for a site.
-   Title of a Quick Start Tour */
+/* Title for the screen to pick a theme and homepage for a site. */
 "Choose a theme" = "اختيار قالب";
 
 /* Select the site's intent. Subtitle */
@@ -1527,9 +1493,6 @@ translators: Block name. %s: The localized block name */
 
 /* No comment provided by engineer. */
 "Choose file" = "اختيار ملف";
-
-/* Menu option for selecting media from the device's photo library. */
-"Choose from My Device" = "الاختيار من جهازي";
 
 /* Explanatory text for Homepage Settings homepage type selection. */
 "Choose from a homepage that displays your latest posts (classic blog) or a fixed \/ static page." = "اختر من صفحة رئيسية تعرض أحدث مقالاتك (مدونة تقليدية) أو صفحة ثابتة\/ساكنة.";
@@ -1602,7 +1565,6 @@ translators: Block name. %s: The localized block name */
    Action button to close edior and cancel changes or insertion of post
    Action button to close the editor
    Dismiss the current view
-   Dismiss the media picker for Stock Photos
    Dismisses the current screen
    Voiceover accessibility label informing the user that this button dismiss the current view */
 "Close" = "إغلاق";
@@ -1744,22 +1706,13 @@ translators: Block name. %s: The localized block name */
 "Completed: Check your site title" = "مُنجَز: التحقّق من عنوان موقعك";
 
 /* The Quick Start Tour title after the user finished the step. */
-"Completed: Choose a theme" = "مُنجَز: اختيار قالب";
-
-/* The Quick Start Tour title after the user finished the step. */
 "Completed: Choose a unique site icon" = "مُنجَز: اختيار أيقونة فريدة للموقع";
 
 /* The Quick Start Tour title after the user finished the step. */
 "Completed: Connect with other sites" = "اكتمل: الربط بمواقع أخرى";
 
 /* The Quick Start Tour title after the user finished the step. */
-"Completed: Continue with site setup" = "مُنجَز: الاستمرار في إعداد الموقع";
-
-/* The Quick Start Tour title after the user finished the step. */
 "Completed: Create your site" = "مُنجَز: إنشاء موقعك";
-
-/* The Quick Start Tour title after the user finished the step. */
-"Completed: Explore plans" = "مُنجَز: استكشاف الخطط";
 
 /* The Quick Start Tour title after the user finished the step. */
 "Completed: Publish a post" = "مُنجَز: نشر مقالة";
@@ -1898,9 +1851,6 @@ translators: Block name. %s: The localized block name */
 /* Button title. Tapping begins log in using Google. */
 "Continue with Google" = "المتابعة باستخدام Google";
 
-/* Title of a Quick Start Tour */
-"Continue with site setup" = "الاستمرار في إعداد الموقع";
-
 /* Shown while logging in with Apple and the app waits for the site creation process to complete. */
 "Continuing with Apple" = "المتابعة عبر Apple";
 
@@ -1995,13 +1945,13 @@ translators: Block name. %s: The localized block name */
 "Couldn't connect to the WordPress site. There is no valid WordPress site at this address. Check the site address (URL) you entered." = "يتعذر الاتصال بموقع ووردبريس. لا يوجد موقع ووردبريس صالح على هذا العنوان. تحقق من عنوان الموقع (URL) الذي أدخلته.";
 
 /* Message to show to user when he tries to add a self-hosted site with RSD link present, but xmlrpc is missing. */
-"Couldn't connect. Required XML-RPC methods are missing on the server." = "تعذر الاتصال. طرق XML-RPC المطلوبة غير موجودة على الخادم.";
+"Couldn't connect. Required XML-RPC methods are missing on the server. Please contact your hosting provider to solve this problem." = "تعذر الاتصال. تكون طرق XML-RPC المطلوبة مفقودة على الخادم. يرجى الاتصال بمزوِّد خدمة الاستضافة لديك لحل هذه المشكلة.";
 
 /* Message to show to user when he tries to add a self-hosted site but the host returned a 403 error, meaning that the access to the /xmlrpc.php file is forbidden. */
-"Couldn't connect. We received a 403 error when trying to access your site's XMLRPC endpoint. The app needs that in order to communicate with your site. Contact your host to solve this problem." = "تعذر الاتصال. تلقينا الخطأ 403 عند محاولة الوصول إلى نقطة نهاية موقعك XMLRPC. يحتاج التطبيق إلى ذلك للاتصال بموقعك. يُرجى الاتصال بمستضيفك لحل هذه المشكلة.";
+"Couldn't connect. We received a 403 error when trying to access your site's XMLRPC endpoint. The app needs that in order to communicate with your site. Please contact your hosting provider to solve this problem." = "تعذر الاتصال. تلقينا الخطأ 403 عند محاولة الوصول إلى نقطة نهاية XMLRPC في موقعك. يحتاج التطبيق إلى ذلك للاتصال بموقعك. يرجى الاتصال بمزوِّد خدمة الاستضافة لديك لحل هذه المشكلة.";
 
 /* Message to show to user when he tries to add a self-hosted site but the host returned a 405 error, meaning that the host is blocking POST requests on /xmlrpc.php file. */
-"Couldn't connect. Your host is blocking POST requests, and the app needs that in order to communicate with your site. Contact your host to solve this problem." = "تعذر الاتصال. يحظر مضيفك طلبات POST، ويحتاج التطبيق إلى ذلك للاتصال بموقعك. يُرجى الاتصال بالمضيف لحل هذه المشكلة.";
+"Couldn't connect. Your host is blocking POST requests, and the app needs that in order to communicate with your site. Please contact your hosting provider to solve this problem." = "تعذر الاتصال. يحظر مضيفك طلبات POST، ويحتاج التطبيق إلى ذلك للاتصال بموقعك. يرجى الاتصال بمزوِّد خدمة الاستضافة لديك لحل هذه المشكلة.";
 
 /* Error message when tag loading failed */
 "Couldn't load tags." = "تعذّر تحميل الوسوم.";
@@ -2024,9 +1974,6 @@ translators: Block name. %s: The localized block name */
 /* Error title displayed when unable to close user account. */
 "Couldn’t close account automatically" = "تعذّر إغلاق الحساب تلقائياً";
 
-/* Message to show while media data source is finding the number of items available. */
-"Counting media items..." = "جاري حساب عناصر الوسائط...";
-
 /* Period Stats 'Countries' header */
 "Countries" = "الدول";
 
@@ -2036,9 +1983,6 @@ translators: Block name. %s: The localized block name */
 
 /* Register Domain - Address information field Country Code */
 "Country Code" = "رمز البلد";
-
-/* Title of a section on the debug screen that shows a list of actions related to crash logging */
-"Crash Logging" = "تسجيل الأعطال";
 
 /* Label for switch to turn on/off sending crashes info */
 "Crash reports" = "تقارير الأعطال";
@@ -2054,9 +1998,6 @@ translators: Block name. %s: The localized block name */
 
 /* Create New header text */
 "Create New" = "إنشاء جديد";
-
-/* Title for the site creation flow. */
-"Create New Site" = "إنشاء موقع جديد";
 
 /* Button for selecting the current page template.
    Button title, encourages users to create their first page on their blog.
@@ -2244,9 +2185,6 @@ translators: Block name. %s: The localized block name */
 /* Navigates to debug menu only available in development builds */
 "Debug" = "تصحيح الأخطاء (Debug)";
 
-/* Debug settings title */
-"Debug Settings" = "إعدادات وضع تصحيح الأخطاء";
-
 /* Only December needs to be translated */
 "December 17, 2017" = "17 ديسمبر، 2017";
 
@@ -2267,9 +2205,6 @@ translators: Block name. %s: The localized block name */
 /* Label for selecting the default post format
    Title for screen to select a default post format for a blog */
 "Default Post Format" = "التنسيق الافتراضي للمقالة";
-
-/* Placeholder for the reader CSS URL */
-"Default URL" = "الرابط الافتراضي URL";
 
 /* Discussion Settings: Posts Section */
 "Defaults for New Posts" = "الإعدادات الافتراضية للمقالات الجديدة";
@@ -2407,7 +2342,6 @@ translators: Block name. %s: The localized block name */
 /* Accessibility label for button to dismiss a bottom sheet
    Accessibility label for the transparent space above the login dialog which acts as a button to dismiss the dialog.
    Accessibility label for the transparent space above the signup dialog which acts as a button to dismiss the dialog.
-   Action to show on alert when view asset fails.
    Dismiss a view. Verb */
 "Dismiss" = "تجاهل";
 
@@ -2425,12 +2359,6 @@ translators: Block name. %s: The localized block name */
    User's Display Name */
 "Display Name" = "اسم العرض";
 
-/* Accessibility label for other media items in the media collection view. The parameter is the creation date of the document. */
-"Document, %@" = "المستند، %@";
-
-/* Accessibility label for other media items in the media collection view. The parameter is the filename file. */
-"Document: %@" = "المستند: %@";
-
 /* Message shown when all tours have been completed */
 "Doesn't it feel good to cross things off a list?" = "أليس من الأفضل حذف أشياء من القائمة؟";
 
@@ -2442,12 +2370,6 @@ translators: Block name. %s: The localized block name */
 
 /* Noun. Title. Links to the Domains screen. */
 "Domains" = "النطاقات";
-
-/* Description for the first domain purchased with a free plan. */
-"Domains purchased on this site will redirect to %@" = "النطاقات التي تم شراؤها على هذا الموقع سيتم توجيهها إلى %@";
-
-/* Description for the first domain purchased with a free plan. */
-"Domains purchased on this site will redirect users to " = "النطاقات التي تم شراؤها على هذا الموقع ستعيد توجيه الزائرين إلى ";
 
 /* Label for button to log in using your site address. The underscores _..._ denote underline */
 "Don't have an account? _Sign up_" = "ليس لديك حساب؟ _تسجيل_";
@@ -2618,15 +2540,11 @@ translators: Block name. %s: The localized block name */
 /* Editing GIF alert default action button.
    Edits a Comment
    Edits the comment
-   User action to edit media details.
-   Verb, edit a comment */
+   User action to edit media details. */
 "Edit" = "تحرير";
 
 /* Title for the edit more button section */
 "Edit \"More\" button" = "تحرير زر \"المزيد\"";
-
-/* Button that displays the media editor to the user */
-"Edit %@" = "تحرير %@";
 
 /* Blocklist Keyword Edition Title */
 "Edit Blocklist Word" = "تحرير كلمة قائمة الحظر";
@@ -2686,9 +2604,6 @@ translators: Block name. %s: The localized block name */
 
 /* Title for the editor settings section */
 "Editor" = "المحرّر";
-
-/* Edit Action Spoken hint. */
-"Edits a comment" = "يحرر تعليقًا";
 
 /* VoiceOver accessibility hint, informing the user the button can be used to Edit the Comment. */
 "Edits the comment." = "يحرِّر التعليق.";
@@ -2816,9 +2731,6 @@ translators: Block name. %s: The localized block name */
 
 /* Message explaining why the user might enter a password. */
 "Enter a password to protect this post" = "إدخال كلمة مرور لحماية هذه المقالة";
-
-/* Secondary message shown when there are no domains that match the user entered text. */
-"Enter different words above and we'll look for an address that matches it." = "أدخل كلمات مختلفة أعلاه وسنبحث عن عنوان يطابقها.";
 
 /* (placeholder) Help enter WordPress password
    Placeholder of a field to type a password to protect the post. */
@@ -3005,23 +2917,14 @@ translators: Block name. %s: The localized block name */
 /* Screen reader hint (non-imperative) about what does the site menu area selector button do. */
 "Expands to select a different menu area" = "التوسيع لتحديد منطقة قائمة مختلفة";
 
-/* Label indicating that a domain name registration has expired. */
-"Expired" = "منتهي الصلاحية";
-
 /* Title for the error view when the user scanned an expired log in code */
 "Expired log in code" = "رمز تسجيل دخول منتهي الصلاحية";
 
 /* Title. Indicates an expiration date. */
 "Expires on" = "تنتهي الصلاحية في";
 
-/* Label indicating the date on which a domain name registration will expire. The %@ placeholder will be replaced with a date at runtime. */
-"Expires on %@" = "تنتهي الصلاحية في %@";
-
 /* Placeholder text for the tagline of a site */
 "Explain what this site is about." = "اكتب نبذة قصيرة عن الموقع.";
-
-/* Title of a Quick Start Tour */
-"Explore plans" = "استكشاف الخطط";
 
 /* Export Content confirmation action title
    Label for selecting the Export Content Settings item */
@@ -3121,6 +3024,9 @@ translators: Block name. %s: The localized block name */
 /* Label for the file type (.JPG, .PNG, etc) for a media asset (image / video) */
 "File type" = "نوع الملف";
 
+/* No comment provided by engineer. */
+"File type not supported as a media file." = "نوع الملف غير مدعوم كملف وسائط.";
+
 /* Film & Television site intent topic */
 "Film & Television" = "الفيلم والتليفزيون";
 
@@ -3208,8 +3114,7 @@ translators: Block name. %s: The localized block name */
    Label for number of followers. */
 "Followers" = "المتابعين";
 
-/* Accessibility label for following buttons.
-   Title of the Following Reader tab
+/* Title of the Following Reader tab
    User is following the blog.
    Verb. Button title. The user is following a blog. */
 "Following" = "المتابعة";
@@ -3226,9 +3131,6 @@ translators: Block name. %s: The localized block name */
 /* Filters Follows Notifications */
 "Follows" = "متابعات";
 
-/* Spoken hint describing action for unselected following buttons. */
-"Follows blog" = "متابعة المدونة";
-
 /* VoiceOver accessibility hint, informing the user the button can be used to follow a blog. */
 "Follows the blog." = "يتابع المدونة.";
 
@@ -3237,6 +3139,9 @@ translators: Block name. %s: The localized block name */
 
 /* No comment provided by engineer. */
 "Font Size" = "حجم الخط";
+
+/* translators: %1$s: Font size name e.g. Small */
+"Font Size, %1$s" = "حجم الخط، ⁦%1$s⁩";
 
 /* Food site intent topic */
 "Food" = "طعام";
@@ -3267,9 +3172,6 @@ translators: Block name. %s: The localized block name */
 
 /* One of the options when selecting More in the Post Editor's format bar */
 "Free Photo Library" = "مكتبة الصور المجانية";
-
-/* Label shown for domains that will be free for the first year due to the user having a premium plan with available domain credit. */
-"Free for the first year " = "مجاني للسنة الأولى";
 
 /* Explanatory text for clearing device media cache. */
 "Free up storage space on this device by deleting temporary media files. This will not affect the media on your site." = "يمكنك توفير مساحة تخزين على هذا الجهاز عن طريق حذف ملفات الوسائط المؤقتة. لن يؤثر هذا على الوسائط الموجودة على موقعك.";
@@ -3359,9 +3261,6 @@ translators: Block name. %s: The localized block name */
 /* Name of the Quick Start list that guides users through a few tasks to explore the WordPress/Jetpack app. */
 "Get to know the app" = "التعرُّف على التطبيق";
 
-/* Title of the card that starts the purchase of the first redirected domain in the Domains Dashboard. */
-"Get your domain" = "احصل على نطاقك";
-
 /* Title of the second alert preparing users to grant permission for us to send them push notifications. */
 "Get your notifications faster" = "تلقي تنبيهاتك بشكل أسرع";
 
@@ -3385,9 +3284,6 @@ translators: Block name. %s: The localized block name */
 
 /* Option to select the Gmail app when logging in with magic links */
 "Gmail" = "Gmail";
-
-/* No comment provided by engineer. */
-"Go back" = "عد للخلف";
 
 /* Button title. Tapping lets the user view the sites they follow. */
 "Go to Following" = "انتقل إلى التالي";
@@ -3427,17 +3323,11 @@ translators: Block name. %s: The localized block name */
 /* This value is used to set the accessibility hint text for viewing the user's notifications. */
 "Guides you through the process of checking your notifications." = "يرشدك في أثناء عملية التحقُّق من تنبيهاتك.";
 
-/* This value is used to set the accessibility hint text for choosing a theme for the user's site. */
-"Guides you through the process of choosing a theme for your site." = "يرشدك خلال عملية اختيار قالب لموقعك.";
-
 /* This value is used to set the accessibility hint text for creating a new page for the user's site. */
 "Guides you through the process of creating a new page for your site." = "يرشدك خلال عملية إنشاء صفحة جديدة لموقعك.";
 
 /* This value is used to set the accessibility hint text for creating the user's site. */
 "Guides you through the process of creating your site." = "يرشدك خلال عملية إنشاء موقعك.";
-
-/* This value is used to set the accessibility hint text for exploring plans on the user's site. */
-"Guides you through the process of exploring plans for your site." = "يرشدك خلال عملية استكشاف خطط لموقعك.";
 
 /* This value is used to set the accessibility hint text for following the sites of other users. */
 "Guides you through the process of following other sites." = "يرشدك خلال عملية متابعة المواقع الأخرى.";
@@ -3453,9 +3343,6 @@ translators: Block name. %s: The localized block name */
 
 /* This value is used to set the accessibility hint text for setting the site title. */
 "Guides you through the process of setting a title for your site." = "يرشدك خلال عملية تعيين عنوان لموقعك.";
-
-/* This value is used to set the accessibility hint text for setting up the user's site. */
-"Guides you through the process of setting up your site." = "يرشدك خلال عملية إعداد موقعك.";
 
 /* This value is used to set the accessibility hint text for uploading a site icon. */
 "Guides you through the process of uploading an icon for your site." = "يرشدك خلال عملية تحميل أيقونة رمزية لموقعك.";
@@ -3610,9 +3497,6 @@ translators: Block name. %s: The localized block name */
 /* Message to show when site icon update failed */
 "Icon update failed" = "فشل تحديث الرمز";
 
-/* Message explaining that they will need to install Jetpack on one of their sites. */
-"If you already have a site, you’ll need to install the free Jetpack plugin and connect it to your WordPress.com account." = "إذا كان لديك موقع بالفعل، فسيتعيَّن عليك تثبيت إضافة Jetpack المجانية وربطها بحسابك على WordPress.com.";
-
 /* The instructions text about not being able to find the magic link email. */
 "If you can’t find the email, please check your junk or spam email folder" = "إذا تعذر عليك العثور على البريد الإلكتروني، فيرجى التحقُّق من مجلد البريد الإلكتروني غير الهام والبريد الإلكتروني المزعج";
 
@@ -3663,9 +3547,6 @@ translators: Block name. %s: The localized block name */
 
 /* Hint for image title on image settings. */
 "Image title" = "عنوان الصورة";
-
-/* Accessibility label for image thumbnails in the media collection view. The parameter is the creation date of the image. */
-"Image, %@" = "الصورة %@";
 
 /* Undated post time label */
 "Immediately" = "حالاً";
@@ -4025,9 +3906,6 @@ translators: Block name. %s: The localized block name */
 /* Body text of the first alert preparing users to grant permission for us to send them push notifications. */
 "Learn about new comments, likes, and follows in seconds." = "تعرَّف على التعليقات والإعجابات والمتابعات الجديدة في غضون ثوانٍ.";
 
-/* Description of a Quick Start Tour */
-"Learn about the marketing and SEO tools in our paid plans." = "معرفة المزيد عن أدوات التسويق وتحسين محركات البحث SEO في خططنا المدفوعة.";
-
 /* A button title.
    Link to cookie policy
    Menu title to show the prompts feature introduction modal.
@@ -4167,17 +4045,11 @@ translators: Block name. %s: The localized block name */
 /* Text displayed while loading the activity feed for a site */
 "Loading Backups..." = "جاري تحميل النسخ الاحتياطية...";
 
-/* Phrase to show when the user has searched for GIFs and they are being loaded. */
-"Loading GIFs..." = "جاري تحميل صور GIF...";
-
 /* Menus label text displayed while menus are loading */
 "Loading Menus..." = "جاري تحميل القوائم...";
 
 /* Text displayed while loading site People. */
 "Loading People..." = "جاري تحميل الأشخاص...";
-
-/* Phrase to show when the user has searched for images and they are being loaded. */
-"Loading Photos..." = "جاري تحميل الصورة...";
 
 /* Text displayed while loading plans details */
 "Loading Plan..." = "جاري تحميل الخطة...";
@@ -4199,9 +4071,6 @@ translators: Block name. %s: The localized block name */
 
 /* Displayed while a comment is being loaded. */
 "Loading comment..." = "جارٍ تحميل التعليق...";
-
-/* Shown while the app waits for the domain suggestions web service to return during the site creation process. */
-"Loading domains" = "تحميل النطاقات";
 
 /* Displayed while a call is loading the history. */
 "Loading history..." = "جاري تحميل السجلّ...";
@@ -4422,13 +4291,6 @@ translators: Block name. %s: The localized block name */
 /* Label for size of media cache in the app. */
 "Media Cache Size" = "حجم ذاكرة التخزين المؤقت للوسائط";
 
-/* Title for alert when access to media capture is not granted */
-"Media Capture" = "التقاط الوسائط";
-
-/* Title for alert when a generic error happened when loading media
-   Title for alert when access to the media library is not granted by the user */
-"Media Library" = "مكتبة الوسائط";
-
 /* Title for action sheet with media options. */
 "Media Options" = "خيارات الوسائط";
 
@@ -4450,9 +4312,6 @@ translators: Block name. %s: The localized block name */
 
 /* translators: %s: block title e.g: \"Paragraph\". */
 "Media options" = "خيارات الوسائط";
-
-/* Alert title when there is issues loading an asset to preview. */
-"Media preview failed." = "فشل معاينة الوسائط.";
 
 /* Alert displayed to the user when multiple media items have uploaded successfully. */
 "Media uploaded (%ld files)" = "الوسائط المرفوعة (%ld الملفات)";
@@ -4664,8 +4523,11 @@ translators: %s: Select control button label e.g. \"Button width\" */
 /* Describes a status of a plugin */
 "Needs Update" = "بحاجة إلى تحديث";
 
-/* Label indicating that a domain name registration has no expiry date. */
-"Never expires" = "لا تنتهي صلاحيته أبداً";
+/* No comment provided by engineer. */
+"Network connection lost, working offline" = "فقدان الاتصال بالشبكة، العمل من دون اتصال بالإنترنت";
+
+/* No comment provided by engineer. */
+"Network connection re-established" = "أعيد إنشاء الاتصال بالشبكة";
 
 /* Header of section in Plugin Directory showing newest plugins */
 "New" = "جديد";
@@ -4740,9 +4602,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 
 /* List Editor Empty State Message */
 "No Items" = "لا توجد عناصر";
-
-/* Title when users have no Jetpack sites. */
-"No Jetpack sites found" = "لم يتم العثور على أي مواقع Jetpack";
 
 /* Menus selection title for setting a location to not use a menu. */
 "No Menu" = "لا توجد قائمة";
@@ -4856,9 +4715,7 @@ translators: %s: Select control button label e.g. \"Button width\" */
 /* Title for the view when there aren't any Activities to display in the Activity Log for a given filter. */
 "No matching events found." = "لم يتم العثور على أحداث متطابقة.";
 
-/* Message displayed when no results are returned from a media library search. Should match Calypso.
-   Phrase to show when the user search for images but there are no result to show.
-   Phrase to show when the user searches for GIFs but there are no result to show. */
+/* Message displayed when no results are returned from a media library search. Should match Calypso. */
 "No media matching your search" = "لا توجد وسائط مطابقة لبحثك";
 
 /* Menus text shown when no menus were available for loading the Menus editor. */
@@ -4962,9 +4819,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 /* Error message to show to users when trying to upload a media object with file size is larger than the available site disk quota */
 "Not enough space to upload" = "لا توجد مساحة كافية للرفع";
 
-/* Accessibility label for unselected following buttons. */
-"Not following" = "عدم المتابعة";
-
 /* Button label for denying our request to allow push notifications
    Not now button title shown in alert preparing users to grant permission for us to send them push notifications.
    Phrase displayed to dismiss a quick start tour suggestion. */
@@ -4996,9 +4850,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 
 /* A message title */
 "Nothing liked yet" = "لم ينل إعجابي شيء حتي الآن";
-
-/* Default message for empty media picker */
-"Nothing to show" = "لا يوجد شيء لعرضه";
 
 /* Notifications Details Accessibility Identifier */
 "Notification Details Table" = "جدول تفاصيل التنبيهات";
@@ -5059,7 +4910,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
    Alert dismissal title
    Button title. Acknowledges a prompt.
    Button title. An acknowledgement of the message displayed in a prompt.
-   Confirmation of action
    Default action
    Dismisses the alert
    Marks all notifications as read.
@@ -5069,7 +4919,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
    Ok button for dismissing alert helping users understand their site address
    OK button title for the warning shown to the user when the app realizes there should be an auth token but there isn't one.
    OK Button title shown in alert informing users about the Reader Save for Later feature.
-   OK button to close the informative dialog on Gutenberg editor
    Submit button on prompt for user information.
    Title of a button that dismisses a prompt
    Title of an OK button. Pressing the button acknowledges and dismisses a prompt.
@@ -5154,9 +5003,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 /* Go to the settings app
    Title of a button that opens the apps settings in the system Settings.app */
 "Open Settings" = "فتح الإعدادات";
-
-/* Editor button to swich the media picker from quick mode to full picker */
-"Open full media picker" = "فتح أداة انتقاء الوسائط بالكامل";
 
 /* No comment provided by engineer. */
 "Open in Safari" = "فتح في Safari";
@@ -5374,14 +5220,8 @@ translators: %s: Select control button label e.g. \"Button width\" */
 /* Photography site intent topic */
 "Photography" = "التصوير الفوتوغرافي";
 
-/* Subtitle for placeholder in Free Photos. The company name 'Pexels' should always be written as it is. */
-"Photos provided by Pexels" = "الصور مقدمة من Pexels";
-
 /* Title for selecting a new username in the site creation flow. */
 "Pick username" = "اختيار اسم مستخدم";
-
-/* The item to select during a guided tour. */
-"Plan" = "الخطة";
 
 /* Action title. Noun. Links to a blog's Plans screen.
    Title for the plan selector */
@@ -5653,9 +5493,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 /* A message explaining the Posts I Like feature in the reader */
 "Posts that you like will appear here." = "ستظهر المنشورات التي تعجب بها هنا.";
 
-/* Subtitle for placeholder in Tenor picker. `The company name 'Tenor' should always be written as it is. */
-"Powered by Tenor" = "مدعوم من Tenor";
-
 /* Browse premium themes selection title */
 "Premium" = "الإصدار المميز";
 
@@ -5673,9 +5510,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
    Title for screen to preview a selected homepage design.
    Title for screen to preview a static content. */
 "Preview" = "معاينة";
-
-/* Action for Media Picker to preview the selected media items. The argument in the string represents the number of elements (as numeric digits) selected */
-"Preview %@" = "معاينة %@";
 
 /* Title for web preview device switching button */
 "Preview Device" = "معاينة الجهاز";
@@ -5704,9 +5538,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 /* Primary Site Picker's Title
    Primary Web Site */
 "Primary Site" = "الموقع الرئيسي";
-
-/* Primary site address label, used in the site address section of the Domains Dashboard. */
-"Primary site address" = "رابط الموقع الأساسي";
 
 /* Label for the privacy setting
    Privacy settings section header */
@@ -5809,9 +5640,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 /* Published on [date] */
 "Published on" = "تمّ النشر في";
 
-/* Label that describes in which blog the user is publishing to */
-"Publishing To" = "نشر إلى";
-
 /* A short message that informs the user a page is being published to the server from the share extension. */
 "Publishing page..." = "جارٍ نشر الصفحة...";
 
@@ -5833,9 +5661,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 /* This is the string we display when asking the user to approve push notifications in the settings app after previously having denied them. */
 "Push notifications have been turned off in iOS settings. Toggle “Allow Notifications” to turn them back on." = "تم إيقاف تشغيل تنبيهات الدفع في إعدادات iOS. قم بتبديل \"السماح بالتنبيهات\" لتشغيلها من جديد.";
 
-/* The menu item to select during a guided tour. */
-"Quick Start" = "البدء السريع";
-
 /* Title for button allowing users to rate the app in the App Store */
 "Rate Us" = "قيّمنا";
 
@@ -5854,12 +5679,8 @@ translators: %s: Select control button label e.g. \"Button width\" */
    The accessibility value of the reader tab.
    The default title of the Reader
    The menu item to select during a guided tour.
-   Title of the 'Reader' tab - used for spotlight indexing on iOS.
-   Title of the Reader section of the debug screen used in debug builds of the app */
+   Title of the 'Reader' tab - used for spotlight indexing on iOS. */
 "Reader" = "القارئ";
-
-/* Title of the screen that allows the user to change the Reader CSS URL for debug builds */
-"Reader CSS URL" = "رابط Reader CSS URL";
 
 /* Title of button that asks the users if they'd like to focus on checking their sites stats */
 "Reading posts from other sites" = "قراءة تدوينات من مواقع أخرى";
@@ -5942,8 +5763,7 @@ translators: %s: Select control button label e.g. \"Button width\" */
 /* Title of the completion screen of the Blogging Reminders Settings screen when the reminders are removed. */
 "Reminders removed" = "تمت إزالة التذكيرات";
 
-/* Add asset to media picker list
-   Alert button to confirm a plugin to be removed
+/* Alert button to confirm a plugin to be removed
    Button label when removing a blog
    Label for the Remove Feature Image icon. Tapping will show a confirmation screen for removing the feature image from the post.
    Remove Action
@@ -6021,9 +5841,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 /* First line of remove email follower warning in confirmation dialog.
    First line of remove follower warning in confirmation dialog. */
 "Removing followers makes them stop receiving updates from your site. If they choose to, they can still visit your site, and follow it again." = "تؤدي إزالة المتابعين إلى توقفهم عن استقبال تحديثات من موقعك. إذا اختاروا ذلك، فسيظل بإمكانهم زيارة موقعك ومتابعته مرة أخرى.";
-
-/* Label indicating the date on which a domain name registration will be renewed. The %@ placeholder will be replaced with a date at runtime. */
-"Renews on %@" = "يتم التجديد في %@";
 
 /* No comment provided by engineer. */
 "Replace Current Block" = "استبدال المكوِّن الحالي";
@@ -6157,7 +5974,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
    Retry. Verb – retry a failed media upload.
    The Jetpack view button title used when an error occurred
    Title for accessory view in the empty state table view cell in the Verticals step of Enhanced Site Creation
-   title for action that tries to connect to the reader after a loading error.
    User action to retry media upload. */
 "Retry" = "إعادة المحاولة";
 
@@ -6210,6 +6026,9 @@ translators: %s: Select control button label e.g. \"Button width\" */
 
 /* Button label to open web page in Safari */
 "Safari" = "Safari";
+
+/* Title of a row displayed on the debug screen used to configure the sandbox store use in the App. */
+"Sandbox Store" = "متجر Sandbox";
 
 /* Menus save button title
    Save Action
@@ -6364,12 +6183,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 /* No comment provided by engineer. */
 "Search settings" = "إعدادات البحث";
 
-/* Title for placeholder in Tenor picker */
-"Search to find GIFs to add to your Media Library!" = "ابحث للعثور على صور GIF لإضافتها إلى مكتبة الوسائط الخاصة بك!";
-
-/* Title for placeholder in Free Photos */
-"Search to find free photos to add to your Media Library!" = "ابحث للعثور على صور مجانية لإضافتها إلى مكتبة الوسائط الخاصة بك!";
-
 /* Menus search bar placeholder text. */
 "Search..." = "يجري البحث...";
 
@@ -6384,9 +6197,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 
 /* Button in Plugin Directory letting users see more plugins */
 "See All" = "مشاهدة الكل";
-
-/* Action button linking to instructions for installing Jetpack.Presented when logging in with a site address that does not have a valid Jetpack installation */
-"See Instructions" = "الاطلاع على الإرشادات";
 
 /* Caption displayed in promotional screens shown during the login flow. */
 "See comments and notifications in real time." = "شاهد التعليقات والإشعارات في الوقت الفعلي.";
@@ -6405,22 +6215,13 @@ translators: %s: Select control button label e.g. \"Button width\" */
 "Select %@ to create a new post" = "حدّد %@ لإنشاء مقالة جديدة";
 
 /* A step in a guided tour for quick start. %@ will be the name of the item to select. */
-"Select %@ to discover new themes" = "حدّد %@ لاكتشاف القوالب الجديدة";
-
-/* A step in a guided tour for quick start. %@ will be the name of the item to select. */
 "Select %@ to find other sites." = "حدِّد %@ للعثور على مواقع أخرى.";
 
 /* A step in a guided tour for quick start. %@ will be the name of the item to select. */
 "Select %@ to see how your site is performing." = "حدّد %@ لمعرفة مستوى أداء موقعك.";
 
 /* A step in a guided tour for quick start. %@ will be the name of the item to select. */
-"Select %@ to see your checklist" = "حدّد %@ لرؤية قائمة الاختيار الخاصة بك";
-
-/* A step in a guided tour for quick start. %@ will be the name of the item to select. */
 "Select %@ to see your current library." = "حدِّد %@ للاطلاع على مكتبتك الحالية.";
-
-/* A step in a guided tour for quick start. %@ will be the name of the item to select. */
-"Select %@ to see your current plan and other available plans." = "حدّد %@ لرؤية خطتك الحالية والخطط المتاحة الأخرى.";
 
 /* A step in a guided tour for quick start. %@ will be the name of the item to select. */
 "Select %@ to see your page list." = "حدّد %@ لرؤية قائمة صفحاتك.";
@@ -6460,9 +6261,6 @@ translators: %s: Select control button label e.g. \"Button width\" */
 
 /* Register domain - Title for the Choose domain button of Suggested domains screen */
 "Select domain" = "تحديد نطاق";
-
-/* Accessibility hint for actions when displaying media items. */
-"Select media." = "تحديد الوسائط.";
 
 /* Accessibility label for selecting paragraph style button on formatting toolbar. */
 "Select paragraph style" = "تحديد نمط الفقرة";
@@ -6817,10 +6615,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Create new Site Page button title */
 "Site page" = "صفحة الموقع";
 
-/* Prologue title label, the 
- force splits it into 2 lines. */
-"Site security and performance\nfrom your pocket" = "أمان الموقع وأداؤه\nمن جيبك";
-
 /* Site timezone offset from UTC. The first %@ is plus or minus. %d is the number of hours. The last %@ is minutes, where applicable. Examples: `Site timezone (UTC+10:30)`, `Site timezone (UTC-8)`. */
 "Site timezone (UTC%@%d%@)" = "المنطقة الزمنيّة للموقع (UTC%1$@%2$d%3$@)";
 
@@ -6874,9 +6668,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 
 /* Title shown on the dashboard when it fails to load */
 "Some data wasn't loaded" = "لم يتم تحميل بعض البيانات";
-
-/* Confirms with the user if they save the post all media that failed to upload will be removed from it. */
-"Some media uploads failed. This action will remove all failed media from the post.\nSave anyway?" = "فشلت بعض عمليات رفع الوسائط. سيؤدي هذا الإجراء إلى إزالة كل الوسائط الفاشلة من المقالة.\nهل تريد الحفظ على أي حال؟";
 
 /* Title for a label that appears when the scan failed
    Title for the error view when the scan start has failed */
@@ -7088,8 +6879,7 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
    Theme Support action title */
 "Support" = "الدعم";
 
-/* Button used to switch site
-   Title for back button that leads to the site picker screen. */
+/* Title for back button that leads to the site picker screen. */
 "Switch Site" = "تبديل الموقع";
 
 /* Switches the Editor to HTML Mode */
@@ -7177,9 +6967,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Label explaining why users might want to add tags. */
 "Tags help tell readers what a post is about. Separate different tags with commas." = "تساعد الوسوم على إخبار القراء بما تدور حوله المقالة. افصل بين الوسوم المختلفة بفواصل.";
 
-/* Menu option for taking an image or video with the device's camera. */
-"Take Photo or Video" = "التقاط صورة أو تسجيل فيديو";
-
 /* No comment provided by engineer. */
 "Take a Photo" = "التقاط صورة";
 
@@ -7249,9 +7036,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 
 /* Accessibility hint */
 "Tap to select the previous period" = "اضغط لتحديد الفترة السابقة";
-
-/* Accessibility hint for button used to switch site */
-"Tap to switch to another site, or add a new site" = "أنقر للتبديل إلى موقع آخر، أو إضافة موقع جديد";
 
 /* Accessibility hint for a button that opens a new view with more details. */
 "Tap to view more details." = "اضغط لعرض مزيد من التفاصيل.";
@@ -7330,9 +7114,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 
 /* Error message shown to a user who is trying to share to Facebook but does not have any available Facebook Pages. */
 "The Facebook connection cannot find any Pages. Publicize cannot connect to Facebook Profiles, only published Pages." = "يتعذر الاتصال بـ Facebook العثور على أي صفحات. لا يمكن لآلية النشر الاتصال بملفات تعريف Facebook الشخصية، فقط للصفحات المنشورة.";
-
-/* Message shown when a GIF failed to load while trying to add it to the Media library. */
-"The GIF could not be added to the Media Library." = "تتعذر إضافة تنسيق GIF إلى مكتبة الوسائط.";
 
 /* Description shown when a user logs in with Google but no matching WordPress.com account is found */
 "The Google account \"%@\" doesn't match any account on WordPress.com" = "لا يتطابق حساب جوجل \"‎%@\" مع أي حساب موجود على WordPress.com.";
@@ -7431,7 +7212,8 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* No comment provided by engineer. */
 "The site at %@ uses WordPress %@. We recommend to update to the latest version, or at least %@" = "يستخدم الموقع في %1$@ ووردبريس %2$@. نوصي بالتحديث إلى أحدث إصدار أو الإصدار %3$@ على الأقل";
 
-/* Error message shown a URL does not point to an existing site. */
+/* Error message shown a URL does not point to an existing site.
+   Error message shown when a URL does not point to an existing site. */
 "The site at this address is not a WordPress site. For us to connect to it, the site must use WordPress." = "الموقع الموجود على هذا العنوان ليس موقع ووردبريس. لكي نتصل بالموقع، يجب أن يستخدم الموقع ووردبريس.";
 
 /* Message shown when site deletion API failed */
@@ -7471,7 +7253,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 "Theme Activated" = "تم تفعيل القالب";
 
 /* Noun. Name of the Themes feature
-   The menu item to select during a guided tour.
    Themes option in the blog details
    Title of Themes browser page */
 "Themes" = "القوالب";
@@ -7540,9 +7321,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 
 /* Explaining to the user there was an error trying to obtain the current location of the user. */
 "There was a problem when trying to access your location. Please try again later." = "حدثت مشكلة عند محاولة الوصول إلى موقعك. يُرجى المحاولة مرة أخرى لاحقاً.";
-
-/* Explaining to the user there was an generic error accesing media. */
-"There was a problem when trying to access your media. Please try again later." = "حدثت مشكلة أثناء محاولة الوصول إلى الوسائط الخاصة بك. يُرجى المحاولة مرة أخرى لاحقاً.";
 
 /* Message for stories unknown error. */
 "There was a problem with the Stories editor.  If the problem persists you can contact us via the Me > Help & Support screen." = "حدثت مشكلة في محرر القصص. إذا استمرت المشكلة، يمكنك الاتصال بنا من خلال شاشة \"أنا\" > \"المساعدة والدعم\".";
@@ -7613,9 +7391,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 
 /* A description informing the user in order to proceed with this feature we will need camera permissions, and how to enable it. */
 "This app needs permission to access the Camera to scan login codes, tap on the Open Settings button to enable it." = "يحتاج هذا التطبيق إلى صلاحية للوصول إلى الكاميرا لمسح رموز تسجيل الدخول ضوئيًا، انقر على زر فتح الإعدادات لتمكينها.";
-
-/* Explaining to the user why the app needs access to the device media library. */
-"This app needs permission to access your device media library in order to add photos and\/or video to your posts. Please change the privacy settings if you wish to allow this." = "يلزم هذا التطبيق إذن بالوصول إلى مكتبة وسائط الجهاز لإضافة الصور و\/أو مقاطع الفيديو إلى مقالاتك. يُرجى تغيير إعدادات الخصوصية إذا كنت ترغب في السماح بهذا.";
 
 /* No comment provided by engineer. */
 "This color combination may be hard for people to read. Try using a brighter background color and\/or a darker text color." = "قد يصعب على الأشخاص قراءة تركيبة الألوان هذه. حاول استخدام لون خلفية أغمق و\/أو لون نص أكثر إشراقًا.";
@@ -7723,9 +7498,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
    Title for the time zone selector */
 "Time Zone" = "المنطقة الزمنيّة";
 
-/* Description of a Quick Start Tour */
-"Time to finish setting up your site! Our checklist walks you through the next steps." = "حان الوقت لإنهاء إعداد موقعك! توضِّح لك قائمة الاختيار الخاصة بنا الخطوات التالية.";
-
 /* Error when the uses takes more than 1 minute to submit a security key. */
 "Time's up, but don't worry, your security is our priority. Please try again!" = "انتهى الوقت، لكن لا داعي للقلق، فأمانك هو أولويتنا. يرجى المحاولة مرة أخرى!";
 
@@ -7777,9 +7549,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Message asking the user if they want to set up Jetpack from stats */
 "To use stats on your site, you'll need to install the Jetpack plugin." = "لاستخدام الإحصاءات على موقعك، سيتعين عليك تنصيب إضافة Jetpack.";
 
-/* Message explaining that Jetpack needs to be installed for a particular site. Reads like 'To use this app for example.com you'll need to have... */
-"To use this app for %@ you'll need to have the Jetpack plugin installed and activated." = "لاستخدام هذا التطبيق لـ %@، سيتعيَّن عليك تثبيت إضافة Jetpack وتفعيلها.";
-
 /* Comments Today Section Header
    Insights 'Today' header
    Notifications Today Section Header */
@@ -7800,9 +7569,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Accessibility Identifier for the Aztec Unordered List Style */
 "Toggles the unordered list style" = "تبديل نمط القائمة غير المرتبة";
 
-/* Title of the Tools section of the debug screen used in debug builds of the app */
-"Tools" = "أدوات";
-
 /* Insights 'Top Commenters' header */
 "Top Commenters" = "أفضل المعلقين";
 
@@ -7810,8 +7576,7 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
    Screen reader text expressing the menu item is at the top level and has no parent. */
 "Top level" = "أعلى مستوى";
 
-/* Shortened version of the main title to be used in back navigation
-   Topic page title */
+/* Shortened version of the main title to be used in back navigation */
 "Topic" = "الموضوع";
 
 /* Used when a Reader Topic is not found for a specific id */
@@ -7888,9 +7653,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
    Try Again. Action
    Try to load the list of interests again. */
 "Try Again" = "حاول مرّة اخرى";
-
-/* Action button that will restart the login flow.Presented when logging in with a site address that does not have a valid Jetpack installation */
-"Try With Another Account" = "المحاولة باستخدام حساب آخر";
 
 /* Text displayed in the view when there aren't any backups to display for a given filter. */
 "Try adjusting your date range filter" = "محاولة ضبط عامل تصفية مدى التاريخ الخاص بك";
@@ -7970,9 +7732,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 
 /* Site creation. Seelect a domain, search field placeholder */
 "Type a name for your site" = "اكتب اسمًا لموقعك (اسم للنطاق)";
-
-/* Register domain - Search field placeholder for the Suggested Domain screen */
-"Type to get more suggestions" = "اكتب للحصول على مزيد من الاقتراحات";
 
 /* URL text field placeholder */
 "URL" = "الرابط";
@@ -8079,12 +7838,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Alert displayed to the user when a single post has failed to upload. */
 "Unable to upload 1 draft post" = "يتعذر رفع مسودة مقالة واحدة";
 
-/* Alert displayed to the user when a single post and multiple files have failed to upload. */
-"Unable to upload 1 draft post, %ld files" = "يتعذر رفع مسودة مقالة واحدة، و%ld من الملفات";
-
-/* Alert displayed to the user when a single post and 1 file has failed to upload. */
-"Unable to upload 1 draft post, 1 file" = "يتعذر رفع مسودة مقالة واحدة، وملف واحد";
-
 /* Alert displayed to the user when a single post has failed to upload. */
 "Unable to upload 1 post" = "تعذر رفع مقالة واحدة";
 
@@ -8139,8 +7892,7 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Label of the table view cell's delete button, when unfollowing a site. */
 "Unfollow" = "إلغاء المتابعة";
 
-/* Accessibility label for unfollowing a site
-   Accessibility label for unfollowing a tag */
+/* Accessibility label for unfollowing a tag */
 "Unfollow %@" = "إلغاء متابعة %@";
 
 /* Title for a button that unsubscribes the user from the post. */
@@ -8155,9 +7907,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Notice title when unfollowing a site succeeds.
    User unfollowed a site. */
 "Unfollowed site" = "موقع لا تتم متابعته";
-
-/* Spoken hint describing action for selected following buttons. */
-"Unfollows blog" = "إلغاء متابعة مدونة";
 
 /* VoiceOver accessibility hint, informing the user the button can be used to unfollow a blog. */
 "Unfollows the blog." = "إلغاء متابعة المدونة.";
@@ -8174,9 +7923,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 
 /* Title for Unknown HTML Editor */
 "Unknown HTML" = "HTML غير معروف";
-
-/* Label to use when creation date from media asset is not know. */
-"Unknown creation date" = "تاريخ الإنشاء مجهول";
 
 /* No comment provided by engineer. */
 "Unknown error" = "خطأ غير معروف";
@@ -8331,17 +8077,11 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* No comment provided by engineer. */
 "Uploading…" = "جاري الرفع…";
 
-/* Title for alert when trying to save post with failed media items */
-"Uploads failed" = "فشلت عمليات الرفع";
-
 /* Use the current image */
 "Use" = "استخدم";
 
 /* A step in a guided tour for quick start. %@ will be the name of the item to select. */
 "Use %@ to find sites and tags." = "استخدم %@ للعثور على المواقع والوسوم.";
-
-/* Title of a row displayed on the debug screen used to configure the sandbox store use in the App. */
-"Use Sandbox Store" = "استخدام مخزن Sandbox";
 
 /* The button's title text to use a security key. */
 "Use a security key" = "استخدام مفتاح الأمان";
@@ -8390,9 +8130,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Push Authentication Alert Title */
 "Verify Log In" = "التحقق من تسجيل الدخول";
 
-/* Notice displayed after domain credit redemption success. */
-"Verify your email address - instructions sent to %@" = "التحقُّق من عنوان بريدك الإلكتروني - تم إرسال الإرشادات إلى %@";
-
 /* Description for the version label in the What's new page. */
 "Version " = "النسخة";
 
@@ -8420,9 +8157,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 
 /* Title of an alert informing users that the video they are trying to select is not allowed. */
 "Video not uploaded" = "لم يتم رفع مقطع فيديو!";
-
-/* Accessibility label for video thumbnails in the media collection view. The parameter is the creation date of the video. */
-"Video, %@" = "الفيديو %@";
 
 /* Period Stats 'Videos' header */
 "Videos" = "الفيديوهات";
@@ -8601,9 +8335,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Message for error displayed when preparing a backup fails. */
 "We couldn't create your backup. Please try again later." = "لم نتمكن من إنشاء النسخة الاحتياطية الخاصة بك، يرجى المحاولة مجددًا في وقت لاحق.";
 
-/* Primary message shown when there are no domains that match the user entered text. */
-"We couldn't find any available address with the words you entered - let's try again." = "لم نتمكن من العثور على أي عنوان متاح بالكلمات التي أدخلتها - لنحاول مرة أخرى.";
-
 /* Text displayed in notice after the app fails to upload a page, it will attempt to upload it later. */
 "We couldn't publish this page, but we'll try again later." = "لم نتمكن من نشر هذه الصفحة، ولكننا سنحاول مرة أخرى لاحقًا.";
 
@@ -8679,9 +8410,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* The subtitle text on the magic link requested screen followed by the email address. */
 "We just sent a magic link to" = "أرسلنا رابطًا سحريًا للتو إلى";
 
-/* Popup content about why this post is being opened in block editor */
-"We made big improvements to the block editor and think it's worth a try!\n\nWe enabled it for new posts and pages but if you'd like to change to the classic editor, go to 'My Site' > 'Site Settings'." = "أجرينا تحسينات هائلة بمحرِّر المكوّنات، ونعتقد أنها تستحق التجربة!\n\nقمنا بتمكينها في المقالات والصفحات الجديدة، ولكن إذا رغبتَ في التغيير إلى المحرِّر التقليدي فانتقل إلى \"موقعي\" > \"إعدادات الموقع\".";
-
 /* Message displayed when a backup has finished */
 "We successfully created a backup of your site as of %@" = "لقد نجحنا في إنشاء نسخة احتياطية لموقعك اعتبارًا من %@";
 
@@ -8690,9 +8418,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 
 /* Informational text about link to other tracking tools */
 "We use other tracking tools, including some from third parties. Read about these and how to control them." = "نستخدم أدوات تتبع أخرى، بما في ذلك بعض الأدوات التي تنتمي إلى أطراف ثالثة. اقرأ عن هذه الأدوات وكيفية التحكم فيها.";
-
-/* Message explaining that WordPress was not detected. */
-"We were not able to detect a WordPress site at the address you entered. Please make sure WordPress is installed and that you are running the latest available version." = "لم نتمكن من اكتشاف موقع ووردبريس على العنوان الذي أدخلته. يرجى التأكُّد من تثبيت ووردبريس، وأنك تقوم بتشغيل أحدث إصدار متاح.";
 
 /* Error message displayed when an error occurred sending the magic link email. */
 "We were unable to send you an email at this time. Please try again later." = "يتعذر علينا إرسال بريد إلكتروني في هذا الوقت. يُرجى المحاولة مرة أخرى لاحقًا.";
@@ -8781,9 +8506,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 
 /* Instruction text after a signup Magic Link was requested. */
 "We've emailed you a signup link to create your new WordPress.com account. Check your email on this device, and tap the link in the email you receive from WordPress.com." = "أرسلنا إليك رسالة عبر البريد الإلكتروني تتضمن رابط التسجيل لإنشاء حسابك الجديد على WordPress.com. تحقَّق من بريدك الإلكتروني على هذا الجهاز، وانقر على الرابط الموجود في الرسالة التي تم تلقيها عبر البريد الإلكتروني من WordPress.com.";
-
-/* Register Domain - error displayed when a domain was purchased succesfully, but there was a problem setting it to a primary domain for the site */
-"We've had problems changing the primary domain on your site — but don't worry, your domain was successfully purchased." = "واجهنا مشكلات في تغيير النطاق الأساسي على موقعك — ولكن لا داعي للقلق، تم شراء نطاقك بنجاح.";
 
 /* Account Settings Web Address label
    Header for a comment author's web address, shown when editing a comment. */
@@ -8950,9 +8672,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Siri Suggestion to open Support */
 "WordPress Help" = "مساعدة ووردبريس";
 
-/* Name for the WordPress Media Library */
-"WordPress Media" = "وسائط ووردبريس";
-
 /* Accessibility label for selecting an image or video from the user's WordPress media library on formatting toolbar. */
 "WordPress Media Library" = "مكتبة وسائط ووردبريس";
 
@@ -9019,6 +8738,9 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Title of button that displays the Automattic Work With Us web page */
 "Work With Us" = "العمل معنا";
 
+/* No comment provided by engineer. */
+"Working Offline" = "العمل من دون اتصال بالإنترنت";
+
 /* Accessibility label for the Stats' world map. */
 "World map showing views by country." = "تُظهر خريطة العالم المشاهدات حسب البلد.";
 
@@ -9065,8 +8787,7 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Title of Years stats filter. */
 "Years" = "سنوات";
 
-/* Accept Action
-   Button title. Confirms that the user wants to proceed with a pending action.
+/* Button title. Confirms that the user wants to proceed with a pending action.
    Label for a button that clears all old activity logs
    Yes */
 "Yes" = "نعم";
@@ -9166,7 +8887,7 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 "You have 1 hidden WordPress site." = "لديك موقع WordPress واحد مخفى.";
 
 /* Description for the first domain purchased with a paid plan. */
-"You have a free one-year domain registration with your plan" = "لديك تسجيل نطاق مجاني مدته عام واحد ضمن خطتك";
+"You have a free one-year domain registration with your plan." = "لديك تسجيل نطاق مجاني مدته عام واحد ضمن خطتك.";
 
 /* Message alert when attempting to delete site with purchases */
 "You have active premium upgrades on your site. Please cancel your upgrades prior to deleting your site." = "لديك ترقيات متميزة نشطة على موقعك. يرجى إلغاء ترقياتك قبل حذف موقعك.";
@@ -9252,9 +8973,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Message displayed on a post's card when the post has unsaved changes */
 "You've made unsaved changes to this post" = "لقد أجريتَ تغييرات غير محفوظة على هذه المقالة";
 
-/* Header of the domains list section in the Domains Dashboard. */
-"Your Site Domains" = "نطاقات موقعك";
-
 /* The item to select during a guided tour. */
 "Your Site Icon" = "أيقونة موقعك";
 
@@ -9266,9 +8984,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 
 /* Share extension error dialog text. */
 "Your account does not have permission to upload media to this site. The Site Administrator can change these permissions." = "لا يمتلك حسابك إذنًا برفع الوسائط إلى هذا الموقع. يمكن لمسؤول الموقع تغيير هذه الأذونات.";
-
-/* Explaining to the user why the app needs access to the device media library. */
-"Your app is not authorized to access media library due to active restrictions such as parental controls. Please check your parental control settings in this device." = "لا يُسمح لتطبيقك بالوصول إلى مكتبة الوسائط بسبب القيود النشطة مثل الرقابة الأبوية. يرجى التحقّق من إعدادات الرقابة الأبوية لديك في هذا الجهاز.";
 
 /* Title for the Jetpack Backup Complete message. */
 "Your backup is now available for download" = "أصبحت نسختك الاحتياطية متاحة الآن للتنزيل";
@@ -9285,9 +9000,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 /* Title for the view when there aren't any Backups to display */
 "Your first backup will be ready soon" = "ستكون نسختك الاحتياطية الأولى جاهزة قريبًا";
 
-/* Title of the site address section in the Domains Dashboard. */
-"Your free WordPress.com address is" = "عنوان ووردبريس.كوم المجاني الخاص بك هو";
-
 /* Details about recently acquired domain on domain credit redemption success screen */
 "Your new domain %@ is being set up. It may take up to 30 minutes for your domain to start working." = "جاري الآن إعداد نطاقك الجديد %@. قد يستغرق الأمر ما يصل إلى 30 دقيقة لكي يبدأ نطاقك بالعمل.";
 
@@ -9302,9 +9014,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 
 /* Message of Export Content confirmation alert; substitution is user's email address */
 "Your posts, pages, and settings will be mailed to you at %@." = "سيتم إرسال المقالات والصفحات والإعدادات الخاصة بك لك عبر %@.";
-
-/* Footer of the primary site section in the Domains Dashboard. */
-"Your primary site address is what visitors will see in their address bar when visiting your website." = "رابط الموقع الأساسي هو العنوان الذي سيراه الزائرون في شريط العناوين بمتصفحاتهم عند زيارة موقعك.";
 
 /* Text displayed when a site restore takes too long. */
 "Your restore is taking longer than usual, please check again in a few minutes." = "استغرقت محاولة الاستعادة أكثر من المعتاد، يُرجى التحقق مرة أخرى بعد دقائق قليلة.";
@@ -9362,12 +9071,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 
 /* Describes the expected behavior when the user enables in-app notifications in Reader Comments. */
 "You’re following this conversation. You will receive an email whenever a new comment is made." = "إنك تتابع هذه المحادثة. ستتلقى بريدًا إلكترونيًا عند إجراء تعليق جديد.";
-
-/* Popup content about why this post is being opened in block editor */
-"You’re now using the block editor for new pages — great! If you’d like to change to the classic editor, go to ‘My Site’ > ‘Site Settings’." = "أنت الآن تستخدم محرِّر المكوّن للصفحات الجديدة — رائع! إذا كنت ترغب في التغيير إلى المحرِّر التقليدي، فانتقل إلى \"موقعي\" > \"إعدادات الموقع\".";
-
-/* Popup content about why this post is being opened in block editor */
-"You’re now using the block editor for new posts — great! If you’d like to change to the classic editor, go to ‘My Site’ > ‘Site Settings’." = "أنت الآن تستخدم محرِّر المكوّن للمقالات الجديدة — رائع! إذا كنت ترغب في التغيير إلى المحرِّر التقليدي، فانتقل إلى \"موقعي\" > \"إعدادات الموقع\".";
 
 /* Comment Attachment Label */
 "[COMMENT]" = "[تعليق]";
@@ -9443,9 +9146,6 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 
 /* Title of button for leaving on image optimization, displayed in the alert informing users to enable image optimization in uploads. */
 "appSettings.optimizeImagesPopup.turnOn" = "نعم، واصل الاستخدام";
-
-/* Label displayed on audio media items. */
-"audio" = "صوت";
 
 /* translators: displays audio file extension. e.g. MP3 audio file */
 "audio file" = "ملف صوت";
@@ -9556,7 +9256,41 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 "blogHeader.actionCopyURL" = "نسخ عنوان URL";
 
 /* Context menu button title */
-"blogHeader.actionOpenInBrowser" = "فتح في متصفح";
+"blogHeader.actionVisitSite" = "زيارة الموقع";
+
+/* Title for a button that, when tapped, shows more info about participating in Bloganuary. */
+"bloganuary.dashboard.card.button.learnMore" = "معرفة المزيد";
+
+/* Short description for the Bloganuary event, shown right below the title. */
+"bloganuary.dashboard.card.description" = "في شهر يناير، ستأتي موجّهات التدوين من Bloganuary - تحدٍّ مجتمعي لدينا لإنشاء عادة التدوين الخاصة بالعام الجديد.";
+
+/* Title for the Bloganuary dashboard card while Bloganuary is running. */
+"bloganuary.dashboard.card.runningTitle" = "أصبحت Bloganuary هنا!";
+
+/* Title for the Bloganuary dashboard card. */
+"bloganuary.dashboard.card.title" = "Bloganuary قادمة!";
+
+/* Title of a button that calls the user to enable the Blogging Prompts feature. */
+"bloganuary.learnMore.modal.button.promptsDisabled" = "تشغيل موجّهات التدوين";
+
+/* Title of a button that will dismiss the Bloganuary modal when tapped.
+Note that the word 'go' here should have a closer meaning to 'start' rather than 'move forward'. */
+"bloganuary.learnMore.modal.button.promptsEnabled" = "هيا بنا!";
+
+/* The second line of the description shown in the Bloganuary modal sheet. */
+"bloganuary.learnMore.modal.description.second" = "انشر ردك.";
+
+/* The third line of the description shown in the Bloganuary modal sheet. */
+"bloganuary.learnMore.modal.description.third" = "اقرأ ردود المدونين الأخرى للحصول على الإلهام وإقامة اتصالات جديدة.";
+
+/* The first line of the description shown in the Bloganuary modal sheet. */
+"bloganuary.learnMore.modal.descriptions.first" = "استقبل موجّهًا جديدًا لإلهامك في كل يوم.";
+
+/* An additional piece of information shown in case the user has the Blogging Prompts feature disabled. */
+"bloganuary.learnMore.modal.footer.addition" = "للانضمام إلى Bloganuary، يتعين عليك تمكين موجّهات التدوين.";
+
+/* An informative excerpt shown in a subtler tone. */
+"bloganuary.learnMore.modal.footer.text" = "ستستخدم Bloganuary موجّهات التدوين اليومية لإرسال الموضوعات الخاصة بشهر يناير إليك.";
 
 /* Verb. Dismisses the blogging prompt notification. */
 "bloggingPrompt.pushNotification.customActionDescription.dismiss" = "تجاهُل";
@@ -9566,6 +9300,9 @@ translators: %s: Select control option value e.g: \"Auto, 25%\". */
 
 /* Option for users to rate a chat bot answer as helpful. */
 "chat.rateHelpful" = "التقييم بأنه مفيد";
+
+/* Title for the checkout view */
+"checkout.title" = "السداد";
 
 /* Displayed in the confirmation alert when marking comment notifications as read. */
 "comment" = "التعليق";
@@ -9717,26 +9454,57 @@ Example: Reply to Pamela Nguyen */
 /* Title for the View stats button in the More menu */
 "dashboardCard.stats.viewStats" = "عرض الإحصاءات";
 
+/* Debug menu item title */
+"debugMenu.analytics" = "التحليلات";
+
 /* Feature flags menu item */
 "debugMenu.featureFlags" = "تمييز العلامات";
 
-/* General section title */
-"debugMenu.generalSectionTitle" = "عام";
+/* Title of the screen that allows the user to change the Reader CSS URL for debug builds */
+"debugMenu.readerCellTitle" = "عنوان URL لـ CSS في القارئ";
 
-/* Remote config params debug menu footer explaining the meaning of a cell with a checkmark. */
-"debugMenu.remoteConfig.footer" = "يُشار إلى المعلمات التي تم تجاوزها بعلامة اختيار.";
+/* Placeholder for the reader CSS URL */
+"debugMenu.readerDefaultURL" = "عنوان URL الافتراضي";
 
-/* Hint for overriding remote config params */
-"debugMenu.remoteConfig.hint" = "تجاوز المعلمة المختارة عن طريق تحديد قيمة جديدة هنا.";
+/* Hint for the reader CSS URL field */
+"debugMenu.readerHit" = "أضف عنوان URL الخاص بـ CSS المخصص هنا ليتم تحميله في القارئ. إذا كنتَ تقوم بتشغيل Calypso محليًا، فقد يبدو هذا مثل: http:\/\/192.168.15.23:3000\/calypso\/reader-mobile.css";
 
-/* Placeholder for overriding remote config params */
-"debugMenu.remoteConfig.placeholder" = "لا توجد قيمة بعيدة أو افتراضية";
+/* Remote Config Debug Menu section title */
+"debugMenu.remoteConfig.currentValue" = "القيمة الحالية";
 
-/* Remote Config debug menu title */
+/* Remote Config Debug Menu section title */
+"debugMenu.remoteConfig.defaultValue" = "القيمة الافتراضية";
+
+/* Remote Config Debug Menu section title */
+"debugMenu.remoteConfig.overridenValue" = "تكوين بعيد";
+
+/* Remote Config Debug Menu section title */
+"debugMenu.remoteConfig.remoteConfigValue" = "قيمة التكوين البعيد";
+
+/* Remote Config Debug Menu reset button title */
+"debugMenu.remoteConfig.reset" = "إعادة التعيين";
+
+/* Remote Config Debug Menu screen title
+   Remote Config debug menu title */
 "debugMenu.remoteConfig.title" = "تكوين بعيد";
 
 /* Remove current quick start tour menu item */
 "debugMenu.removeQuickStart" = "إزالة الجولة الحالية";
+
+/* Debug Menu section title */
+"debugMenu.section.logging" = "تسجيل الدخول";
+
+/* Debug Menu section title */
+"debugMenu.section.quickStart" = "البدء السريع";
+
+/* Debug Menu section title */
+"debugMenu.section.settings" = "الإعدادات";
+
+/* Title for debug menu screen */
+"debugMenu.title" = "المطور";
+
+/* Weekly Roundup debug menu item */
+"debugMenu.weeklyRoundup" = "موجز أسبوعي";
 
 /* Title for a menu action in the context menu on the Jetpack install card. */
 "domain.dashboard.card.menu.hide" = "إخفاء هذا";
@@ -9755,6 +9523,9 @@ Example: Reply to Pamela Nguyen */
 
 /* The expired label of the domain card in All Domains screen. */
 "domain.management.card.expired.label" = "منتهي الصلاحية";
+
+/* Label indicating that a domain name registration has no expiry date. */
+"domain.management.card.neverExpires.label" = "لا تنتهي الصلاحية أبدًا";
 
 /* The renews label of the domain card in All Domains screen. */
 "domain.management.card.renews.label" = "التجديدات";
@@ -9849,6 +9620,15 @@ Example: Reply to Pamela Nguyen */
 /* The text to display for paid domains in 'Site Creation > Choose a domain' screen */
 "domain.suggestions.row.yearly" = "سنوياً";
 
+/* Help button */
+"domainSelection.helpButton.title" = "مساعدة";
+
+/* Description for the first domain purchased with a free plan. */
+"domainSelection.redirectPrompt.title" = "النطاقات التي تم شراؤها على هذا الموقع سيتم توجيهها إلى %1$@";
+
+/* Search domain - Title for the Suggested domains screen */
+"domainSelection.search.title" = "البحث عن النطاقات";
+
 /* Title for the checkout screen. */
 "domains.checkout.title" = "السداد";
 
@@ -9880,9 +9660,17 @@ Example: Reply to Pamela Nguyen */
 "ellipsisButton.AccessibilityLabel" = "المزيد";
 
 /* Placeholder for the site url textfield.
-   Provides a sample of what a domain name looks like.
    Site Address placeholder */
 "example.com" = "example.com";
+
+/* Title for confirmation navigation bar button item */
+"externalMediaPicker.add" = "إضافة";
+
+/* Bottom toolbar title in the selection mode */
+"externalMediaPicker.toolbarSelectItemsPrompt" = "تحديد صور";
+
+/* Bottom toolbar title in the selection mode */
+"externalMediaPicker.toolbarViewSelected" = "عرض العناصر المحدَّدة (%@)";
 
 /* Title of screen the displays the details of an advertisement campaign. */
 "feature.blaze.campaignDetails.title" = "تفاصيل الحملة";
@@ -9982,9 +9770,6 @@ Example: Reply to Pamela Nguyen */
 
 /* (placeholder) Help the user enter a URL into the field */
 "http:\/\/my-site-address (URL)" = "http:\/\/my-site-address (عنوان URL)";
-
-/* Label displayed on image media items. */
-"image" = "صورة";
 
 /* Sentence to justify why the app is asking permission from the user to use their camera. */
 "infoplist.NSCameraUsageDescription" = "لالتقاط صور أو مقاطع فيديو لاستخدامها في مقالاتك.";
@@ -10286,9 +10071,6 @@ Example: Reply to Pamela Nguyen */
 /* Indicating that referrer was marked as spam */
 "marked as spam" = "تم وضع علامة على أنه بريد مزعج";
 
-/* Products header text in Me Screen. */
-"me.products.header" = "المنتجات";
-
 /* Title of error prompt shown when a sync fails. */
 "media.syncFailed" = "تتعذر مزامنة الوسائط";
 
@@ -10339,6 +10121,21 @@ Example: Reply to Pamela Nguyen */
 
 /* Text displayed in HUD after successfully deleting a media item */
 "mediaLibrary.deletionSuccessMessage" = "محذوف!";
+
+/* The name of the media filter */
+"mediaLibrary.filterAll" = "الكل";
+
+/* The name of the media filter */
+"mediaLibrary.filterAudio" = "الصوت";
+
+/* The name of the media filter */
+"mediaLibrary.filterDocuments" = "الوثائق";
+
+/* The name of the media filter */
+"mediaLibrary.filterImages" = "الصور";
+
+/* The name of the media filter */
+"mediaLibrary.filterVideos" = "الفيديوهات";
 
 /* User action to delete un-uploaded media. */
 "mediaLibrary.retryOptionsAlert.delete" = "حذف";
@@ -10417,6 +10214,9 @@ Example: Reply to Pamela Nguyen */
 
 /* The name of the action in the context menu */
 "mediaPicker.takeVideo" = "تسجيل فيديو";
+
+/* Navigation title for media preview. Example: 1 of 3 */
+"mediaPreview.NofM" = "%1$@ من %2$@";
 
 /* Max image size in pixels (e.g. 300x300px) */
 "mediaSizeSlider.valueFormat" = "%1$d × ⁦%2$d⁩ بكسل";
@@ -10571,6 +10371,30 @@ Example: Reply to Pamela Nguyen */
 /* Message title for when a user has no sites. */
 "mySite.noSites.title" = "ليس لديك أي مواقع";
 
+/* Menu title for the add site option */
+"mySite.siteActions.addSite" = "إضافة موقع";
+
+/* Button that reveals more site actions */
+"mySite.siteActions.button" = "إجراءات الموقع";
+
+/* Accessibility hint for button used to show more site actions */
+"mySite.siteActions.hint" = "النقر لإظهار مزيد من إجراءات الموقع";
+
+/* Menu title for the personalize home option */
+"mySite.siteActions.personalizeHome" = "تخصيص الصفحة الرئيسية";
+
+/* Menu title for the change site icon option */
+"mySite.siteActions.siteIcon" = "تغيير أيقونة الموقع";
+
+/* Menu title for the change site title option */
+"mySite.siteActions.siteTitle" = "تغيير عنوان الموقع";
+
+/* Menu title for the switch site option */
+"mySite.siteActions.switchSite" = "تغيير الموقع";
+
+/* Menu title for the visit site option */
+"mySite.siteActions.visitSite" = "زيارة الموقع";
+
 /* Dismiss button title. */
 "noResultsViewController.dismissButton" = "تجاهل";
 
@@ -10585,12 +10409,6 @@ Example: Reply to Pamela Nguyen */
 
 /* This is one of the buttons we display when prompting the user for a review */
 "notifications.appRatings.sendFeedback.yes.buttonTitle" = "إرسال الملاحظات";
-
-/* Word separating the current index from the total amount. I.e.: 7 of 9 */
-"of" = "من";
-
-/* Label displayed on media items that are not video, image, or audio. */
-"other" = "أخرى";
 
 /* Badge for page cells */
 "pageList.badgeHomepage" = "الصفحة الرئيسية";
@@ -10681,6 +10499,9 @@ Example: Reply to Pamela Nguyen */
 
 /* Register Domain - Domain contact information field Phone */
 "phone number" = "رقم الهاتف";
+
+/* Title for the plan selection view */
+"planSelection.title" = "الخطط";
 
 /* Post status and date for list cells with %@ a placeholder for the date. */
 "post.createdTimeAgo" = "%@ الذي تم إنشاؤه";
@@ -10881,12 +10702,6 @@ Tapping on this row allows the user to edit the sharing message. */
 /* Title for a tappable string that opens the reader with a prompts tag */
 "prompts.card.viewprompts.title" = "عرض كل الردود";
 
-/* Subtitle of the notification when prompts are hidden from the dashboard card */
-"prompts.notification.removed.subtitle" = "زيارة إعدادات الموقع لإعادة التشغيل";
-
-/* Title of the notification when prompts are hidden from the dashboard card */
-"prompts.notification.removed.title" = "تم إخفاء مطالبات التدوين";
-
 /* Button label that dismisses the qr log in flow and returns the user back to the previous screen */
 "qrLoginVerifyAuthorization.completedInstructions.dismiss" = "تجاهل";
 
@@ -11082,6 +10897,30 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 /* Site name that is placed in the tooltip view. */
 "site.creation.domain.tooltip.site.name" = "YourSiteName.com";
 
+/* Header of the secondary domains list section in the Domains Dashboard. %1$@ is the name of the site. */
+"site.domains.domainSection.title" = "النطاقات الأخرى لـ %1$@";
+
+/* A section title which displays a row with a free WP.com domain */
+"site.domains.freeDomainSection.title" = "نطاق ووردبريس.كوم المجاني الخاص بك";
+
+/* Description for the first domain purchased with a paid plan. */
+"site.domains.freeDomainWithPaidPlan.description" = "احصل على تسجيل نطاق مجاني مدته عام أو نقل نطاق مع أي خطة سنوية.";
+
+/* Title of the card that starts the purchase of the first domain with a paid plan. */
+"site.domains.freeDomainWithPaidPlan.title" = "الحصول على نطاقك";
+
+/* Footer of the primary site section in the Domains Dashboard. */
+"site.domains.primaryDomain" = "رابط الموقع الأساسي هو العنوان الذي سيراه الزائرون في شريط العناوين بمتصفحاتهم عند زيارة موقعك.";
+
+/* Primary domain label, used in the site address section of the Domains Dashboard. */
+"site.domains.primaryDomain.title" = "النطاق الأساسي";
+
+/* Title for a button that opens domain purchasing flow. */
+"site.domains.purchaseDirectly.buttons.title" = "البحث عن نطاق فحسب";
+
+/* Title for a button that opens plan and domain purchasing flow. */
+"site.domains.purchaseWithPlan.buttons.title" = "الترقية إلى خطة";
+
 /* Back button title shown in Site Creation flow to come back from Plan selection to Domain selection */
 "siteCreation.domain.backButton.title" = "النطاقات";
 
@@ -11099,6 +10938,9 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 
 /* Accessibility label for media item preview for user's viewing an item in their media library */
 "siteMediaItem.contentViewAccessibilityLabel" = "معاينة الوسائط";
+
+/* Title for confirmation navigation bar button item */
+"siteMediaPicker.add" = "إضافة";
 
 /* Button selection media in media picker */
 "siteMediaPicker.deselect" = "إلغاء التحديد";
@@ -11274,6 +11116,12 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 /* Dismiss the AlertView */
 "stockPhotos.strings.dismiss" = "تجاهُل";
 
+/* Subtitle for placeholder in Free Photos. The company name 'Pexels' should always be written as it is. */
+"stockPhotos.subtitle" = "الصور مقدمة من Pexels";
+
+/* Title for placeholder in Free Photos */
+"stockPhotos.title" = "ابحث للعثور على صور مجانية لإضافتها إلى مكتبة الوسائط الخاصة بك!";
+
 /* Section title for prominent suggestions */
 "suggestions.section.prominent" = "في هذه المحادثة";
 
@@ -11382,9 +11230,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 /* Support email label. */
 "support.row.email.title" = "البريد الإلكتروني";
 
-/* Option in Support view to view the Forums. */
-"support.row.forums.title" = "منتديات ووردبريس";
-
 /* Option in Support view to launch the Help Center. */
 "support.row.helpCenter.title" = "مركز مساعدة ووردبريس";
 
@@ -11421,6 +11266,9 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 /* View title for Help & Support page. */
 "support.title" = "مساعدة";
 
+/* Title for placeholder in Tenor picker */
+"tenor.welcomeMessage" = "ابحث للعثور على صور بتنسيق GIF لإضافتها إلى مكتبة الوسائط الخاصة بك!";
+
 /* Header of delete screen section listing things that will be deleted. */
 "these items will be deleted:" = "سيتم حذف هذه العناصر:";
 
@@ -11435,9 +11283,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 
 /* Displayed in the confirmation alert when marking unread notifications as read. */
 "unread" = "غير مقروء";
-
-/* Label displayed on video media items. */
-"video" = "فيديو";
 
 /* Portion of a message for Jetpack users that have multisite WP installation, thus Restore is not available. This part is a link, colored with a different color. */
 "visit our documentation page" = "زيارة صفحة الوثائق الخاصة بنا";
@@ -11577,6 +11422,9 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 /* This is a comma separated list of keywords used for spotlight indexing of the 'My Sites' tab. */
 "wordpress, sites, site, blogs, blog" = "ووردبريس، المواقع، الموقع، المدونات، المدونة";
 
+/* Error message that describes an unknown error had occured */
+"wordpress-api.error.unknown" = "حدث خطأ ما، ترجى المحاولة مجددًا في وقت لاحق.";
+
 /* Jetpack Plugin Modal on WordPress primary button title */
 "wordpress.jetpack.plugin.modal.primary.button.title" = "التبديل إلى تطبيق Jetpack";
 
@@ -11600,9 +11448,6 @@ Example: given a notice format "Following %@" and empty site name, this will be 
 
 /* Title of a button that displays a blog post in a web view. */
 "wp.migration.successCard.learnMore" = "معرفة المزيد";
-
-/* Placeholder for site url, if the url is unknown.Presented when logging in with a site address that does not have a valid Jetpack installation.The error would read: to use this app for your site you'll need... */
-"your site" = "موقعك";
 
 /* Label for button to log in using Google. The {G} will be replaced with the Google logo. */
 "{G} Log in with Google." = "{G} تسجيل الدخول باستخدام Google.";

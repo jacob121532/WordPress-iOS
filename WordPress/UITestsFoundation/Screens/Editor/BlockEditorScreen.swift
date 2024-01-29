@@ -96,14 +96,6 @@ public class BlockEditorScreen: ScreenObject {
         $0.staticTexts["You have unsaved changes."]
     }
 
-    private let turnOnImageOptimizationButtonGetter: (XCUIApplication) -> XCUIElement = {
-        $0.buttons["Yes, leave on"]
-    }
-
-    private let turnOffImageOptimizationButtonGetter: (XCUIApplication) -> XCUIElement = {
-        $0.buttons["No, turn off"]
-    }
-
     var addBlockButton: XCUIElement { addBlockButtonGetter(app) }
     var chooseFromDeviceButton: XCUIElement { chooseFromDeviceButtonGetter(app) }
     var closeButton: XCUIElement { closeButtonGetter(app) }
@@ -127,8 +119,6 @@ public class BlockEditorScreen: ScreenObject {
     var switchToHTMLModeButton: XCUIElement { switchToHTMLModeButtonGetter(app) }
     var undoButton: XCUIElement { undoButtonGetter(app) }
     var unsavedChangesLabel: XCUIElement { unsavedChangesLabelGetter(app) }
-    var turnOnImageOptimizationButton: XCUIElement { turnOnImageOptimizationButtonGetter(app) }
-    var turnOffImageOptimizationButton: XCUIElement { turnOffImageOptimizationButtonGetter(app) }
 
     public init(app: XCUIApplication = XCUIApplication()) throws {
         // The block editor has _many_ elements but most are loaded on-demand. To verify the screen
@@ -197,20 +187,6 @@ public class BlockEditorScreen: ScreenObject {
     public func addImageGallery() throws -> BlockEditorScreen {
         addBlock("Gallery block")
         try addMultipleImages(numberOfImages: 3)
-
-        return self
-    }
-
-    /**
-     Chooses the option of Optimize Images popup.
-     */
-    public func chooseOptimizeImages(option: Bool) throws -> BlockEditorScreen {
-        if option {
-            turnOnImageOptimizationButton.tap()
-        }
-        else {
-            turnOffImageOptimizationButton.tap()
-        }
 
         return self
     }

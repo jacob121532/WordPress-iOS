@@ -1,6 +1,7 @@
 import Foundation
 import CoreData
 import UIKit
+import WordPressUI
 
 protocol PostsCardView: AnyObject {
     var tableView: UITableView { get }
@@ -272,7 +273,6 @@ private extension PostsCardViewModel {
 
     enum Constants {
         static let numberOfPosts = 3
-        static let numberOfPostsToSync: NSNumber = 3
     }
 
     enum Strings {

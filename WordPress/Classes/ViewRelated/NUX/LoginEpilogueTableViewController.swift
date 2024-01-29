@@ -2,7 +2,6 @@ import UIKit
 import WordPressShared
 import WordPressAuthenticator
 
-
 // MARK: - LoginEpilogueTableViewController
 //
 class LoginEpilogueTableViewController: UITableViewController {
@@ -70,7 +69,6 @@ class LoginEpilogueTableViewController: UITableViewController {
         refreshInterface(for: credentials)
     }
 }
-
 
 // MARK: - UITableViewDataSource methods
 //
@@ -233,16 +231,13 @@ private extension LoginEpilogueTableViewController {
     }
 
     enum Settings {
-        static let headerReuseIdentifier = "SectionHeader"
         static let userCellReuseIdentifier = "userInfo"
         static let chooseSiteReuseIdentifier = "chooseSite"
         static let createNewSiteReuseIdentifier = "createNewSite"
         static let profileRowHeight = CGFloat(180)
         static let blogRowHeight = CGFloat(60)
-        static let headerHeight = CGFloat(50)
     }
 }
-
 
 // MARK: - Loading
 //

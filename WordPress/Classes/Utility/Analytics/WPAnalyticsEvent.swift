@@ -230,6 +230,8 @@ import Foundation
     // Domains
     case domainsDashboardViewed
     case domainsDashboardAddDomainTapped
+    case domainsDashboardGetDomainTapped
+    case domainsDashboardGetPlanTapped
     case domainsSearchSelectDomainTapped
     case domainsRegistrationFormViewed
     case domainsRegistrationFormSubmitted
@@ -241,6 +243,7 @@ import Foundation
 
     // Domain Management
     case meDomainsTapped
+    case allDomainsDomainDetailsWebViewShown
     case domainsDashboardAllDomainsTapped
     case domainsDashboardDomainsSearchShown
     case domainsListShown
@@ -248,7 +251,7 @@ import Foundation
     case addDomainTapped
     case domainsSearchTransferDomainTapped
     case domainsSearchRowSelected
-    case siteSwitcherDomainSiteSelected
+    case siteSwitcherSiteSelected
     case purchaseDomainScreenShown
     case purchaseDomainGetDomainTapped
     case purchaseDomainChooseSiteTapped
@@ -263,6 +266,12 @@ import Foundation
     case mySiteNoSitesViewActionTapped
     case mySiteNoSitesViewHidden
 
+    // My Site: Header Actions
+    case mySiteHeaderMoreTapped
+    case mySiteHeaderAddSiteTapped
+    case mySiteHeaderShareSiteTapped
+    case mySiteHeaderPersonalizeHomeTapped
+
     // Site Switcher
     case mySiteSiteSwitcherTapped
     case siteSwitcherDisplayed
@@ -273,7 +282,9 @@ import Foundation
     case siteSwitcherToggleBlogVisible
 
     // Post List
+    case postListItemSelected
     case postListShareAction
+    case postListBlazeAction
     case postListCommentsAction
     case postListSetAsPostsPageAction
     case postListSetHomePageAction
@@ -309,7 +320,6 @@ import Foundation
     case appSettingsClearSpotlightIndexTapped
     case appSettingsClearSiriSuggestionsTapped
     case appSettingsOpenDeviceSettingsTapped
-    case appSettingsOptimizeImagesPopupTapped
 
     // Notifications
     case notificationsPreviousTapped
@@ -952,6 +962,10 @@ import Foundation
             return "domains_dashboard_viewed"
         case .domainsDashboardAddDomainTapped:
             return "domains_dashboard_add_domain_tapped"
+        case .domainsDashboardGetDomainTapped:
+            return "domains_dashboard_get_domain_tapped"
+        case .domainsDashboardGetPlanTapped:
+            return "domains_dashboard_get_plan_tapped"
         case .domainsSearchSelectDomainTapped:
             return "domains_dashboard_select_domain_tapped"
         case .domainsRegistrationFormViewed:
@@ -972,12 +986,14 @@ import Foundation
         // Domain Management
         case .meDomainsTapped:
             return "me_all_domains_tapped"
+        case .allDomainsDomainDetailsWebViewShown:
+            return "all_domains_domain_details_web_view_shown"
         case .domainsDashboardAllDomainsTapped:
             return "domains_dashboard_all_domains_tapped"
         case .domainsDashboardDomainsSearchShown:
             return "domains_dashboard_domains_search_shown"
         case .domainsListShown:
-            return "all_domains_domains_list_shown"
+            return "all_domains_list_shown"
         case .allDomainsFindDomainTapped:
             return "domain_management_all_domains_find_domain_tapped"
         case .addDomainTapped:
@@ -986,8 +1002,8 @@ import Foundation
             return "domains_dashboard_domains_search_transfer_domain_tapped"
         case .domainsSearchRowSelected:
             return "domain_management_domains_search_row_selected"
-        case .siteSwitcherDomainSiteSelected:
-            return "site_switcher_domain_site_selected"
+        case .siteSwitcherSiteSelected:
+            return "site_switcher_site_selected"
         case .purchaseDomainScreenShown:
             return "domain_management_purchase_domain_screen_shown"
         case .purchaseDomainGetDomainTapped:
@@ -1011,6 +1027,16 @@ import Foundation
         case .mySiteNoSitesViewHidden:
             return "my_site_no_sites_view_hidden"
 
+        // My Site Header Actions
+        case .mySiteHeaderMoreTapped:
+            return "my_site_header_more_tapped"
+        case .mySiteHeaderAddSiteTapped:
+            return "my_site_header_add_site_tapped"
+        case .mySiteHeaderShareSiteTapped:
+            return "my_site_header_share_site_tapped"
+        case .mySiteHeaderPersonalizeHomeTapped:
+            return "my_site_header_personalize_home_tapped"
+
         // Site Switcher
         case .mySiteSiteSwitcherTapped:
             return "my_site_site_switcher_tapped"
@@ -1028,7 +1054,11 @@ import Foundation
             return "site_switcher_toggle_blog_visible"
 
         // Post List
+        case .postListItemSelected:
+            return "post_list_item_selected"
         case .postListShareAction:
+            return "post_list_button_pressed"
+        case .postListBlazeAction:
             return "post_list_button_pressed"
         case .postListCommentsAction:
             return "post_list_button_pressed"
@@ -1080,8 +1110,6 @@ import Foundation
             return "app_settings_max_image_size_changed"
         case .appSettingsImageQualityChanged:
             return "app_settings_image_quality_changed"
-        case .appSettingsOptimizeImagesPopupTapped:
-            return "app_settings_optimize_images_popup_tapped"
 
         // Account Close
         case .accountCloseTapped:
@@ -1447,7 +1475,6 @@ import Foundation
         case .supportChatbotEnded:
             return "support_chatbot_ended"
 
-
         // Jetpack plugin connection to user's WP.com account
         case .jetpackPluginConnectUserAccountStarted:
             return "jetpack_plugin_connect_user_account_started"
@@ -1517,6 +1544,8 @@ import Foundation
             return ["via": "tenor"]
         case .postListShareAction:
             return ["button": "share"]
+        case .postListBlazeAction:
+            return ["button": "blaze"]
         case .postListCommentsAction:
             return ["button": "comments"]
         case .postListSetAsPostsPageAction:

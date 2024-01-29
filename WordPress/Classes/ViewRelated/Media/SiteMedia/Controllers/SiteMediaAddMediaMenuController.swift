@@ -34,6 +34,11 @@ final class SiteMediaAddMediaMenuController: NSObject, PHPickerViewControllerDel
         return UIMenu(options: [.displayInline], children: children)
     }
 
+    func showPhotosPicker(from viewController: UIViewController) {
+        MediaPickerMenu(viewController: viewController, isMultipleSelectionEnabled: true)
+            .showPhotosPicker(delegate: self)
+    }
+
     // MARK: - PHPickerViewControllerDelegate
 
     func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
@@ -43,11 +48,9 @@ final class SiteMediaAddMediaMenuController: NSObject, PHPickerViewControllerDel
             return
         }
 
-        MediaHelper.advertiseImageOptimization() { [self] in
-            for result in results {
-                let info = MediaAnalyticsInfo(origin: .mediaLibrary(.deviceLibrary), selectionMethod: .fullScreenPicker)
-                coordinator.addMedia(from: result.itemProvider, to: blog, analyticsInfo: info)
-            }
+        for result in results {
+            let info = MediaAnalyticsInfo(origin: .mediaLibrary(.deviceLibrary), selectionMethod: .fullScreenPicker)
+            coordinator.addMedia(from: result.itemProvider, to: blog, analyticsInfo: info)
         }
     }
 
@@ -66,9 +69,7 @@ final class SiteMediaAddMediaMenuController: NSObject, PHPickerViewControllerDel
         switch mediaType {
         case UTType.image.identifier:
             if let image = info[.originalImage] as? UIImage {
-                MediaHelper.advertiseImageOptimization() {
-                    addAsset(from: image)
-                }
+                addAsset(from: image)
             }
         case UTType.movie.identifier:
             if let videoURL = info[.mediaURL] as? URL {

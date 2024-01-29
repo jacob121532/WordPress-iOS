@@ -7,7 +7,6 @@
 #import <MobileCoreServices/MobileCoreServices.h>
 #import "WordPress-Swift.h"
 #import "WPXMLRPCDecoder.h"
-#import <WordPressShared/WPImageSource.h>
 #import <WordPressShared/WPAnalytics.h>
 
 @import WordPressKit;
@@ -82,7 +81,7 @@ NSErrorDomain const MediaServiceErrorDomain = @"MediaServiceErrorDomain";
     void (^failureBlock)(NSError *error) = ^(NSError *error) {
         [self.managedObjectContext performBlock:^{
             if (error) {
-                [self trackUploadError:error];
+                [self trackUploadError:error blog:blog];
                 DDLogError(@"Error uploading media: %@", error);
             }
             NSError *customError = [self customMediaUploadError:error remote:remote];
@@ -165,11 +164,12 @@ NSErrorDomain const MediaServiceErrorDomain = @"MediaServiceErrorDomain";
 #pragma mark - Private helpers
 
 - (void)trackUploadError:(NSError *)error
+                    blog:(Blog *)blog
 {
     if (error.code == NSURLErrorCancelled) {
-        [WPAppAnalytics track:WPAnalyticsStatMediaServiceUploadCanceled];
+        [WPAppAnalytics track:WPAnalyticsStatMediaServiceUploadCanceled withBlog:blog];
     } else {
-        [WPAppAnalytics track:WPAnalyticsStatMediaServiceUploadFailed error:error];
+        [WPAppAnalytics track:WPAnalyticsStatMediaServiceUploadFailed error:error withBlogID:blog.dotComID];
     }
 }
 
@@ -423,13 +423,10 @@ NSErrorDomain const MediaServiceErrorDomain = @"MediaServiceErrorDomain";
     __block BOOL onePageLoad = NO;
     NSManagedObjectID *blogObjectID = [blog objectID];
 
-    /// Temporary logging to try and narrow down an issue:
-    ///
-    /// REF: https://github.com/wordpress-mobile/WordPress-iOS/issues/15335
-    ///
-    if (blog == nil || blog.objectID == nil) {
-        DDLogError(@"🔴 Error: missing object ID (please contact @diegoreymendez with this log)");
-        DDLogError(@"%@", [NSThread callStackSymbols]);
+    if (blog == nil || blogObjectID == nil) {
+        NSError *error = [NSError errorWithDomain:WKErrorDomain code:WKErrorUnknown userInfo:@{NSDebugDescriptionErrorKey: @"Failed to get blogObjectID for syncMediaLibraryForBlog"}];
+        [WordPressAppDelegate logError:error];
+        return;
     }
 
     [self.managedObjectContext performBlock:^{

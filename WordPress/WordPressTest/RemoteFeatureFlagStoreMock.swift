@@ -10,8 +10,21 @@ class RemoteFeatureFlagStoreMock: RemoteFeatureFlagStore {
     var removalPhaseNewUsers = false
     var removalPhaseSelfHosted = false
     var removalPhaseStaticScreens = false
+    var inAppRating = false
+
+    var enabledFeatureFlags = Set<String>()
+    var disabledFeatureFlag = Set<String>()
+
+    override var deviceID: String {
+        return "Test"
+    }
 
     override func value(for flagKey: String) -> Bool? {
+        if enabledFeatureFlags.contains(flagKey) {
+            return true
+        } else if disabledFeatureFlag.contains(flagKey) {
+            return false
+        }
         switch flagKey {
         case RemoteFeatureFlag.jetpackFeaturesRemovalPhaseOne.remoteKey:
             return removalPhaseOne
@@ -27,6 +40,8 @@ class RemoteFeatureFlagStoreMock: RemoteFeatureFlagStore {
             return removalPhaseSelfHosted
         case RemoteFeatureFlag.jetpackFeaturesRemovalStaticPosters.remoteKey:
             return removalPhaseStaticScreens
+        case RemoteFeatureFlag.inAppRating.remoteKey:
+            return inAppRating
         default:
             return super.value(for: flagKey)
         }

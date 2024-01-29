@@ -1,3 +1,5 @@
+import WordPressUI
+
 // TODO: Consider deleting and moving actions when Reader Improvements v1 feature flag (`readerImprovements`) is removed
 /// Action commands in Reader cells
 class ReaderPostCellActions: NSObject, ReaderPostCellDelegate {
@@ -159,13 +161,6 @@ class ReaderPostCellActions: NSObject, ReaderPostCellDelegate {
         saveForLaterAction = saveAction
     }
 
-    fileprivate func visitSiteForPost(_ post: ReaderPost) {
-        guard let origin = origin else {
-            return
-        }
-        ReaderVisitSiteAction().execute(with: post, context: ContextManager.sharedInstance().mainContext, origin: origin)
-    }
-
     fileprivate func showAttributionForPost(_ post: ReaderPost) {
         guard let origin = origin else {
             return
@@ -205,7 +200,6 @@ enum ReaderActionsVisibility: Equatable {
         }
     }
 }
-
 
 // MARK: - Saved Posts
 extension ReaderPostCellActions {

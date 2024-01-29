@@ -20,10 +20,13 @@ enum RemoteFeatureFlag: Int, CaseIterable {
     case contactSupportChatbot
     case jetpackSocialImprovements
     case domainManagement
+    case dynamicDashboardCards
     case plansInSiteCreation
-    case readerImprovements // pcdRpT-3Eb-p2
     case bloganuaryDashboardNudge // pcdRpT-4FE-p2
     case wordPressSotWCard
+    case inAppRating
+    case statsTrafficTab
+    case siteMonitoring
 
     var defaultValue: Bool {
         switch self {
@@ -63,14 +66,20 @@ enum RemoteFeatureFlag: Int, CaseIterable {
             return AppConfiguration.isJetpack
         case .domainManagement:
             return false
+        case .dynamicDashboardCards:
+            return false
         case .plansInSiteCreation:
             return false
-        case .readerImprovements:
-            return true
         case .bloganuaryDashboardNudge:
             return AppConfiguration.isJetpack
         case .wordPressSotWCard:
             return true
+        case .inAppRating:
+            return false
+        case .statsTrafficTab:
+            return false
+        case .siteMonitoring:
+            return false
         }
     }
 
@@ -113,14 +122,20 @@ enum RemoteFeatureFlag: Int, CaseIterable {
             return "jetpack_social_improvements_v1"
         case .domainManagement:
             return "domain_management"
+        case .dynamicDashboardCards:
+            return "dynamic_dashboard_cards"
         case .plansInSiteCreation:
             return "plans_in_site_creation"
-        case .readerImprovements:
-            return "reader_improvements"
         case .bloganuaryDashboardNudge:
             return "bloganuary_dashboard_nudge"
         case .wordPressSotWCard:
             return "wp_sotw_2023_nudge"
+        case .inAppRating:
+            return "in_app_rating_and_feedback"
+        case .statsTrafficTab:
+            return "stats_traffic_tab"
+        case .siteMonitoring:
+            return "site_monitoring"
         }
     }
 
@@ -162,14 +177,20 @@ enum RemoteFeatureFlag: Int, CaseIterable {
             return "Jetpack Social Improvements v1"
         case .domainManagement:
             return "Domain Management"
+        case .dynamicDashboardCards:
+            return "Dynamic Dashboard Cards"
         case .plansInSiteCreation:
             return "Plans in Site Creation"
-        case .readerImprovements:
-            return "Reader Improvements v1"
         case .bloganuaryDashboardNudge:
             return "Bloganuary Dashboard Nudge"
         case .wordPressSotWCard:
             return "SoTW Nudge Card for WordPress App"
+        case .inAppRating:
+            return "In-App Rating and Feedback"
+        case .statsTrafficTab:
+            return "Stats Traffic Tab"
+        case .siteMonitoring:
+            return "Site Monitoring"
         }
     }
 

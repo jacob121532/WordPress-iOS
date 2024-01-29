@@ -21,7 +21,6 @@ class BloggingRemindersScheduler {
 
     // MARK: - Convenience Typealiases
 
-    typealias BlogIdentifier = BloggingRemindersStore.BlogIdentifier
     typealias ScheduledReminders = BloggingRemindersStore.ScheduledReminders
     typealias ScheduledWeekday = BloggingRemindersStore.ScheduledWeekday
     typealias ScheduledWeekdaysWithTime = BloggingRemindersStore.ScheduledWeekdaysWithTime
@@ -29,9 +28,7 @@ class BloggingRemindersScheduler {
     // MARK: - Error Handling
 
     enum Error: Swift.Error {
-        case cantRetrieveContainerForAppGroup(appGroupName: String)
         case needsPermissionForPushNotifications
-        case noPreviousScheduleAttempt
     }
 
     // MARK: - Schedule Data Containers

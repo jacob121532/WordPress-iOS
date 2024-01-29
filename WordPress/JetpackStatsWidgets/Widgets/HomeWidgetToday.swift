@@ -1,7 +1,6 @@
 import WidgetKit
 import SwiftUI
 
-
 struct HomeWidgetToday: Widget {
     private let tracks = Tracks(appGroupName: WPAppGroupName)
 
@@ -28,5 +27,6 @@ struct HomeWidgetToday: Widget {
         .configurationDisplayName(LocalizableStrings.todayWidgetTitle)
         .description(LocalizableStrings.todayPreviewDescription)
         .supportedFamilies([.systemSmall, .systemMedium])
+        .iOS17ContentMarginsDisabled() /// Temporarily disable additional iOS17 margins for widgets for StandBy
     }
 }

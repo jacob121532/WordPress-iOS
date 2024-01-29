@@ -3,10 +3,6 @@ import UIKit
 final class ReaderShowMenuAction {
     private let isLoggedIn: Bool
 
-    private lazy var readerImprovementsEnabled: Bool = {
-        RemoteFeatureFlag.readerImprovements.enabled()
-    }()
-
     init(loggedIn: Bool) {
         isLoggedIn = loggedIn
     }
@@ -24,7 +20,6 @@ final class ReaderShowMenuAction {
         // Create the action sheet
         let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         alertController.addCancelActionWithTitle(ReaderPostMenuButtonTitles.cancel, handler: nil)
-
 
         // Block site button
         if shouldShowBlockSiteMenuItem(readerTopic: readerTopic, post: post) {
@@ -119,8 +114,7 @@ final class ReaderShowMenuAction {
         // - The site is not private,
         // - The user is logged in,
         // - and the user uses accessibility content size.
-        if readerImprovementsEnabled,
-           !post.isPrivate(),
+        if !post.isPrivate(),
            isLoggedIn,
            let vc = vc as? ReaderStreamViewController,
            vc.traitCollection.preferredContentSizeCategory.isAccessibilityCategory {
@@ -132,7 +126,7 @@ final class ReaderShowMenuAction {
         }
 
         // Save post
-        if readerImprovementsEnabled, let vc = vc as? ReaderStreamViewController {
+        if let vc = vc as? ReaderStreamViewController {
             let buttonTitle = post.isSavedForLater ? ReaderPostMenuButtonTitles.removeSavedPost: ReaderPostMenuButtonTitles.savePost
 
             alertController.addActionWithTitle(buttonTitle, style: .default) { _ in

@@ -1,5 +1,6 @@
 import UIKit
 import CoreData
+import WordPressUI
 
 // Notification sent when a Comment is permanently deleted so the Notifications list (NotificationsViewController) is immediately updated.
 extension NSNotification.Name {
@@ -112,10 +113,6 @@ class CommentDetailViewController: UIViewController, NoResultsViewHost {
         return cell
     }()
 
-    private lazy var moderationCell: UITableViewCell = {
-        return $0
-    }(UITableViewCell())
-
     private lazy var deleteButtonCell: BorderedButtonTableViewCell = {
         let cell = BorderedButtonTableViewCell()
         cell.configure(buttonTitle: .deleteButtonText,
@@ -141,7 +138,6 @@ class CommentDetailViewController: UIViewController, NoResultsViewHost {
         cell.delegate = self
         return cell
     }()
-
 
     private lazy var commentService: CommentService = {
         return .init(coreDataStack: ContextManager.shared)
@@ -188,14 +184,6 @@ class CommentDetailViewController: UIViewController, NoResultsViewHost {
         let appearance = UINavigationBarAppearance()
         appearance.configureWithTransparentBackground()
         appearance.backgroundEffect = UIBlurEffect(style: .systemThinMaterial)
-        return appearance
-    }()
-
-    /// opaque navigation bar style.
-    /// this is used for iOS 14 and below, since scrollEdgeAppearance only applies for large title bars, except on iOS 15 where it applies for all navbars.
-    private lazy var opaqueBarAppearance: UINavigationBarAppearance = {
-        let appearance = UINavigationBarAppearance()
-        appearance.configureWithOpaqueBackground()
         return appearance
     }()
 
@@ -351,18 +339,6 @@ private extension CommentDetailViewController {
         return .init(top: 0, left: -tableView.separatorInset.left, bottom: 0, right: tableView.frame.size.width)
     }
 
-    /// returns the height of the navigation bar + the status bar.
-    var topBarHeight: CGFloat {
-        return (view.window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0.0) +
-            (navigationController?.navigationBar.frame.height ?? 0.0)
-    }
-
-    /// determines the threshold for the content offset on whether the content has scrolled.
-    /// for translucent navigation bars, the content view spans behind the status bar and navigation bar so we'd have to account for that.
-    var contentScrollThreshold: CGFloat {
-        (navigationController?.navigationBar.isTranslucent ?? false) ? -topBarHeight : 0
-    }
-
     func configureView() {
         containerStackView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(containerStackView)
@@ -393,7 +369,6 @@ private extension CommentDetailViewController {
 
         // get rid of the separator line for the last cell.
         tableView.tableFooterView = UIView(frame: .init(x: 0, y: 0, width: tableView.frame.size.width, height: Constants.tableBottomMargin))
-
 
         // assign 20pt leading inset to the table view, as per the design.
         tableView.directionalLayoutMargins = .init(top: tableView.directionalLayoutMargins.top,
@@ -590,8 +565,6 @@ private extension CommentDetailViewController {
                                                           commentID: NSNumber(value: comment.commentID),
                                                           source: .commentNotification)
     }
-
-
 
     // Shows the comment thread with the parent comment highlighted.
     func navigateToParentComment() {

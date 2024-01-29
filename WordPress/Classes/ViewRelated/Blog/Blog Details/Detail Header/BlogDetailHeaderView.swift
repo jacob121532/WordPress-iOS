@@ -1,5 +1,6 @@
 import Gridicons
 import UIKit
+import DesignSystem
 
 @objc protocol BlogDetailHeaderViewDelegate {
     func makeSiteIconMenu() -> UIMenu?
@@ -16,7 +17,7 @@ class BlogDetailHeaderView: UIView {
 
     // MARK: - Child Views
 
-    private let titleView: TitleView
+    let titleView: TitleView
 
     // MARK: - Delegate
 
@@ -99,13 +100,13 @@ class BlogDetailHeaderView: UIView {
 
     // MARK: - Initializers
 
-    required init(items: [ActionRow.Item], delegate: BlogDetailHeaderViewDelegate) {
+    required init(delegate: BlogDetailHeaderViewDelegate) {
         titleView = TitleView(frame: .zero)
 
         super.init(frame: .zero)
 
         self.delegate = delegate
-        setupChildViews(items: items)
+        setupChildViews()
     }
 
     required init?(coder: NSCoder) {
@@ -114,12 +115,15 @@ class BlogDetailHeaderView: UIView {
 
     // MARK: - Child View Initialization
 
-    private func setupChildViews(items: [ActionRow.Item]) {
+    private func setupChildViews() {
         assert(delegate != nil)
 
         if let siteActionsMenu = delegate?.makeSiteActionsMenu() {
-            titleView.siteActionButton.showsMenuAsPrimaryAction = true
-            titleView.siteActionButton.menu = siteActionsMenu
+            titleView.siteSwitcherButton.menu = siteActionsMenu
+            titleView.siteSwitcherButton.addTarget(self, action: #selector(siteSwitcherTapped), for: .touchUpInside)
+            titleView.siteSwitcherButton.addAction(UIAction { _ in
+                WPAnalytics.trackEvent(.mySiteHeaderMoreTapped)
+            }, for: .menuActionTriggered)
         }
 
         if let siteIconMenu = delegate?.makeSiteIconMenu() {
@@ -141,17 +145,15 @@ class BlogDetailHeaderView: UIView {
 
         addSubview(titleView)
 
-        let showsActionRow = items.count > 0
-        setupConstraintsForChildViews(showsActionRow)
+        setupConstraintsForChildViews()
     }
 
     // MARK: - Constraints
 
     private var topActionRowConstraint: NSLayoutConstraint?
 
-    private func setupConstraintsForChildViews(_ showsActionRow: Bool) {
+    private func setupConstraintsForChildViews() {
         let constraints = constraintsForTitleView()
-
         NSLayoutConstraint.activate(constraints)
     }
 
@@ -199,7 +201,7 @@ class BlogDetailHeaderView: UIView {
     }
 }
 
-fileprivate extension BlogDetailHeaderView {
+extension BlogDetailHeaderView {
     class TitleView: UIView {
         private enum Dimensions {
             static let siteSwitcherHeight: CGFloat = 36
@@ -212,7 +214,7 @@ fileprivate extension BlogDetailHeaderView {
             let stackView = UIStackView(arrangedSubviews: [
                 siteIconView,
                 titleStackView,
-                siteActionButton
+                siteSwitcherButton
             ])
 
             stackView.alignment = .center
@@ -278,9 +280,9 @@ fileprivate extension BlogDetailHeaderView {
             return button
         }()
 
-        let siteActionButton: UIButton = {
+        let siteSwitcherButton: UIButton = {
             let button = UIButton(frame: .zero)
-            let image = UIImage(named: "more-horizontal-mobile")?.withRenderingMode(.alwaysTemplate)
+            let image = UIImage(named: "chevron-down-slim")?.withRenderingMode(.alwaysTemplate)
 
             button.setImage(image, for: .normal)
             button.contentMode = .center
@@ -288,7 +290,7 @@ fileprivate extension BlogDetailHeaderView {
             button.tintColor = .secondaryLabel
             button.accessibilityLabel = NSLocalizedString("mySite.siteActions.button", value: "Site Actions", comment: "Button that reveals more site actions")
             button.accessibilityHint = NSLocalizedString("mySite.siteActions.hint", value: "Tap to show more site actions", comment: "Accessibility hint for button used to show more site actions")
-            button.accessibilityIdentifier = .siteActionAccessibilityId
+            button.accessibilityIdentifier = .switchSiteAccessibilityId
 
             return button
         }()
@@ -357,8 +359,8 @@ fileprivate extension BlogDetailHeaderView {
 
         private func setupConstraintsForSiteSwitcher() {
             NSLayoutConstraint.activate([
-                siteActionButton.heightAnchor.constraint(equalToConstant: Dimensions.siteSwitcherHeight),
-                siteActionButton.widthAnchor.constraint(equalToConstant: Dimensions.siteSwitcherWidth)
+                siteSwitcherButton.heightAnchor.constraint(equalToConstant: Dimensions.siteSwitcherHeight),
+                siteSwitcherButton.widthAnchor.constraint(equalToConstant: Dimensions.siteSwitcherWidth)
             ])
         }
     }
@@ -368,7 +370,7 @@ private extension String {
     // MARK: Accessibility Identifiers
     static let siteTitleAccessibilityId = "site-title-button"
     static let siteUrlAccessibilityId = "site-url-button"
-    static let siteActionAccessibilityId = "site-action-button"
+    static let switchSiteAccessibilityId = "switch-site-button"
 }
 
 private enum Strings {

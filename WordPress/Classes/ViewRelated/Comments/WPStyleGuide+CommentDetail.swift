@@ -5,7 +5,6 @@ import UIKit
 extension WPStyleGuide {
     public struct CommentDetail {
         static let tintColor: UIColor = .primary
-        static let externalIconImage: UIImage = .gridicon(.external).imageFlippedForRightToLeftLayoutDirection()
 
         static let textFont = WPStyleGuide.fontForTextStyle(.body)
         static let textColor = UIColor.text
@@ -55,7 +54,6 @@ extension WPStyleGuide {
             static let shareIconImageName = "square.and.arrow.up"
             static let ellipsisIconImageName = "ellipsis.circle"
             static let infoIconImageName = "info.circle"
-
 
             static var replyIconImage: UIImage? {
                 // this symbol is only available in iOS 14 and above. For iOS 13, we need to use the backported image in our assets.

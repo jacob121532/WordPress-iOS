@@ -6,6 +6,7 @@ import WordPressShared
 import WordPressAuthenticator
 import Gridicons
 import UIKit
+import WordPressUI
 
 /// The purpose of this class is to render the collection of Notifications, associated to the main
 /// WordPress.com account.
@@ -19,8 +20,6 @@ class NotificationsViewController: UIViewController, UIViewControllerRestoration
     @objc static let selectedSegmentIndexRestorationIdentifier   = "NotificationsSelectedSegmentIndexKey"
 
     // MARK: - Properties
-
-    let formatter = FormattableContentFormatter()
 
     /// Table View
     ///
@@ -249,10 +248,12 @@ class NotificationsViewController: UIViewController, UIViewControllerRestoration
 
         if shouldShowPrimeForPush {
             setupNotificationPrompt()
-        } else if AppRatingUtility.shared.shouldPromptForAppReview(section: InlinePrompt.section) {
-            setupAppRatings()
-            self.showInlinePrompt()
         }
+        // TODO: Remove this when In-App Rating project is shipped
+//        else if AppRatingUtility.shared.shouldPromptForAppReview(section: InlinePrompt.section) {
+//            setupAppRatings()
+//            self.showInlinePrompt()
+//        }
 
         showNotificationPrimerAlertIfNeeded()
         showSecondNotificationsAlertIfNeeded()
@@ -431,6 +432,10 @@ class NotificationsViewController: UIViewController, UIViewControllerRestoration
 
         showDetails(for: note)
 
+        if !note.read {
+            AppRatingUtility.shared.incrementSignificantEvent()
+        }
+
         if !splitViewControllerIsHorizontallyCompact {
             syncNotificationsWithModeratedComments()
         }
@@ -439,7 +444,7 @@ class NotificationsViewController: UIViewController, UIViewControllerRestoration
 
     func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         // skip when the notification is marked for deletion.
-        guard let note = tableViewHandler.resultsController?.object(at: indexPath) as? Notification,
+        guard let note = tableViewHandler.resultsController?.managedObject(atUnsafe: indexPath) as? Notification,
               deletionRequestForNoteWithID(note.objectID) == nil else {
             return nil
         }
@@ -466,7 +471,7 @@ class NotificationsViewController: UIViewController, UIViewControllerRestoration
 
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         // skip when the notification is marked for deletion.
-        guard let note = tableViewHandler.resultsController?.object(at: indexPath) as? Notification,
+        guard let note = tableViewHandler.resultsController?.managedObject(atUnsafe: indexPath) as? Notification,
             let block: FormattableCommentContent = note.contentGroup(ofKind: .comment)?.blockOfKind(.comment),
             deletionRequestForNoteWithID(note.objectID) == nil else {
             return nil
@@ -525,8 +530,6 @@ class NotificationsViewController: UIViewController, UIViewControllerRestoration
         }
     }
 }
-
-
 
 // MARK: - User Interface Initialization
 //
@@ -648,7 +651,6 @@ extension NotificationsViewController {
     }
 }
 
-
 // MARK: - Notifications
 //
 private extension NotificationsViewController {
@@ -737,8 +739,6 @@ private extension NotificationsViewController {
         }
     }
 }
-
-
 
 // MARK: - Public Methods
 //
@@ -890,7 +890,7 @@ extension NotificationsViewController {
         }
 
         let noteIndexPath = tableView.indexPathsForVisibleRows?.first { indexPath in
-            return note == tableViewHandler.resultsController?.object(at: indexPath) as? Notification
+            return note == tableViewHandler.resultsController?.managedObject(atUnsafe: indexPath) as? Notification
         }
 
         guard noteIndexPath == nil else {
@@ -931,7 +931,6 @@ extension NotificationsViewController {
     }
 }
 
-
 // MARK: - Notifications Deletion Mechanism
 //
 private extension NotificationsViewController {
@@ -969,7 +968,6 @@ private extension NotificationsViewController {
     func deletionRequestForNoteWithID(_ noteObjectID: NSManagedObjectID) -> NotificationDeletionRequest? {
         return notificationDeletionRequests[noteObjectID]
     }
-
 
     // MARK: - Notifications Deletion from CommentDetailViewController
 
@@ -1037,8 +1035,6 @@ private extension NotificationsViewController {
     }
 
 }
-
-
 
 // MARK: - Marking as Read
 //
@@ -1165,8 +1161,6 @@ private extension NotificationsViewController {
     }
 }
 
-
-
 // MARK: - Unread notifications caching
 //
 private extension NotificationsViewController {
@@ -1200,8 +1194,6 @@ private extension NotificationsViewController {
         }
     }
 }
-
-
 
 // MARK: - WPTableViewHandler Helpers
 //
@@ -1371,8 +1363,6 @@ extension NotificationsViewController {
     }
 }
 
-
-
 // MARK: - WPTableViewHandlerDelegate Methods
 //
 extension NotificationsViewController: WPTableViewHandlerDelegate {
@@ -1408,7 +1398,7 @@ extension NotificationsViewController: WPTableViewHandlerDelegate {
     }
 
     func configureCell(_ cell: UITableViewCell, at indexPath: IndexPath) {
-        guard let note = tableViewHandler.resultsController?.object(at: indexPath) as? Notification,
+        guard let note = tableViewHandler.resultsController?.managedObject(atUnsafe: indexPath) as? Notification,
               let cell = cell as? ListTableViewCell else {
             return
         }
@@ -1534,8 +1524,6 @@ private extension NotificationsViewController {
         return mainContext.countObjects(ofType: Notification.self) > 0 && !shouldDisplayJetpackPrompt
     }
 }
-
-
 
 // MARK: - NoResults Helpers
 //
@@ -1821,20 +1809,6 @@ extension NotificationsViewController: WPSplitViewControllerDetailProvider {
         controller.view.backgroundColor = .basicBackground
         return controller
     }
-
-    private func fetchFirstNotification() -> Notification? {
-        let context = managedObjectContext()
-        guard let fetchRequest = self.fetchRequest() else {
-            return nil
-        }
-        fetchRequest.fetchLimit = 1
-
-        if let results = try? context.fetch(fetchRequest) as? [Notification] {
-            return results.first
-        }
-
-        return nil
-    }
 }
 
 // MARK: - Details Navigation Datasource
@@ -1848,7 +1822,6 @@ extension NotificationsViewController: NotificationsNavigationDataSource {
         return loadNotification(near: note, withIndexDelta: +1)
     }
 }
-
 
 // MARK: - SearchableActivity Conformance
 //
@@ -1879,10 +1852,6 @@ extension NotificationsViewController: SearchableActivityConvertable {
 private extension NotificationsViewController {
     var mainContext: NSManagedObjectContext {
         return ContextManager.sharedInstance().mainContext
-    }
-
-    var actionsService: NotificationActionsService {
-        return NotificationActionsService(coreDataStack: ContextManager.shared)
     }
 
     var userDefaults: UserPersistentRepository {
@@ -1997,7 +1966,6 @@ private extension NotificationsViewController {
     }
 
     enum Stats {
-        static let networkStatusKey = "network_status"
         static let noteTypeKey = "notification_type"
         static let noteTypeUnknown = "unknown"
         static let sourceKey = "source"
@@ -2008,7 +1976,6 @@ private extension NotificationsViewController {
     enum Syncing {
         static let minimumPullToRefreshDelay = TimeInterval(1.5)
         static let pushMaxWait = TimeInterval(1.5)
-        static let syncTimeout = TimeInterval(10)
         static let undoTimeout = TimeInterval(4)
     }
 

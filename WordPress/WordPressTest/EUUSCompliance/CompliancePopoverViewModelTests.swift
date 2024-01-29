@@ -81,8 +81,10 @@ private class MockCompliancePopoverCoordinator: CompliancePopoverCoordinatorProt
     private(set) var presentIfNeededCallCount = 0
     private(set) var dismissCallCount = 0
 
-    func presentIfNeeded(on viewController: UIViewController) {
+    @discardableResult
+    func presentIfNeeded() async -> Bool {
         presentIfNeededCallCount += 1
+        return true
     }
 
     func navigateToSettings() {

@@ -58,10 +58,6 @@ public class Comment: NSManagedObject {
         return Int(likeCount)
     }
 
-    func hasAuthorUrl() -> Bool {
-        return !author_url.isEmpty
-    }
-
     func canEditAuthorData() -> Bool {
         // If the authorID is zero, the user is unregistered. Therefore, the data can be edited.
         return authorID == 0
@@ -70,7 +66,6 @@ public class Comment: NSManagedObject {
     func hasParentComment() -> Bool {
         return parentID > 0
     }
-
 
     /// Convenience method to check if the current user can actually moderate.
     /// `canModerate` is only applicable when the site is dotcom-related (hosted or atomic). For self-hosted sites, default to true.

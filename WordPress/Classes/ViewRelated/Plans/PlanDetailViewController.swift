@@ -3,9 +3,6 @@ import CocoaLumberjack
 import WordPressShared
 
 class PlanDetailViewController: UIViewController {
-    fileprivate let cellIdentifier = "PlanFeatureListItem"
-
-    fileprivate let tableViewHorizontalMargin: CGFloat = 24.0
     fileprivate let planImageDropshadowRadius: CGFloat = 3.0
 
     private var noResultsViewController: NoResultsViewController?
@@ -213,7 +210,6 @@ private extension PlanDetailViewController {
             self.noResultsViewModel = noResultsViewModel
         }
     }
-
 
     func noResultsCell() -> UITableViewCell {
         let cell = UITableViewCell()

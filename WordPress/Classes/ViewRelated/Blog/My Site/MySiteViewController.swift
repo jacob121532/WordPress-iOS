@@ -1,6 +1,7 @@
 import WordPressAuthenticator
 import UIKit
 import SwiftUI
+import WordPressUI
 
 final class MySiteViewController: UIViewController, UIScrollViewDelegate, NoSitesViewDelegate {
     enum Section: Int, CaseIterable {
@@ -57,20 +58,25 @@ final class MySiteViewController: UIViewController, UIScrollViewDelegate, NoSite
     var willDisplayPostSignupFlow: Bool = false
 
     private var createButtonCoordinator: CreateButtonCoordinator?
-    private var complianceCoordinator: CompliancePopoverCoordinator?
 
     private let meScenePresenter: ScenePresenter
     private let blogService: BlogService
 
     private let viewModel: MySiteViewModel
 
+    // MARK: - Dependencies
+
+    private let overlaysCoordinator: MySiteOverlaysCoordinator
+
     // MARK: - Initializers
 
-    init(meScenePresenter: ScenePresenter, blogService: BlogService? = nil) {
+    init(meScenePresenter: ScenePresenter,
+         blogService: BlogService? = nil,
+         overlaysCoordinator: MySiteOverlaysCoordinator = .init()) {
         self.meScenePresenter = meScenePresenter
         self.blogService = blogService ?? BlogService(coreDataStack: ContextManager.shared)
         self.viewModel = MySiteViewModel()
-
+        self.overlaysCoordinator = overlaysCoordinator
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -124,8 +130,8 @@ final class MySiteViewController: UIViewController, UIScrollViewDelegate, NoSite
         let configuration = AddNewSiteConfiguration(
             canCreateWPComSite: viewModel.defaultAccount != nil,
             canAddSelfHostedSite: AppConfiguration.showAddSelfHostedSiteButton,
-            launchSiteCreation: self.launchSiteCreationFromNoSites,
-            launchLoginForSelfHostedSite: self.launchLoginForSelfHostedSite
+            launchSiteCreation: { [weak self] in self?.launchSiteCreationFromNoSites() },
+            launchLoginForSelfHostedSite: { [weak self] in self?.launchLoginForSelfHostedSite() }
         )
         let noSiteView = NoSitesView(
             viewModel: noSitesViewModel,
@@ -159,13 +165,13 @@ final class MySiteViewController: UIViewController, UIScrollViewDelegate, NoSite
             showBlogDetailsForMainBlogOrNoSites()
         }
 
-        configureNavBarAppearance(animated: false)
+        configureNavBarAppearance(animated: animated)
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
 
-        resetNavBarAppearance()
+        resetNavBarAppearance(animated: animated)
         createButtonCoordinator?.hideCreateButton()
     }
 
@@ -189,8 +195,9 @@ final class MySiteViewController: UIViewController, UIScrollViewDelegate, NoSite
         createFABIfNeeded()
         fetchPrompt(for: blog)
 
-        complianceCoordinator = CompliancePopoverCoordinator()
-        complianceCoordinator?.presentIfNeeded(on: self)
+        Task { @MainActor in
+            await overlaysCoordinator.presentOverlayIfNeeded(in: self)
+        }
     }
 
     override func viewDidLayoutSubviews() {
@@ -301,8 +308,8 @@ final class MySiteViewController: UIViewController, UIScrollViewDelegate, NoSite
         }
     }
 
-    private func resetNavBarAppearance() {
-        navigationController?.setNavigationBarHidden(false, animated: false)
+    private func resetNavBarAppearance(animated: Bool) {
+        navigationController?.setNavigationBarHidden(false, animated: animated)
         isNavigationBarHidden = false
     }
 
@@ -384,7 +391,6 @@ final class MySiteViewController: UIViewController, UIScrollViewDelegate, NoSite
                 self.updateNavigationTitle(for: blog)
                 self.sitePickerViewController?.blogDetailHeaderView.blog = blog
             }
-
 
         case .dashboard:
 
@@ -886,6 +892,10 @@ extension MySiteViewController: BlogDetailsPresentationDelegate {
     ///
     func showBlogDetailsSubsection(_ subsection: BlogDetailsSubsection) {
         blogDetailsViewController?.showDetailView(for: subsection)
+    }
+
+    func showBlogDetailsSubsection(_ subsection: BlogDetailsSubsection, userInfo: [AnyHashable: Any]) {
+        blogDetailsViewController?.showDetailView(for: subsection, userInfo: userInfo)
     }
 
     // TODO: Refactor presentation from routes

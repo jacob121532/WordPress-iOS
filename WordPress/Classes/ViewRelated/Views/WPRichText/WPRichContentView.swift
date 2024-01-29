@@ -10,7 +10,6 @@ import WordPressShared
     @objc optional func interactWith(URL: URL)
 }
 
-
 /// A subclass of UITextView for displaying HTML formatted strings.  Embedded content
 /// in tags like img, iframe, and video, are loaded manually and presented as subviews.
 ///
@@ -98,7 +97,6 @@ class WPRichContentView: UITextView {
         setupView()
     }
 
-
     required init?(coder aDecoder: NSCoder) {
         DDLogDebug("This class should be initialized via code, in order to properly render blockquotes. We need to be able to ovverride the default `textContainer`, and we don't have opportunity to do so when unpacking from a `nib`. Sorry for that :(")
         super.init(coder: aDecoder)
@@ -116,7 +114,6 @@ class WPRichContentView: UITextView {
         setupTouchDetection()
     }
 
-
     @objc func layoutAttachmentViews() {
         if let richDelegate = delegate as? WPRichContentViewDelegate {
             if richDelegate.richContentViewShouldUpdateLayoutForAttachments?(self) == false {
@@ -131,12 +128,10 @@ class WPRichContentView: UITextView {
         }
     }
 
-
     @objc func updateLayoutForAttachments() {
         attachmentManager.layoutAttachmentViews()
         invalidateIntrinsicContentSize()
     }
-
 
     func ensureLayoutForAttachment(_ textAttachment: NSTextAttachment) {
         guard textStorage.length > 0 else {
@@ -204,7 +199,6 @@ private extension WPRichContentView {
     }
 }
 
-
 extension WPRichContentView: WPTextAttachmentManagerDelegate {
     func attachmentManager(_ attachmentManager: WPTextAttachmentManager, viewForAttachment attachment: WPTextAttachment) -> UIView? {
         if attachment.tagName == "img" {
@@ -213,7 +207,6 @@ extension WPRichContentView: WPTextAttachmentManagerDelegate {
             return embedForAttachment(attachment)
         }
     }
-
 
     /// Returns the view to use for an embed attachment.
     ///
@@ -247,7 +240,6 @@ extension WPRichContentView: WPTextAttachmentManagerDelegate {
         return embed
     }
 
-
     /// Find the most appropriate size for a gif image to be loaded efficiently without loosing much quality.
     /// With height: 0, the image will resize proportionally, and won't grow bigger than its original size.
     ///
@@ -270,7 +262,6 @@ extension WPRichContentView: WPTextAttachmentManagerDelegate {
         }
     }
 
-
     /// Creates and return a `WPRichTextImage` with the given parameters.
     ///
     fileprivate func richTextImage(with size: CGSize, _ url: URL, _ attachment: WPTextAttachment) -> WPRichTextImage {
@@ -280,7 +271,6 @@ extension WPRichContentView: WPTextAttachmentManagerDelegate {
         image.linkURL = linkURLForImageAttachment(attachment)
         return image
     }
-
 
     /// Returns the CGSize instance for the given `WPTextAttachment`
     ///
@@ -376,7 +366,6 @@ extension WPRichContentView: WPTextAttachmentManagerDelegate {
         return link
     }
 
-
     /// Get the NSRange for the specified attachment in the attributedText.
     ///
     /// - Parameters:
@@ -395,7 +384,6 @@ extension WPRichContentView: WPTextAttachmentManagerDelegate {
         return attachmentRange
     }
 
-
     /// Get the NSRange for the attachment associated with the specified WPRichTextImage instance.
     ///
     /// - Parameters:
@@ -412,7 +400,6 @@ extension WPRichContentView: WPTextAttachmentManagerDelegate {
 
         return rangeOfAttachment(match.key)
     }
-
 
     /// Notifies the delegate of an user interaction with a WPRichTextImage instance.
     ///
@@ -443,17 +430,7 @@ private extension WPRichContentView {
     struct Constants {
         static let textContainerInset = UIEdgeInsets.init(top: 0.0, left: 0.0, bottom: 16.0, right: 0.0)
         static let defaultAttachmentHeight = CGFloat(50.0)
-        static let photonQuality = 65
     }
-}
-
-// MARK: - Rich Media Struct
-
-/// A simple struct used to keep references to a rich text image and its associated attachment.
-///
-struct RichMedia {
-    let image: WPRichTextImage
-    let attachment: WPTextAttachment
 }
 
 // This is very much based on Aztec.LayoutManager — most of this code is pretty much copy-pasted
@@ -519,7 +496,6 @@ struct RichMedia {
         }
     }
 
-
     /// Returns the Rect in which the Blockquote should be rendered.
     ///
     /// - Parameters:
@@ -544,7 +520,6 @@ struct RichMedia {
 
         return blockquoteRect
     }
-
 
     /// Draws a single Blockquote Line Fragment, in the specified Rectangle, using a given Graphics Context.
     ///

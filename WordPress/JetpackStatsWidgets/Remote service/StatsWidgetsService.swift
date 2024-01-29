@@ -22,7 +22,6 @@ class StatsWidgetsService {
 
     private var state: State = .ready
 
-
     func fetchStats(for widgetData: HomeWidgetData,
                     completion: @escaping (Result<ResultType, Error>) -> Void) {
 
@@ -156,7 +155,7 @@ class StatsWidgetsService {
                                                        url: widgetData.url,
                                                        timeZone: widgetData.timeZone,
                                                        date: Date(),
-                                                       stats: ThisWeekWidgetStats(days: ThisWeekWidgetStats.daysFrom(summaryData: summaryData)))
+                                                       stats: ThisWeekWidgetStats(days: ThisWeekWidgetStats.daysFrom(summaryData: summaryData.map { ThisWeekWidgetStats.Input(periodStartDate: $0.periodStartDate, viewsCount: $0.viewsCount) })))
             completion(.success(newWidgetData))
 
             DispatchQueue.global().async {
@@ -170,7 +169,6 @@ class StatsWidgetsService {
 enum StatsWidgetsError: Error {
     case nilStats
 }
-
 
 private extension Date {
     func convert(from timeZone: TimeZone, comparedWith target: TimeZone = TimeZone.current) -> Date {

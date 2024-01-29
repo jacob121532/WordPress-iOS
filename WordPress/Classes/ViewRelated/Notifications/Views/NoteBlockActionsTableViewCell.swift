@@ -1,8 +1,6 @@
 import Foundation
 import WordPressShared.WPStyleGuide
 
-
-
 // MARK: - NoteBlockActionsTableViewCell
 //
 class NoteBlockActionsTableViewCell: NoteBlockTableViewCell {
@@ -188,9 +186,6 @@ class NoteBlockActionsTableViewCell: NoteBlockTableViewCell {
         return isLikeOn ? LikeComment.TitleHints.unlike : LikeComment.TitleHints.like
     }
 
-
-
-
     // MARK: - Overriden Methods
 
     override func awakeFromNib() {
@@ -244,8 +239,6 @@ class NoteBlockActionsTableViewCell: NoteBlockTableViewCell {
         super.traitCollectionDidChange(previousTraitCollection)
         actionsView.spacing = buttonSpacingForCurrentTraits
     }
-
-
 
     // MARK: - IBActions
     @IBAction func replyWasPressed(_ sender: AnyObject) {
@@ -302,8 +295,6 @@ class NoteBlockActionsTableViewCell: NoteBlockTableViewCell {
         }
     }
 }
-
-
 
 // MARK: - Action Button Helpers
 //
@@ -362,15 +353,9 @@ private extension NoteBlockActionsTableViewCell {
     }
 }
 
-
 // MARK: - Private Constants
 //
 private extension NoteBlockActionsTableViewCell {
-    struct Edit {
-        static let normalTitle      = NSLocalizedString("Edit", comment: "Verb, edit a comment")
-        static let normalHint       = NSLocalizedString("Edits a comment", comment: "Edit Action Spoken hint.")
-    }
-
     struct Constants {
         static let buttonSpacing = CGFloat(20)
         static let buttonSpacingCompact = CGFloat(2)

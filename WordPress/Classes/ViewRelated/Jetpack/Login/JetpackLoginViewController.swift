@@ -3,14 +3,12 @@ import UIKit
 import WordPressShared
 import WordPressAuthenticator
 
-
 /// A view controller that presents a Jetpack login form.
 ///
 class JetpackLoginViewController: UIViewController {
 
     // MARK: - Constants
 
-    fileprivate let jetpackInstallRelativePath = "plugin-install.php?tab=plugin-information&plugin=jetpack"
     var blog: Blog
 
     // MARK: - Properties
@@ -108,7 +106,6 @@ class JetpackLoginViewController: UIViewController {
         completionBlock?()
     }
 
-
     // MARK: - UI Helpers
 
     func updateMessageAndButton() {
@@ -157,13 +154,6 @@ class JetpackLoginViewController: UIViewController {
         faqButton.setTitle(Constants.Buttons.faqTitle, for: .normal)
         faqButton.isHidden = tacButton.isHidden
     }
-
-    // MARK: - Private Helpers
-
-    fileprivate func managedObjectContext() -> NSManagedObjectContext {
-        return ContextManager.sharedInstance().mainContext
-    }
-
 
     // MARK: - Browser
 

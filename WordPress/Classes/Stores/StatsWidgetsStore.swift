@@ -100,7 +100,6 @@ class StatsWidgetsStore {
                                                                    date: Date(),
                                                                    stats: stats) as? T
 
-
         } else if widgetType == HomeWidgetAllTimeData.self, let stats = stats as? AllTimeWidgetStats {
             widgetReload = WidgetCenter.shared.reloadAllTimeTimelines
 
@@ -126,7 +125,6 @@ class StatsWidgetsStore {
         widgetReload?()
     }
 }
-
 
 // MARK: - Helper methods
 private extension StatsWidgetsStore {
@@ -240,7 +238,6 @@ private extension StatsWidgetsStore {
     }
 }
 
-
 // MARK: - Extract this week data
 extension StatsWidgetsStore {
     func updateThisWeekHomeWidget(summary: StatsSummaryTimeIntervalData?) {
@@ -251,7 +248,7 @@ extension StatsWidgetsStore {
             }
             let summaryData = Array(summary?.summaryData.reversed().prefix(ThisWeekWidgetStats.maxDaysToDisplay + 1) ?? [])
 
-            let stats = ThisWeekWidgetStats(days: ThisWeekWidgetStats.daysFrom(summaryData: summaryData))
+            let stats = ThisWeekWidgetStats(days: ThisWeekWidgetStats.daysFrom(summaryData: summaryData.map { ThisWeekWidgetStats.Input(periodStartDate: $0.periodStartDate, viewsCount: $0.viewsCount) }))
             StoreContainer.shared.statsWidgets.storeHomeWidgetData(widgetType: HomeWidgetThisWeekData.self, stats: stats)
         case .week:
             WidgetCenter.shared.reloadThisWeekTimelines()
@@ -260,7 +257,6 @@ extension StatsWidgetsStore {
         }
     }
 }
-
 
 // MARK: - Login/Logout notifications
 private extension StatsWidgetsStore {
@@ -345,13 +341,11 @@ private extension StatsWidgetsStore {
     }
 }
 
-
 extension StatsViewController {
     @objc func initializeStatsWidgetsIfNeeded() {
         StoreContainer.shared.statsWidgets.initializeStatsWidgetsIfNeeded()
     }
 }
-
 
 extension BlogListViewController {
     @objc func refreshStatsWidgetsSiteList() {
